@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Raw / bulky data stays local (hackathon data pack may carry usage restrictions).
+# Remove these lines if you want the data in the private repo.
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+*.zip
+*.parquet
+
+# OS
+.DS_Store
