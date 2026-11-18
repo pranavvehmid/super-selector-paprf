@@ -18,7 +18,9 @@ STEPS = (
     "apply_pressure_definition", "validate_pressure_definition", "build_player_metrics", "validate_player_metrics",
     "build_baselines", "validate_baselines", "build_reliability_scores", "freeze_rankings", "validate_rankings",
     "build_candidate_universe", "run_paprf_phase2", "audit_paprf_context", "build_paprf_v2", "build_paprf_v3",
-    "build_paprf_v4",
+    "build_paprf_v4", "validate_paprf_forward", "audit_paprf_split_reliability",
+    "build_paprf_role_profiles", "validate_paprf_role_profiles", "build_paprf_unified_ranking",
+    "build_paprf_discipline_rankings",
 )
 CHECKS = (
     "data/processed/metric_attribution_deliveries.csv",
@@ -27,6 +29,13 @@ CHECKS = (
       for role in ("batters", "bowlers")),
     *(f"outputs/tables/paprf_v4_{name}.csv" for name in ("rank_ledger", "sensitivity", "temporal", "cells", "progression")),
     "work/paprf_v4_validation.json",
+    "work/paprf_forward_validation.json", "work/paprf_split_reliability.json",
+    "work/paprf_contextual_roles.json", "work/paprf_role_profile_validation.json",
+    "work/paprf_unified_ranking.json", "work/paprf_contextual_discipline_v2.json",
+    "outputs/rankings/paprf_contextual_role_top10_v1.csv",
+    "outputs/rankings/paprf_unified_top10_v1.csv",
+    "outputs/rankings/paprf_contextual_batters_top10_v2.csv",
+    "outputs/rankings/paprf_contextual_bowlers_top10_v2.csv",
 )
 
 

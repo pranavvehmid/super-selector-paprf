@@ -2,6 +2,7 @@
 
 import csv
 import json
+from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -38,6 +39,15 @@ def main():
     distribution = read_csv(TABLES / "paprf_pressure_distribution.csv")
     if sum(int(r["delivery_count"]) for r in distribution) != audit["delivery_rows"]:
         raise ValueError("Pressure distribution and audit totals diverged")
+    role_profiles = read_json("work/paprf_contextual_roles.json")
+    edges = [-1, -.5, 0, .5, 1]
+    bins = defaultdict(lambda: [0] * (len(edges) + 1))
+    for r in read_csv(TABLES / "paprf_role_profile_scores.csv"):
+        if r["scenario"] == "primary":
+            bins[r["role"]][sum(float(r["score"]) >= edge for edge in edges)] += 1
+    for role, counts in bins.items():
+        if sum(counts) != role_profiles["roles"][role]["primary"]["eligible"]:
+            raise ValueError(f"Role histogram and eligible counts diverged for {role}")
     data = dict(names=names, rankings=rankings, contexts=contexts, ledger=ledger,
                 model=model, audit=audit, distribution=distribution,
                 context_audit=read_json("work/paprf_context_audit.json"),
@@ -46,9 +56,12 @@ def main():
                 regularised=read_json("work/paprf_v4_validation.json"),
                 forward=read_json("work/paprf_forward_validation.json"),
                 split_reliability=read_json("work/paprf_split_reliability.json"),
-                role_profiles=read_json("work/paprf_contextual_roles.json"),
+                role_profiles=role_profiles,
+                role_histograms=dict(edges=edges, counts=dict(bins)),
                 role_validation=read_json("work/paprf_role_profile_validation.json"),
                 disciplines=read_json("work/paprf_contextual_discipline_v2.json"),
+                datasets=read_json("work/data-quality-audit.json")["file_quality"],
+                publication=read_json("work/publication_manifest.json"),
                 robustness=read_json("work/robustness-validation.json"))
     path = ROOT / "dashboard/evidence.js"
     path.write_text("globalThis.paprfEvidence = " + json.dumps(data, ensure_ascii=True, separators=(",", ":")) + ";\n",

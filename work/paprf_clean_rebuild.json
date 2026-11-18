@@ -18,7 +18,13 @@
     "audit_paprf_context",
     "build_paprf_v2",
     "build_paprf_v3",
-    "build_paprf_v4"
+    "build_paprf_v4",
+    "validate_paprf_forward",
+    "audit_paprf_split_reliability",
+    "build_paprf_role_profiles",
+    "validate_paprf_role_profiles",
+    "build_paprf_unified_ranking",
+    "build_paprf_discipline_rankings"
   ],
   "compared_files": [
     {
@@ -110,8 +116,68 @@
       "published_sha256": "3ce37ae17390c9828b475a2125a48125c918836717a5caf74a14a57e56c7f7a5",
       "rebuilt_sha256": "3ce37ae17390c9828b475a2125a48125c918836717a5caf74a14a57e56c7f7a5",
       "identical": true
+    },
+    {
+      "file": "work/paprf_forward_validation.json",
+      "published_sha256": "4a85ceee5ed6a1951b190976bf43e984ddd59936b13142f0ebd8c35a06077155",
+      "rebuilt_sha256": "4a85ceee5ed6a1951b190976bf43e984ddd59936b13142f0ebd8c35a06077155",
+      "identical": true
+    },
+    {
+      "file": "work/paprf_split_reliability.json",
+      "published_sha256": "6a1439ba29d5ac8f1c5a23a389e9e420df579aac64519f90d424f9f39f59a5b1",
+      "rebuilt_sha256": "6a1439ba29d5ac8f1c5a23a389e9e420df579aac64519f90d424f9f39f59a5b1",
+      "identical": true
+    },
+    {
+      "file": "work/paprf_contextual_roles.json",
+      "published_sha256": "3c4232df9654d46f217687ac3a425e62adf175e88c6971938d3ab79171038a61",
+      "rebuilt_sha256": "3c4232df9654d46f217687ac3a425e62adf175e88c6971938d3ab79171038a61",
+      "identical": true
+    },
+    {
+      "file": "work/paprf_role_profile_validation.json",
+      "published_sha256": "1a5713f4e4dc5c96ce9a50b3c7f13e5c57a23eddd5748c05464c13184065bcf3",
+      "rebuilt_sha256": "1a5713f4e4dc5c96ce9a50b3c7f13e5c57a23eddd5748c05464c13184065bcf3",
+      "identical": true
+    },
+    {
+      "file": "work/paprf_unified_ranking.json",
+      "published_sha256": "6a64c18ded534696338709314934b29c6a667e1e2ddd30ada44339921a33a983",
+      "rebuilt_sha256": "6a64c18ded534696338709314934b29c6a667e1e2ddd30ada44339921a33a983",
+      "identical": true
+    },
+    {
+      "file": "work/paprf_contextual_discipline_v2.json",
+      "published_sha256": "4bd1a7bffb291dac6530db022599d8359c3059a9f6cc58efe758ea1a0c455671",
+      "rebuilt_sha256": "4bd1a7bffb291dac6530db022599d8359c3059a9f6cc58efe758ea1a0c455671",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/paprf_contextual_role_top10_v1.csv",
+      "published_sha256": "79b3340b7d26c55a8030b500d485ce9ffe699b19cbdf7a3ff26ff80cd2f0c37b",
+      "rebuilt_sha256": "79b3340b7d26c55a8030b500d485ce9ffe699b19cbdf7a3ff26ff80cd2f0c37b",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/paprf_unified_top10_v1.csv",
+      "published_sha256": "8e2f6b863171ec91cda42a3995519c3e3122b7714b6cf28c43c2ccbaa661d023",
+      "rebuilt_sha256": "8e2f6b863171ec91cda42a3995519c3e3122b7714b6cf28c43c2ccbaa661d023",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/paprf_contextual_batters_top10_v2.csv",
+      "published_sha256": "91b50f6d7aabedbd091bde7553eb5faa6d5ea4055cad977a5de1d4b251a79396",
+      "rebuilt_sha256": "91b50f6d7aabedbd091bde7553eb5faa6d5ea4055cad977a5de1d4b251a79396",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/paprf_contextual_bowlers_top10_v2.csv",
+      "published_sha256": "b7cd4109111b24eb17228329c4d1e5b98c4287b9ea4439dcadf873e357d799da",
+      "rebuilt_sha256": "b7cd4109111b24eb17228329c4d1e5b98c4287b9ea4439dcadf873e357d799da",
+      "identical": true
     }
   ],
-  "identical_count": 15,
+  "identical_count": 25,
   "scalar_point_scores_verified": 305
 }

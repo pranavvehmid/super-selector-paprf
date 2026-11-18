@@ -15,6 +15,7 @@ CHAPTERS = (
     ("plan", "Research plan and phase history", "methodology/paprf_four_phase_plan.md"),
     ("unified", "Unified index and leaderboard directory", "methodology/paprf_unified_ranking.md"),
     ("discipline", "Separate batting and bowling indices", "methodology/paprf_discipline_rankings_v2.md"),
+    ("formula-reference", "Numbered formula reference", "methodology/paprf_publication_formula_reference.md"),
     ("roles", "Contextual outcomes and seven roles", "methodology/paprf_contextual_role_profiles.md"),
     ("role-validation", "Role validation and score uncertainty", "methodology/paprf_role_profile_validation.md"),
     ("source-dictionary", "Organiser data dictionary", "data_dictionary.md"),
@@ -61,16 +62,28 @@ def main():
     contents = []
     for key, _, relative in CHAPTERS:
         source = ROOT / "docs" / relative
-        body = markdown.markdown(source.read_text(encoding="utf-8"), extensions=["tables", "fenced_code"])
+        material = source.read_text(encoding="utf-8")
+        if key == "formula-reference":
+            def math_tag(match, form):
+                expression = html.escape(" ".join(match[1].split()), quote=True)
+                span = f'<span data-tex="{expression}" data-display="{form}">{expression}</span>'
+                return f"\n\n<div class=\"equation\">{span}</div>\n\n" if form == "block" else span
+
+            material = re.sub(r"(?ms)^\$\$\s*\n(.*?)\n\$\$[ \t]*$", lambda m: math_tag(m, "block"), material)
+            material = re.sub(r"\$([^$\n]+)\$", lambda m: math_tag(m, "inline"), material)
+        body = markdown.markdown(material, extensions=["tables", "fenced_code"])
         body = re.sub(r"<(/?)h([1-5])>", lambda m: f"<{m[1]}h{int(m[2])+1}>", body)
         contents.append(f'<article id="{key}">{local_links(body, source, chapter_links)}</article>')
     toc = "".join(f'<li><a href="#{k}">{html.escape(title)}</a></li>' for k, title, _ in CHAPTERS)
     page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PAPRF research library</title><link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="publication.css"></head><body>
+<title>PAPRF research library</title><script src="theme.js"></script><link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="publication.css"><link rel="stylesheet" href="atlas.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css" integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js" integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE" crossorigin="anonymous"></script>
+<script defer src="formula.js"></script></head><body>
 <header class="site-header"><div class="mast"><a class="brand" href="index.html">PAPRF</a>
-<span class="mast-label">Research library</span></div>
+<span class="mast-label">Research library</span><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></div>
 <nav aria-label="Research"><a href="index.html#unified">Unified index</a><a href="index.html#pipeline">Methods overview</a>
 <a href="index.html#figures">Figure atlas</a><a href="#library-top">Contents</a></nav></header>
 <main class="library" id="library-top"><section class="panel"><p class="kicker">RESEARCH RECORD</p>

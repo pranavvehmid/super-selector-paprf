@@ -1,0 +1,15 @@
+{
+  "run_id": "e5f524236dbf",
+  "input_hashes": {
+    "outputs/rankings/lens_a_batters_v1.csv": "b2696b3f33a180d203be9f1826bce9bf795fa7743ead581dc73e041b0484d6d2",
+    "outputs/rankings/lens_a_bowlers_v1.csv": "fda3710494430d1392cd2e2ae3b779f9edcd53209c34cacd3b9e7571de310bc7",
+    "outputs/rankings/paprf_contextual_batters_top10_v2.csv": "91b50f6d7aabedbd091bde7553eb5faa6d5ea4055cad977a5de1d4b251a79396",
+    "outputs/rankings/paprf_contextual_bowlers_top10_v2.csv": "b7cd4109111b24eb17228329c4d1e5b98c4287b9ea4439dcadf873e357d799da",
+    "outputs/rankings/paprf_contextual_role_top10_v1.csv": "79b3340b7d26c55a8030b500d485ce9ffe699b19cbdf7a3ff26ff80cd2f0c37b",
+    "work/paprf_role_profile_validation.json": "1a5713f4e4dc5c96ce9a50b3c7f13e5c57a23eddd5748c05464c13184065bcf3",
+    "work/paprf_clean_rebuild.json": "f14a66173d86dca77525179230c76fdb82522c43787c26729beafba8c1c32d93",
+    "outputs/figures/paprf_role_forward_validation.png": "a7a9265ff153faef1ea849f75ba63cee533a58448ed583a23939d7fd38cb5ddd"
+  },
+  "independently_rebuilt_files": 25,
+  "pdf_available": true
+}

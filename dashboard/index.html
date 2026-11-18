@@ -5,21 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore T20 pressure exposure, model sensitivity and player evidence for Super Selector Round 1.">
   <title>PAPRF · A research atlas of T20 performance</title>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="publication.css">
+  <link rel="stylesheet" href="atlas.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css" integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js" integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE" crossorigin="anonymous"></script>
   <script defer src="evidence.js"></script>
   <script defer src="app.js"></script>
   <script defer src="publication.js"></script>
+  <script defer src="author.js"></script>
+  <script defer src="atlas.js"></script>
 </head>
 <body>
   <header class="site-header">
-    <div class="mast"><a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span> PAPRF</a><span class="mast-label">Super Selector · Round 1</span></div>
-    <nav aria-label="Research navigation"><a href="#unified">Contextual rankings</a><a href="#rankings">Round 1 pressure lists</a><a href="#pipeline">Method</a><a href="#role-profiles">Role profiles</a><a href="#figures">Figures</a><a href="library.html">Research library</a></nav>
+    <div class="mast"><a class="brand" href="?page=home">PAPRF</a><span class="mast-label">Super Selector · Round 1</span><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></div>
+    <nav id="atlas-nav" aria-label="Research pages">
+      <a data-route="home" href="?page=home">Home</a><a data-route="dataset" href="?page=dataset">Dataset</a>
+      <a data-route="framework" href="?page=framework">Framework</a><a data-route="pressure" href="?page=pressure">Pressure</a>
+      <a data-route="players" href="?page=players">Players</a><a data-route="roles" href="?page=roles">Roles</a>
+      <a data-route="top-ten" href="?page=top-ten">Ultimate Top 10</a><a data-route="compare" href="?page=compare">Compare</a>
+      <a data-route="validation" href="?page=validation">Validation</a><a data-route="documentation" href="?page=documentation">Documentation</a>
+      <a data-route="about" href="?page=about">About</a>
+    </nav>
   </header>
   <main id="overview">
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero-copy">
         <p class="kicker">SUPER SELECTOR ROUND 1 · RESEARCH ATLAS</p>
         <h1>T20 performance<br>in context</h1>
@@ -30,6 +42,24 @@
         <div id="summary" class="stats stats-left"></div>
         <div id="pressure-summary" class="stats stats-right"></div>
       </div>
+      <p class="note">Author: <span data-author="name">[AUTHOR_NAME]</span></p>
+    </section>
+    <section class="panel" id="home-findings">
+      <h2>What the research found</h2>
+      <p>The original Round 1 analysis measures how players respond to elevated match pressure relative to their typical performance. The contextual study asks a broader question: how much do players exceed expectations for their deployment and opponents?</p>
+      <p>Repeated pressure-ranking tests showed weak ordering over time. Contextual opener scores held up better in both tested windows. Treat the lists as historical evidence with quantified limitations.</p>
+      <ol class="pipeline"><li>Verify data</li><li>Rebuild match state</li><li>Estimate context</li><li>Score within roles</li><li>Validate ranks</li></ol>
+      <div id="home-preview"></div>
+      <p><a href="?page=top-ten" data-route="top-ten">See both full top tens</a> · <a href="?page=validation" data-route="validation">Inspect the tests</a></p>
+    </section>
+    <section class="panel" id="dataset">
+      <h1>Dataset explorer</h1>
+      <p>The organiser supplies IPL and T20I data from 2022 onward. This explorer summarises raw-file coverage and blank fields. Scoring uses the retained delivery population after exclusions.</p>
+      <div id="dataset-summary"></div>
+      <div class="controls"><label>Source file<select id="dataset-file"></select></label>
+        <label>Show fields<select id="dataset-fields"><option value="all">All fields</option><option value="missing">Fields with blanks</option></select></label></div>
+      <div id="dataset-missing"></div>
+      <p><a href="library.html#source-dictionary">Data dictionary</a> · <a href="library.html#source-audit">Preprocessing and exclusions</a></p>
     </section>
     <noscript>This dashboard requires JavaScript to load the evidence and controls.</noscript>
     <div id="load-error" class="panel" hidden>Evidence could not be loaded. Regenerate the dashboard data bundle and refresh.</div>
@@ -58,7 +88,7 @@
       <p><var>n</var> is scored balls in the role. At 120 balls the factor <var>R</var> is 0.5, so a role reference of 90 becomes an adjusted role score of 70. The most-used role within the selected discipline is primary.</p>
       <div class="equation"><span data-tex="I=\min\!\left(100,\;S_p+0.10\min(1,n_s/n_p)\max(0,S_s-50)\right)">I = min(100, Sₚ + 0.10 min(1, nₛ/nₚ) max(0, Sₛ−50))</span><small>(3)</small></div>
       <p>A secondary role at 80 with half the primary ball count adds 1.5 points. Primary 70 plus that credit gives a unified index of 71.5. The detail below each ranked player shows the same calculation with their actual inputs.</p>
-      <p><a href="library.html#discipline">Discipline split and worked methodology</a> · <a href="library.html#roles">Contextual expectations and weights</a> · <a href="#glossary">Metric glossary</a></p>
+      <p><a href="library.html#formula-reference">Numbered formula reference</a> · <a href="library.html#discipline">Discipline split and worked methodology</a> · <a href="#glossary">Metric glossary</a></p>
     </section>
     <section class="panel" id="research">
       <div class="section-head"><div><p class="kicker">03 / PRESSURE RESEARCH</p><h2>Match-adjusted pressure rankings</h2></div>
@@ -86,6 +116,9 @@
         </select></label></div>
       <p id="profile-summary" class="note" aria-live="polite"></p>
       <div id="profile-results"></div>
+      <details><summary>Distribution of eligible role scores</summary><div id="profile-histogram"></div>
+        <p>Bars count eligible player-role records in signed role-score intervals. This distribution uses the shrunk contextual scores shown in the role table, before the 0–100 discipline transformation.</p>
+      </details>
       <details><summary>Later-match validation</summary><div id="profile-validation"></div>
         <p>Correlations compare earlier ordering with later runs and dismissals or wickets on common eligible players. Top-ten resampling shares describe the historical sample.</p>
       </details>
@@ -96,12 +129,27 @@
       <label>Research figure<select id="figure-select"></select></label>
       <figure><img id="figure-image" alt=""><figcaption id="figure-caption"></figcaption></figure>
     </section>
+    <section class="panel" id="compare-players">
+      <h1>Comparative analysis</h1>
+      <p>Compare historical contextual scores and the contributions that produced them. These values use the selected discipline and a common 100-point reference.</p>
+      <div class="controls"><label>Discipline<select id="compare-discipline"><option value="batter">Batters</option><option value="bowler">Bowlers</option></select></label><label>Player A<select id="compare-a"></select></label><label>Player B<select id="compare-b"></select></label></div>
+      <div id="compare-matrix"></div>
+    </section>
     <section class="panel" id="pressure">
       <div class="section-head"><div><p class="kicker">MATCH CONTEXT</p><h2>Pressure exposure</h2></div><label>Chart scale<select id="scale"><option value="share">Within-phase share</option><option value="count">Delivery count</option></select></label></div>
       <p>Each row combines an innings and phase. Hover or focus a segment for its numerator, denominator and share.</p>
       <div class="legend"><span class="ordinary">Ordinary</span><span class="elevated">Elevated</span><span class="high">High</span></div>
       <div id="distribution" class="chart"></div>
       <p id="pressure-detail" class="note" aria-live="polite">Choose a band segment to inspect its evidence.</p>
+      <h3>Explore the chase-pressure equation</h3>
+      <p>Hold innings progress and wickets constant, then vary the required run rate. This curve represents the implemented equation, with illustrative inputs.</p>
+      <div class="controls">
+        <label>Legal balls completed <output id="curve-balls-value">90</output><input type="range" id="curve-balls" min="0" max="119" value="90"></label>
+        <label>Wickets lost <output id="curve-wickets-value">4</output><input type="range" id="curve-wickets" min="0" max="9" value="4"></label>
+      </div>
+      <figure class="pressure-figure"><canvas id="pressure-curve" width="1000" height="320" aria-describedby="pressure-curve-alt"></canvas>
+        <figcaption id="pressure-curve-alt"></figcaption>
+      </figure>
     </section>
     <section class="panel" id="rankings">
       <div class="section-head"><div><p class="kicker">SUBMISSION ARCHIVE AND EXPERIMENTS</p><h2>Lens A rankings explorer</h2></div></div>
@@ -149,6 +197,18 @@
         <li><strong>Validation and submission</strong><span>Cross-check final deliverables and verify submission labels before release.</span></li>
       </ol>
     </section>
+    <section class="panel" id="documents">
+      <h1>Research documentation</h1>
+      <p>Read the full methods and version history, then download the typeset report or its source.</p>
+      <p id="publication-run" class="note"></p>
+      <ul><li><a href="library.html">Research library</a></li><li><a id="publication-pdf" href="reports/paprf_research.pdf">Research report PDF</a></li><li><a href="reports/paprf_research_source.zip">LaTeX report and compilation files</a></li></ul>
+    </section>
+    <section class="panel" id="about">
+      <h1>About the research</h1>
+      <p>Author: <span data-author="name">[AUTHOR_NAME]</span></p>
+      <p>PAPRF started with the Super Selector Round 1 pressure challenge and grew into a study of how match context, statistical support and deployment change player evaluation.</p>
+      <div id="author-links"></div>
+    </section>
     <section class="panel" id="glossary">
       <p class="kicker">06 / REFERENCE</p><h2>Glossary and source limits</h2>
       <div id="metric-glossary"></div>
@@ -156,6 +216,6 @@
       <p><a href="library.html">Read the full methods, validation and version record</a></p>
     </section>
   </main>
-  <footer>Super Selector Round 1 · Lens A v1 and exploratory PAPRF scenarios</footer>
+  <footer>Super Selector Round 1 · <span data-author="name">[AUTHOR_NAME]</span></footer>
 </body>
 </html>

@@ -208,6 +208,22 @@ function renderRoleProfiles() {
     batting ? "Explosiveness" : "Legal-ball runs above expectation", "Top-ten resample share"],
     stats.top10.map((row) => [row.rank, row.name, fmt(row.score, 6), row.scored_balls, row.india_scored_balls,
       fmt(batting ? row.explosiveness : row.rate_residual, 4), `${fmt(resamples.get(row.player_id) * 100, 1)}%`])));
+  const histogram = data.role_histograms;
+  const counts = histogram.counts[role];
+  const bounds = histogram.edges;
+  const maximum = Math.max(...counts);
+  $("profile-histogram").replaceChildren(table(["Role score interval", "Eligible players", "Distribution"],
+    counts.map((n, i) => {
+      const label = i === 0 ? `Below ${bounds[0]}` : i === bounds.length ? `${bounds[i-1]} or above` :
+        `${bounds[i-1]} to below ${bounds[i]}`;
+      return [label, n, ""];
+    })));
+  for (const [i, row] of Array.from($("profile-histogram").querySelectorAll("tbody tr")).entries()) {
+    const bar = element("meter");
+    bar.min = 0; bar.max = maximum; bar.value = counts[i];
+    bar.setAttribute("aria-label", `${counts[i]} players in this interval`);
+    row.cells[2].append(bar);
+  }
   $("profile-validation").replaceChildren(table(
     ["Test start", "Common players", "Primary ρ", "Residualised boundary ρ", "Runs-only ρ", "Volume ρ", "Primary leaders assessable"],
     validation.forward.map((window) => {

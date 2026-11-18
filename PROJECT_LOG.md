@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Verify the Vercel URL and share it.
+**Next action:** Review the final model on the live dashboard or edit its source in the repository.
 
 ---
 
@@ -258,3 +258,13 @@
 - Files: docs/methodology/paprf_discipline_rankings_v2.md,scripts/build_paprf_discipline_rankings.py,outputs/rankings/paprf_contextual_batters_top10_v2.csv,outputs/rankings/paprf_contextual_bowlers_top10_v2.csv,dashboard/
 - Decision: Compute primary and secondary role credit separately for batters and bowlers. Keep the submission pressure lists clearly labeled.
 - Next: Verify the Vercel URL and share it.
+
+## 2026-11-18 — Rebuilt pressure, contextual and split ranking evidence from the original inputs (step: 10)
+- Rebuilt pressure, contextual and split ranking evidence from the original inputs. All 25 artifacts and 305 scalar scores matched.
+- Files: scripts/verify_paprf_rebuild.py, work/paprf_clean_rebuild.json
+
+## 2026-11-18 — Published the eleven-view dual-theme dashboard and native LaTeX model report wit (step: 11)
+- Published the eleven-view dual-theme dashboard and native LaTeX model report with evidence run e5f524236dbf. Verified both themes across five widths and the live Vercel assets.
+- Files: dashboard, outputs/report/latex, docs/research/paprf_publication_qa.md, work/publication_manifest.json
+- Decision: Keep the archived Round 1 pressure submission lists and contextual indices separate by discipline. Existing scores stay versioned with zero numerical changes.
+- Next: Review the final model on the live dashboard or edit its source in the repository.

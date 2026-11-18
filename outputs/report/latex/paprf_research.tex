@@ -1,0 +1,116 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,graphicx,microtype}
+\usepackage{mathptmx}
+\usepackage{setspace,xcolor,hyperref}
+\usepackage{tabularx}
+\definecolor{ResearchRose}{HTML}{A8245C}
+\setstretch{1.16}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\hypersetup{colorlinks=true,linkcolor=ResearchRose,urlcolor=ResearchRose,citecolor=ResearchRose}
+\input{generated.tex}
+\title{\textcolor{ResearchRose}{T20 Performance in Context}\\[0.4em]
+\large A reproducible study of pressure, deployment and player evaluation}
+\author{\ResearchAuthor}
+\date{18 November 2026\\ \small Evidence run \texttt{\RunID}}
+\setcounter{tocdepth}{1}
+\begin{document}
+\maketitle
+\begin{abstract}
+The Super Selector challenge asks for separate batting and bowling top tens under match pressure. This study reconstructs pre-delivery context, measures historical lift, and tests the stability of ranks. It also reports a separate contextual index that compares observed effectiveness within each player's deployment. The retained sample comprises \DeliveryCount\ delivery events in \MatchCount\ matches. The reproducibility check matched \ReplayCount\ versioned artifacts. Forward and interleaved checks show weak repeatability for pressure-only ranking, while contextual performance has stronger but role-dependent carryover. All results describe the supplied sample.
+\end{abstract}
+\tableofcontents
+\clearpage
+\section{Problem and data}
+The organiser requires ordered lists of ten batters and ten bowlers under pressure, with evidence and a methodology report \cite{organiser}. The archived Lens A pressure rankings are shown separately from the contextual recommendations in Section~\ref{sec:rankings}. The latter ask how far players exceeded expectations for their observed role across eligible situations.
+
+The organiser supplied six CSV files describing delivery events, matches, competitions, teams, playing elevens and player mappings. The delivery ledger joins match and competition data by their IDs. The pressure population uses the validated IPL and T20I matches. The quality checks exclude unsupported innings and inconsistent or revised results. The evaluator performs pressure-state reconstruction and ambiguity checks before aggregating performance. A missing value is distinct from numeric zero. Player names are display labels only.
+
+\section{Mathematical framework}
+\subsection{Opportunity units and conventional benchmarks}
+Let $R$ be batter-attributed runs, $B$ counted balls faced, $C$ conceded runs, $L$ legal bowling deliveries, $D$ recorded striker dismissals on counted balls, and $W$ credited wickets. Boundaries require a recognised flag and matching attributed runs. Bowling economy includes attributed extra concessions, whereas the contextual run forecast uses legal-ball outcomes. For a positive denominator,
+\begin{equation}
+\mathrm{SR}=100R/B,\qquad\mathrm{Econ}=6C/L,\qquad
+\mathrm{Avg}=R/D,\quad\mathrm{BowlAvg}=C/W,\quad\mathrm{BowlSR}=L/W.
+\label{eq:conventional}
+\end{equation}
+Zero denominators leave a metric undefined. The averages in Equation~\ref{eq:conventional} illustrate conventional comparators and do not enter the contextual index. For example, 30 runs from 20 balls yields a strike rate of 150. A bowler conceding 30 from 24 legal balls has an economy of 7.5.
+
+\subsection{Pre-delivery pressure}
+Let $\ell$ be completed legal balls, $w$ fallen wickets, $r$ runs required and $b$ remaining balls, all before the event. Write $g(x)=\min(1,\max(0,x))$. The implemented innings equations are
+\begin{align}
+P_1&=0.70g((\ell-72)/48)+0.30g(w/10),\\
+P_2&=0.55g((6r/\max(1,b)-7)/5)\notag\\
+   &\quad+0.25g(w/10)+0.20g(\ell/120).
+\end{align}
+The bands are ordinary below 0.40, elevated from 0.40 to below 0.65, and high thereafter. Elevated and high form the pressure bucket. First-innings powerplay pressure is structurally unavailable under this formula. The pre-delivery state excludes the outcome of the delivery under evaluation.
+
+\subsection{Historical pressure lift}
+The first baseline combines role-oriented standardised pressure-minus-ordinary rates with equal weights, then multiplies by $n/(n+60)$ for pressure opportunities $n$. From v2 to v4 the research models match cells by innings, phase and competition family, test coarser strata and use whole-match resampling. V4 regularises fine cells without a hard per-cell ball minimum. Write $a,b$ for ordinary and pressure balls in a supported cell and $d$ for the unregularised rate difference. Minimising $\tfrac{ab}{a+b}(\theta-d)^2+12\theta^2$ gives
+\begin{equation}
+\theta = \frac{ab}{ab+12(a+b)}d.
+\label{eq:ridge}
+\end{equation}
+Aggregate $\theta$ with pressure balls as weights, orient and cap component z-scores at three standard deviations, and apply $n/(n+60)$. The v4 historical rank uses the 10th percentile of 500 family-stratified whole-match draws, with at least 475 valid draws. A score interval is conditional on observed support and scaling, not a forecast interval.
+
+\subsection{Contextual role scores}
+The contextual model scores chronological dates in batches. A date's estimates use earlier dates only. For an outcome count or sum $A$ and opportunity count $n$ in a context, use $(A+k\mu)/(n+k)$ for parent mean $\mu$ and prior count $k=120$. Opponent adjustments use prior residual means with 120 for individuals and 360 for teams, combined at 75\% and 25\%. Residual outcomes are actual minus expected. Deployment roles use batting slot and entry phase, or bowling phase. The seven role leaderboards apply the following weights after direction alignment and clipping.
+\begin{table}[ht]
+\centering
+\caption{Weights on contextual residual components.}
+\begin{tabular}{lrrr}
+\toprule Deployment & Runs & Boundaries & Dismissals/wickets \\
+\midrule
+Opener & .45 & .30 & .25 \\
+Top order & .40 & .20 & .40 \\
+Middle/lower order & .40 & .25 & .35 \\
+Late entrant & .50 & .35 & .15 \\
+Powerplay bowler & .35 & .20 & .45 \\
+Middle-overs bowler & .35 & .20 & .45 \\
+Death bowler & .50 & .25 & .25 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Separate contextual indices}
+Assign primary role by scored opportunities within batting or bowling. A primary needs 60 scored balls and six scored matches. Let $c=\sum_j\beta_j z_j$ be the unshrunk weighted role score, $\mu_r$ and $\sigma_r$ the eligible role cohort's centre and sample spread, and $\Phi$ the standard normal CDF. Derive
+\begin{gather}
+Q=100\Phi((c-\mu_r)/\sigma_r),\\
+S=50+\frac{n}{n+120}(Q-50),\\
+U=0.10\min(1,n_s/n_p)\max(0,S_s-50),\notag\\
+I=\min\{100,S_p+U\}.
+\label{eq:overall}
+\end{gather}
+Flat reference cohorts use $Q=50$. The best supported secondary credit is used once, within the same discipline. Here $p$ and $s$ denote primary and secondary roles, and $U$ is versatility credit in index points. If $n_p=120$ and $Q_p=90$, $S_p=70$. A secondary role on half the balls with $S_s=80$ adds 1.5 points. Scores are rounded to six decimals and ties use numeric player ID. The index has no probability or absolute impact interpretation.
+
+\section{Ranking evidence}\label{sec:rankings}
+\subsection{Archived Round 1 pressure lists}
+\PressureTable
+\subsection{Contextual batting and bowling}
+\ContextTable
+\subsection{Role-specific leaders}
+\RoleTable
+
+\section{Validation and research findings}
+Pressure-only forward validation compares training predictions with later measured lift on common eligible IDs. Both peer scales and prediction parameters are trained before cutoff. Rank correlation is Spearman's correlation of midranks. Chronological and interleaved match-halves audits find weak repeatability for pressure ranks. The contextual role validation found positive associations across both test windows for openers, top-order batting and middle bowling. Late entrants had too few common players. Middle-over runs-only scoring outperformed the composite in both tested windows. These are retrospective tests without an external holdout.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{paprf_role_forward_validation.png}
+\caption{Later-window association of contextual role scores. Units are Spearman rank correlation on the common eligible player pool. A missing marker indicates insufficient support.}
+\end{figure}
+
+India exposure is identified from venue country, without claims about home advantage or ground conditions. Serial dependence, sparse subroles, shared outcome metrics and changing eligibility limit inference. The index pools no age or career-potential claims. Ordinary and pressure counts differ by role. Changing a support rule may change cohort composition even when the scoring weights remain unchanged.
+
+\section{Version history and reproducibility}
+The organiser pressure lists remain at Lens A v1. Research versions v2, v3 and v4 add fine-cell matching, granularity testing and regularisation respectively. Contextual role outputs and the separate batting/bowling indices carry their own scoring question. This publication unifies the interface and report while preserving the historical ranking artifacts.
+
+From the repository root, run \texttt{python scripts/verify\_paprf\_rebuild.py} against the six supplied CSVs. It rebuilds in a temporary workspace and compares versioned artifacts. Generate tables with \texttt{python scripts/build\_paprf\_latex.py}, then compile this source using Tectonic or an equivalent LaTeX engine. The dashboard and report share evidence run \texttt{\RunID}.
+
+\section{Glossary}
+\textbf{Residual} means observed minus estimated outcome in the same units. \textbf{Role reference} is a within-role 0--100 transform. \textbf{Shrinkage} reduces estimated signal at low opportunity counts. \textbf{P10/P90} denote the tenth and ninetieth empirical resampling percentiles. \textbf{Eligibility} refers to declared evidence gates. \textbf{Context} includes innings, phase, competition family and match situation as specified by each model.
+
+\begin{thebibliography}{9}
+\bibitem{organiser} SupeRR Selector Season 2. \emph{Round 1 Problem Statement: Identify the Most Reliable Players Under Pressure}. Organiser-supplied brief and supporting data, pages 1--2.
+\end{thebibliography}
+\end{document}
