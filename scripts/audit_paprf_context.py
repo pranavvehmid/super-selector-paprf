@@ -70,7 +70,7 @@ def midranks(values):
     return [mean(positions[value]) for value in values]
 
 
-def collect():
+def collect(clusters=None):
     comp_path = ROOT / "data/raw/competitions.csv"
     match_path = ROOT / "data/raw/matches.csv"
     inputs = {p.relative_to(ROOT).as_posix(): digest(p) for p in (INPUT, match_path, comp_path)}
@@ -95,6 +95,8 @@ def collect():
             raise ValueError(f"Unexpected tournament for retained match {match_id}")
         cell = (row["innings"], row["innings_phase"], family)
         period = "early" if match["match_date"] < split else "late"
+        if clusters is not None:
+            clusters["families"][match_id] = family
         bucket = int(row["pressure_band"] in PRESSURE_BANDS)
         contributions = [
             ("batter", row["striker_id"], int(row["batter_runs_attributed"]),
@@ -107,6 +109,10 @@ def collect():
         for role, player, *totals in contributions:
             add(matched[role, player][cell][bucket], match_id, *totals)
             add(temporal[role, player][period][bucket], match_id, *totals)
+            if clusters is not None:
+                group = clusters["counts"][(role, player, cell, bucket, match_id)]
+                for i, value in enumerate(totals):
+                    group[i] += value
     early = sum(day < split for day, _ in dates)
     return matched, temporal, dict(inputs=inputs, deliveries=count, split_date=split,
                                   early_matches=early, late_matches=len(dates)-early,

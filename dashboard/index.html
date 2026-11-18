@@ -12,7 +12,7 @@
 <body>
   <header class="site-header">
     <div class="mast"><a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span> PAPRF</a><span class="mast-label">Super Selector · Round 1</span></div>
-    <nav aria-label="Dashboard"><a href="#overview">Overview</a><a href="#pressure">Pressure</a><a href="#rankings">Rankings</a><a href="#method">Method</a><a href="#progress">Progress</a></nav>
+    <nav aria-label="Dashboard"><a href="#overview">Overview</a><a href="#research">Research v2</a><a href="#pressure">Pressure</a><a href="#rankings">v1 explorer</a><a href="#method">Method</a><a href="#progress">Progress</a></nav>
   </header>
   <main id="overview">
     <section class="hero">
@@ -32,6 +32,15 @@
     </section>
     <noscript>This dashboard requires JavaScript to load the evidence and controls.</noscript>
     <div id="load-error" class="panel" hidden>Evidence could not be loaded. Regenerate the dashboard data bundle and refresh.</div>
+    <section class="panel" id="research">
+      <div class="section-head"><div><p class="kicker">LATEST RESEARCH ITERATION</p><h2>Match-adjusted top 10</h2></div>
+      <label>Role<select id="research-role"><option value="batter">Batters</option><option value="bowler">Bowlers</option></select></label></div>
+      <p id="research-note" class="note" aria-live="polite"></p>
+      <div id="research-top"></div>
+      <details><summary>Why players left the v1 top ten</summary><div id="research-movements"></div></details>
+      <details><summary>Cell-threshold sensitivity</summary><div id="research-thresholds"></div></details>
+      <p class="note">The research score is the 10th percentile of matched scores across valid match-bootstrap draws. The 10th–90th percentile range describes variation conditional on the observed support.</p>
+    </section>
     <section class="panel" id="pressure">
       <div class="section-head"><div><p class="kicker">MATCH CONTEXT</p><h2>Pressure exposure</h2></div><label>Chart scale<select id="scale"><option value="share">Within-phase share</option><option value="count">Delivery count</option></select></label></div>
       <p>Each row combines an innings and phase. Hover or focus a segment for its numerator, denominator and share.</p>
@@ -79,7 +88,7 @@
       <p class="kicker">RESEARCH MILESTONES</p><h2>Project progress</h2>
       <ol class="timeline">
         <li><strong>Data and pressure foundation</strong><span>Recalculated index, phase and band across the retained delivery sample.</span></li>
-        <li><strong>Statistical modelling</strong><span>Frozen replay, pressure and weight sensitivity, matched baselines, and chronological repeatability audited. Model review and uncertainty analysis are open.</span></li>
+        <li><strong>Statistical modelling</strong><span>v2 research rankings now account for matched contexts and match-resampling uncertainty. Support gates and temporal stability remain areas for refinement.</span></li>
         <li><strong>Dashboard and research PDF</strong><span>Interactive evidence explorer built. Publication-quality PDF remains planned.</span></li>
         <li><strong>Validation and submission</strong><span>Cross-check final deliverables and verify submission labels before release.</span></li>
       </ol>

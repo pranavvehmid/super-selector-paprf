@@ -126,6 +126,24 @@ function renderRankings() {
   renderPlayer(shown.find((r) => r.player_id === selected), role);
 }
 
+function renderResearch() {
+  const run = data.research;
+  const stats = run.roles[$("research-role").value];
+  const statuses = {
+    outside_top10: "Qualified outside the top ten",
+    insufficient_resample_support: "Fewer than 95% valid draws",
+    insufficient_matched_support: "Insufficient matched opportunities or matches",
+  };
+  $("research-note").textContent = `PAPRF v2 · ${stats.resample_qualified} eligible after resampling · ${run.draws} draws · ${stats.shared_with_v1.length}/10 shared with frozen v1`;
+  $("research-top").replaceChildren(table(["v2 rank", "Player", "v1 top-10 rank", "Matched point rank", "v2 score (p10)", "p90", "Valid draws"],
+    stats.top10.map((r) => [r.research_rank, r.name, r.v1_frozen_rank ?? "—", r.matched_point_rank,
+      fmt(r.p10, 6), fmt(r.p90, 6), `${r.valid_draws}/${run.draws}`])));
+  $("research-movements").replaceChildren(table(["Player", "v1 rank", "v2 rank", "Status"],
+    stats.left_v1_top10.map((r) => [r.name, r.rank, r.research_rank ?? "—", statuses[r.status]])));
+  $("research-thresholds").replaceChildren(table(["Balls per cell and context", "Matched eligible", "Point top-ten overlap with 12 balls"],
+    Object.entries(stats.threshold_sensitivity).map(([threshold, r]) => [threshold, r.eligible, `${r.shared_with_cutoff_12}/10`])));
+}
+
 if (!data) {
   $("load-error").hidden = false;
 } else {
@@ -159,6 +177,7 @@ if (!data) {
   $("scale").addEventListener("change", renderDistribution);
   for (const id of ["role", "scenario", "limit"]) $(id).addEventListener("change", renderRankings);
   $("search").addEventListener("input", renderRankings);
+  $("research-role").addEventListener("change", renderResearch);
   $("sensitivity").append(table(["Sensitivity check", "Batters shared with v1", "Bowlers shared with v1"],
     [...[30, 90].map((prior) => [`Shrinkage prior = ${prior} balls`,
       ...["batter", "bowler"].map((role) => `${data.robustness.roles[role].prior_top10_overlap_with_60[prior]}/10`)]),
@@ -175,4 +194,5 @@ if (!data) {
       })));
   renderDistribution();
   renderRankings();
+  renderResearch();
 }

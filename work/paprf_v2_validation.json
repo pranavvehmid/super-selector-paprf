@@ -1,0 +1,579 @@
+{
+  "source": {
+    "inputs": {
+      "data/processed/metric_attribution_deliveries.csv": "66e7560eab6edac418b89fb2aa2f372f90616ec32283d565d28714ce26096499",
+      "data/raw/matches.csv": "bb100ab84b8b9a15160c1f2315cf675210131a30e779ec5079fd5403dcf56eef",
+      "data/raw/competitions.csv": "507ceb7189f972d4e4f299ddcfc97f3c3247af1913f6291106f161fa8353fd9b"
+    },
+    "deliveries": 186620,
+    "split_date": "2024-05-08",
+    "early_matches": 391,
+    "late_matches": 391,
+    "first_date": "2022-01-22",
+    "last_date": "2026-11-01"
+  },
+  "seed": 20261118,
+  "draws": 500,
+  "cell_cutoff": 12,
+  "minimum_valid": 0.95,
+  "roles": {
+    "batter": {
+      "resample_qualified": 46,
+      "threshold_sensitivity": {
+        "6": {
+          "eligible": 127,
+          "top10_ids": [
+            "6726",
+            "768",
+            "8",
+            "1077",
+            "5928",
+            "2921",
+            "6396",
+            "3374",
+            "3916",
+            "3647"
+          ],
+          "shared_with_cutoff_12": 4
+        },
+        "12": {
+          "eligible": 105,
+          "top10_ids": [
+            "768",
+            "6396",
+            "2463",
+            "3374",
+            "2921",
+            "992",
+            "8221",
+            "2485",
+            "3024",
+            "2101"
+          ],
+          "shared_with_cutoff_12": 10
+        },
+        "24": {
+          "eligible": 87,
+          "top10_ids": [
+            "768",
+            "1077",
+            "2463",
+            "3374",
+            "2921",
+            "992",
+            "3024",
+            "126",
+            "4246",
+            "2258"
+          ],
+          "shared_with_cutoff_12": 6
+        }
+      },
+      "top10": [
+        {
+          "role": "batter",
+          "player_id": "768",
+          "name": "Reeza Hendricks",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 1,
+          "point_score": 1.81556,
+          "ordinary_balls": 140,
+          "pressure_balls": 265,
+          "valid_draws": 491,
+          "p10": 1.061415,
+          "p50": 1.885097,
+          "p90": 3.449639,
+          "research_rank": 1
+        },
+        {
+          "role": "batter",
+          "player_id": "2463",
+          "name": "Ryan Burl",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 3,
+          "point_score": 1.129198,
+          "ordinary_balls": 86,
+          "pressure_balls": 156,
+          "valid_draws": 499,
+          "p10": 0.457617,
+          "p50": 1.142961,
+          "p90": 1.749552,
+          "research_rank": 2
+        },
+        {
+          "role": "batter",
+          "player_id": "2921",
+          "name": "Fakhar Zaman",
+          "v1_frozen_rank": 4,
+          "matched_point_rank": 5,
+          "point_score": 0.982615,
+          "ordinary_balls": 166,
+          "pressure_balls": 190,
+          "valid_draws": 495,
+          "p10": 0.279146,
+          "p50": 0.848981,
+          "p90": 1.481649,
+          "research_rank": 3
+        },
+        {
+          "role": "batter",
+          "player_id": "992",
+          "name": "Mayank Agarwal",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 6,
+          "point_score": 0.896997,
+          "ordinary_balls": 139,
+          "pressure_balls": 100,
+          "valid_draws": 482,
+          "p10": 0.255547,
+          "p50": 0.853538,
+          "p90": 2.171359,
+          "research_rank": 4
+        },
+        {
+          "role": "batter",
+          "player_id": "6396",
+          "name": "Tim David",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 2,
+          "point_score": 1.346205,
+          "ordinary_balls": 195,
+          "pressure_balls": 515,
+          "valid_draws": 499,
+          "p10": 0.215509,
+          "p50": 1.27526,
+          "p90": 2.451294,
+          "research_rank": 5
+        },
+        {
+          "role": "batter",
+          "player_id": "3024",
+          "name": "Mohammad Rizwan",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 9,
+          "point_score": 0.728889,
+          "ordinary_balls": 300,
+          "pressure_balls": 249,
+          "valid_draws": 480,
+          "p10": 0.167734,
+          "p50": 0.704283,
+          "p90": 1.261272,
+          "research_rank": 6
+        },
+        {
+          "role": "batter",
+          "player_id": "2485",
+          "name": "Babar Azam",
+          "v1_frozen_rank": 10,
+          "matched_point_rank": 8,
+          "point_score": 0.763706,
+          "ordinary_balls": 372,
+          "pressure_balls": 173,
+          "valid_draws": 487,
+          "p10": 0.148285,
+          "p50": 0.774497,
+          "p90": 1.467798,
+          "research_rank": 7
+        },
+        {
+          "role": "batter",
+          "player_id": "2101",
+          "name": "Quinton de Kock",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 10,
+          "point_score": 0.725745,
+          "ordinary_balls": 247,
+          "pressure_balls": 271,
+          "valid_draws": 475,
+          "p10": -0.010487,
+          "p50": 0.805872,
+          "p90": 2.690153,
+          "research_rank": 8
+        },
+        {
+          "role": "batter",
+          "player_id": "2671",
+          "name": "Liton Das",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 24,
+          "point_score": 0.422776,
+          "ordinary_balls": 429,
+          "pressure_balls": 136,
+          "valid_draws": 493,
+          "p10": -0.027796,
+          "p50": 0.457698,
+          "p90": 1.074359,
+          "research_rank": 9
+        },
+        {
+          "role": "batter",
+          "player_id": "167",
+          "name": "Ajinkya Rahane",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 17,
+          "point_score": 0.532115,
+          "ordinary_balls": 274,
+          "pressure_balls": 221,
+          "valid_draws": 500,
+          "p10": -0.047248,
+          "p50": 0.557898,
+          "p90": 1.020744,
+          "research_rank": 10
+        }
+      ],
+      "shared_with_v1": [
+        "2485",
+        "2921"
+      ],
+      "shared_with_matched_point": [
+        "2101",
+        "2463",
+        "2485",
+        "2921",
+        "3024",
+        "6396",
+        "768",
+        "992"
+      ],
+      "left_v1_top10": [
+        {
+          "player_id": "2633",
+          "rank": 1,
+          "name": "Jason Holder",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "143",
+          "rank": 2,
+          "name": "Dinesh Karthik",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "8",
+          "rank": 3,
+          "name": "Mahendra Singh Dhoni",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "1924",
+          "rank": 5,
+          "name": "Sam Billings",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "2756",
+          "rank": 6,
+          "name": "Shashank Singh",
+          "research_rank": 12,
+          "status": "outside_top10"
+        },
+        {
+          "player_id": "796",
+          "rank": 7,
+          "name": "Matthew Wade",
+          "research_rank": null,
+          "status": "insufficient_resample_support"
+        },
+        {
+          "player_id": "2214",
+          "rank": 8,
+          "name": "Gulbadin Naib",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "7741",
+          "rank": 9,
+          "name": "Gareth Delany",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        }
+      ]
+    },
+    "bowler": {
+      "resample_qualified": 44,
+      "threshold_sensitivity": {
+        "6": {
+          "eligible": 144,
+          "top10_ids": [
+            "3697",
+            "21784",
+            "4641",
+            "27964",
+            "6643",
+            "786",
+            "6628",
+            "22920",
+            "4265",
+            "6464"
+          ],
+          "shared_with_cutoff_12": 4
+        },
+        "12": {
+          "eligible": 119,
+          "top10_ids": [
+            "6643",
+            "34485",
+            "3629",
+            "21784",
+            "6287",
+            "4265",
+            "6355",
+            "6628",
+            "19316",
+            "5979"
+          ],
+          "shared_with_cutoff_12": 10
+        },
+        "24": {
+          "eligible": 92,
+          "top10_ids": [
+            "34485",
+            "4373",
+            "22920",
+            "2490",
+            "6806",
+            "39657",
+            "2847",
+            "4265",
+            "2526",
+            "4641"
+          ],
+          "shared_with_cutoff_12": 2
+        }
+      },
+      "top10": [
+        {
+          "role": "bowler",
+          "player_id": "34485",
+          "name": "Sufiyan Muqeem",
+          "v1_frozen_rank": 9,
+          "matched_point_rank": 2,
+          "point_score": 1.024149,
+          "ordinary_balls": 104,
+          "pressure_balls": 100,
+          "valid_draws": 500,
+          "p10": 0.271975,
+          "p50": 1.010787,
+          "p90": 1.732851,
+          "research_rank": 1
+        },
+        {
+          "role": "bowler",
+          "player_id": "4265",
+          "name": "T Natarajan",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 6,
+          "point_score": 0.950297,
+          "ordinary_balls": 175,
+          "pressure_balls": 504,
+          "valid_draws": 498,
+          "p10": 0.181122,
+          "p50": 0.926688,
+          "p90": 1.689756,
+          "research_rank": 2
+        },
+        {
+          "role": "bowler",
+          "player_id": "6806",
+          "name": "Tushar Deshpande",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 18,
+          "point_score": 0.612599,
+          "ordinary_balls": 181,
+          "pressure_balls": 250,
+          "valid_draws": 500,
+          "p10": 0.158297,
+          "p50": 0.596196,
+          "p90": 1.055646,
+          "research_rank": 3
+        },
+        {
+          "role": "bowler",
+          "player_id": "7240",
+          "name": "FazalHaq Farooqi",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 12,
+          "point_score": 0.744606,
+          "ordinary_balls": 279,
+          "pressure_balls": 124,
+          "valid_draws": 493,
+          "p10": 0.138539,
+          "p50": 0.71834,
+          "p90": 1.371539,
+          "research_rank": 4
+        },
+        {
+          "role": "bowler",
+          "player_id": "1758",
+          "name": "Patrick Cummins",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 23,
+          "point_score": 0.475812,
+          "ordinary_balls": 265,
+          "pressure_balls": 374,
+          "valid_draws": 495,
+          "p10": 0.017149,
+          "p50": 0.547559,
+          "p90": 1.199767,
+          "research_rank": 5
+        },
+        {
+          "role": "bowler",
+          "player_id": "2847",
+          "name": "Shardul Thakur",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 20,
+          "point_score": 0.556159,
+          "ordinary_balls": 251,
+          "pressure_balls": 391,
+          "valid_draws": 498,
+          "p10": -0.038183,
+          "p50": 0.511782,
+          "p90": 1.063188,
+          "research_rank": 6
+        },
+        {
+          "role": "bowler",
+          "player_id": "360",
+          "name": "Bhuvneshwar Kumar",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 34,
+          "point_score": 0.34532,
+          "ordinary_balls": 576,
+          "pressure_balls": 841,
+          "valid_draws": 491,
+          "p10": -0.107805,
+          "p50": 0.400832,
+          "p90": 0.936606,
+          "research_rank": 7
+        },
+        {
+          "role": "bowler",
+          "player_id": "7364",
+          "name": "Haris Rauf",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 22,
+          "point_score": 0.487606,
+          "ordinary_balls": 269,
+          "pressure_balls": 435,
+          "valid_draws": 476,
+          "p10": -0.200089,
+          "p50": 0.551819,
+          "p90": 1.264883,
+          "research_rank": 8
+        },
+        {
+          "role": "bowler",
+          "player_id": "781",
+          "name": "Sunil Narine",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 30,
+          "point_score": 0.398994,
+          "ordinary_balls": 362,
+          "pressure_balls": 478,
+          "valid_draws": 497,
+          "p10": -0.23716,
+          "p50": 0.383198,
+          "p90": 0.903351,
+          "research_rank": 9
+        },
+        {
+          "role": "bowler",
+          "player_id": "8380",
+          "name": "Mohammad Rishad Hossain",
+          "v1_frozen_rank": null,
+          "matched_point_rank": 35,
+          "point_score": 0.323927,
+          "ordinary_balls": 221,
+          "pressure_balls": 193,
+          "valid_draws": 498,
+          "p10": -0.268102,
+          "p50": 0.323193,
+          "p90": 0.911181,
+          "research_rank": 10
+        }
+      ],
+      "shared_with_v1": [
+        "34485"
+      ],
+      "shared_with_matched_point": [
+        "34485",
+        "4265"
+      ],
+      "left_v1_top10": [
+        {
+          "player_id": "4237",
+          "rank": 1,
+          "name": "Tabraiz Shamsi",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "35318",
+          "rank": 2,
+          "name": "Sakib Hussain",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "6643",
+          "rank": 3,
+          "name": "Hasan Mahmud",
+          "research_rank": null,
+          "status": "insufficient_resample_support"
+        },
+        {
+          "player_id": "2490",
+          "rank": 4,
+          "name": "Mohammad Nawaz",
+          "research_rank": null,
+          "status": "insufficient_resample_support"
+        },
+        {
+          "player_id": "25132",
+          "rank": 5,
+          "name": "Praful Hinge",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "22471",
+          "rank": 6,
+          "name": "Matthew Humphreys",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "4229",
+          "rank": 7,
+          "name": "George Linde",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "7327",
+          "rank": 8,
+          "name": "Rasikh Salam",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        },
+        {
+          "player_id": "2878",
+          "rank": 10,
+          "name": "Mohit Sharma",
+          "research_rank": null,
+          "status": "insufficient_matched_support"
+        }
+      ]
+    }
+  },
+  "frozen_hashes": {
+    "batter": "b2696b3f33a180d203be9f1826bce9bf795fa7743ead581dc73e041b0484d6d2",
+    "bowler": "fda3710494430d1392cd2e2ae3b779f9edcd53209c34cacd3b9e7571de310bc7"
+  }
+}

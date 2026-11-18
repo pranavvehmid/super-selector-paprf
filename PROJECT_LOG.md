@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Run match-cluster uncertainty and support-threshold sensitivity before the model decision.
+**Next action:** Compare coarser strata and partial pooling to recover sparse support, then measure temporal stability and refresh the PDF evidence.
 
 ---
 
@@ -204,3 +204,9 @@
 - Files: scripts/audit_paprf_context.py,scripts/build_dashboard_data.py,docs/methodology/paprf_matched_context_and_repeatability.md,docs/methodology/paprf_four_phase_plan.md,outputs/report/round1_methodology_report_v1.md,outputs/tables/paprf_matched_cells.csv,outputs/tables/paprf_temporal_periods.csv,outputs/tables/paprf_context_audit_scores.csv,work/paprf_context_audit.json,dashboard/
 - Decision: Treat matched and chronological results as diagnostics for model review.
 - Next: Run match-cluster uncertainty and support-threshold sensitivity before the model decision.
+
+## 2026-11-18 — Released PAPRF v2 research rankings using 500 stratified match resamples and aud (step: 9)
+- Released PAPRF v2 research rankings using 500 stratified match resamples and audited 6, 12 and 24 ball cell cutoffs. Verified repeat-run hashes and the dashboard role switch. Added rank movement evidence and the uncertainty plot.
+- Files: scripts/build_paprf_v2.py,docs/methodology/paprf_v2_uncertainty.md,outputs/rankings/paprf_batters_v2.csv,outputs/rankings/paprf_bowlers_v2.csv,outputs/tables/paprf_v2_uncertainty.csv,work/paprf_v2_validation.json,dashboard/
+- Decision: Rank research v2 by the empirical 10th percentile with at least 95 percent valid draws, and document the resulting loss of eligibility.
+- Next: Compare coarser strata and partial pooling to recover sparse support, then measure temporal stability and refresh the PDF evidence.
