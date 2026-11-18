@@ -133,8 +133,29 @@ if (!data) {
   const percentage = 100 * (bands.elevated + bands.high) / data.audit.delivery_rows;
   $("summary").append(tile("Validated matches", number.format(data.audit.distinct_match_ids), "stat"),
     tile("Delivery events", number.format(data.audit.delivery_rows), "stat"),
-    tile("Elevated or high", `${fmt(percentage)}%`, "stat"),
-    tile("Frozen ranking places", data.rankings.batter.length + data.rankings.bowler.length, "stat"));
+    tile("Eligible batters", number.format(data.model.roles.batter.scenarios.v1_equal.eligible), "stat"),
+    tile("Eligible bowlers", number.format(data.model.roles.bowler.scenarios.v1_equal.eligible), "stat"));
+  $("pressure-summary").append(tile("Ordinary events", number.format(bands.ordinary), "stat"),
+    tile("Elevated events", number.format(bands.elevated), "stat"),
+    tile("High-pressure events", number.format(bands.high), "stat"),
+    tile("Elevated or high", `${fmt(percentage)}%`, "stat"));
+  for (const role of ["batter", "bowler"]) {
+    const leader = data.rankings[role][0];
+    const card = element("a", undefined, "leader");
+    card.href = "#rankings";
+    const label = element("span", `Frozen v1 · Top ${role}`, "leader-label");
+    const player = element("strong", leader.player_name);
+    const score = element("span", fmt(leader.reliability_signal, 3), "leader-score");
+    card.append(label, player, score);
+    card.addEventListener("click", () => {
+      $("role").value = role;
+      $("scenario").value = "v1_equal";
+      $("search").value = "";
+      selected = leader.player_id;
+      renderRankings();
+    });
+    $("featured").append(card);
+  }
   $("scale").addEventListener("change", renderDistribution);
   for (const id of ["role", "scenario", "limit"]) $(id).addEventListener("change", renderRankings);
   $("search").addEventListener("input", renderRankings);

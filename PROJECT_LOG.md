@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Complete GitHub and Vercel sign-in, push the reviewed commit and verify deployment. Continue matched baselines and repeatability as Phase 2 research.
+**Next action:** Push the dashboard and evidence to the private GitHub repository and connect it to Vercel.
 
 ---
 
@@ -193,3 +193,8 @@
 - Files: dashboard/,scripts/build_dashboard_data.py,README.md,.gitignore
 - Decision: Use a private GitHub repository for versioned project files and a static Vercel deployment from the dashboard directory. Publish only aggregate evidence in the dashboard.
 - Next: Complete GitHub and Vercel sign-in, push the reviewed commit and verify deployment. Continue matched baselines and repeatability as Phase 2 research.
+
+## 2026-11-18 — Redesigned the dashboard front with pink and magenta navigation, a cricket-pitch (step: 12)
+- Redesigned the dashboard front with pink and magenta navigation, a cricket-pitch illustration, audited metric tiles, and ranking-leader shortcuts. Checked both shortcuts, chart rows and key metrics in the DOM.
+- Files: dashboard/index.html,dashboard/styles.css,dashboard/app.js
+- Next: Push the dashboard and evidence to the private GitHub repository and connect it to Vercel.

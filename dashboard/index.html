@@ -10,13 +10,25 @@
   <script defer src="app.js"></script>
 </head>
 <body>
-  <header class="mast"><a class="brand" href="#overview">PAPRF <span>Research dashboard</span></a><nav aria-label="Dashboard"><a href="#pressure">Pressure</a><a href="#rankings">Rankings</a><a href="#method">Method</a><a href="#progress">Progress</a></nav></header>
+  <header class="site-header">
+    <div class="mast"><a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span> PAPRF</a><span class="mast-label">Super Selector · Round 1</span></div>
+    <nav aria-label="Dashboard"><a href="#overview">Overview</a><a href="#pressure">Pressure</a><a href="#rankings">Rankings</a><a href="#method">Method</a><a href="#progress">Progress</a></nav>
+  </header>
   <main id="overview">
     <section class="hero">
-      <p class="kicker">SUPER SELECTOR / ROUND 1</p>
-      <h1>T20 under pressure</h1>
-      <p>Explore the balls that qualify as pressure, the player outcomes that drive the rankings, and what changes when the model assumptions move.</p>
-      <div id="summary" class="stats"></div>
+      <div class="hero-copy">
+        <p class="kicker">RESEARCH DASHBOARD</p>
+        <h1>T20 under pressure</h1>
+        <p>Explore the match situations, player outcomes, and model choices behind the Round 1 rankings.</p>
+      </div>
+      <div class="hero-scorecard">
+        <div id="summary" class="stats stats-left"></div>
+        <div class="pitch-art" aria-hidden="true">
+          <div class="pitch-rings"></div><div class="pitch-strip"></div><div class="pitch-wicket"><i></i><i></i><i></i></div><div class="pitch-ball"></div>
+        </div>
+        <div id="pressure-summary" class="stats stats-right"></div>
+      </div>
+      <div id="featured" class="featured-ranks" aria-label="Frozen ranking leaders"></div>
     </section>
     <noscript>This dashboard requires JavaScript to load the evidence and controls.</noscript>
     <div id="load-error" class="panel" hidden>Evidence could not be loaded. Regenerate the dashboard data bundle and refresh.</div>
