@@ -51,6 +51,11 @@
       <div class="scroll"><table><caption class="sr-only">Ranked players and pressure sample sizes</caption><thead><tr><th scope="col">Rank</th><th scope="col">Player</th><th scope="col">Score</th><th scope="col">Pressure balls</th><th scope="col">Matches</th><th scope="col">v1 rank</th></tr></thead><tbody id="rank-rows"></tbody></table></div>
       <div id="player" class="player" aria-live="polite"></div>
       <details><summary>Additional sensitivity checks</summary><div id="sensitivity"></div></details>
+      <details><summary>Matched context and repeatability audit</summary><div id="context-audit"></div>
+        <p>Matched cells compare the same innings, phase and competition family. Each retained cell needs at least 12 balls on each side. The matched delta weights each cell by its pressure balls.</p>
+        <code>Matched delta = Σ pressure balls × (pressure rate − ordinary rate) / Σ pressure balls</code>
+        <p>The time split uses whole matches. Spearman correlation compares ranks among players who qualified in both periods.</p>
+      </details>
     </section>
     <section class="panel" id="method">
       <p class="kicker">REPRODUCIBILITY</p><h2>The calculation</h2>
@@ -67,14 +72,14 @@
       </details>
       <details><summary>Which assumptions were tested?</summary>
         <p>The batting scenario adds early first-innings collapses with three or more wickets lost inside 36 legal balls. The bowling scenario adds chases with 6–24 balls left, at least two wickets in hand and a required rate of 7–12 runs per over.</p>
-        <p>These are sensitivity settings. Phase- and competition-matched performance and repeatability remain open. Pressure bands describe scoreboard context.</p>
+        <p>These are sensitivity settings. The matched-context and repeatability results are in the rankings explorer. Pressure bands describe scoreboard context.</p>
       </details>
     </section>
     <section class="panel" id="progress">
       <p class="kicker">RESEARCH MILESTONES</p><h2>Project progress</h2>
       <ol class="timeline">
         <li><strong>Data and pressure foundation</strong><span>Recalculated index, phase and band across the retained delivery sample.</span></li>
-        <li><strong>Statistical modelling</strong><span>Frozen v1 replay and pressure/weight sensitivity complete. Matched baselines and repeatability are pending.</span></li>
+        <li><strong>Statistical modelling</strong><span>Frozen replay, pressure and weight sensitivity, matched baselines, and chronological repeatability audited. Model review and uncertainty analysis are open.</span></li>
         <li><strong>Dashboard and research PDF</strong><span>Interactive evidence explorer built. Publication-quality PDF remains planned.</span></li>
         <li><strong>Validation and submission</strong><span>Cross-check final deliverables and verify submission labels before release.</span></li>
       </ol>

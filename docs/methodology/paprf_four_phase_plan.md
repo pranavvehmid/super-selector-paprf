@@ -13,6 +13,6 @@ Stages H and I span analysis and validation. Phase 2 is where model experiments 
 
 ## Evidence standard
 
-Phase 2 has started with the [prespecified pressure and weight sensitivity experiment](paprf_phase2_experiment.md), including a frozen-ranking replay and a score ledger. The model decision follows the remaining context and repeatability tests.
+Phase 2 evidence is organised in the [pressure and weight experiment](paprf_phase2_experiment.md) and the [matched-context and temporal audit](paprf_matched_context_and_repeatability.md). The [formula ledger](lens_a_formula_ledger.md) records the baseline algorithms. Match-cluster uncertainty and review of the model choice remain open.
 
 For each result, record the source path and version or hash, row grain, ID join, population, exclusions, numerator, denominator, formula, units, precision, code entry point and verification result. Use the claim and source registers for external facts. Keep proposed and measured values identifiable. An unavailable result is reported as unavailable with its reason. The [Phase 1 record](paprf_phase1_evidence.md) provides the first reproducible calculation and audit.

@@ -163,6 +163,16 @@ if (!data) {
     [...[30, 90].map((prior) => [`Shrinkage prior = ${prior} balls`,
       ...["batter", "bowler"].map((role) => `${data.robustness.roles[role].prior_top10_overlap_with_60[prior]}/10`)]),
     ["High pressure only", ...["batter", "bowler"].map((role) => `${data.robustness.roles[role].high_only_top10_overlap_with_base}/10`)]]));
+  const contextAudit = data.context_audit;
+  $("context-audit").append(element("p",
+    `Match-date split: ${contextAudit.split_date} · ${contextAudit.early_matches} earlier matches · ${contextAudit.late_matches} later matches`),
+    table(["Role", "Matched eligible", "Frozen top 10 still eligible", "Matched top 10 overlap", "Eligible in both periods", "Spearman ρ"],
+      ["batter", "bowler"].map((role) => {
+        const audit = contextAudit.roles[role];
+        return [role, audit.scenarios.matched.eligible, `${audit.frozen_ids_still_eligible_matched.length}/10`,
+          `${audit.matched_overlap_ids.length}/10`, audit.common_period_eligible_ids.length,
+          audit.spearman === null ? "Unavailable" : fmt(audit.spearman, 3)];
+      })));
   renderDistribution();
   renderRankings();
 }

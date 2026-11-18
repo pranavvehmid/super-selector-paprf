@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Push the dashboard and evidence to the private GitHub repository and connect it to Vercel.
+**Next action:** Run match-cluster uncertainty and support-threshold sensitivity before the model decision.
 
 ---
 
@@ -198,3 +198,9 @@
 - Redesigned the dashboard front with pink and magenta navigation, a cricket-pitch illustration, audited metric tiles, and ranking-leader shortcuts. Checked both shortcuts, chart rows and key metrics in the DOM.
 - Files: dashboard/index.html,dashboard/styles.css,dashboard/app.js
 - Next: Push the dashboard and evidence to the private GitHub repository and connect it to Vercel.
+
+## 2026-11-18 — Completed Phase 2 matched-context and chronological repeatability diagnostics ov (step: 9)
+- Completed Phase 2 matched-context and chronological repeatability diagnostics over 186620 delivery events. Published opportunity-level denominator definitions, a worked player example, aggregate ledgers and a dashboard audit panel. Verified the frozen ranking hashes and dashboard rendering.
+- Files: scripts/audit_paprf_context.py,scripts/build_dashboard_data.py,docs/methodology/paprf_matched_context_and_repeatability.md,docs/methodology/paprf_four_phase_plan.md,outputs/report/round1_methodology_report_v1.md,outputs/tables/paprf_matched_cells.csv,outputs/tables/paprf_temporal_periods.csv,outputs/tables/paprf_context_audit_scores.csv,work/paprf_context_audit.json,dashboard/
+- Decision: Treat matched and chronological results as diagnostics for model review.
+- Next: Run match-cluster uncertainty and support-threshold sensitivity before the model decision.

@@ -133,6 +133,8 @@ The manifest at outputs/rankings/ranking_manifest_v1.json identifies the frozen 
 
 ## Formula and evidence supplement
 
+The [matched-context and repeatability audit](../../docs/methodology/paprf_matched_context_and_repeatability.md) provides the formulas, a fully worked player example, chronological split and ranked-score ledgers. Its sensitivity results qualify claims about repeatability and apply to the exploratory PAPRF diagnostics.
+
 The [PAPRF Phase 1 evidence record](../../docs/methodology/paprf_phase1_evidence.md) includes the pressure distribution by innings and phase, denominator-level calculations and the formula reconciliation. The [four-phase plan](../../docs/methodology/paprf_four_phase_plan.md) maps the remaining model, dashboard, PDF and validation work to the project specification.
 
 The full mathematical expression ledger, metric-attribution rules, rounding treatment, validation calculations and source-to-artifact map are maintained in docs/methodology/lens_a_formula_ledger.md. The audit against the user’s broader scouting specification and the evidence gaps for future work are in docs/methodology/master_prompt_methodology_audit.md and docs/evidence/master_prompt_intake_and_traceability.md.

@@ -40,6 +40,7 @@ def main():
         raise ValueError("Pressure distribution and audit totals diverged")
     data = dict(names=names, rankings=rankings, contexts=contexts, ledger=ledger,
                 model=model, audit=audit, distribution=distribution,
+                context_audit=read_json("work/paprf_context_audit.json"),
                 robustness=read_json("work/robustness-validation.json"))
     path = ROOT / "dashboard/evidence.js"
     path.write_text("globalThis.paprfEvidence = " + json.dumps(data, ensure_ascii=True, separators=(",", ":")) + ";\n",
