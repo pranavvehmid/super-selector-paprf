@@ -12,7 +12,7 @@
 <body>
   <header class="site-header">
     <div class="mast"><a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span> PAPRF</a><span class="mast-label">Super Selector · Round 1</span></div>
-    <nav aria-label="Dashboard"><a href="#overview">Overview</a><a href="#research">Research rankings</a><a href="#pressure">Pressure</a><a href="#rankings">v1 explorer</a><a href="#method">Method</a><a href="#progress">Progress</a></nav>
+    <nav aria-label="Dashboard"><a href="#overview">Overview</a><a href="#research">Research rankings</a><a href="#role-profiles">Role profiles</a><a href="#pressure">Pressure</a><a href="#rankings">v1 explorer</a><a href="#method">Method</a><a href="#progress">Progress</a></nav>
   </header>
   <main id="overview">
     <section class="hero">
@@ -47,6 +47,18 @@
         <p>Whole matches are split within competition family and year. The displayed ranges are percentiles over split assignments. The shuffle comparison breaks player pairing within exposure groups.</p>
       </details>
       <p class="note">The research score is the 10th percentile of matched scores across valid match-bootstrap draws. The 10th–90th percentile range describes variation conditional on the observed support.</p>
+    </section>
+    <section class="panel" id="role-profiles">
+      <div class="section-head"><div><p class="kicker">CONTEXTUAL PERFORMANCE</p><h2>Role leaderboards</h2></div>
+        <label>Deployment<select id="profile-role">
+          <option value="opener">Opener</option><option value="top_order">Top order</option>
+          <option value="middle_lower">Middle and lower order</option><option value="late_entrant">Late entrant</option>
+          <option value="powerplay_bowler">Powerplay bowler</option><option value="middle_bowler">Middle-overs bowler</option>
+          <option value="death_bowler">Death bowler</option>
+        </select></label></div>
+      <p id="profile-summary" class="note" aria-live="polite"></p>
+      <div id="profile-results"></div>
+      <p class="note">Role scores compare outcomes against earlier-date expectations for similar contexts. The India check tests a 1.5× opportunity weight. The primary ranking gives both location groups equal per-ball weight.</p>
     </section>
     <section class="panel" id="pressure">
       <div class="section-head"><div><p class="kicker">MATCH CONTEXT</p><h2>Pressure exposure</h2></div><label>Chart scale<select id="scale"><option value="share">Within-phase share</option><option value="count">Delivery count</option></select></label></div>

@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Test pressure and opponent baselines on an untouched sample or document the limit if further data is unavailable.
+**Next action:** Test clustered rank uncertainty and future-period predictive stability of the contextual role profiles, including residualised boundaries.
 
 ---
 
@@ -234,3 +234,9 @@
 - Files: scripts/audit_paprf_split_reliability.py,scripts/build_paprf_review_v4_pdf.py,docs/methodology/paprf_split_reliability.md,outputs/report/paprf_research_review_v4_supplement.pdf,outputs/tables/paprf_split_reliability.csv,outputs/tables/paprf_split_player_ledger.csv,outputs/tables/paprf_split_match_membership.csv,work/paprf_split_reliability.json,dashboard/
 - Decision: Retain the historical v4 ranks. The interleaved sample shows little evidence of persistent rank order, even with the stricter gates.
 - Next: Test pressure and opponent baselines on an untouched sample or document the limit if further data is unavailable.
+
+## 2026-11-18 — Built earlier-date role and opposition forecasts, seven ordered contextual role  (step: 9-12)
+- Built earlier-date role and opposition forecasts, seven ordered contextual role top tens, India and metric-weight sensitivity, orthogonal boundary checks and annual trend profiles. Audited 3536 scores, 28 role scenarios and the archived ranking hashes. Added role visuals and a dashboard selector.
+- Files: scripts/build_paprf_role_profiles.py,docs/methodology/paprf_contextual_role_profiles.md,outputs/rankings/paprf_contextual_role_top10_v1.csv,outputs/tables/paprf_role_profile_splits.csv,outputs/tables/paprf_role_profile_trends.csv,outputs/tables/paprf_role_profile_scores.csv,work/paprf_contextual_roles.json,dashboard/
+- Decision: Treat contextual role effectiveness as a separate scored construct. Report modest run-MSE changes, predictor overlap and unsupported age and venue claims explicitly.
+- Next: Test clustered rank uncertainty and future-period predictive stability of the contextual role profiles, including residualised boundaries.

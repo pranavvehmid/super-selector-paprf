@@ -196,6 +196,17 @@ function renderResearch() {
     Object.entries(stats.threshold_sensitivity).map(([threshold, r]) => [threshold, r.eligible, `${r.shared_with_cutoff_12}/10`])));
 }
 
+function renderRoleProfiles() {
+  const stats = data.role_profiles.roles[$("profile-role").value];
+  const weights = data.role_profiles.weights[$("profile-role").value];
+  $("profile-summary").textContent = `${stats.primary.eligible} eligible · weights ${weights.map((w) => fmt(w * 100, 0) + "%").join(" / ")} · India sensitivity ${stats.india_1_5.shared_with_primary}/10 · equal weights ${stats.equal_weights.shared_with_primary}/10 · boundary residualisation ${stats.orthogonal_boundary.shared_with_primary}/10`;
+  const batting = $("profile-role").value.endsWith("_bowler") === false;
+  $("profile-results").replaceChildren(table(["Rank", "Player", "Role score", "Scored balls", "India balls",
+    batting ? "Explosiveness" : "Legal-ball runs above expectation"],
+    stats.top10.map((row) => [row.rank, row.name, fmt(row.score, 6), row.scored_balls, row.india_scored_balls,
+      fmt(batting ? row.explosiveness : row.rate_residual, 4)])));
+}
+
 if (!data) {
   $("load-error").hidden = false;
 } else {
@@ -231,6 +242,7 @@ if (!data) {
   $("search").addEventListener("input", renderRankings);
   $("research-role").addEventListener("change", renderResearch);
   $("research-version").addEventListener("change", renderResearch);
+  $("profile-role").addEventListener("change", renderRoleProfiles);
   $("sensitivity").append(table(["Sensitivity check", "Batters shared with v1", "Bowlers shared with v1"],
     [...[30, 90].map((prior) => [`Shrinkage prior = ${prior} balls`,
       ...["batter", "bowler"].map((role) => `${data.robustness.roles[role].prior_top10_overlap_with_60[prior]}/10`)]),
@@ -248,4 +260,5 @@ if (!data) {
   renderDistribution();
   renderRankings();
   renderResearch();
+  renderRoleProfiles();
 }
