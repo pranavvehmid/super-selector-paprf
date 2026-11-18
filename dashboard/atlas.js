@@ -144,13 +144,21 @@ function comparisonView() {
 }
 
 for (const tag of document.querySelectorAll("[data-author]")) tag.textContent = paprfAuthor[tag.dataset.author];
-for (const [key, label] of [["email", "Public email"], ["linkedin", "LinkedIn"], ["github", "GitHub"], ["repository", "Project repository"]]) {
+for (const [key, label] of [["email", "Email"], ["phone", "Phone"], ["linkedin", "LinkedIn"], ["repository", "GitHub repository"]]) {
   const value = paprfAuthor[key];
   if (!value || value.startsWith("[")) continue;
   const a = document.createElement("a");
-  a.textContent = label;
-  a.href = key === "email" ? `mailto:${value}` : value;
-  const p = document.createElement("p"); p.append(a); $("author-links").append(p);
+  const item = document.createElement("li");
+  if (key === "email" || key === "phone") {
+    item.append(`${label} · `);
+    a.textContent = value;
+    a.href = key === "email" ? `mailto:${value}` : `tel:${value.replace(/\s/g, "")}`;
+  } else {
+    a.textContent = label;
+    a.href = value;
+  }
+  item.append(a);
+  $("author-links").append(item);
 }
 if (globalThis.paprfEvidence?.datasets) {
   $("dataset-summary").append(table(["Scope", "Count"], [

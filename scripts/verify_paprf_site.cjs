@@ -88,6 +88,12 @@ async function main() {
       assert.equal(response.status(),200);
       assert.match(response.headers()["content-type"],/application\/pdf/);
     }
+    await page.locator('a[data-route="about"]').click();
+    const author = await page.evaluate(() => globalThis.paprfAuthor);
+    assert.equal(await page.locator("#about h1").innerText(), `About ${author.name}`);
+    assert.equal(await page.locator('#about [data-author="bio"]').innerText(), author.bio);
+    const contactLinks = await page.locator("#author-links a").evaluateAll(links => links.map(link => link.getAttribute("href")));
+    assert.deepEqual(contactLinks, [`mailto:${author.email}`, `tel:${author.phone.replace(/\s/g, "")}`, author.linkedin, author.repository]);
     assert.deepEqual(errors, []);
     console.log("11 routes × 5 widths × 2 themes, contrast, keyboard, history, calculations and report downloads passed.");
   } finally { await browser.close(); }

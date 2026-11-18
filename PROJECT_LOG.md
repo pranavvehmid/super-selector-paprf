@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Review the final model on the live dashboard or edit its source in the repository.
+**Next action:** Review the live About page and final report.
 
 ---
 
@@ -268,3 +268,8 @@
 - Files: dashboard, outputs/report/latex, docs/research/paprf_publication_qa.md, work/publication_manifest.json
 - Decision: Keep the archived Round 1 pressure submission lists and contextual indices separate by discipline. Existing scores stay versioned with zero numerical changes.
 - Next: Review the final model on the live dashboard or edit its source in the repository.
+
+## 2026-11-18 — Published the author's About page and verified its contact links, project link,  (step: 11)
+- Published the author's About page and verified its contact links, project link, and report title-page credit on production.
+- Files: dashboard/author.js, dashboard/index.html, dashboard/atlas.js, outputs/report/latex, scripts/verify_paprf_site.cjs
+- Next: Review the live About page and final report.
