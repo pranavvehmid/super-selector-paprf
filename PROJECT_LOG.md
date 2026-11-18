@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Estimate detectable repeatable signal with a phase-aware clustered null and update the research review.
+**Next action:** Test pressure and opponent baselines on an untouched sample or document the limit if further data is unavailable.
 
 ---
 
@@ -228,3 +228,9 @@
 - Files: scripts/validate_paprf_forward.py,docs/methodology/paprf_forward_validation.md,outputs/tables/paprf_forward_validation_ledger.csv,work/paprf_forward_validation.json,outputs/figures/paprf_forward_validation.png,dashboard/
 - Decision: The retrospective benchmark results do not support a consistent predictive advantage or a change to the historical v4 rank order.
 - Next: Estimate detectable repeatable signal with a phase-aware clustered null and update the research review.
+
+## 2026-11-18 — Rebuilt v1 through v4 from raw organiser data and matched all 15 audit files. Ad (step: 9-12)
+- Rebuilt v1 through v4 from raw organiser data and matched all 15 audit files. Added 32 family-and-year-interleaved whole-match splits with within-exposure shuffles and verified 512 correlations from the player ledgers. Rendered and checked the four-page v4 research review supplement and dashboard results.
+- Files: scripts/audit_paprf_split_reliability.py,scripts/build_paprf_review_v4_pdf.py,docs/methodology/paprf_split_reliability.md,outputs/report/paprf_research_review_v4_supplement.pdf,outputs/tables/paprf_split_reliability.csv,outputs/tables/paprf_split_player_ledger.csv,outputs/tables/paprf_split_match_membership.csv,work/paprf_split_reliability.json,dashboard/
+- Decision: Retain the historical v4 ranks. The interleaved sample shows little evidence of persistent rank order, even with the stricter gates.
+- Next: Test pressure and opponent baselines on an untouched sample or document the limit if further data is unavailable.

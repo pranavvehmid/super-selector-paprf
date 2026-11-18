@@ -128,6 +128,15 @@ function renderRankings() {
 
 function renderResearch() {
   const role = $("research-role").value;
+  const reliability = data.split_reliability;
+  const range = (items) => `${fmt(items[1], 3)} (${fmt(items[0], 3)} to ${fmt(items[2], 3)})`;
+  $("research-reliability").replaceChildren(table(
+    ["Per-context gate", "Median common players", "Observed ρ (p10–p90)", "Shuffle ρ (p10–p90)", "Above own shuffle p90"],
+    Object.entries(reliability.roles[role]).map(([gate, r]) => [
+      gate === "primary" ? "30 balls / 3 matches" : "60 balls / 6 matches",
+      r.summary_p10_p50_p90.common_players[1], range(r.summary_p10_p50_p90.composite_rho),
+      range(r.shuffle_rho_p10_p50_p90), `${r.splits_above_own_null_p90}/${reliability.splits}`,
+    ])));
   $("research-forward").replaceChildren(table(
     ["Test period", "Common players", "v4 p10 ρ", "v4 point ρ", "Pooled ρ", "Volume ρ", "v4 assessable", "Chance overlap"],
     data.forward.folds.map((fold) => {
