@@ -1,0 +1,117 @@
+{
+  "steps": [
+    "audit_data_quality",
+    "validate_state_rules",
+    "reconstruct_state",
+    "validate_reconstructed_state",
+    "apply_pressure_definition",
+    "validate_pressure_definition",
+    "build_player_metrics",
+    "validate_player_metrics",
+    "build_baselines",
+    "validate_baselines",
+    "build_reliability_scores",
+    "freeze_rankings",
+    "validate_rankings",
+    "build_candidate_universe",
+    "run_paprf_phase2",
+    "audit_paprf_context",
+    "build_paprf_v2",
+    "build_paprf_v3",
+    "build_paprf_v4"
+  ],
+  "compared_files": [
+    {
+      "file": "data/processed/metric_attribution_deliveries.csv",
+      "published_sha256": "66e7560eab6edac418b89fb2aa2f372f90616ec32283d565d28714ce26096499",
+      "rebuilt_sha256": "66e7560eab6edac418b89fb2aa2f372f90616ec32283d565d28714ce26096499",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/lens_a_batters_v1.csv",
+      "published_sha256": "b2696b3f33a180d203be9f1826bce9bf795fa7743ead581dc73e041b0484d6d2",
+      "rebuilt_sha256": "b2696b3f33a180d203be9f1826bce9bf795fa7743ead581dc73e041b0484d6d2",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/lens_a_bowlers_v1.csv",
+      "published_sha256": "fda3710494430d1392cd2e2ae3b779f9edcd53209c34cacd3b9e7571de310bc7",
+      "rebuilt_sha256": "fda3710494430d1392cd2e2ae3b779f9edcd53209c34cacd3b9e7571de310bc7",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/paprf_batters_v2.csv",
+      "published_sha256": "29c8284e9afe5dd3b02998a49aa3993fdc9f40a953b269f43b07f91c101a53a2",
+      "rebuilt_sha256": "29c8284e9afe5dd3b02998a49aa3993fdc9f40a953b269f43b07f91c101a53a2",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/paprf_bowlers_v2.csv",
+      "published_sha256": "8dca0db25e41dae03ca2f053a53630c5c46169c40e3ae607b7f2d568879c93f4",
+      "rebuilt_sha256": "8dca0db25e41dae03ca2f053a53630c5c46169c40e3ae607b7f2d568879c93f4",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/paprf_batters_v3.csv",
+      "published_sha256": "88516d03cf164524d75dd63937c84c3ab105d27f3c965f188a1447d267c6022b",
+      "rebuilt_sha256": "88516d03cf164524d75dd63937c84c3ab105d27f3c965f188a1447d267c6022b",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/paprf_bowlers_v3.csv",
+      "published_sha256": "bfdd79a3230855cb1567fc3212f03c821b3c2db06d9473fa6ad8021e7317decd",
+      "rebuilt_sha256": "bfdd79a3230855cb1567fc3212f03c821b3c2db06d9473fa6ad8021e7317decd",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/paprf_batters_v4.csv",
+      "published_sha256": "27d2afe272000fff6440d7df851dc791f73aac654b17fbd1edfc99d2866927d3",
+      "rebuilt_sha256": "27d2afe272000fff6440d7df851dc791f73aac654b17fbd1edfc99d2866927d3",
+      "identical": true
+    },
+    {
+      "file": "outputs/rankings/paprf_bowlers_v4.csv",
+      "published_sha256": "ce917380c3beb3623dff55e92d7ac2502e81ea3a3e6e4a93f15ee8e1e2459fb9",
+      "rebuilt_sha256": "ce917380c3beb3623dff55e92d7ac2502e81ea3a3e6e4a93f15ee8e1e2459fb9",
+      "identical": true
+    },
+    {
+      "file": "outputs/tables/paprf_v4_rank_ledger.csv",
+      "published_sha256": "7e46f1c639cdffc4ae2a7571c724704214e5ee15b622aa9f9d1ed5fb4f71cefd",
+      "rebuilt_sha256": "7e46f1c639cdffc4ae2a7571c724704214e5ee15b622aa9f9d1ed5fb4f71cefd",
+      "identical": true
+    },
+    {
+      "file": "outputs/tables/paprf_v4_sensitivity.csv",
+      "published_sha256": "59095ee03531ad80ac4062ab01068f9ac5b685e73d43c9f5145b52047545acb4",
+      "rebuilt_sha256": "59095ee03531ad80ac4062ab01068f9ac5b685e73d43c9f5145b52047545acb4",
+      "identical": true
+    },
+    {
+      "file": "outputs/tables/paprf_v4_temporal.csv",
+      "published_sha256": "71ed89859e464e509659a3d8ded468558329c08e71ea7ff6a8dad79b9b5299d7",
+      "rebuilt_sha256": "71ed89859e464e509659a3d8ded468558329c08e71ea7ff6a8dad79b9b5299d7",
+      "identical": true
+    },
+    {
+      "file": "outputs/tables/paprf_v4_cells.csv",
+      "published_sha256": "df5c6ddc2e16d71e39ccbb3aa1911cb5de48dc0f7b395b34f9ced52302f35945",
+      "rebuilt_sha256": "df5c6ddc2e16d71e39ccbb3aa1911cb5de48dc0f7b395b34f9ced52302f35945",
+      "identical": true
+    },
+    {
+      "file": "outputs/tables/paprf_v4_progression.csv",
+      "published_sha256": "77b9c994f01644e1a02900e58c477f09555667f288badf580bba87389ca5cdce",
+      "rebuilt_sha256": "77b9c994f01644e1a02900e58c477f09555667f288badf580bba87389ca5cdce",
+      "identical": true
+    },
+    {
+      "file": "work/paprf_v4_validation.json",
+      "published_sha256": "3ce37ae17390c9828b475a2125a48125c918836717a5caf74a14a57e56c7f7a5",
+      "rebuilt_sha256": "3ce37ae17390c9828b475a2125a48125c918836717a5caf74a14a57e56c7f7a5",
+      "identical": true
+    }
+  ],
+  "identical_count": 15,
+  "scalar_point_scores_verified": 305
+}

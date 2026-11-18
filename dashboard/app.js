@@ -128,6 +128,22 @@ function renderRankings() {
 
 function renderResearch() {
   const role = $("research-role").value;
+  if ($("research-version").value === "v4") {
+    const run = data.regularised;
+    const stats = run.roles[role];
+    $("research-note").textContent = `PAPRF v4 · ${stats.eligible_bootstrap} eligible · ${run.draws} draws · ${stats.shared_with_v3}/10 shared with v3 · temporal Spearman ${fmt(stats.temporal.spearman, 3)}`;
+    $("research-top").replaceChildren(table(["v4 rank", "Player", "v3 top-10 rank", "Point rank", "v4 score (p10)", "p90", "Valid draws"],
+      stats.top10.map((r) => [r.research_rank, r.name, r.v3_top10_rank ?? "—", r.point_rank,
+        fmt(r.p10, 6), fmt(r.p90, 6), `${r.valid_draws}/${run.draws}`])));
+    $("research-movements").replaceChildren(table(["Player", "v3 rank", "Reason"],
+      stats.v3_departures.map((r) => [r.name, r.v3_rank, r.reason])));
+    const labels = {primary:"Primary",lambda6:"Regularisation 6",lambda24:"Regularisation 24",
+      uncapped:"Uncapped components",no_event_component:"Without dismissal / wicket component",
+      historical_dismissals:"Historical dismissal attribution"};
+    $("research-thresholds").replaceChildren(table(["Scenario", "Point eligible", "Shared with primary point top ten"],
+      Object.entries(stats.tests).map(([key, item]) => [labels[key], item.eligible, `${item.overlap}/10`])));
+    return;
+  }
   if ($("research-version").value === "v3") {
     const run = data.granularity;
     const stats = run.designs.phase_family_v3[role];

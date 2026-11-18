@@ -70,7 +70,7 @@ def midranks(values):
     return [mean(positions[value]) for value in values]
 
 
-def collect(clusters=None):
+def collect(clusters=None, *, striker_dismissals_only=False, dismissal_audit=None):
     comp_path = ROOT / "data/raw/competitions.csv"
     match_path = ROOT / "data/raw/matches.csv"
     inputs = {p.relative_to(ROOT).as_posix(): digest(p) for p in (INPUT, match_path, comp_path)}
@@ -106,8 +106,15 @@ def collect(clusters=None):
             ("bowler", row["bowler_id"], int(row["bowler_runs_conceded"]),
              row["bowler_legal_ball"] == "true", row["bowler_dot"] == "true", row["bowler_wicket"] == "true"),
         ]
-        if row["is_wicket"] == "true" and row["dismissed_player_id"]:
-            contributions.append(("batter", row["dismissed_player_id"], 0, 0, 0, 1))
+        if row["is_wicket"] == "true":
+            dismissed = row["dismissed_player_id"]
+            striker_ball = dismissed == row["striker_id"] and row["batter_ball_faced"] == "true"
+            if dismissal_audit is not None:
+                reason = ("missing_id" if not dismissed else "non_striker" if dismissed != row["striker_id"]
+                          else "striker_counted_ball" if striker_ball else "striker_uncounted_ball")
+                dismissal_audit[row["pressure_band"], reason] += 1
+            if dismissed and (striker_ball or not striker_dismissals_only):
+                contributions.append(("batter", dismissed, 0, 0, 0, 1))
         for role, player, *totals in contributions:
             add(matched[role, player][cell][bucket], match_id, *totals)
             add(temporal[role, player][period][bucket], match_id, *totals)

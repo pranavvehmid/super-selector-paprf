@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Audit dismissal-rate influence and compare a partially pooled fine-cell model before deciding the submission ranking.
+**Next action:** Fit on an early window and validate on a held-out period using fixed peer scaling before final submission model selection.
 
 ---
 
@@ -216,3 +216,9 @@
 - Files: scripts/build_paprf_v3.py,scripts/build_paprf_review_pdf.py,docs/methodology/paprf_v3_cell_granularity.md,outputs/rankings/paprf_batters_v3.csv,outputs/rankings/paprf_bowlers_v3.csv,outputs/report/paprf_research_review_v3.pdf,work/paprf_v3_validation.json,dashboard/
 - Decision: Treat the broad v3 support gain as observed coverage, and report the weak temporal repeatability and attribution sensitivity.
 - Next: Audit dismissal-rate influence and compare a partially pooled fine-cell model before deciding the submission ranking.
+
+## 2026-11-18 — Completed four v4 passes: dismissal attribution audit, regularised fine-cell mod (step: 9-12)
+- Completed four v4 passes: dismissal attribution audit, regularised fine-cell model, sensitivity and chronology checks, and a clean rebuild of v1 through v4 from six raw organiser CSVs. All 15 checked files matched byte for byte and all 305 v4 point scores passed independent scalar verification. Updated the dashboard and progression table.
+- Files: scripts/build_paprf_v4.py,scripts/verify_paprf_rebuild.py,docs/methodology/paprf_v4_reanalysis.md,outputs/rankings/paprf_batters_v4.csv,outputs/rankings/paprf_bowlers_v4.csv,outputs/tables/paprf_v4_progression.csv,work/paprf_clean_rebuild.json,dashboard/
+- Decision: Version the v4 historical research rankings and qualify claims because chronological rank agreement is weak.
+- Next: Fit on an early window and validate on a held-out period using fixed peer scaling before final submission model selection.
