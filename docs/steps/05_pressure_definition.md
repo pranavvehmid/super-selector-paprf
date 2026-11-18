@@ -1,6 +1,6 @@
 # Step 05 — Define pressure transparently (batting and bowling)
 
-**Status:** NOT STARTED  
+**Status:** GATE PASSED
 **Code:** `src/rrselect/pressure.py`
 
 ## Goal
@@ -21,4 +21,4 @@ Written pressure definition, formula/logic, bands and rationale for both innings
 Interpretable, available from the data, and leakage-free.
 
 ## Log of work on this step
-_(append dated notes here and in PROJECT_LOG.md)_
+- 2026-11-18: Defined and applied pressure v1 using only validated pre-delivery state. The generated pressure labels cover 186,620 primary-scope deliveries; independent validation found zero errors and no outcome-field inputs. See docs/methodology/pressure_definition.md and work/pressure-definition-validation.json.

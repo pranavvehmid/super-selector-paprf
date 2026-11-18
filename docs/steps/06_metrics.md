@@ -1,6 +1,6 @@
 # Step 06 — Define role-appropriate batting and bowling metrics
 
-**Status:** NOT STARTED  
+**Status:** GATE PASSED
 **Code:** `src/rrselect/metrics.py`
 
 ## Goal
@@ -18,4 +18,4 @@ Metric specification: numerator, denominator, attribution rule, interpretation f
 Every metric computed from correctly attributed runs, balls, wickets and extras.
 
 ## Log of work on this step
-_(append dated notes here and in PROJECT_LOG.md)_
+- 2026-11-18: Implemented role-specific attribution and generated delivery-level and player-by-pressure-band metric tables. The independent aggregate reconciliation reported zero errors. See docs/metric_specification.md and work/player-metrics-validation.json.

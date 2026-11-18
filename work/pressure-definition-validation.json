@@ -1,0 +1,16 @@
+{
+  "row_count": 186620,
+  "validation_error_count": 0,
+  "errors": [],
+  "outcome_fields_retained_as_inputs": [],
+  "pressure_input_fields": [
+    "innings",
+    "pre_delivery_balls_remaining",
+    "pre_delivery_legal_balls",
+    "pre_delivery_runs",
+    "pre_delivery_runs_required",
+    "pre_delivery_wickets",
+    "target"
+  ],
+  "leakage_check": "Pressure calculation consumes only pre-delivery state and the second-innings target. No delivery-outcome or result field is an input."
+}

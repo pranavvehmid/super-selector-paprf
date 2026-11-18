@@ -4,6 +4,10 @@
 
 **Required deliverables:** (A) ordered top-10 batters and top-10 bowlers on Unstop; (B) a reproducible methodology report.
 
+## PAPRF Round 1 dashboard
+
+Open [the dashboard](dashboard/index.html) from a local checkout to explore pressure exposure, player calculations, ranking sensitivity and the research milestones. See the [dashboard setup and publishing guide](dashboard/README.md) and the [current four-phase research plan](docs/methodology/paprf_four_phase_plan.md). The project plan also calls for a publication-quality PDF.
+
 > **Taking over this project (human or model)?** Read in this order:
 > 1. `AGENTS.md` — working rules and the mandatory log-update protocol
 > 2. `PROJECT_LOG.md` — what has been done, newest entry last, plus the current "Next action"
@@ -11,15 +15,15 @@
 > 4. `docs/decisions.md` and `docs/assumptions.md` — what is decided vs. assumed
 > 5. `docs/original/` — the original handoff (v2.0, 16 Nov 2026)
 
-## Analysis design: three lenses, kept separate
+## Analysis design: exactly three workstreams
 
-| Lens | Name | What it is | Where |
-|---|---|---|---|
-| A | **By the numbers** | Transparent statistical rating: pressure vs. own baseline, shrinkage, match-clustered uncertainty | `docs/methodology/lens_a_numbers.md`, `src/rrselect/ranking_numbers.py` |
-| B | **PLS** | Partial Least Squares model (handles many correlated predictors) predicting out-of-sample pressure performance | `docs/methodology/lens_b_pls.md`, `src/rrselect/ranking_pls.py` |
-| C | **Squad-context overlay** | Filters/annotates A and B with retention list, auction availability, current RR squad, RR pick history, hometown/heritage | `docs/factors/`, `src/rrselect/squadfit.py` |
+| Workstream | Purpose | Boundary |
+|---|---|---|
+| 1. **Data-led top-10 shortlist** | Produce the official pressure-performance rankings and demonstrate statistical reasoning, validation, and game understanding. | The only source of the official batter and bowler ranks; uses supplied historical data only. |
+| 2. **Current RR squad-building needs** | Assess current squad coverage, retentions, remaining auction pool, and prior-season gaps from user-supplied current-context inputs. | A contextual needs assessment; never changes Workstream 1 scores or ranks. |
+| 3. **RR-specific player fit** | Recommend realistic RR-fit options using playing style, development trajectory, availability scenarios, and Workstream 2 needs. | A labelled recommendation layer; never changes Workstream 1 scores or ranks. |
 
-The pressure-reliability rankings (A and B) come **only from the supplied data**. Lens C never changes the statistical scores; it is a labelled interpretation layer. Which list is entered on Unstop is an open decision (see `docs/decisions.md`, D-003).
+The previous Lens A (transparent pressure-versus-baseline rating) and Lens B (PLS, if confirmed) are alternative or complementary methods **within Workstream 1**. The previous Lens C is now split across Workstreams 2 and 3. See `docs/RR_Super_Select_Hackathon_Project_Handoff.md` for the current working plan.
 
 ## Repository layout
 

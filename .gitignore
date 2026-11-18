@@ -11,6 +11,12 @@ data/raw/*
 !data/raw/.gitkeep
 data/interim/*
 !data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+work/incoming-repo-*/
+.vercel/
+.env
+.env.*
 *.zip
 *.parquet
 

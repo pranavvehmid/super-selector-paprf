@@ -1,0 +1,26 @@
+{
+  "minimum_opportunities": 60,
+  "minimum_matches": 6,
+  "roles": {
+    "batter": {
+      "eligible_base_count": 176,
+      "eligible_high_only_count": 105,
+      "prior_top10_overlap_with_60": {
+        "30": 10,
+        "60": 10,
+        "90": 10
+      },
+      "high_only_top10_overlap_with_base": 7
+    },
+    "bowler": {
+      "eligible_base_count": 219,
+      "eligible_high_only_count": 157,
+      "prior_top10_overlap_with_60": {
+        "30": 9,
+        "60": 10,
+        "90": 10
+      },
+      "high_only_top10_overlap_with_base": 5
+    }
+  }
+}

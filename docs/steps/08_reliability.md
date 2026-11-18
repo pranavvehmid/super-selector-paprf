@@ -1,6 +1,6 @@
 # Step 08 — Design a reliability rating with sample-size protection
 
-**Status:** NOT STARTED  
+**Status:** GATE PASSED
 **Code:** `src/rrselect/reliability.py, ranking_numbers.py, ranking_pls.py`
 
 ## Goal
@@ -22,4 +22,4 @@ Documented rating formulas (Lens A and Lens B), eligibility rules, uncertainty e
 No high-confidence rank from a handful of pressure deliveries.
 
 ## Log of work on this step
-_(append dated notes here and in PROJECT_LOG.md)_
+- 2026-11-18: Built peer-standardised three-component reliability signals and applied a 60-pressure-ball shrinkage prior. Diagnostic plots show sample-size contraction; signals remain provisional pending Step 9 robustness checks.

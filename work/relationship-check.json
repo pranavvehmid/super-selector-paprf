@@ -1,0 +1,14 @@
+{
+  "unmatched_ids": {
+    "ball_by_ball.match_id_to_matches.match_id": [],
+    "playing_eleven.match_id_to_matches.match_id": [],
+    "matches.comp_id_to_competitions.comp_id": [],
+    "mapping.comp_id_to_competitions.comp_id": [],
+    "teams.comp_id_to_competitions.comp_id": []
+  },
+  "all_relationship_checks_pass": true,
+  "player_name_variants": {
+    "mapping": {},
+    "ball_by_ball": {}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "input": "data/processed/pressure_labeled_deliveries.csv",
+  "input_sha256": "4cc41bb5e526fe2bd4d2faf8cb53df8cd81f5f2d31e6cda45623c44608c42f36",
+  "delivery_rows": 186620,
+  "distinct_match_ids": 782,
+  "recalculation_mismatches": {
+    "index": 0,
+    "phase": 0,
+    "band": 0
+  },
+  "band_totals": {
+    "ordinary": 117832,
+    "elevated": 33343,
+    "high": 35445
+  },
+  "ranking_file_hashes": {
+    "lens_a_batters_v1.csv": "b2696b3f33a180d203be9f1826bce9bf795fa7743ead581dc73e041b0484d6d2",
+    "lens_a_bowlers_v1.csv": "fda3710494430d1392cd2e2ae3b779f9edcd53209c34cacd3b9e7571de310bc7",
+    "ranking_manifest_v1.json": "88b2de83dd5006eb860a671bc4c848b734aed3b8bbd124691aecf3878ba84fc8"
+  }
+}

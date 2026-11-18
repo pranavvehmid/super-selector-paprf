@@ -1,0 +1,17 @@
+{
+  "row_count": 186620,
+  "definition_version": "v1",
+  "bands": {
+    "innings_1:elevated": 12489,
+    "innings_1:high": 10365,
+    "innings_1:ordinary": 74446,
+    "innings_2:elevated": 20854,
+    "innings_2:high": 25080,
+    "innings_2:ordinary": 43386
+  },
+  "mean_pressure_index": {
+    "innings_1": 0.2164160328880064,
+    "innings_2": 0.4498872909380435
+  },
+  "leakage_guard": "Uses only pre_delivery_* fields, the second-innings target known before that innings begins, and the innings number. It does not use the rated delivery outcome, result, winner, or a future delivery."
+}

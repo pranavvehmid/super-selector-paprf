@@ -1,0 +1,977 @@
+{
+  "input_sha256": "66e7560eab6edac418b89fb2aa2f372f90616ec32283d565d28714ce26096499",
+  "roles": {
+    "batter": {
+      "frozen_sha256": "b2696b3f33a180d203be9f1826bce9bf795fa7743ead581dc73e041b0484d6d2",
+      "scenarios": {
+        "v1_equal": {
+          "weight_parts": [
+            1,
+            1,
+            1
+          ],
+          "peer_mean_and_sample_sd": [
+            [
+              0.2742168465909091,
+              0.19669344031910393
+            ],
+            [
+              -0.057518221590909094,
+              0.05832210769787084
+            ],
+            [
+              0.024730448863636362,
+              0.024267819216819364
+            ]
+          ],
+          "eligible": 176,
+          "eligible_added": 0,
+          "eligible_lost": 0,
+          "overlap_of_10": 10,
+          "entered_top10": [],
+          "left_top10": [],
+          "top10_in_order": [
+            [
+              "2633",
+              1.4979
+            ],
+            [
+              "143",
+              1.484493
+            ],
+            [
+              "8",
+              1.341489
+            ],
+            [
+              "2921",
+              1.106621
+            ],
+            [
+              "1924",
+              1.056267
+            ],
+            [
+              "2756",
+              1.051216
+            ],
+            [
+              "796",
+              1.03656
+            ],
+            [
+              "2214",
+              1.001369
+            ],
+            [
+              "7741",
+              0.986658
+            ],
+            [
+              "2485",
+              0.925867
+            ]
+          ]
+        },
+        "role_rule_equal": {
+          "weight_parts": [
+            1,
+            1,
+            1
+          ],
+          "peer_mean_and_sample_sd": [
+            [
+              0.25557867415730334,
+              0.19909451913126067
+            ],
+            [
+              -0.04837155617977528,
+              0.05910717530027173
+            ],
+            [
+              0.023499842696629213,
+              0.02311893750363865
+            ]
+          ],
+          "eligible": 178,
+          "eligible_added": 2,
+          "eligible_lost": 0,
+          "overlap_of_10": 9,
+          "entered_top10": [
+            "6726"
+          ],
+          "left_top10": [
+            "2214"
+          ],
+          "top10_in_order": [
+            [
+              "2633",
+              1.553226
+            ],
+            [
+              "143",
+              1.520834
+            ],
+            [
+              "8",
+              1.363783
+            ],
+            [
+              "1924",
+              1.133153
+            ],
+            [
+              "2921",
+              1.124209
+            ],
+            [
+              "2756",
+              1.122369
+            ],
+            [
+              "796",
+              1.102074
+            ],
+            [
+              "7741",
+              1.037433
+            ],
+            [
+              "2485",
+              0.979769
+            ],
+            [
+              "6726",
+              0.935618
+            ]
+          ]
+        },
+        "v1_rate_heavy": {
+          "weight_parts": [
+            2,
+            1,
+            1
+          ],
+          "peer_mean_and_sample_sd": [
+            [
+              0.2742168465909091,
+              0.19669344031910393
+            ],
+            [
+              -0.057518221590909094,
+              0.05832210769787084
+            ],
+            [
+              0.024730448863636362,
+              0.024267819216819364
+            ]
+          ],
+          "eligible": 176,
+          "eligible_added": 0,
+          "eligible_lost": 0,
+          "overlap_of_10": 10,
+          "entered_top10": [],
+          "left_top10": [],
+          "top10_in_order": [
+            [
+              "143",
+              1.811573
+            ],
+            [
+              "8",
+              1.689778
+            ],
+            [
+              "2633",
+              1.437857
+            ],
+            [
+              "7741",
+              1.292173
+            ],
+            [
+              "2921",
+              1.231596
+            ],
+            [
+              "1924",
+              1.159547
+            ],
+            [
+              "2756",
+              1.152125
+            ],
+            [
+              "2485",
+              0.959379
+            ],
+            [
+              "2214",
+              0.929323
+            ],
+            [
+              "796",
+              0.890284
+            ]
+          ]
+        },
+        "v1_event_heavy": {
+          "weight_parts": [
+            1,
+            1,
+            2
+          ],
+          "peer_mean_and_sample_sd": [
+            [
+              0.2742168465909091,
+              0.19669344031910393
+            ],
+            [
+              -0.057518221590909094,
+              0.05832210769787084
+            ],
+            [
+              0.024730448863636362,
+              0.024267819216819364
+            ]
+          ],
+          "eligible": 176,
+          "eligible_added": 0,
+          "eligible_lost": 0,
+          "overlap_of_10": 8,
+          "entered_top10": [
+            "2877",
+            "6726"
+          ],
+          "left_top10": [
+            "8",
+            "2485"
+          ],
+          "top10_in_order": [
+            [
+              "2633",
+              1.355594
+            ],
+            [
+              "2756",
+              1.130003
+            ],
+            [
+              "796",
+              1.11821
+            ],
+            [
+              "2214",
+              1.100458
+            ],
+            [
+              "143",
+              1.075645
+            ],
+            [
+              "6726",
+              1.004712
+            ],
+            [
+              "1924",
+              0.996648
+            ],
+            [
+              "2921",
+              0.988068
+            ],
+            [
+              "2877",
+              0.917245
+            ],
+            [
+              "7741",
+              0.902822
+            ]
+          ]
+        }
+      }
+    },
+    "bowler": {
+      "frozen_sha256": "fda3710494430d1392cd2e2ae3b779f9edcd53209c34cacd3b9e7571de310bc7",
+      "scenarios": {
+        "v1_equal": {
+          "weight_parts": [
+            1,
+            1,
+            1
+          ],
+          "peer_mean_and_sample_sd": [
+            [
+              1.0154906438356164,
+              1.396375012041093
+            ],
+            [
+              -0.04423846575342466,
+              0.06522497495073006
+            ],
+            [
+              0.02467561187214612,
+              0.024852695514192072
+            ]
+          ],
+          "eligible": 219,
+          "eligible_added": 0,
+          "eligible_lost": 0,
+          "overlap_of_10": 10,
+          "entered_top10": [],
+          "left_top10": [],
+          "top10_in_order": [
+            [
+              "4237",
+              1.444478
+            ],
+            [
+              "35318",
+              1.373606
+            ],
+            [
+              "6643",
+              1.33111
+            ],
+            [
+              "2490",
+              1.298983
+            ],
+            [
+              "25132",
+              1.163051
+            ],
+            [
+              "22471",
+              1.123418
+            ],
+            [
+              "4229",
+              1.119121
+            ],
+            [
+              "7327",
+              1.103338
+            ],
+            [
+              "34485",
+              1.060173
+            ],
+            [
+              "2878",
+              1.015889
+            ]
+          ]
+        },
+        "role_rule_equal": {
+          "weight_parts": [
+            1,
+            1,
+            1
+          ],
+          "peer_mean_and_sample_sd": [
+            [
+              1.0241398721461188,
+              1.3999590979373937
+            ],
+            [
+              -0.044994278538812785,
+              0.06497792008440602
+            ],
+            [
+              0.024740497716894978,
+              0.024637706382171158
+            ]
+          ],
+          "eligible": 219,
+          "eligible_added": 0,
+          "eligible_lost": 0,
+          "overlap_of_10": 9,
+          "entered_top10": [
+            "27964"
+          ],
+          "left_top10": [
+            "2878"
+          ],
+          "top10_in_order": [
+            [
+              "4237",
+              1.451226
+            ],
+            [
+              "35318",
+              1.378989
+            ],
+            [
+              "2490",
+              1.377394
+            ],
+            [
+              "22471",
+              1.168188
+            ],
+            [
+              "25132",
+              1.166801
+            ],
+            [
+              "4229",
+              1.126563
+            ],
+            [
+              "6643",
+              1.120016
+            ],
+            [
+              "7327",
+              1.110713
+            ],
+            [
+              "27964",
+              1.091251
+            ],
+            [
+              "34485",
+              1.064497
+            ]
+          ]
+        },
+        "v1_rate_heavy": {
+          "weight_parts": [
+            2,
+            1,
+            1
+          ],
+          "peer_mean_and_sample_sd": [
+            [
+              1.0154906438356164,
+              1.396375012041093
+            ],
+            [
+              -0.04423846575342466,
+              0.06522497495073006
+            ],
+            [
+              0.02467561187214612,
+              0.024852695514192072
+            ]
+          ],
+          "eligible": 219,
+          "eligible_added": 0,
+          "eligible_lost": 0,
+          "overlap_of_10": 9,
+          "entered_top10": [
+            "46066"
+          ],
+          "left_top10": [
+            "2878"
+          ],
+          "top10_in_order": [
+            [
+              "4237",
+              1.59088
+            ],
+            [
+              "35318",
+              1.581326
+            ],
+            [
+              "25132",
+              1.37094
+            ],
+            [
+              "2490",
+              1.311146
+            ],
+            [
+              "6643",
+              1.255329
+            ],
+            [
+              "22471",
+              1.167683
+            ],
+            [
+              "7327",
+              1.109701
+            ],
+            [
+              "4229",
+              1.093659
+            ],
+            [
+              "46066",
+              1.089487
+            ],
+            [
+              "34485",
+              1.06669
+            ]
+          ]
+        },
+        "v1_event_heavy": {
+          "weight_parts": [
+            1,
+            1,
+            2
+          ],
+          "peer_mean_and_sample_sd": [
+            [
+              1.0154906438356164,
+              1.396375012041093
+            ],
+            [
+              -0.04423846575342466,
+              0.06522497495073006
+            ],
+            [
+              0.02467561187214612,
+              0.024852695514192072
+            ]
+          ],
+          "eligible": 219,
+          "eligible_added": 0,
+          "eligible_lost": 0,
+          "overlap_of_10": 8,
+          "entered_top10": [
+            "3623",
+            "6354"
+          ],
+          "left_top10": [
+            "25132",
+            "34485"
+          ],
+          "top10_in_order": [
+            [
+              "6643",
+              1.461481
+            ],
+            [
+              "4237",
+              1.438497
+            ],
+            [
+              "22471",
+              1.269042
+            ],
+            [
+              "4229",
+              1.227752
+            ],
+            [
+              "35318",
+              1.21639
+            ],
+            [
+              "2490",
+              1.180813
+            ],
+            [
+              "3623",
+              1.153319
+            ],
+            [
+              "7327",
+              1.072285
+            ],
+            [
+              "2878",
+              1.071225
+            ],
+            [
+              "6354",
+              1.011045
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "exposure": [
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "death",
+      "bucket": "ordinary",
+      "deliveries": 1004
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "death",
+      "bucket": "reference",
+      "deliveries": 10072
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "middle",
+      "bucket": "ordinary",
+      "deliveries": 19621
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "middle",
+      "bucket": "reference",
+      "deliveries": 165
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "powerplay",
+      "bucket": "ordinary",
+      "deliveries": 12619
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "powerplay",
+      "bucket": "promoted",
+      "deliveries": 636
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "death",
+      "bucket": "ordinary",
+      "deliveries": 2228
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "death",
+      "bucket": "reference",
+      "deliveries": 6278
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "middle",
+      "bucket": "ordinary",
+      "deliveries": 7621
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "middle",
+      "bucket": "reference",
+      "deliveries": 11757
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "powerplay",
+      "bucket": "ordinary",
+      "deliveries": 8337
+    },
+    {
+      "role": "batter",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "powerplay",
+      "bucket": "reference",
+      "deliveries": 4900
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "death",
+      "bucket": "ordinary",
+      "deliveries": 872
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "death",
+      "bucket": "reference",
+      "deliveries": 12384
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "middle",
+      "bucket": "ordinary",
+      "deliveries": 23627
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "middle",
+      "bucket": "reference",
+      "deliveries": 233
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "powerplay",
+      "bucket": "ordinary",
+      "deliveries": 15108
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "powerplay",
+      "bucket": "promoted",
+      "deliveries": 959
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "death",
+      "bucket": "ordinary",
+      "deliveries": 2401
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "death",
+      "bucket": "reference",
+      "deliveries": 6676
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "middle",
+      "bucket": "ordinary",
+      "deliveries": 10686
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "middle",
+      "bucket": "reference",
+      "deliveries": 12339
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "powerplay",
+      "bucket": "ordinary",
+      "deliveries": 12113
+    },
+    {
+      "role": "batter",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "powerplay",
+      "bucket": "reference",
+      "deliveries": 3984
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "death",
+      "bucket": "ordinary",
+      "deliveries": 1004
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "death",
+      "bucket": "reference",
+      "deliveries": 10072
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "middle",
+      "bucket": "ordinary",
+      "deliveries": 19621
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "middle",
+      "bucket": "reference",
+      "deliveries": 165
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "1",
+      "phase": "powerplay",
+      "bucket": "ordinary",
+      "deliveries": 13255
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "death",
+      "bucket": "ordinary",
+      "deliveries": 1903
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "death",
+      "bucket": "promoted",
+      "deliveries": 325
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "death",
+      "bucket": "reference",
+      "deliveries": 6278
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "middle",
+      "bucket": "ordinary",
+      "deliveries": 7621
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "middle",
+      "bucket": "reference",
+      "deliveries": 11757
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "powerplay",
+      "bucket": "ordinary",
+      "deliveries": 8337
+    },
+    {
+      "role": "bowler",
+      "competition": "IPL",
+      "innings": "2",
+      "phase": "powerplay",
+      "bucket": "reference",
+      "deliveries": 4900
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "death",
+      "bucket": "ordinary",
+      "deliveries": 872
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "death",
+      "bucket": "reference",
+      "deliveries": 12384
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "middle",
+      "bucket": "ordinary",
+      "deliveries": 23627
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "middle",
+      "bucket": "reference",
+      "deliveries": 233
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "1",
+      "phase": "powerplay",
+      "bucket": "ordinary",
+      "deliveries": 16067
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "death",
+      "bucket": "ordinary",
+      "deliveries": 2142
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "death",
+      "bucket": "promoted",
+      "deliveries": 259
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "death",
+      "bucket": "reference",
+      "deliveries": 6676
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "middle",
+      "bucket": "ordinary",
+      "deliveries": 10686
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "middle",
+      "bucket": "reference",
+      "deliveries": 12339
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "powerplay",
+      "bucket": "ordinary",
+      "deliveries": 12113
+    },
+    {
+      "role": "bowler",
+      "competition": "T20I",
+      "innings": "2",
+      "phase": "powerplay",
+      "bucket": "reference",
+      "deliveries": 3984
+    }
+  ]
+}

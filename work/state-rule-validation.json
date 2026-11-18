@@ -1,0 +1,68 @@
+{
+  "population": {
+    "candidate_match_count": 785,
+    "delivery_rows_in_innings_1_or_2": 187321,
+    "rules_tested": {
+      "team_runs": "runs + extras1_runs + extras_2_runs",
+      "legal_ball": "extras_type is neither wide, Overstep, nor other",
+      "wickets_lost": "is_wicket == true"
+    }
+  },
+  "complete_over_test": {
+    "nonfinal_overs_checked": 28560,
+    "failure_count": 4,
+    "failures": [
+      {
+        "match_id": "14130",
+        "innings": "1",
+        "overid": 14,
+        "legal_ball_count": 5,
+        "delivery_count": 5
+      },
+      {
+        "match_id": "14130",
+        "innings": "2",
+        "overid": 14,
+        "legal_ball_count": 5,
+        "delivery_count": 6
+      },
+      {
+        "match_id": "14164",
+        "innings": "1",
+        "overid": 14,
+        "legal_ball_count": 5,
+        "delivery_count": 5
+      },
+      {
+        "match_id": "41509",
+        "innings": "1",
+        "overid": 12,
+        "legal_ball_count": 7,
+        "delivery_count": 7
+      }
+    ]
+  },
+  "state_reconstruction_holdout": {
+    "match_ids": [
+      "14130",
+      "14164",
+      "41509"
+    ],
+    "reason": "At least one nonfinal over does not contain six inferred legal balls."
+  },
+  "match_margin_checks": {
+    "run_margin_matches_checked": 382,
+    "run_margin_matches_matched": 382,
+    "run_margin_mismatches": [],
+    "wicket_margin_matches_checked": 379,
+    "wicket_margin_matches_matched": 378,
+    "wicket_margin_mismatches": [
+      {
+        "match_id": "20190",
+        "result": "Lucknow Super Giants Won by 6 wickets",
+        "expected": 6,
+        "observed": 5
+      }
+    ]
+  }
+}

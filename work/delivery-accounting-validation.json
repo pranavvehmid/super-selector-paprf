@@ -1,0 +1,238 @@
+{
+  "population": {
+    "included_delivery_rows": 193787,
+    "excluded_match_count": 70,
+    "rule": "Uses the provisional Step 3 population; no delivery accounting rule is inferred."
+  },
+  "extras_type_counts": {
+    "None": 182408,
+    "Overstep": 553,
+    "byes": 503,
+    "legbyes": 2635,
+    "other": 255,
+    "wide": 7433
+  },
+  "top_extras_run_combinations": [
+    {
+      "extras_type": "None",
+      "runs": 1,
+      "extras1_runs": 0,
+      "extras_2_runs": 0,
+      "row_count": 69527
+    },
+    {
+      "extras_type": "None",
+      "runs": 0,
+      "extras1_runs": 0,
+      "extras_2_runs": 0,
+      "row_count": 65636
+    },
+    {
+      "extras_type": "None",
+      "runs": 4,
+      "extras1_runs": 0,
+      "extras_2_runs": 0,
+      "row_count": 22336
+    },
+    {
+      "extras_type": "None",
+      "runs": 6,
+      "extras1_runs": 0,
+      "extras_2_runs": 0,
+      "row_count": 12260
+    },
+    {
+      "extras_type": "None",
+      "runs": 2,
+      "extras1_runs": 0,
+      "extras_2_runs": 0,
+      "row_count": 12001
+    },
+    {
+      "extras_type": "wide",
+      "runs": 0,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 6842
+    },
+    {
+      "extras_type": "legbyes",
+      "runs": 0,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 2276
+    },
+    {
+      "extras_type": "None",
+      "runs": 3,
+      "extras1_runs": 0,
+      "extras_2_runs": 0,
+      "row_count": 622
+    },
+    {
+      "extras_type": "byes",
+      "runs": 0,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 332
+    },
+    {
+      "extras_type": "wide",
+      "runs": 0,
+      "extras1_runs": 2,
+      "extras_2_runs": 0,
+      "row_count": 289
+    },
+    {
+      "extras_type": "wide",
+      "runs": 0,
+      "extras1_runs": 5,
+      "extras_2_runs": 0,
+      "row_count": 262
+    },
+    {
+      "extras_type": "legbyes",
+      "runs": 0,
+      "extras1_runs": 4,
+      "extras_2_runs": 0,
+      "row_count": 226
+    },
+    {
+      "extras_type": "Overstep",
+      "runs": 0,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 207
+    },
+    {
+      "extras_type": "Overstep",
+      "runs": 1,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 168
+    },
+    {
+      "extras_type": "byes",
+      "runs": 0,
+      "extras1_runs": 4,
+      "extras_2_runs": 0,
+      "row_count": 133
+    },
+    {
+      "extras_type": "legbyes",
+      "runs": 0,
+      "extras1_runs": 2,
+      "extras_2_runs": 0,
+      "row_count": 125
+    },
+    {
+      "extras_type": "other",
+      "runs": 0,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 110
+    },
+    {
+      "extras_type": "Overstep",
+      "runs": 4,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 78
+    },
+    {
+      "extras_type": "other",
+      "runs": 1,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 48
+    },
+    {
+      "extras_type": "Overstep",
+      "runs": 6,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 44
+    },
+    {
+      "extras_type": "other",
+      "runs": 4,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 39
+    },
+    {
+      "extras_type": "wide",
+      "runs": 0,
+      "extras1_runs": 3,
+      "extras_2_runs": 0,
+      "row_count": 38
+    },
+    {
+      "extras_type": "byes",
+      "runs": 0,
+      "extras1_runs": 2,
+      "extras_2_runs": 0,
+      "row_count": 35
+    },
+    {
+      "extras_type": "Overstep",
+      "runs": 2,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 33
+    },
+    {
+      "extras_type": "other",
+      "runs": 6,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 26
+    },
+    {
+      "extras_type": "None",
+      "runs": 5,
+      "extras1_runs": 0,
+      "extras_2_runs": 0,
+      "row_count": 24
+    },
+    {
+      "extras_type": "other",
+      "runs": 2,
+      "extras1_runs": 1,
+      "extras_2_runs": 0,
+      "row_count": 17
+    },
+    {
+      "extras_type": "Overstep",
+      "runs": 0,
+      "extras1_runs": 1,
+      "extras_2_runs": 1,
+      "row_count": 12
+    },
+    {
+      "extras_type": "Overstep",
+      "runs": 0,
+      "extras1_runs": 1,
+      "extras_2_runs": 4,
+      "row_count": 9
+    },
+    {
+      "extras_type": "other",
+      "runs": 0,
+      "extras1_runs": 1,
+      "extras_2_runs": 4,
+      "row_count": 7
+    }
+  ],
+  "run_flag_mismatches": {
+    "is_four_vs_runs": 19,
+    "is_six_vs_runs": 3
+  },
+  "dismissal_consistency_mismatches": {
+    "is_wicket_vs_dismissed_player_id": 12
+  },
+  "delivery_counter_transitions": {
+    "same_over_rows": 162608,
+    "new_over_rows": 29553
+  }
+}

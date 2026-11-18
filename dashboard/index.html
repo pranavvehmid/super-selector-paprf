@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore T20 pressure exposure, model sensitivity and player evidence for Super Selector Round 1.">
+  <title>PAPRF | Super Selector research dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="evidence.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="mast"><a class="brand" href="#overview">PAPRF <span>Research dashboard</span></a><nav aria-label="Dashboard"><a href="#pressure">Pressure</a><a href="#rankings">Rankings</a><a href="#method">Method</a><a href="#progress">Progress</a></nav></header>
+  <main id="overview">
+    <section class="hero">
+      <p class="kicker">SUPER SELECTOR / ROUND 1</p>
+      <h1>T20 under pressure</h1>
+      <p>Explore the balls that qualify as pressure, the player outcomes that drive the rankings, and what changes when the model assumptions move.</p>
+      <div id="summary" class="stats"></div>
+    </section>
+    <noscript>This dashboard requires JavaScript to load the evidence and controls.</noscript>
+    <div id="load-error" class="panel" hidden>Evidence could not be loaded. Regenerate the dashboard data bundle and refresh.</div>
+    <section class="panel" id="pressure">
+      <div class="section-head"><div><p class="kicker">MATCH CONTEXT</p><h2>Pressure exposure</h2></div><label>Chart scale<select id="scale"><option value="share">Within-phase share</option><option value="count">Delivery count</option></select></label></div>
+      <p>Each row combines an innings and phase. Hover or focus a segment for its numerator, denominator and share.</p>
+      <div class="legend"><span class="ordinary">Ordinary</span><span class="elevated">Elevated</span><span class="high">High</span></div>
+      <div id="distribution" class="chart"></div>
+      <p id="pressure-detail" class="note" aria-live="polite">Choose a band segment to inspect its evidence.</p>
+    </section>
+    <section class="panel" id="rankings">
+      <div class="section-head"><div><p class="kicker">PLAYER EVIDENCE</p><h2>Rankings explorer</h2></div></div>
+      <div class="controls">
+        <label>Role<select id="role"><option value="batter">Batters</option><option value="bowler">Bowlers</option></select></label>
+        <label>Model<select id="scenario"><option value="v1_equal">Frozen v1 · equal weights</option><option value="role_rule_equal">Experimental · role-specific pressure</option><option value="v1_rate_heavy">Experimental · rate weighted 50%</option><option value="v1_event_heavy">Experimental · dismissal / wicket weighted 50%</option></select></label>
+        <label>Player search<input id="search" type="search" placeholder="Name or player ID"></label>
+        <label>Rows<select id="limit"><option value="10">Top 10</option><option value="20">Top 20</option><option value="all">All eligible</option></select></label>
+      </div>
+      <p id="scenario-summary" class="note" aria-live="polite"></p>
+      <div class="scroll"><table><caption class="sr-only">Ranked players and pressure sample sizes</caption><thead><tr><th scope="col">Rank</th><th scope="col">Player</th><th scope="col">Score</th><th scope="col">Pressure balls</th><th scope="col">Matches</th><th scope="col">v1 rank</th></tr></thead><tbody id="rank-rows"></tbody></table></div>
+      <div id="player" class="player" aria-live="polite"></div>
+      <details><summary>Additional sensitivity checks</summary><div id="sensitivity"></div></details>
+    </section>
+    <section class="panel" id="method">
+      <p class="kicker">REPRODUCIBILITY</p><h2>The calculation</h2>
+      <details open><summary>Pressure before the ball</summary>
+        <p>Let L be completed legal balls, W be wickets lost, R be runs required and B be balls remaining. Clamp limits values to [0, 1].</p>
+        <code>Innings 1: 0.70 × clamp((L − 72) / 48) + 0.30 × clamp(W / 10)</code>
+        <code>Innings 2: 0.55 × clamp((6R / max(B, 1) − 7) / 5) + 0.25 × clamp(W / 10) + 0.20 × clamp(L / 120)</code>
+        <p>Ordinary is below 0.40, elevated is 0.40 to below 0.65, and high is at least 0.65. The first innings can only qualify after the late-innings term starts contributing.</p>
+      </details>
+      <details><summary>Player score and evidence thresholds</summary>
+        <p>Take the pressure rate minus the ordinary rate for each metric. Standardise each difference using the eligible role pool mean and sample standard deviation and orient the signs so higher is better. Batting uses runs per ball, dot rate and dismissal rate. Bowling uses economy, dot rate and wicket rate.</p>
+        <code>Raw = Σ(weight × signed z) / Σ(weight)</code><code>Score = Raw × n / (n + 60)</code>
+        <p>Each context requires at least 60 role-specific balls and six recorded matches. The shrinkage factor uses pressure balls n. Scores are ranked at six decimal places.</p>
+      </details>
+      <details><summary>Which assumptions were tested?</summary>
+        <p>The batting scenario adds early first-innings collapses with three or more wickets lost inside 36 legal balls. The bowling scenario adds chases with 6–24 balls left, at least two wickets in hand and a required rate of 7–12 runs per over.</p>
+        <p>These are sensitivity settings. Phase- and competition-matched performance and repeatability remain open. Pressure bands describe scoreboard context.</p>
+      </details>
+    </section>
+    <section class="panel" id="progress">
+      <p class="kicker">RESEARCH MILESTONES</p><h2>Project progress</h2>
+      <ol class="timeline">
+        <li><strong>Data and pressure foundation</strong><span>Recalculated index, phase and band across the retained delivery sample.</span></li>
+        <li><strong>Statistical modelling</strong><span>Frozen v1 replay and pressure/weight sensitivity complete. Matched baselines and repeatability are pending.</span></li>
+        <li><strong>Dashboard and research PDF</strong><span>Interactive evidence explorer built. Publication-quality PDF remains planned.</span></li>
+        <li><strong>Validation and submission</strong><span>Cross-check final deliverables and verify submission labels before release.</span></li>
+      </ol>
+    </section>
+  </main>
+  <footer>Super Selector Round 1 · Lens A v1 and exploratory PAPRF scenarios</footer>
+</body>
+</html>

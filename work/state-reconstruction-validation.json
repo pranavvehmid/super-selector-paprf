@@ -1,0 +1,10 @@
+{
+  "row_count": 186620,
+  "validation_error_count": 0,
+  "errors": [],
+  "rules": {
+    "team_runs": "runs + extras1_runs + extras_2_runs",
+    "legal_ball": "extras_type not in {wide, Overstep, other}",
+    "wickets_lost": "is_wicket == true"
+  }
+}

@@ -1,6 +1,6 @@
 # Step 11 — Add squad-context overlay (Lens C)
 
-**Status:** NOT STARTED  
+**Status:** BLOCKED — source inputs not supplied
 **Code:** `src/rrselect/squadfit.py`
 
 ## Goal
@@ -21,4 +21,4 @@ Squad-fit notes and shortlist per lens (outputs/rankings/ and docs/factors/).
 Statistical scores untouched; all external facts sourced and dated.
 
 ## Log of work on this step
-_(append dated notes here and in PROJECT_LOG.md)_
+- 2026-11-18: Kept deliberately separate from Lens A. The repository has no dated, source-backed current RR squad, retention, auction-pool, price, or availability dataset. No such facts have been inferred. The report documents the exact outstanding inputs and labels this workstream incomplete.

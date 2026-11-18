@@ -1,6 +1,6 @@
 # Step 03 — Complete the data-quality and coverage audit
 
-**Status:** NOT STARTED  
+**Status:** GATE PASSED
 **Code:** `src/rrselect/data_quality.py`
 
 ## Goal
@@ -22,4 +22,4 @@ Data-quality report and reproducible inclusion/exclusion policy.
 Do not score records whose delivery, player or match context cannot be interpreted reliably.
 
 ## Log of work on this step
-_(append dated notes here and in PROJECT_LOG.md)_
+- 2026-11-18: Added and ran scripts/audit_data_quality.py, a dependency-free audit that checks exact duplicates, coverage, player display-name consistency, candidate delivery ordering, special matches, and provisional exclusions. Its full result is stored in work/data-quality-audit.json; the human-readable policy is in docs/data_quality_report.md.

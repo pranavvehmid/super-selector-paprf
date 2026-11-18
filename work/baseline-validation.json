@@ -1,0 +1,10 @@
+{
+  "rows_checked": {
+    "batter": 816,
+    "bowler": 587
+  },
+  "minimum_opportunities": 60,
+  "minimum_matches": 6,
+  "validation_error_count": 0,
+  "errors": []
+}

@@ -1,0 +1,697 @@
+{
+  "source_directory": "data/raw",
+  "file_quality": {
+    "ball_by_ball.csv": {
+      "row_count": 200999,
+      "column_count": 33,
+      "exact_duplicate_row_count": 0,
+      "blank_counts": {
+        "match_id": 0,
+        "innings": 0,
+        "overid": 0,
+        "over_ball_num": 0,
+        "innings_ball_num": 0,
+        "batting_team_id": 0,
+        "bowling_team_id": 0,
+        "striker_id": 0,
+        "striker_name": 0,
+        "non_striker_id": 0,
+        "non_striker_name": 0,
+        "bowler_id": 0,
+        "bowler_name": 0,
+        "batting_type": 0,
+        "bowling_type": 0,
+        "batting_order": 0,
+        "runs": 0,
+        "is_four": 0,
+        "is_six": 0,
+        "is_wicket": 0,
+        "dismissal_type_id": 190118,
+        "dismissal_type": 190118,
+        "dismissed_player_id": 190107,
+        "extras_type": 0,
+        "extras1_runs": 0,
+        "extras_2_runs": 0,
+        "pace_or_spin": 0,
+        "bowl_speed": 0,
+        "stroke": 12,
+        "delivery_style": 7,
+        "over_or_around": 407,
+        "on_or_off": 0,
+        "delivery_ist_time": 0
+      }
+    },
+    "matches.csv": {
+      "row_count": 883,
+      "column_count": 22,
+      "exact_duplicate_row_count": 0,
+      "blank_counts": {
+        "match_id": 0,
+        "comp_id": 0,
+        "match_number": 0,
+        "match_date": 0,
+        "stage": 0,
+        "venue_id": 0,
+        "venue_country": 0,
+        "home_team_id": 0,
+        "home_team": 0,
+        "away_team_id": 0,
+        "away_team": 0,
+        "home_team_captain_id": 44,
+        "away_team_captain_id": 45,
+        "toss_win_team_id": 15,
+        "toss_opted": 15,
+        "man_of_the_match": 0,
+        "first_inn_revised_overs": 858,
+        "second_inn_revised_overs": 858,
+        "revised_target": 860,
+        "knock_out": 0,
+        "win_team_id": 41,
+        "result": 0
+      }
+    },
+    "competitions.csv": {
+      "row_count": 141,
+      "column_count": 4,
+      "exact_duplicate_row_count": 0,
+      "blank_counts": {
+        "comp_id": 0,
+        "comp_name": 0,
+        "match_format": 0,
+        "season": 0
+      }
+    },
+    "teams.csv": {
+      "row_count": 353,
+      "column_count": 3,
+      "exact_duplicate_row_count": 0,
+      "blank_counts": {
+        "comp_id": 0,
+        "team_id": 0,
+        "team_name": 0
+      }
+    },
+    "playing_eleven.csv": {
+      "row_count": 28381,
+      "column_count": 9,
+      "exact_duplicate_row_count": 0,
+      "blank_counts": {
+        "match_id": 0,
+        "team_id": 0,
+        "player_id": 0,
+        "batting_order": 8678,
+        "is_played": 0,
+        "is_captain": 8667,
+        "is_wk": 8667,
+        "is_impact": 0,
+        "is_impact_off": 0
+      }
+    },
+    "competition_team_player_mapping.csv": {
+      "row_count": 6413,
+      "column_count": 6,
+      "exact_duplicate_row_count": 0,
+      "blank_counts": {
+        "comp_id": 0,
+        "comp_name": 0,
+        "team_id": 0,
+        "team_name": 0,
+        "player_id": 0,
+        "player_name": 0
+      }
+    }
+  },
+  "coverage": {
+    "ball_by_ball_match_ids": 867,
+    "matches_match_ids": 883,
+    "playing_eleven_match_ids": 880,
+    "matches_without_ball_by_ball": [
+      "31281",
+      "31284",
+      "31288",
+      "32610",
+      "32612",
+      "32622",
+      "36210",
+      "36564",
+      "38797",
+      "40761",
+      "41502",
+      "41503",
+      "42030",
+      "46008",
+      "48513",
+      "50189"
+    ],
+    "matches_without_playing_eleven": [
+      "36210",
+      "41503",
+      "48513"
+    ],
+    "playing_eleven_without_matches": [],
+    "ball_by_ball_without_matches": [],
+    "matches_without_competition": []
+  },
+  "special_matches": {
+    "abandoned_or_no_result": [
+      {
+        "match_id": "15410",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "15546",
+        "result": "No Result"
+      },
+      {
+        "match_id": "17765",
+        "result": "No Result"
+      },
+      {
+        "match_id": "20226",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "21406",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "28333",
+        "result": "No Result"
+      },
+      {
+        "match_id": "31281",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "31284",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "31288",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "31707",
+        "result": "No Result"
+      },
+      {
+        "match_id": "32610",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "32612",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "32622",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "38797",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "37353",
+        "result": "No Result"
+      },
+      {
+        "match_id": "36564",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "35424",
+        "result": "No Result"
+      },
+      {
+        "match_id": "36210",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "40737",
+        "result": "No Result"
+      },
+      {
+        "match_id": "40748",
+        "result": "No Result"
+      },
+      {
+        "match_id": "40751",
+        "result": "No Result"
+      },
+      {
+        "match_id": "40761",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "39983",
+        "result": "No Result"
+      },
+      {
+        "match_id": "39985",
+        "result": "No Result"
+      },
+      {
+        "match_id": "41502",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "41503",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "41975",
+        "result": "No Result"
+      },
+      {
+        "match_id": "41979",
+        "result": "No Result"
+      },
+      {
+        "match_id": "42030",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "45390",
+        "result": "No Result"
+      },
+      {
+        "match_id": "45908",
+        "result": "No Result"
+      },
+      {
+        "match_id": "46008",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "46311",
+        "result": "No Result"
+      },
+      {
+        "match_id": "46747",
+        "result": "No Result"
+      },
+      {
+        "match_id": "46749",
+        "result": "No Result"
+      },
+      {
+        "match_id": "47968",
+        "result": "No Result"
+      },
+      {
+        "match_id": "50136",
+        "result": "No Result"
+      },
+      {
+        "match_id": "48513",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "50189",
+        "result": "Match Abandoned"
+      },
+      {
+        "match_id": "50408",
+        "result": "No Result"
+      }
+    ],
+    "revised_overs_or_target": [
+      {
+        "match_id": "13612",
+        "first_inn_revised_overs": "",
+        "second_inn_revised_overs": "114",
+        "revised_target": "143"
+      },
+      {
+        "match_id": "15410",
+        "first_inn_revised_overs": "114",
+        "second_inn_revised_overs": "",
+        "revised_target": ""
+      },
+      {
+        "match_id": "15546",
+        "first_inn_revised_overs": "84",
+        "second_inn_revised_overs": "",
+        "revised_target": ""
+      },
+      {
+        "match_id": "16753",
+        "first_inn_revised_overs": "66",
+        "second_inn_revised_overs": "",
+        "revised_target": ""
+      },
+      {
+        "match_id": "16754",
+        "first_inn_revised_overs": "",
+        "second_inn_revised_overs": "42",
+        "revised_target": "56"
+      },
+      {
+        "match_id": "17395",
+        "first_inn_revised_overs": "48",
+        "second_inn_revised_overs": "48",
+        "revised_target": "91"
+      },
+      {
+        "match_id": "17765",
+        "first_inn_revised_overs": "72",
+        "second_inn_revised_overs": "72",
+        "revised_target": "130"
+      },
+      {
+        "match_id": "21586",
+        "first_inn_revised_overs": "",
+        "second_inn_revised_overs": "90",
+        "revised_target": "171"
+      },
+      {
+        "match_id": "19959",
+        "first_inn_revised_overs": "66",
+        "second_inn_revised_overs": "",
+        "revised_target": ""
+      },
+      {
+        "match_id": "21070",
+        "first_inn_revised_overs": "",
+        "second_inn_revised_overs": "48",
+        "revised_target": "104"
+      },
+      {
+        "match_id": "21071",
+        "first_inn_revised_overs": "102",
+        "second_inn_revised_overs": "102",
+        "revised_target": "203"
+      },
+      {
+        "match_id": "28046",
+        "first_inn_revised_overs": "",
+        "second_inn_revised_overs": "90",
+        "revised_target": "152"
+      },
+      {
+        "match_id": "29984",
+        "first_inn_revised_overs": "",
+        "second_inn_revised_overs": "60",
+        "revised_target": "126"
+      },
+      {
+        "match_id": "31707",
+        "first_inn_revised_overs": "30",
+        "second_inn_revised_overs": "",
+        "revised_target": ""
+      },
+      {
+        "match_id": "37354",
+        "first_inn_revised_overs": "42",
+        "second_inn_revised_overs": "42",
+        "revised_target": "94"
+      },
+      {
+        "match_id": "36098",
+        "first_inn_revised_overs": "78",
+        "second_inn_revised_overs": "78",
+        "revised_target": "116"
+      },
+      {
+        "match_id": "34428",
+        "first_inn_revised_overs": "",
+        "second_inn_revised_overs": "48",
+        "revised_target": "78"
+      },
+      {
+        "match_id": "36208",
+        "first_inn_revised_overs": "54",
+        "second_inn_revised_overs": "30",
+        "revised_target": "69"
+      },
+      {
+        "match_id": "40727",
+        "first_inn_revised_overs": "84",
+        "second_inn_revised_overs": "84",
+        "revised_target": "96"
+      },
+      {
+        "match_id": "40749",
+        "first_inn_revised_overs": "",
+        "second_inn_revised_overs": "114",
+        "revised_target": "147"
+      },
+      {
+        "match_id": "39809",
+        "first_inn_revised_overs": "90",
+        "second_inn_revised_overs": "90",
+        "revised_target": "136"
+      },
+      {
+        "match_id": "39983",
+        "first_inn_revised_overs": "54",
+        "second_inn_revised_overs": "",
+        "revised_target": ""
+      },
+      {
+        "match_id": "39985",
+        "first_inn_revised_overs": "108",
+        "second_inn_revised_overs": "",
+        "revised_target": ""
+      },
+      {
+        "match_id": "41851",
+        "first_inn_revised_overs": "60",
+        "second_inn_revised_overs": "60",
+        "revised_target": "125"
+      },
+      {
+        "match_id": "41975",
+        "first_inn_revised_overs": "108",
+        "second_inn_revised_overs": "",
+        "revised_target": ""
+      },
+      {
+        "match_id": "46311",
+        "first_inn_revised_overs": "54",
+        "second_inn_revised_overs": "54",
+        "revised_target": ""
+      },
+      {
+        "match_id": "46749",
+        "first_inn_revised_overs": "84",
+        "second_inn_revised_overs": "",
+        "revised_target": ""
+      },
+      {
+        "match_id": "50137",
+        "first_inn_revised_overs": "66",
+        "second_inn_revised_overs": "66",
+        "revised_target": "151"
+      },
+      {
+        "match_id": "50371",
+        "first_inn_revised_overs": "114",
+        "second_inn_revised_overs": "114",
+        "revised_target": "213"
+      },
+      {
+        "match_id": "48610",
+        "first_inn_revised_overs": "102",
+        "second_inn_revised_overs": "90",
+        "revised_target": "115"
+      },
+      {
+        "match_id": "48611",
+        "first_inn_revised_overs": "",
+        "second_inn_revised_overs": "102",
+        "revised_target": "168"
+      },
+      {
+        "match_id": "50190",
+        "first_inn_revised_overs": "90",
+        "second_inn_revised_overs": "90",
+        "revised_target": "103"
+      },
+      {
+        "match_id": "50408",
+        "first_inn_revised_overs": "54",
+        "second_inn_revised_overs": "54",
+        "revised_target": ""
+      },
+      {
+        "match_id": "54711",
+        "first_inn_revised_overs": "30",
+        "second_inn_revised_overs": "30",
+        "revised_target": "33"
+      }
+    ]
+  },
+  "ball_by_ball_ordering": {
+    "duplicate_match_innings_ball_coordinates": 0,
+    "raw_file_order_regressions_by_innings_ball_num": 0,
+    "non_integer_innings_ball_num": 0
+  },
+  "innings_coverage": {
+    "1": 105727,
+    "2": 95234,
+    "3": 25,
+    "4": 13
+  },
+  "provisional_primary_population": {
+    "exclude_match_ids": [
+      "13612",
+      "15410",
+      "15546",
+      "16753",
+      "16754",
+      "17395",
+      "17765",
+      "19959",
+      "20226",
+      "21070",
+      "21071",
+      "21406",
+      "21586",
+      "28046",
+      "28333",
+      "29984",
+      "31281",
+      "31284",
+      "31288",
+      "31707",
+      "32610",
+      "32612",
+      "32622",
+      "34428",
+      "34429",
+      "35424",
+      "36098",
+      "36208",
+      "36210",
+      "36564",
+      "37085",
+      "37086",
+      "37087",
+      "37088",
+      "37089",
+      "37090",
+      "37091",
+      "37092",
+      "37093",
+      "37094",
+      "37095",
+      "37096",
+      "37097",
+      "37098",
+      "37099",
+      "37353",
+      "37354",
+      "38797",
+      "39809",
+      "39983",
+      "39985",
+      "40725",
+      "40727",
+      "40737",
+      "40748",
+      "40749",
+      "40751",
+      "40761",
+      "41502",
+      "41503",
+      "41851",
+      "41975",
+      "41979",
+      "42030",
+      "45390",
+      "45512",
+      "45908",
+      "46008",
+      "46311",
+      "46747",
+      "46749",
+      "47968",
+      "48015",
+      "48016",
+      "48017",
+      "48018",
+      "48019",
+      "48020",
+      "48021",
+      "48022",
+      "48023",
+      "48024",
+      "48025",
+      "48026",
+      "48027",
+      "48028",
+      "48029",
+      "48513",
+      "48610",
+      "48611",
+      "50136",
+      "50137",
+      "50189",
+      "50190",
+      "50359",
+      "50371",
+      "50408",
+      "54711"
+    ],
+    "exclude_match_count": 98,
+    "candidate_match_count": 785,
+    "match_ids_with_innings_3_or_4": [
+      "34429",
+      "40725",
+      "45512",
+      "48027",
+      "48029",
+      "50359"
+    ],
+    "scope_excluded_match_ids": [
+      "37085",
+      "37086",
+      "37087",
+      "37088",
+      "37089",
+      "37090",
+      "37091",
+      "37092",
+      "37093",
+      "37094",
+      "37095",
+      "37096",
+      "37097",
+      "37098",
+      "37099",
+      "48015",
+      "48016",
+      "48017",
+      "48018",
+      "48019",
+      "48020",
+      "48021",
+      "48022",
+      "48023",
+      "48024",
+      "48025",
+      "48026",
+      "48027",
+      "48028",
+      "48029"
+    ],
+    "scope_excluded_competitions": [
+      {
+        "comp_id": "2670",
+        "comp_name": "Mens T20 Emerging Teams Asia Cup 2024"
+      },
+      {
+        "comp_id": "3289",
+        "comp_name": "Asia Cup Rising Stars 2025"
+      }
+    ],
+    "reason": "Special match conditions require Step 4 state-reconstruction validation before inclusion; non-IPL T20 competitions are sensitivity-only under D-001."
+  },
+  "player_name_variants": {
+    "mapping": {},
+    "striker": {},
+    "non_striker": {},
+    "bowler": {}
+  }
+}

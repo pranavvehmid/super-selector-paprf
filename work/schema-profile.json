@@ -1,0 +1,984 @@
+{
+  "data_directory": "C:\\Users\\ADMIN\\Documents\\Codex\\2026-11-18\\referenced-chatgpt-conversation-this-is-an\\data\\raw",
+  "files": [
+    {
+      "file": "ball_by_ball.csv",
+      "row_count": 200999,
+      "columns": [
+        {
+          "name": "match_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "13511",
+            "13511",
+            "13511"
+          ]
+        },
+        {
+          "name": "innings",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        {
+          "name": "overid",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        {
+          "name": "over_ball_num",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "innings_ball_num",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "batting_team_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "22",
+            "22",
+            "22"
+          ]
+        },
+        {
+          "name": "bowling_team_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "28",
+            "28",
+            "28"
+          ]
+        },
+        {
+          "name": "striker_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "1187",
+            "1187",
+            "1187"
+          ]
+        },
+        {
+          "name": "striker_name",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "Jason Roy",
+            "Jason Roy",
+            "Jason Roy"
+          ]
+        },
+        {
+          "name": "non_striker_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "6273",
+            "6273",
+            "6273"
+          ]
+        },
+        {
+          "name": "non_striker_name",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "Tom Banton",
+            "Tom Banton",
+            "Tom Banton"
+          ]
+        },
+        {
+          "name": "bowler_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "1772",
+            "1772",
+            "1772"
+          ]
+        },
+        {
+          "name": "bowler_name",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "Sheldon Cottrell",
+            "Sheldon Cottrell",
+            "Sheldon Cottrell"
+          ]
+        },
+        {
+          "name": "batting_type",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "RHB",
+            "RHB",
+            "RHB"
+          ]
+        },
+        {
+          "name": "bowling_type",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "Left-arm fast-medium",
+            "Left-arm fast-medium",
+            "Left-arm fast-medium"
+          ]
+        },
+        {
+          "name": "batting_order",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        {
+          "name": "runs",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "name": "is_four",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "false",
+            "false",
+            "false"
+          ]
+        },
+        {
+          "name": "is_six",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "false",
+            "false",
+            "false"
+          ]
+        },
+        {
+          "name": "is_wicket",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "false",
+            "false",
+            "false"
+          ]
+        },
+        {
+          "name": "dismissal_type_id",
+          "blank_count": 190118,
+          "observed_types": {
+            "blank": 190118,
+            "integer": 10881
+          },
+          "samples": [
+            "1",
+            "2",
+            "2"
+          ]
+        },
+        {
+          "name": "dismissal_type",
+          "blank_count": 190118,
+          "observed_types": {
+            "blank": 190118,
+            "text": 10881
+          },
+          "samples": [
+            "Bowled",
+            "Caught",
+            "Caught"
+          ]
+        },
+        {
+          "name": "dismissed_player_id",
+          "blank_count": 190107,
+          "observed_types": {
+            "blank": 190107,
+            "integer": 10892
+          },
+          "samples": [
+            "1187",
+            "6273",
+            "1596"
+          ]
+        },
+        {
+          "name": "extras_type",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "None",
+            "None",
+            "None"
+          ]
+        },
+        {
+          "name": "extras1_runs",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "name": "extras_2_runs",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 200999
+          },
+          "samples": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "name": "pace_or_spin",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "Pace",
+            "Pace",
+            "Pace"
+          ]
+        },
+        {
+          "name": "bowl_speed",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 107534,
+            "decimal": 93465
+          },
+          "samples": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "name": "stroke",
+          "blank_count": 12,
+          "observed_types": {
+            "text": 200987,
+            "blank": 12
+          },
+          "samples": [
+            "Cover Drive",
+            "Flick",
+            "Square Cut"
+          ]
+        },
+        {
+          "name": "delivery_style",
+          "blank_count": 7,
+          "observed_types": {
+            "text": 200992,
+            "blank": 7
+          },
+          "samples": [
+            "Inswing",
+            "Inswing",
+            "Inswing"
+          ]
+        },
+        {
+          "name": "over_or_around",
+          "blank_count": 407,
+          "observed_types": {
+            "text": 200592,
+            "blank": 407
+          },
+          "samples": [
+            "Over",
+            "Over",
+            "Over"
+          ]
+        },
+        {
+          "name": "on_or_off",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "Off-side",
+            "On-side",
+            "Off-side"
+          ]
+        },
+        {
+          "name": "delivery_ist_time",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 200999
+          },
+          "samples": [
+            "2022-01-23 00:00:00 UTC",
+            "2022-01-23 00:00:00 UTC",
+            "2022-01-23 00:00:00 UTC"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "matches.csv",
+      "row_count": 883,
+      "columns": [
+        {
+          "name": "match_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 883
+          },
+          "samples": [
+            "13511",
+            "13512",
+            "13513"
+          ]
+        },
+        {
+          "name": "comp_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 883
+          },
+          "samples": [
+            "1331",
+            "1331",
+            "1331"
+          ]
+        },
+        {
+          "name": "match_number",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 883
+          },
+          "samples": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "match_date",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 883
+          },
+          "samples": [
+            "2022-01-22",
+            "2022-01-23",
+            "2022-01-26"
+          ]
+        },
+        {
+          "name": "stage",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 883
+          },
+          "samples": [
+            "League",
+            "League",
+            "League"
+          ]
+        },
+        {
+          "name": "venue_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 883
+          },
+          "samples": [
+            "54",
+            "54",
+            "54"
+          ]
+        },
+        {
+          "name": "venue_country",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 883
+          },
+          "samples": [
+            "West Indies",
+            "West Indies",
+            "West Indies"
+          ]
+        },
+        {
+          "name": "home_team_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 883
+          },
+          "samples": [
+            "28",
+            "28",
+            "28"
+          ]
+        },
+        {
+          "name": "home_team",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 883
+          },
+          "samples": [
+            "West Indies",
+            "West Indies",
+            "West Indies"
+          ]
+        },
+        {
+          "name": "away_team_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 883
+          },
+          "samples": [
+            "22",
+            "22",
+            "22"
+          ]
+        },
+        {
+          "name": "away_team",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 883
+          },
+          "samples": [
+            "England",
+            "England",
+            "England"
+          ]
+        },
+        {
+          "name": "home_team_captain_id",
+          "blank_count": 44,
+          "observed_types": {
+            "blank": 44,
+            "integer": 839
+          },
+          "samples": [
+            "494",
+            "494",
+            "494"
+          ]
+        },
+        {
+          "name": "away_team_captain_id",
+          "blank_count": 45,
+          "observed_types": {
+            "blank": 45,
+            "integer": 838
+          },
+          "samples": [
+            "478",
+            "1596",
+            "1596"
+          ]
+        },
+        {
+          "name": "toss_win_team_id",
+          "blank_count": 15,
+          "observed_types": {
+            "integer": 868,
+            "blank": 15
+          },
+          "samples": [
+            "28",
+            "28",
+            "22"
+          ]
+        },
+        {
+          "name": "toss_opted",
+          "blank_count": 15,
+          "observed_types": {
+            "text": 868,
+            "blank": 15
+          },
+          "samples": [
+            "Fielding",
+            "Fielding",
+            "Fielding"
+          ]
+        },
+        {
+          "name": "man_of_the_match",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 883
+          },
+          "samples": [
+            "0",
+            "0",
+            "4986"
+          ]
+        },
+        {
+          "name": "first_inn_revised_overs",
+          "blank_count": 858,
+          "observed_types": {
+            "blank": 858,
+            "integer": 25
+          },
+          "samples": [
+            "114",
+            "84",
+            "66"
+          ]
+        },
+        {
+          "name": "second_inn_revised_overs",
+          "blank_count": 858,
+          "observed_types": {
+            "blank": 858,
+            "integer": 25
+          },
+          "samples": [
+            "114",
+            "42",
+            "48"
+          ]
+        },
+        {
+          "name": "revised_target",
+          "blank_count": 860,
+          "observed_types": {
+            "blank": 860,
+            "integer": 23
+          },
+          "samples": [
+            "143",
+            "56",
+            "91"
+          ]
+        },
+        {
+          "name": "knock_out",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 883
+          },
+          "samples": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "name": "win_team_id",
+          "blank_count": 41,
+          "observed_types": {
+            "integer": 842,
+            "blank": 41
+          },
+          "samples": [
+            "28",
+            "22",
+            "28"
+          ]
+        },
+        {
+          "name": "result",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 883
+          },
+          "samples": [
+            "West Indies Won by 9 Wickets",
+            "England Won by 1 Run",
+            "West Indies Won by 20 runs"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "competitions.csv",
+      "row_count": 141,
+      "columns": [
+        {
+          "name": "comp_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 141
+          },
+          "samples": [
+            "3395",
+            "3405",
+            "3465"
+          ]
+        },
+        {
+          "name": "comp_name",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 141
+          },
+          "samples": [
+            "South Africa in New Zealand T20I Series 2026",
+            "Afghanistan v Sri Lanka T20I Series 2026",
+            "India in Zimbabwe T20I Series 2026"
+          ]
+        },
+        {
+          "name": "match_format",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 141
+          },
+          "samples": [
+            "T20I",
+            "T20I",
+            "T20I"
+          ]
+        },
+        {
+          "name": "season",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 136,
+            "text": 5
+          },
+          "samples": [
+            "2026",
+            "2026",
+            "2026"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "teams.csv",
+      "row_count": 353,
+      "columns": [
+        {
+          "name": "comp_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 353
+          },
+          "samples": [
+            "1331",
+            "1331",
+            "1335"
+          ]
+        },
+        {
+          "name": "team_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 353
+          },
+          "samples": [
+            "22",
+            "28",
+            "18"
+          ]
+        },
+        {
+          "name": "team_name",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 353
+          },
+          "samples": [
+            "England",
+            "West Indies",
+            "India"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "playing_eleven.csv",
+      "row_count": 28381,
+      "columns": [
+        {
+          "name": "match_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 28381
+          },
+          "samples": [
+            "13511",
+            "13511",
+            "13511"
+          ]
+        },
+        {
+          "name": "team_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 28381
+          },
+          "samples": [
+            "22",
+            "22",
+            "22"
+          ]
+        },
+        {
+          "name": "player_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 28381
+          },
+          "samples": [
+            "1187",
+            "6273",
+            "1210"
+          ]
+        },
+        {
+          "name": "batting_order",
+          "blank_count": 8678,
+          "observed_types": {
+            "integer": 19703,
+            "blank": 8678
+          },
+          "samples": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "is_played",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 28381
+          },
+          "samples": [
+            "true",
+            "true",
+            "true"
+          ]
+        },
+        {
+          "name": "is_captain",
+          "blank_count": 8667,
+          "observed_types": {
+            "text": 19714,
+            "blank": 8667
+          },
+          "samples": [
+            "false",
+            "false",
+            "false"
+          ]
+        },
+        {
+          "name": "is_wk",
+          "blank_count": 8667,
+          "observed_types": {
+            "text": 19714,
+            "blank": 8667
+          },
+          "samples": [
+            "false",
+            "false",
+            "false"
+          ]
+        },
+        {
+          "name": "is_impact",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 28381
+          },
+          "samples": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "name": "is_impact_off",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 28381
+          },
+          "samples": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "competition_team_player_mapping.csv",
+      "row_count": 6413,
+      "columns": [
+        {
+          "name": "comp_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 6413
+          },
+          "samples": [
+            "1331",
+            "1331",
+            "1331"
+          ]
+        },
+        {
+          "name": "comp_name",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 6413
+          },
+          "samples": [
+            "England in West Indies T20I Series 2022",
+            "England in West Indies T20I Series 2022",
+            "England in West Indies T20I Series 2022"
+          ]
+        },
+        {
+          "name": "team_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 6413
+          },
+          "samples": [
+            "22",
+            "22",
+            "22"
+          ]
+        },
+        {
+          "name": "team_name",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 6413
+          },
+          "samples": [
+            "England",
+            "England",
+            "England"
+          ]
+        },
+        {
+          "name": "player_id",
+          "blank_count": 0,
+          "observed_types": {
+            "integer": 6413
+          },
+          "samples": [
+            "478",
+            "479",
+            "722"
+          ]
+        },
+        {
+          "name": "player_name",
+          "blank_count": 0,
+          "observed_types": {
+            "text": 6413
+          },
+          "samples": [
+            "Eoin Morgan",
+            "Adil Rashid",
+            "Liam Dawson"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Step 07 — Establish each player's normal-performance baseline
 
-**Status:** NOT STARTED  
+**Status:** GATE PASSED
 **Code:** `src/rrselect/baselines.py`
 
 ## Goal
@@ -19,4 +19,4 @@ Player-level baseline and pressure tables with context definitions.
 Comparison is like-for-like enough to interpret fairly.
 
 ## Log of work on this step
-_(append dated notes here and in PROJECT_LOG.md)_
+- 2026-11-18: Built ordinary-versus-pressure player baselines. Eligibility requires 60 opportunities and six matches in each context; 176 batters and 219 bowlers qualify. Independent formula and eligibility checks reported zero errors.

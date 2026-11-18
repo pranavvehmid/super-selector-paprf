@@ -1,0 +1,40 @@
+{
+  "version": "v1",
+  "method": "Lens A pressure-versus-ordinary reliability signal",
+  "scope": "IPL and T20I only; 782 validated matches after documented exclusions",
+  "ranking_rule": "Descending shrinkage-protected reliability_signal",
+  "shrinkage_prior_pressure_balls": 60,
+  "top_n": 10,
+  "files": {
+    "batters": {
+      "path": "outputs/rankings/lens_a_batters_v1.csv",
+      "player_ids_in_rank_order": [
+        "2633",
+        "143",
+        "8",
+        "2921",
+        "1924",
+        "2756",
+        "796",
+        "2214",
+        "7741",
+        "2485"
+      ]
+    },
+    "bowlers": {
+      "path": "outputs/rankings/lens_a_bowlers_v1.csv",
+      "player_ids_in_rank_order": [
+        "4237",
+        "35318",
+        "6643",
+        "2490",
+        "25132",
+        "22471",
+        "4229",
+        "7327",
+        "34485",
+        "2878"
+      ]
+    }
+  }
+}

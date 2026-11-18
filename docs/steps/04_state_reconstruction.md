@@ -1,6 +1,6 @@
 # Step 04 — Reconstruct each innings and the pre-delivery match state
 
-**Status:** NOT STARTED  
+**Status:** GATE PASSED
 **Code:** `src/rrselect/state.py`
 
 ## Goal
@@ -21,6 +21,11 @@ Validated ball-level table with reconstructed PRE-delivery match state.
 
 ## Decision gate
 No pressure label until innings state and legal-ball logic pass validation.
+
+## Log of work on this step
+- 2026-11-18: Added and ran scripts/validate_delivery_accounting.py against the 813-match provisional population. It confirms candidate delivery ordering and documents unsafe shortcuts, but does not establish the required accounting semantics. See docs/delivery_accounting_validation.md and work/delivery-accounting-validation.json.
+- 2026-11-18: Checked the supplied archive and project records for a data-provider codebook; none was present. The field-level accounting rule remains blocked pending a provider definition or authorised scorecard reconciliation.
+- 2026-11-18: Reconciled the state rules against source structure and outcomes. Team runs match all 394 ordinary run-margin results; the inferred legal-ball rule passes all retained complete overs; independent reconstruction validation found zero row-level errors. Held out malformed-over matches 14130, 14164, and 41509. After restricting primary analysis to IPL and T20I, generated data/interim/pre_delivery_state.csv for 782 matches.
 
 ## Log of work on this step
 _(append dated notes here and in PROJECT_LOG.md)_
