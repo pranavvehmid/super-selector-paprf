@@ -93,7 +93,7 @@ def make_events(data, metadata, audit):
         yield day, family, india, match, innings, phase, r["pressure_band"], "bowler", phase + "_bowler", bowler, striker, r["batting_team_id"], r["batting_type"], value, names[bowler]
 
 
-def calculate(data, metadata):
+def calculate(data, metadata, observe=None):
     overall, parents, contexts, people, teams = [defaultdict(Pool) for _ in range(5)]
     profiles, audit, losses, dates, names = defaultdict(Summary), Counter(), defaultdict(Pool), defaultdict(list), {}
     for event in make_events(data, metadata, audit):
@@ -127,6 +127,8 @@ def calculate(data, metadata):
                                 0, [6 if discipline == "batter" else 8, 1, 1, 1, 1])
             residual = None if day < WARMUP_END else actual - predicted
             if residual is not None:
+                if observe is not None:
+                    observe(role, player, match, residual)
                 for model, expected in (("context", context_mean), ("opposition", predicted)):
                     losses[discipline, model].add((actual - expected) ** 2)
                 tier_counts[discipline, tier] += 1
@@ -262,7 +264,7 @@ def plot_trends(profiles, ranked, trend_rows):
     plt.close(fig)
 
 
-def main():
+def read_inputs():
     match_file, comp_file = ROOT / "data/raw/matches.csv", ROOT / "data/raw/competitions.csv"
     competitions = {r["comp_id"]: r for r in rows(comp_file)}
     metadata = {r["match_id"]: (r["match_date"], "T20I" if competitions[r["comp_id"]]["match_format"] == "T20I" else
@@ -272,6 +274,11 @@ def main():
     matches = {r["match_id"] for r in data}
     if any(metadata[m][1] == "other" for m in matches):
         raise ValueError("Unexpected competition in the retained population")
+    return data, metadata, matches, (INPUT, match_file, comp_file)
+
+
+def main():
+    data, metadata, matches, source = read_inputs()
     profiles, names, audit, losses, counts = calculate(data, metadata)
     ledger, top, ranked = rank_roles(profiles, names)
     save("paprf_role_profile_splits.csv", [split_row(k, v, names) for k, v in sorted(profiles.items())])
@@ -279,7 +286,7 @@ def main():
     save("paprf_role_profile_trends.csv", trend_rows)
     save("paprf_role_profile_scores.csv", ledger)
     save("../rankings/paprf_contextual_role_top10_v1.csv", top)
-    stats = dict(input_hashes={p.relative_to(ROOT).as_posix(): digest(p) for p in (INPUT, match_file, comp_file)},
+    stats = dict(input_hashes={p.relative_to(ROOT).as_posix(): digest(p) for p in source},
                  matches=len(matches), warmup_matches=sum(metadata[m][0] < WARMUP_END for m in matches),
                  scored_period_start=WARMUP_END, audit=dict(audit), weights=WEIGHTS,
                  opponent_tier_counts=[dict(discipline=d, tier=t, balls=n) for (d, t), n in sorted(counts.items())],

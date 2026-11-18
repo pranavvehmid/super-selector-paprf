@@ -74,3 +74,5 @@ The trend ledger has 173 qualifying player-role records, 97 with three scored ye
 | Audit | Earlier-date forecast error and overlap across weights, geography and boundary treatment. Player-level future forecast accuracy and stability remain untested for this role model. |
 
 Run `python scripts/build_paprf_role_profiles.py`. See the [seven ordered top tens](../../outputs/rankings/paprf_contextual_role_top10_v1.csv), [player and scenario scores](../../outputs/tables/paprf_role_profile_scores.csv), [annual, phase, pressure, style and geography splits](../../outputs/tables/paprf_role_profile_splits.csv), [trend ledger](../../outputs/tables/paprf_role_profile_trends.csv), [audit JSON](../../work/paprf_contextual_roles.json), [correlation heatmaps](../../outputs/figures/paprf_role_component_heatmaps.png) and [illustrative annual trajectories](../../outputs/figures/paprf_role_annual_examples.png).
+
+The [follow-up validation](paprf_role_profile_validation.md) adds whole-match score uncertainty and two later-window comparisons on common eligible players.

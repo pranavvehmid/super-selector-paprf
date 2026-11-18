@@ -197,14 +197,28 @@ function renderResearch() {
 }
 
 function renderRoleProfiles() {
-  const stats = data.role_profiles.roles[$("profile-role").value];
-  const weights = data.role_profiles.weights[$("profile-role").value];
+  const role = $("profile-role").value;
+  const stats = data.role_profiles.roles[role];
+  const validation = data.role_validation.roles[role];
+  const resamples = new Map(validation.historical_top10.map((row) => [row.player_id, row.top10_share]));
+  const weights = data.role_profiles.weights[role];
   $("profile-summary").textContent = `${stats.primary.eligible} eligible · weights ${weights.map((w) => fmt(w * 100, 0) + "%").join(" / ")} · India sensitivity ${stats.india_1_5.shared_with_primary}/10 · equal weights ${stats.equal_weights.shared_with_primary}/10 · boundary residualisation ${stats.orthogonal_boundary.shared_with_primary}/10`;
-  const batting = $("profile-role").value.endsWith("_bowler") === false;
+  const batting = !role.endsWith("_bowler");
   $("profile-results").replaceChildren(table(["Rank", "Player", "Role score", "Scored balls", "India balls",
-    batting ? "Explosiveness" : "Legal-ball runs above expectation"],
+    batting ? "Explosiveness" : "Legal-ball runs above expectation", "Top-ten resample share"],
     stats.top10.map((row) => [row.rank, row.name, fmt(row.score, 6), row.scored_balls, row.india_scored_balls,
-      fmt(batting ? row.explosiveness : row.rate_residual, 4)])));
+      fmt(batting ? row.explosiveness : row.rate_residual, 4), `${fmt(resamples.get(row.player_id) * 100, 1)}%`])));
+  $("profile-validation").replaceChildren(table(
+    ["Test start", "Common players", "Primary ρ", "Residualised boundary ρ", "Runs-only ρ", "Volume ρ", "Primary leaders assessable"],
+    validation.forward.map((window) => {
+      const keys = ["primary", "orthogonal_boundary", "runs_only", "volume"];
+      const correlations = keys.map((key) => {
+        const rho = window.comparisons[key].spearman;
+        return rho === null ? "—" : fmt(rho, 3);
+      });
+      const primary = window.comparisons.primary;
+      return [window.start, window.common, ...correlations, `${primary.earlier_top10_assessable}/${primary.earlier_top10_size}`];
+    })));
 }
 
 if (!data) {

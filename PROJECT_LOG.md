@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Test clustered rank uncertainty and future-period predictive stability of the contextual role profiles, including residualised boundaries.
+**Next action:** Audit role-specific support and opposition transfers on fresh samples.
 
 ---
 
@@ -240,3 +240,9 @@
 - Files: scripts/build_paprf_role_profiles.py,docs/methodology/paprf_contextual_role_profiles.md,outputs/rankings/paprf_contextual_role_top10_v1.csv,outputs/tables/paprf_role_profile_splits.csv,outputs/tables/paprf_role_profile_trends.csv,outputs/tables/paprf_role_profile_scores.csv,work/paprf_contextual_roles.json,dashboard/
 - Decision: Treat contextual role effectiveness as a separate scored construct. Report modest run-MSE changes, predictor overlap and unsupported age and venue claims explicitly.
 - Next: Test clustered rank uncertainty and future-period predictive stability of the contextual role profiles, including residualised boundaries.
+
+## 2026-11-18 — Replayed all 70 contextual role leaderboard scores, tested four training-only ra (step: 9)
+- Replayed all 70 contextual role leaderboard scores, tested four training-only ranking methods in two forward windows, and quantified historical rank uncertainty with 500 family-stratified match resamples. Independently verified 96 correlations and placement totals for all 35000 resampled top-ten positions. Added dashboard coverage and uncertainty.
+- Files: scripts/validate_paprf_role_profiles.py,docs/methodology/paprf_role_profile_validation.md,outputs/tables/paprf_role_forward_player_ledger.csv,outputs/tables/paprf_role_bootstrap_ledger.csv,work/paprf_role_profile_validation.json,dashboard/
+- Decision: Keep the role lists as historical references. Further test runs-only middle bowling, and report late-entrant predictive evidence as unavailable at the declared support gate.
+- Next: Audit role-specific support and opposition transfers on fresh samples.

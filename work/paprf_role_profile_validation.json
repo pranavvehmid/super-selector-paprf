@@ -1,0 +1,1565 @@
+{
+  "source": {
+    "data/processed/metric_attribution_deliveries.csv": "66e7560eab6edac418b89fb2aa2f372f90616ec32283d565d28714ce26096499",
+    "data/raw/matches.csv": "bb100ab84b8b9a15160c1f2315cf675210131a30e779ec5079fd5403dcf56eef",
+    "data/raw/competitions.csv": "507ceb7189f972d4e4f299ddcfc97f3c3247af1913f6291106f161fa8353fd9b"
+  },
+  "seed": 20261118,
+  "draws": 500,
+  "roles": {
+    "opener": {
+      "forward": [
+        {
+          "start": "2024-05-08",
+          "stop_exclusive": "2025-09-06",
+          "train": 41,
+          "test": 46,
+          "common": 22,
+          "means": [
+            0.10370177956459369,
+            0.026856412279421746,
+            0.006320775312907825
+          ],
+          "sd": [
+            0.18346593905112882,
+            0.039299418551326355,
+            0.019760521925342237
+          ],
+          "boundary_slope": 0.1952036560563426,
+          "comparisons": {
+            "primary": {
+              "spearman": 0.5821569734613213,
+              "runs_spearman": 0.5878035008469791,
+              "top10_overlap": 7,
+              "earlier_top10_assessable": 6,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": 0.5482778091473743,
+              "runs_spearman": 0.5798983625070582,
+              "top10_overlap": 8,
+              "earlier_top10_assessable": 6,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": 0.5087521174477696,
+              "runs_spearman": 0.5663466967814794,
+              "top10_overlap": 7,
+              "earlier_top10_assessable": 6,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": 0.16271189037503644,
+              "runs_spearman": 0.08926555096963805,
+              "top10_overlap": 6,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            }
+          }
+        },
+        {
+          "start": "2025-09-06",
+          "stop_exclusive": "9999-12-31",
+          "train": 70,
+          "test": 46,
+          "common": 39,
+          "means": [
+            0.08942753603507785,
+            0.02010474725833994,
+            0.00410335652573895
+          ],
+          "sd": [
+            0.19901349907526655,
+            0.044431073163049235,
+            0.016631420783780992
+          ],
+          "boundary_slope": 0.21027834782341048,
+          "comparisons": {
+            "primary": {
+              "spearman": 0.39615384615384613,
+              "runs_spearman": 0.39979757085020245,
+              "top10_overlap": 6,
+              "earlier_top10_assessable": 8,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": 0.32408906882591093,
+              "runs_spearman": 0.3453441295546559,
+              "top10_overlap": 4,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": 0.4524291497975709,
+              "runs_spearman": 0.48502024291497975,
+              "top10_overlap": 6,
+              "earlier_top10_assessable": 8,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": 0.14696356275303643,
+              "runs_spearman": 0.11578947368421053,
+              "top10_overlap": 4,
+              "earlier_top10_assessable": 9,
+              "earlier_top10_size": 10
+            }
+          }
+        }
+      ],
+      "historical_top10": [
+        {
+          "role": "opener",
+          "player_id": "50284",
+          "name": "Vaibhav Sooryavanshi",
+          "point_rank": 1,
+          "valid_draws": 500,
+          "top10_draws": 499,
+          "top10_share": 0.998,
+          "p10": 1.4858835000000001,
+          "p50": 1.7828505,
+          "p90": 1.9623683
+        },
+        {
+          "role": "opener",
+          "player_id": "6281",
+          "name": "Abhishek Sharma",
+          "point_rank": 2,
+          "valid_draws": 500,
+          "top10_draws": 500,
+          "top10_share": 1.0,
+          "p10": 1.2921613,
+          "p50": 1.6480225,
+          "p90": 1.992812
+        },
+        {
+          "role": "opener",
+          "player_id": "4847",
+          "name": "Finn Allen",
+          "point_rank": 3,
+          "valid_draws": 500,
+          "top10_draws": 484,
+          "top10_share": 0.968,
+          "p10": 0.8934867,
+          "p50": 1.3210164999999998,
+          "p90": 1.7253705000000001
+        },
+        {
+          "role": "opener",
+          "player_id": "5553",
+          "name": "Phil Salt",
+          "point_rank": 4,
+          "valid_draws": 500,
+          "top10_draws": 481,
+          "top10_share": 0.962,
+          "p10": 0.8053723,
+          "p50": 1.1278005000000002,
+          "p90": 1.4162352
+        },
+        {
+          "role": "opener",
+          "player_id": "2367",
+          "name": "Travis Head",
+          "point_rank": 5,
+          "valid_draws": 500,
+          "top10_draws": 389,
+          "top10_share": 0.778,
+          "p10": 0.49506269999999997,
+          "p50": 0.9337055,
+          "p90": 1.3922305000000001
+        },
+        {
+          "role": "opener",
+          "player_id": "25669",
+          "name": "Priyansh Arya",
+          "point_rank": 6,
+          "valid_draws": 500,
+          "top10_draws": 297,
+          "top10_share": 0.594,
+          "p10": 0.10468910000000002,
+          "p50": 0.764509,
+          "p90": 1.3670117000000002
+        },
+        {
+          "role": "opener",
+          "player_id": "3700",
+          "name": "Tim Seifert",
+          "point_rank": 7,
+          "valid_draws": 500,
+          "top10_draws": 295,
+          "top10_share": 0.59,
+          "p10": 0.2629705,
+          "p50": 0.7633475000000001,
+          "p90": 1.1848555000000003
+        },
+        {
+          "role": "opener",
+          "player_id": "4369",
+          "name": "Shai Hope",
+          "point_rank": 8,
+          "valid_draws": 500,
+          "top10_draws": 218,
+          "top10_share": 0.436,
+          "p10": 0.15010010000000001,
+          "p50": 0.6159509999999999,
+          "p90": 1.0898066
+        },
+        {
+          "role": "opener",
+          "player_id": "781",
+          "name": "Sunil Narine",
+          "point_rank": 9,
+          "valid_draws": 500,
+          "top10_draws": 226,
+          "top10_share": 0.452,
+          "p10": 0.07277520000000004,
+          "p50": 0.651885,
+          "p90": 1.0803147000000002
+        },
+        {
+          "role": "opener",
+          "player_id": "6819",
+          "name": "Yashasvi Jaiswal",
+          "point_rank": 10,
+          "valid_draws": 500,
+          "top10_draws": 185,
+          "top10_share": 0.37,
+          "p10": 0.31056720000000004,
+          "p50": 0.6169125,
+          "p90": 0.8915826
+        }
+      ]
+    },
+    "top_order": {
+      "forward": [
+        {
+          "start": "2024-05-08",
+          "stop_exclusive": "2025-09-06",
+          "train": 43,
+          "test": 50,
+          "common": 27,
+          "means": [
+            0.06359579376223827,
+            0.011604396644604885,
+            0.0025847014672125946
+          ],
+          "sd": [
+            0.21172411045212786,
+            0.045543649583455574,
+            0.0219999828082881
+          ],
+          "boundary_slope": 0.2023737406025721,
+          "comparisons": {
+            "primary": {
+              "spearman": 0.3797313797313797,
+              "runs_spearman": 0.33577533577533575,
+              "top10_overlap": 6,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": 0.3064713064713065,
+              "runs_spearman": 0.31074481074481075,
+              "top10_overlap": 6,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": 0.3663003663003663,
+              "runs_spearman": 0.29365079365079366,
+              "top10_overlap": 6,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": -0.040293040293040296,
+              "runs_spearman": -0.033577533577533576,
+              "top10_overlap": 4,
+              "earlier_top10_assessable": 6,
+              "earlier_top10_size": 10
+            }
+          }
+        },
+        {
+          "start": "2025-09-06",
+          "stop_exclusive": "9999-12-31",
+          "train": 77,
+          "test": 49,
+          "common": 30,
+          "means": [
+            0.04004344837621988,
+            0.006889744641403516,
+            0.0012877877433170172
+          ],
+          "sd": [
+            0.17217975723256768,
+            0.037042349080588455,
+            0.02044572156473269
+          ],
+          "boundary_slope": 0.19787295864951304,
+          "comparisons": {
+            "primary": {
+              "spearman": 0.19199110122358176,
+              "runs_spearman": 0.13459399332591768,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 6,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": 0.015350389321468299,
+              "runs_spearman": -0.03670745272525028,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 6,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": 0.24983314794215794,
+              "runs_spearman": 0.2689655172413793,
+              "top10_overlap": 5,
+              "earlier_top10_assessable": 5,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": -0.010456062291434927,
+              "runs_spearman": -0.025583982202447165,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            }
+          }
+        }
+      ],
+      "historical_top10": [
+        {
+          "role": "top_order",
+          "player_id": "6280",
+          "name": "Harry Brook",
+          "point_rank": 1,
+          "valid_draws": 500,
+          "top10_draws": 467,
+          "top10_share": 0.934,
+          "p10": 0.8168683,
+          "p50": 1.301873,
+          "p90": 1.7625631
+        },
+        {
+          "role": "top_order",
+          "player_id": "838",
+          "name": "Glenn Maxwell",
+          "point_rank": 2,
+          "valid_draws": 500,
+          "top10_draws": 304,
+          "top10_share": 0.608,
+          "p10": 0.1735529,
+          "p50": 0.852746,
+          "p90": 1.2964035
+        },
+        {
+          "role": "top_order",
+          "player_id": "1699",
+          "name": "Suryakumar Yadav",
+          "point_rank": 3,
+          "valid_draws": 500,
+          "top10_draws": 314,
+          "top10_share": 0.628,
+          "p10": 0.513749,
+          "p50": 0.8003674999999999,
+          "p90": 1.0827937
+        },
+        {
+          "role": "top_order",
+          "player_id": "4736",
+          "name": "Josh Inglis",
+          "point_rank": 4,
+          "valid_draws": 500,
+          "top10_draws": 241,
+          "top10_share": 0.482,
+          "p10": 0.17032450000000002,
+          "p50": 0.6945545,
+          "p90": 1.1958297
+        },
+        {
+          "role": "top_order",
+          "player_id": "4117",
+          "name": "Ishan Kishan",
+          "point_rank": 5,
+          "valid_draws": 500,
+          "top10_draws": 254,
+          "top10_share": 0.508,
+          "p10": 0.3673631,
+          "p50": 0.7443074999999999,
+          "p90": 1.0521523000000002
+        },
+        {
+          "role": "top_order",
+          "player_id": "818",
+          "name": "Mitchell Marsh",
+          "point_rank": 6,
+          "valid_draws": 500,
+          "top10_draws": 231,
+          "top10_share": 0.462,
+          "p10": 0.07874360000000001,
+          "p50": 0.6918455,
+          "p90": 1.1419706000000003
+        },
+        {
+          "role": "top_order",
+          "player_id": "23311",
+          "name": "Jacob Bethell",
+          "point_rank": 7,
+          "valid_draws": 500,
+          "top10_draws": 165,
+          "top10_share": 0.33,
+          "p10": 0.0803002,
+          "p50": 0.578716,
+          "p90": 1.003545
+        },
+        {
+          "role": "top_order",
+          "player_id": "6396",
+          "name": "Tim David",
+          "point_rank": 8,
+          "valid_draws": 500,
+          "top10_draws": 189,
+          "top10_share": 0.378,
+          "p10": -0.13759129999999992,
+          "p50": 0.5594465,
+          "p90": 1.1521581000000003
+        },
+        {
+          "role": "top_order",
+          "player_id": "4260",
+          "name": "Heinrich Klaasen",
+          "point_rank": 9,
+          "valid_draws": 500,
+          "top10_draws": 175,
+          "top10_share": 0.35,
+          "p10": 0.1409147,
+          "p50": 0.5981955000000001,
+          "p90": 1.0288791000000002
+        },
+        {
+          "role": "top_order",
+          "player_id": "3647",
+          "name": "Shreyas Iyer",
+          "point_rank": 10,
+          "valid_draws": 500,
+          "top10_draws": 154,
+          "top10_share": 0.308,
+          "p10": 0.2725764,
+          "p50": 0.6107175,
+          "p90": 0.9467623000000001
+        }
+      ]
+    },
+    "middle_lower": {
+      "forward": [
+        {
+          "start": "2024-05-08",
+          "stop_exclusive": "2025-09-06",
+          "train": 44,
+          "test": 43,
+          "common": 25,
+          "means": [
+            0.055960820114145673,
+            0.006004965799703718,
+            -0.004834386877027189
+          ],
+          "sd": [
+            0.17796261838407332,
+            0.03825317921131924,
+            0.01820152840652318
+          ],
+          "boundary_slope": 0.1981612507041871,
+          "comparisons": {
+            "primary": {
+              "spearman": 0.3523076923076923,
+              "runs_spearman": 0.3669230769230769,
+              "top10_overlap": 4,
+              "earlier_top10_assessable": 5,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": 0.3676923076923077,
+              "runs_spearman": 0.3861538461538462,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 4,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": 0.39384615384615385,
+              "runs_spearman": 0.3892307692307692,
+              "top10_overlap": 5,
+              "earlier_top10_assessable": 4,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": 0.23658396282993532,
+              "runs_spearman": 0.2515868482776873,
+              "top10_overlap": 5,
+              "earlier_top10_assessable": 9,
+              "earlier_top10_size": 10
+            }
+          }
+        },
+        {
+          "start": "2025-09-06",
+          "stop_exclusive": "9999-12-31",
+          "train": 86,
+          "test": 45,
+          "common": 33,
+          "means": [
+            0.030951549700423915,
+            0.004842253126775315,
+            0.0017915776835926082
+          ],
+          "sd": [
+            0.20754107878188396,
+            0.04136709103137315,
+            0.020512962269945825
+          ],
+          "boundary_slope": 0.18307543071624582,
+          "comparisons": {
+            "primary": {
+              "spearman": -0.22760695187165775,
+              "runs_spearman": -0.17413101604278075,
+              "top10_overlap": 2,
+              "earlier_top10_assessable": 3,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": -0.15808823529411764,
+              "runs_spearman": -0.12867647058823528,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 3,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": -0.26704545454545453,
+              "runs_spearman": -0.19719251336898397,
+              "top10_overlap": 1,
+              "earlier_top10_assessable": 3,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": 0.18434026971689021,
+              "runs_spearman": 0.17648533528652408,
+              "top10_overlap": 1,
+              "earlier_top10_assessable": 9,
+              "earlier_top10_size": 10
+            }
+          }
+        }
+      ],
+      "historical_top10": [
+        {
+          "role": "middle_lower",
+          "player_id": "6396",
+          "name": "Tim David",
+          "point_rank": 1,
+          "valid_draws": 500,
+          "top10_draws": 426,
+          "top10_share": 0.852,
+          "p10": 0.6542087,
+          "p50": 1.1198160000000001,
+          "p90": 1.5504161
+        },
+        {
+          "role": "middle_lower",
+          "player_id": "1318",
+          "name": "Andre Russell",
+          "point_rank": 2,
+          "valid_draws": 500,
+          "top10_draws": 401,
+          "top10_share": 0.802,
+          "p10": 0.5951998,
+          "p50": 1.0453555,
+          "p90": 1.4482707000000004
+        },
+        {
+          "role": "middle_lower",
+          "player_id": "37052",
+          "name": "Naman Dhir",
+          "point_rank": 3,
+          "valid_draws": 500,
+          "top10_draws": 354,
+          "top10_share": 0.708,
+          "p10": 0.4359747,
+          "p50": 0.935048,
+          "p90": 1.4023997
+        },
+        {
+          "role": "middle_lower",
+          "player_id": "3125",
+          "name": "Nicholas Pooran",
+          "point_rank": 4,
+          "valid_draws": 500,
+          "top10_draws": 325,
+          "top10_share": 0.65,
+          "p10": 0.43960540000000004,
+          "p50": 0.89007,
+          "p90": 1.3110137
+        },
+        {
+          "role": "middle_lower",
+          "player_id": "4260",
+          "name": "Heinrich Klaasen",
+          "point_rank": 5,
+          "valid_draws": 500,
+          "top10_draws": 318,
+          "top10_share": 0.636,
+          "p10": 0.5361452000000001,
+          "p50": 0.8261815,
+          "p90": 1.0672459
+        },
+        {
+          "role": "middle_lower",
+          "player_id": "4703",
+          "name": "Rishabh Pant",
+          "point_rank": 6,
+          "valid_draws": 500,
+          "top10_draws": 253,
+          "top10_share": 0.506,
+          "p10": 0.13503740000000006,
+          "p50": 0.747513,
+          "p90": 1.3281965
+        },
+        {
+          "role": "middle_lower",
+          "player_id": "8301",
+          "name": "Asif Khan",
+          "point_rank": 7,
+          "valid_draws": 500,
+          "top10_draws": 247,
+          "top10_share": 0.494,
+          "p10": 0.089767,
+          "p50": 0.7330779999999999,
+          "p90": 1.3653163000000004
+        },
+        {
+          "role": "middle_lower",
+          "player_id": "6725",
+          "name": "Sherfane Rutherford",
+          "point_rank": 8,
+          "valid_draws": 500,
+          "top10_draws": 242,
+          "top10_share": 0.484,
+          "p10": 0.2633025,
+          "p50": 0.7381685,
+          "p90": 1.1236319000000001
+        },
+        {
+          "role": "middle_lower",
+          "player_id": "6512",
+          "name": "Michael Bracewell",
+          "point_rank": 9,
+          "valid_draws": 500,
+          "top10_draws": 185,
+          "top10_share": 0.37,
+          "p10": 0.07871980000000002,
+          "p50": 0.5916865,
+          "p90": 1.0965232000000003
+        },
+        {
+          "role": "middle_lower",
+          "player_id": "6651",
+          "name": "Towhid Hridoy",
+          "point_rank": 10,
+          "valid_draws": 499,
+          "top10_draws": 131,
+          "top10_share": 0.262,
+          "p10": 0.14778200000000002,
+          "p50": 0.590443,
+          "p90": 0.9070579999999999
+        }
+      ]
+    },
+    "late_entrant": {
+      "forward": [
+        {
+          "start": "2024-05-08",
+          "stop_exclusive": "2025-09-06",
+          "train": 7,
+          "test": 3,
+          "common": 1,
+          "means": [
+            0.19799472917095404,
+            0.028697057190594254,
+            -0.011187331062416896
+          ],
+          "sd": [
+            0.24223725503552004,
+            0.06130564226037335,
+            0.021170556975262822
+          ],
+          "boundary_slope": 0.22879839790431056,
+          "comparisons": {
+            "primary": {
+              "spearman": null,
+              "runs_spearman": null,
+              "top10_overlap": null,
+              "earlier_top10_assessable": 1,
+              "earlier_top10_size": 7
+            },
+            "orthogonal_boundary": {
+              "spearman": null,
+              "runs_spearman": null,
+              "top10_overlap": null,
+              "earlier_top10_assessable": 1,
+              "earlier_top10_size": 7
+            },
+            "runs_only": {
+              "spearman": null,
+              "runs_spearman": null,
+              "top10_overlap": null,
+              "earlier_top10_assessable": 1,
+              "earlier_top10_size": 7
+            },
+            "volume": {
+              "spearman": null,
+              "runs_spearman": null,
+              "top10_overlap": null,
+              "earlier_top10_assessable": 1,
+              "earlier_top10_size": 7
+            }
+          }
+        },
+        {
+          "start": "2025-09-06",
+          "stop_exclusive": "9999-12-31",
+          "train": 26,
+          "test": 1,
+          "common": 0,
+          "means": [
+            0.15287563219999767,
+            0.02900437126724689,
+            -0.017432766394155166
+          ],
+          "sd": [
+            0.36875264832713234,
+            0.07582783663377395,
+            0.02561727135099919
+          ],
+          "boundary_slope": 0.19741152367271464,
+          "comparisons": {
+            "primary": {
+              "spearman": null,
+              "runs_spearman": null,
+              "top10_overlap": null,
+              "earlier_top10_assessable": 0,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": null,
+              "runs_spearman": null,
+              "top10_overlap": null,
+              "earlier_top10_assessable": 0,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": null,
+              "runs_spearman": null,
+              "top10_overlap": null,
+              "earlier_top10_assessable": 0,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": null,
+              "runs_spearman": null,
+              "top10_overlap": null,
+              "earlier_top10_assessable": 0,
+              "earlier_top10_size": 10
+            }
+          }
+        }
+      ],
+      "historical_top10": [
+        {
+          "role": "late_entrant",
+          "player_id": "8",
+          "name": "Mahendra Singh Dhoni",
+          "point_rank": 1,
+          "valid_draws": 500,
+          "top10_draws": 476,
+          "top10_share": 0.952,
+          "p10": 0.459835,
+          "p50": 0.7609735,
+          "p90": 1.0732285000000001
+        },
+        {
+          "role": "late_entrant",
+          "player_id": "4708",
+          "name": "Rinku Singh",
+          "point_rank": 2,
+          "valid_draws": 500,
+          "top10_draws": 461,
+          "top10_share": 0.922,
+          "p10": 0.3789436,
+          "p50": 0.7379264999999999,
+          "p90": 1.1118181
+        },
+        {
+          "role": "late_entrant",
+          "player_id": "8182",
+          "name": "Donovan Ferreira",
+          "point_rank": 3,
+          "valid_draws": 500,
+          "top10_draws": 330,
+          "top10_share": 0.66,
+          "p10": -0.0719107,
+          "p50": 0.535331,
+          "p90": 1.0494593
+        },
+        {
+          "role": "late_entrant",
+          "player_id": "7446",
+          "name": "Abdul Samad",
+          "point_rank": 4,
+          "valid_draws": 500,
+          "top10_draws": 301,
+          "top10_share": 0.602,
+          "p10": 0.011935000000000006,
+          "p50": 0.41608900000000004,
+          "p90": 0.8737509000000001
+        },
+        {
+          "role": "late_entrant",
+          "player_id": "6726",
+          "name": "Romario Shepherd",
+          "point_rank": 5,
+          "valid_draws": 500,
+          "top10_draws": 261,
+          "top10_share": 0.522,
+          "p10": -0.17804289999999998,
+          "p50": 0.361826,
+          "p90": 0.9410523000000001
+        },
+        {
+          "role": "late_entrant",
+          "player_id": "7741",
+          "name": "Gareth Delany",
+          "point_rank": 6,
+          "valid_draws": 500,
+          "top10_draws": 300,
+          "top10_share": 0.6,
+          "p10": -0.024827999999999968,
+          "p50": 0.40697249999999996,
+          "p90": 0.8312219000000001
+        },
+        {
+          "role": "late_entrant",
+          "player_id": "2756",
+          "name": "Shashank Singh",
+          "point_rank": 7,
+          "valid_draws": 500,
+          "top10_draws": 303,
+          "top10_share": 0.606,
+          "p10": -0.017351899999999993,
+          "p50": 0.422183,
+          "p90": 0.8545229000000002
+        },
+        {
+          "role": "late_entrant",
+          "player_id": "6396",
+          "name": "Tim David",
+          "point_rank": 8,
+          "valid_draws": 500,
+          "top10_draws": 274,
+          "top10_share": 0.548,
+          "p10": -0.029338799999999998,
+          "p50": 0.3727335,
+          "p90": 0.7969925000000004
+        },
+        {
+          "role": "late_entrant",
+          "player_id": "2633",
+          "name": "Jason Holder",
+          "point_rank": 9,
+          "valid_draws": 500,
+          "top10_draws": 281,
+          "top10_share": 0.562,
+          "p10": -0.008651199999999984,
+          "p50": 0.38020600000000004,
+          "p90": 0.7907836000000001
+        },
+        {
+          "role": "late_entrant",
+          "player_id": "37052",
+          "name": "Naman Dhir",
+          "point_rank": 10,
+          "valid_draws": 500,
+          "top10_draws": 273,
+          "top10_share": 0.546,
+          "p10": 0.0826526,
+          "p50": 0.3616485,
+          "p90": 0.6309399
+        }
+      ]
+    },
+    "powerplay_bowler": {
+      "forward": [
+        {
+          "start": "2024-05-08",
+          "stop_exclusive": "2025-09-06",
+          "train": 75,
+          "test": 77,
+          "common": 44,
+          "means": [
+            -0.009154875208694548,
+            0.00022233715606488348,
+            0.0014806454498826915
+          ],
+          "sd": [
+            0.1836813382318016,
+            0.04365619520108918,
+            0.01941395844854432
+          ],
+          "boundary_slope": 0.21350628745542702,
+          "comparisons": {
+            "primary": {
+              "spearman": 0.3169837914023961,
+              "runs_spearman": 0.29654686398872443,
+              "top10_overlap": 4,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": 0.2727272727272727,
+              "runs_spearman": 0.25525017618040874,
+              "top10_overlap": 4,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": 0.16321353065539113,
+              "runs_spearman": 0.21296687808315715,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 9,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": -0.22499750667934829,
+              "runs_spearman": -0.11726116528726148,
+              "top10_overlap": 1,
+              "earlier_top10_assessable": 8,
+              "earlier_top10_size": 10
+            }
+          }
+        },
+        {
+          "start": "2025-09-06",
+          "stop_exclusive": "9999-12-31",
+          "train": 133,
+          "test": 74,
+          "common": 52,
+          "means": [
+            0.04512536976904018,
+            0.00852010875869242,
+            0.0003089183828903351
+          ],
+          "sd": [
+            0.1910596471408654,
+            0.0431320237381821,
+            0.016349599392319267
+          ],
+          "boundary_slope": 0.20399101413449058,
+          "comparisons": {
+            "primary": {
+              "spearman": -0.048322376846239225,
+              "runs_spearman": -0.11004866387774268,
+              "top10_overlap": 2,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": -0.06548279689234185,
+              "runs_spearman": -0.13309997438743276,
+              "top10_overlap": 2,
+              "earlier_top10_assessable": 5,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": -0.005122513446597797,
+              "runs_spearman": -0.04140698369333219,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 6,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": 0.08731126836314974,
+              "runs_spearman": 0.006193803284078626,
+              "top10_overlap": 5,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            }
+          }
+        }
+      ],
+      "historical_top10": [
+        {
+          "role": "powerplay_bowler",
+          "player_id": "46378",
+          "name": "Kyle Klein",
+          "point_rank": 1,
+          "valid_draws": 500,
+          "top10_draws": 309,
+          "top10_share": 0.618,
+          "p10": 0.3545935,
+          "p50": 0.941786,
+          "p90": 1.3601296
+        },
+        {
+          "role": "powerplay_bowler",
+          "player_id": "4499",
+          "name": "Saqib Mahmood",
+          "point_rank": 2,
+          "valid_draws": 500,
+          "top10_draws": 289,
+          "top10_share": 0.578,
+          "p10": 0.4135825,
+          "p50": 0.8736105000000001,
+          "p90": 1.30922
+        },
+        {
+          "role": "powerplay_bowler",
+          "player_id": "830",
+          "name": "Josh Hazlewood",
+          "point_rank": 3,
+          "valid_draws": 500,
+          "top10_draws": 229,
+          "top10_share": 0.458,
+          "p10": 0.21960160000000004,
+          "p50": 0.778932,
+          "p90": 1.3045969000000002
+        },
+        {
+          "role": "powerplay_bowler",
+          "player_id": "360",
+          "name": "Bhuvneshwar Kumar",
+          "point_rank": 4,
+          "valid_draws": 500,
+          "top10_draws": 209,
+          "top10_share": 0.418,
+          "p10": 0.37120900000000007,
+          "p50": 0.755547,
+          "p90": 1.1393239
+        },
+        {
+          "role": "powerplay_bowler",
+          "player_id": "722",
+          "name": "Liam Dawson",
+          "point_rank": 5,
+          "valid_draws": 500,
+          "top10_draws": 162,
+          "top10_share": 0.324,
+          "p10": 0.2189633,
+          "p50": 0.669906,
+          "p90": 1.0715266
+        },
+        {
+          "role": "powerplay_bowler",
+          "player_id": "20704",
+          "name": "Salman Mirza",
+          "point_rank": 6,
+          "valid_draws": 500,
+          "top10_draws": 207,
+          "top10_share": 0.414,
+          "p10": 0.19727790000000006,
+          "p50": 0.7139344999999999,
+          "p90": 1.2383083000000001
+        },
+        {
+          "role": "powerplay_bowler",
+          "player_id": "6523",
+          "name": "Blessing Muzarabani",
+          "point_rank": 7,
+          "valid_draws": 500,
+          "top10_draws": 187,
+          "top10_share": 0.374,
+          "p10": 0.2508887,
+          "p50": 0.7017340000000001,
+          "p90": 1.1552414
+        },
+        {
+          "role": "powerplay_bowler",
+          "player_id": "7052",
+          "name": "Dunith Wellalage",
+          "point_rank": 8,
+          "valid_draws": 500,
+          "top10_draws": 175,
+          "top10_share": 0.35,
+          "p10": 0.1682013,
+          "p50": 0.6768385,
+          "p90": 1.1231654
+        },
+        {
+          "role": "powerplay_bowler",
+          "player_id": "2320",
+          "name": "Trent Boult",
+          "point_rank": 9,
+          "valid_draws": 500,
+          "top10_draws": 125,
+          "top10_share": 0.25,
+          "p10": 0.2486149,
+          "p50": 0.6240805,
+          "p90": 0.9919778
+        },
+        {
+          "role": "powerplay_bowler",
+          "player_id": "2933",
+          "name": "Jasprit Bumrah",
+          "point_rank": 10,
+          "valid_draws": 500,
+          "top10_draws": 103,
+          "top10_share": 0.206,
+          "p10": 0.3278933,
+          "p50": 0.6383825000000001,
+          "p90": 0.916889
+        }
+      ]
+    },
+    "middle_bowler": {
+      "forward": [
+        {
+          "start": "2024-05-08",
+          "stop_exclusive": "2025-09-06",
+          "train": 94,
+          "test": 101,
+          "common": 56,
+          "means": [
+            0.02895062134691138,
+            0.007128459105254904,
+            0.0019431143872292275
+          ],
+          "sd": [
+            0.19577856494054524,
+            0.04885388942368934,
+            0.016805785627159998
+          ],
+          "boundary_slope": 0.23061037619231087,
+          "comparisons": {
+            "primary": {
+              "spearman": 0.3455228981544771,
+              "runs_spearman": 0.33950786056049215,
+              "top10_overlap": 2,
+              "earlier_top10_assessable": 10,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": 0.2747778537252221,
+              "runs_spearman": 0.2537935748462064,
+              "top10_overlap": 2,
+              "earlier_top10_assessable": 10,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": 0.46254272043745726,
+              "runs_spearman": 0.5588516746411484,
+              "top10_overlap": 2,
+              "earlier_top10_assessable": 10,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": 0.14388786300254783,
+              "runs_spearman": 0.15876220245266862,
+              "top10_overlap": 1,
+              "earlier_top10_assessable": 9,
+              "earlier_top10_size": 10
+            }
+          }
+        },
+        {
+          "start": "2025-09-06",
+          "stop_exclusive": "9999-12-31",
+          "train": 167,
+          "test": 99,
+          "common": 69,
+          "means": [
+            0.015896141791414055,
+            0.0070452811518406004,
+            0.0020945356727441545
+          ],
+          "sd": [
+            0.16715583224680677,
+            0.041404630411940924,
+            0.019354330799456684
+          ],
+          "boundary_slope": 0.22242903876257372,
+          "comparisons": {
+            "primary": {
+              "spearman": 0.21684325904274754,
+              "runs_spearman": 0.27530393957980376,
+              "top10_overlap": 2,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": 0.18005115089514068,
+              "runs_spearman": 0.24443043872447076,
+              "top10_overlap": 2,
+              "earlier_top10_assessable": 6,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": 0.2636097917427841,
+              "runs_spearman": 0.3787575699607214,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": 0.09631267590097724,
+              "runs_spearman": 0.22610205606303724,
+              "top10_overlap": 0,
+              "earlier_top10_assessable": 10,
+              "earlier_top10_size": 10
+            }
+          }
+        }
+      ],
+      "historical_top10": [
+        {
+          "role": "middle_bowler",
+          "player_id": "2490",
+          "name": "Mohammad Nawaz",
+          "point_rank": 1,
+          "valid_draws": 500,
+          "top10_draws": 289,
+          "top10_share": 0.578,
+          "p10": 0.5448847,
+          "p50": 1.045358,
+          "p90": 1.5141328
+        },
+        {
+          "role": "middle_bowler",
+          "player_id": "2382",
+          "name": "Jamie Overton",
+          "point_rank": 2,
+          "valid_draws": 500,
+          "top10_draws": 280,
+          "top10_share": 0.56,
+          "p10": 0.5070551999999999,
+          "p50": 1.0083440000000001,
+          "p90": 1.4799514000000003
+        },
+        {
+          "role": "middle_bowler",
+          "player_id": "6256",
+          "name": "Varun Chakravarthy",
+          "point_rank": 3,
+          "valid_draws": 500,
+          "top10_draws": 295,
+          "top10_share": 0.59,
+          "p10": 0.6965231,
+          "p50": 1.0099255,
+          "p90": 1.3534513000000001
+        },
+        {
+          "role": "middle_bowler",
+          "player_id": "4373",
+          "name": "Mustafizur Rahman",
+          "point_rank": 4,
+          "valid_draws": 500,
+          "top10_draws": 234,
+          "top10_share": 0.468,
+          "p10": 0.4675108,
+          "p50": 0.925101,
+          "p90": 1.3448513
+        },
+        {
+          "role": "middle_bowler",
+          "player_id": "4692",
+          "name": "Lockie Ferguson",
+          "point_rank": 5,
+          "valid_draws": 500,
+          "top10_draws": 189,
+          "top10_share": 0.378,
+          "p10": 0.381632,
+          "p50": 0.828117,
+          "p90": 1.362462
+        },
+        {
+          "role": "middle_bowler",
+          "player_id": "5979",
+          "name": "Abrar Ahmed",
+          "point_rank": 6,
+          "valid_draws": 500,
+          "top10_draws": 150,
+          "top10_share": 0.3,
+          "p10": 0.3586049,
+          "p50": 0.7835935,
+          "p90": 1.2173203
+        },
+        {
+          "role": "middle_bowler",
+          "player_id": "34485",
+          "name": "Sufiyan Muqeem",
+          "point_rank": 7,
+          "valid_draws": 500,
+          "top10_draws": 192,
+          "top10_share": 0.384,
+          "p10": 0.11989070000000014,
+          "p50": 0.792667,
+          "p90": 1.4564377
+        },
+        {
+          "role": "middle_bowler",
+          "player_id": "7325",
+          "name": "Harpreet Brar",
+          "point_rank": 8,
+          "valid_draws": 500,
+          "top10_draws": 187,
+          "top10_share": 0.374,
+          "p10": 0.3068763,
+          "p50": 0.811707,
+          "p90": 1.3525033000000002
+        },
+        {
+          "role": "middle_bowler",
+          "player_id": "1758",
+          "name": "Patrick Cummins",
+          "point_rank": 9,
+          "valid_draws": 500,
+          "top10_draws": 146,
+          "top10_share": 0.292,
+          "p10": 0.3741532,
+          "p50": 0.774861,
+          "p90": 1.2428727000000002
+        },
+        {
+          "role": "middle_bowler",
+          "player_id": "3644",
+          "name": "Kuldeep Yadav",
+          "point_rank": 10,
+          "valid_draws": 500,
+          "top10_draws": 122,
+          "top10_share": 0.244,
+          "p10": 0.4596427,
+          "p50": 0.767825,
+          "p90": 1.0786790000000002
+        }
+      ]
+    },
+    "death_bowler": {
+      "forward": [
+        {
+          "start": "2024-05-08",
+          "stop_exclusive": "2025-09-06",
+          "train": 59,
+          "test": 54,
+          "common": 35,
+          "means": [
+            0.007474943894770276,
+            0.0026028939746823706,
+            0.0013393767449871447
+          ],
+          "sd": [
+            0.21058368405699673,
+            0.04940696133209316,
+            0.024484860169296838
+          ],
+          "boundary_slope": 0.2168455008274747,
+          "comparisons": {
+            "primary": {
+              "spearman": 0.3011204481792717,
+              "runs_spearman": 0.24285714285714285,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 8,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": 0.2411764705882353,
+              "runs_spearman": 0.20476190476190476,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 8,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": 0.24481792717086834,
+              "runs_spearman": 0.21932773109243697,
+              "top10_overlap": 4,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": 0.021859457543779645,
+              "runs_spearman": 0.07776922395383143,
+              "top10_overlap": 5,
+              "earlier_top10_assessable": 8,
+              "earlier_top10_size": 10
+            }
+          }
+        },
+        {
+          "start": "2025-09-06",
+          "stop_exclusive": "9999-12-31",
+          "train": 100,
+          "test": 51,
+          "common": 34,
+          "means": [
+            -0.0032831240093268745,
+            0.0003178381421105424,
+            0.0021022565279477253
+          ],
+          "sd": [
+            0.20401693995749354,
+            0.04614851984913516,
+            0.024670238934712808
+          ],
+          "boundary_slope": 0.21044745784823393,
+          "comparisons": {
+            "primary": {
+              "spearman": -0.18502673796791444,
+              "runs_spearman": -0.09396485867074103,
+              "top10_overlap": 2,
+              "earlier_top10_assessable": 6,
+              "earlier_top10_size": 10
+            },
+            "orthogonal_boundary": {
+              "spearman": -0.14316271963330787,
+              "runs_spearman": -0.07012987012987013,
+              "top10_overlap": 2,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "runs_only": {
+              "spearman": -0.12146676852559206,
+              "runs_spearman": -0.020626432391138275,
+              "top10_overlap": 1,
+              "earlier_top10_assessable": 7,
+              "earlier_top10_size": 10
+            },
+            "volume": {
+              "spearman": 0.07916858080383235,
+              "runs_spearman": 0.07947425099998615,
+              "top10_overlap": 3,
+              "earlier_top10_assessable": 3,
+              "earlier_top10_size": 10
+            }
+          }
+        }
+      ],
+      "historical_top10": [
+        {
+          "role": "death_bowler",
+          "player_id": "2933",
+          "name": "Jasprit Bumrah",
+          "point_rank": 1,
+          "valid_draws": 500,
+          "top10_draws": 479,
+          "top10_share": 0.958,
+          "p10": 0.9150553,
+          "p50": 1.3602885,
+          "p90": 1.7379789
+        },
+        {
+          "role": "death_bowler",
+          "player_id": "781",
+          "name": "Sunil Narine",
+          "point_rank": 2,
+          "valid_draws": 500,
+          "top10_draws": 474,
+          "top10_share": 0.948,
+          "p10": 0.9374749,
+          "p50": 1.3219845000000001,
+          "p90": 1.6025423
+        },
+        {
+          "role": "death_bowler",
+          "player_id": "8661",
+          "name": "Matheesha Pathirana",
+          "point_rank": 3,
+          "valid_draws": 500,
+          "top10_draws": 297,
+          "top10_share": 0.594,
+          "p10": 0.5154054,
+          "p50": 0.8892555,
+          "p90": 1.2884897000000006
+        },
+        {
+          "role": "death_bowler",
+          "player_id": "7967",
+          "name": "Noor Ahmad",
+          "point_rank": 4,
+          "valid_draws": 500,
+          "top10_draws": 251,
+          "top10_share": 0.502,
+          "p10": 0.36892080000000016,
+          "p50": 0.844866,
+          "p90": 1.2811660000000002
+        },
+        {
+          "role": "death_bowler",
+          "player_id": "2417",
+          "name": "Akeal Hosein",
+          "point_rank": 5,
+          "valid_draws": 500,
+          "top10_draws": 182,
+          "top10_share": 0.364,
+          "p10": 0.1891556,
+          "p50": 0.7031685,
+          "p90": 1.1551046999999999
+        },
+        {
+          "role": "death_bowler",
+          "player_id": "4722",
+          "name": "Rashid Khan",
+          "point_rank": 6,
+          "valid_draws": 500,
+          "top10_draws": 209,
+          "top10_share": 0.418,
+          "p10": 0.15243050000000002,
+          "p50": 0.7158715,
+          "p90": 1.3336379000000003
+        },
+        {
+          "role": "death_bowler",
+          "player_id": "6256",
+          "name": "Varun Chakravarthy",
+          "point_rank": 7,
+          "valid_draws": 500,
+          "top10_draws": 191,
+          "top10_share": 0.382,
+          "p10": 0.14968080000000003,
+          "p50": 0.697327,
+          "p90": 1.1636372
+        },
+        {
+          "role": "death_bowler",
+          "player_id": "4641",
+          "name": "Lungi Ngidi",
+          "point_rank": 8,
+          "valid_draws": 500,
+          "top10_draws": 136,
+          "top10_share": 0.272,
+          "p10": 0.30590680000000003,
+          "p50": 0.669003,
+          "p90": 1.0162123
+        },
+        {
+          "role": "death_bowler",
+          "player_id": "5979",
+          "name": "Abrar Ahmed",
+          "point_rank": 9,
+          "valid_draws": 500,
+          "top10_draws": 130,
+          "top10_share": 0.26,
+          "p10": 0.3400799,
+          "p50": 0.6707110000000001,
+          "p90": 0.9520083
+        },
+        {
+          "role": "death_bowler",
+          "player_id": "3644",
+          "name": "Kuldeep Yadav",
+          "point_rank": 10,
+          "valid_draws": 500,
+          "top10_draws": 175,
+          "top10_share": 0.35,
+          "p10": 0.0119232,
+          "p50": 0.6539375000000001,
+          "p90": 1.2557613
+        }
+      ]
+    }
+  }
+}
