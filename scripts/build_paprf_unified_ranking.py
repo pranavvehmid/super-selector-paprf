@@ -125,10 +125,22 @@ def main():
     save("paprf_unified_score_ledger.csv", [dict(scenario=label, **r) for label, group in index.items() for r in group])
     save("../rankings/paprf_unified_top10_v1.csv", original[:10])
 
+    profiles = evidence_profiles(original, role_evidence, splits, trends, bootstrap)
+    result = dict(
+        version="unified_v1", source_hashes={p.relative_to(ROOT).as_posix(): digest(p) for p in files},
+        observed=len(assignments), eligible=len(original), top10=original[:10], ranked=original,
+        unranked=[a for a in assignments if not a["eligible"]],
+        methods=summaries, profiles=profiles,
+    )
+    (ROOT / "work/paprf_unified_ranking.json").write_text(json.dumps(result, separators=(",", ":")) + "\n", encoding="utf-8")
+    print(f"Unified index ranks {len(original)} of {len(assignments)} observed players.")
+
+
+def evidence_profiles(ranked, role_evidence, splits, trends, bootstrap):
     profiles = defaultdict(list)
     shares = {(r["player_id"], r["role"]): float(r["top10_share"]) for r in bootstrap}
     trend = {(r["player_id"], r["role"]): r for r in trends}
-    ids = {r["player_id"] for r in original}
+    ids = {r["player_id"] for r in ranked}
     annual = defaultdict(list)
     geography = defaultdict(dict)
     for r in splits:
@@ -148,14 +160,7 @@ def main():
         if pid in ids:
             profiles[pid].append({**r, "bootstrap_top10_share": shares.get(key), "trend": trend.get(key),
                                   "annual": annual[key], "geography": geography[key]})
-    result = dict(
-        version="unified_v1", source_hashes={p.relative_to(ROOT).as_posix(): digest(p) for p in files},
-        observed=len(assignments), eligible=len(original), top10=original[:10], ranked=original,
-        unranked=[a for a in assignments if not a["eligible"]],
-        methods=summaries, profiles=dict(profiles),
-    )
-    (ROOT / "work/paprf_unified_ranking.json").write_text(json.dumps(result, separators=(",", ":")) + "\n", encoding="utf-8")
-    print(f"Unified index ranks {len(original)} of {len(assignments)} observed players.")
+    return dict(profiles)
 
 
 if __name__ == "__main__":

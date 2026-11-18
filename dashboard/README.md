@@ -11,6 +11,7 @@ When updating the publication, regenerate the index and library before deploymen
 
 ```powershell
 python scripts/build_paprf_unified_ranking.py
+python scripts/build_paprf_discipline_rankings.py
 python scripts/build_dashboard_data.py
 python scripts/build_paprf_research_library.py
 ```

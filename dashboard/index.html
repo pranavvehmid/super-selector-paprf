@@ -16,14 +16,14 @@
 <body>
   <header class="site-header">
     <div class="mast"><a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span> PAPRF</a><span class="mast-label">Super Selector · Round 1</span></div>
-    <nav aria-label="Research navigation"><a href="#unified">Unified index</a><a href="#pipeline">Method</a><a href="#role-profiles">Role profiles</a><a href="#research">Pressure studies</a><a href="#figures">Figures</a><a href="library.html">Research library</a></nav>
+    <nav aria-label="Research navigation"><a href="#unified">Contextual rankings</a><a href="#rankings">Round 1 pressure lists</a><a href="#pipeline">Method</a><a href="#role-profiles">Role profiles</a><a href="#figures">Figures</a><a href="library.html">Research library</a></nav>
   </header>
   <main id="overview">
     <section class="hero">
       <div class="hero-copy">
         <p class="kicker">SUPER SELECTOR ROUND 1 · RESEARCH ATLAS</p>
         <h1>T20 performance<br>in context</h1>
-        <p>How much did a player exceed the expectations of their role? Explore the unified index, its inputs and the evidence behind every position.</p>
+        <p>How much did a player exceed the expectations of their role? Explore separate batting and bowling indices, or open the archived Round 1 pressure lists.</p>
         <div class="hero-links"><a href="#unified">Explore the rankings ↓</a><a href="library.html">Read the research ↗</a></div>
       </div>
       <div class="hero-scorecard">
@@ -34,8 +34,9 @@
     <noscript>This dashboard requires JavaScript to load the evidence and controls.</noscript>
     <div id="load-error" class="panel" hidden>Evidence could not be loaded. Regenerate the dashboard data bundle and refresh.</div>
     <section class="panel" id="unified">
-      <div class="section-head"><div><p class="kicker">01 / GENERAL LEADERBOARD</p><h2>Unified top ten</h2></div>
-        <label>Find an observed player<input id="unified-search" type="search" placeholder="Name or ID" autocomplete="off"></label></div>
+      <div class="section-head"><div><p class="kicker">01 / CONTEXTUAL LEADERBOARDS</p><h2>Batting and bowling top tens</h2></div>
+        <div class="controls"><label>Discipline<select id="unified-discipline"><option value="batter">Batters</option><option value="bowler">Bowlers</option></select></label>
+        <label>Find an observed player<input id="unified-search" type="search" placeholder="Name or ID" autocomplete="off"></label></div></div>
       <p id="unified-coverage" class="note"></p>
       <div id="unified-table"></div>
       <div id="unified-player" aria-live="polite"></div>
@@ -54,10 +55,10 @@
       <div class="equation"><span data-tex="c=\sum_j w_j z_j,\qquad Q=100\Phi\!\left(\frac{c-\mu}{\sigma}\right)">c = Σ wⱼzⱼ; Q = 100Φ((c−μ)/σ)</span><small>(1)</small></div>
       <p>Here <var>c</var> is the unshrunk role signal, <var>z</var> is a signed standardised component capped at ±3, and <var>w</var> is its role weight. The role pool supplies its mean <var>μ</var> and sample standard deviation <var>σ</var>. The normal cumulative function Φ maps the result onto a 0–100 reference scale.</p>
       <div class="equation"><span data-tex="R=\frac{n}{n+120},\qquad S=50+R(Q-50)">R = n/(n+120); S = 50 + R(Q−50)</span><small>(2)</small></div>
-      <p><var>n</var> is scored balls in the role. At 120 balls the factor <var>R</var> is 0.5, so a role reference of 90 becomes an adjusted role score of 70. The most-used role is primary.</p>
+      <p><var>n</var> is scored balls in the role. At 120 balls the factor <var>R</var> is 0.5, so a role reference of 90 becomes an adjusted role score of 70. The most-used role within the selected discipline is primary.</p>
       <div class="equation"><span data-tex="I=\min\!\left(100,\;S_p+0.10\min(1,n_s/n_p)\max(0,S_s-50)\right)">I = min(100, Sₚ + 0.10 min(1, nₛ/nₚ) max(0, Sₛ−50))</span><small>(3)</small></div>
       <p>A secondary role at 80 with half the primary ball count adds 1.5 points. Primary 70 plus that credit gives a unified index of 71.5. The detail below each ranked player shows the same calculation with their actual inputs.</p>
-      <p><a href="library.html#unified">Full unified protocol and leaderboard directory</a> · <a href="library.html#roles">Contextual expectations and weights</a> · <a href="#glossary">Metric glossary</a></p>
+      <p><a href="library.html#discipline">Discipline split and worked methodology</a> · <a href="library.html#roles">Contextual expectations and weights</a> · <a href="#glossary">Metric glossary</a></p>
     </section>
     <section class="panel" id="research">
       <div class="section-head"><div><p class="kicker">03 / PRESSURE RESEARCH</p><h2>Match-adjusted pressure rankings</h2></div>

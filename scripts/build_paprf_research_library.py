@@ -14,6 +14,7 @@ REPO = "https://github.com/pranavvehmid/super-selector-paprf/blob/main/"
 CHAPTERS = (
     ("plan", "Research plan and phase history", "methodology/paprf_four_phase_plan.md"),
     ("unified", "Unified index and leaderboard directory", "methodology/paprf_unified_ranking.md"),
+    ("discipline", "Separate batting and bowling indices", "methodology/paprf_discipline_rankings_v2.md"),
     ("roles", "Contextual outcomes and seven roles", "methodology/paprf_contextual_role_profiles.md"),
     ("role-validation", "Role validation and score uncertainty", "methodology/paprf_role_profile_validation.md"),
     ("source-dictionary", "Organiser data dictionary", "data_dictionary.md"),

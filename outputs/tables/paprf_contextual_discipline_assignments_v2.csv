@@ -1,0 +1,1403 @@
+discipline,player_id,name,primary_role,primary_balls,primary_matches,primary_share,observed_roles,eligible,reason
+batter,8,Mahendra Singh Dhoni,late_entrant,186,28,0.7018867924528301,3,True,
+batter,23,Piyush Chawla,late_entrant,19,8,0.5135135135135135,2,False,Primary role below 60 scored balls or six matches
+batter,28,Ishant Sharma,late_entrant,8,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,47,Virat Kohli,opener,1743,57,0.9903409090909091,2,True,
+batter,88,Faf du Plessis,opener,856,36,1.0,1,True,
+batter,109,Wriddhiman Saha,opener,346,24,1.0,1,True,
+batter,126,Rohit Sharma,opener,1029,53,0.997093023255814,2,True,
+batter,142,Shikhar Dhawan,opener,353,15,1.0,1,True,
+batter,143,Dinesh Karthik,middle_lower,206,14,0.7490909090909091,3,True,
+batter,147,Pradeep Sangwan,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,152,Ravindra Jadeja,middle_lower,413,24,0.5634379263301501,3,True,
+batter,158,Amit Mishra,middle_lower,30,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,161,Dwayne Bravo,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,167,Ajinkya Rahane,top_order,575,28,0.6662804171494786,2,True,
+batter,169,Robin Uthappa,opener,0,0,,3,False,Primary role below 60 scored balls or six matches
+batter,198,Manish Pandey,middle_lower,190,9,0.6551724137931034,2,True,
+batter,220,David Warner,opener,592,25,1.0,1,True,
+batter,223,Steven Smith,opener,64,3,1.0,3,False,Primary role below 60 scored balls or six matches
+batter,232,Tom Cooper,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,250,Aaron Finch,opener,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,274,Martin Guptill,opener,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,278,Tim Southee,late_entrant,21,5,0.7,2,False,Primary role below 60 scored balls or six matches
+batter,286,Kane Richardson,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,295,Wayne Parnell,late_entrant,5,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,305,Ravichandran Ashwin,middle_lower,111,9,0.7254901960784313,4,True,
+batter,332,Angelo Mathews,middle_lower,150,7,1.0,1,True,
+batter,344,Sheldon Jackson,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,360,Bhuvneshwar Kumar,middle_lower,58,4,0.5370370370370371,2,False,Primary role below 60 scored balls or six matches
+batter,393,Kedar Jadhav,middle_lower,10,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,395,Karn Sharma,late_entrant,17,4,0.85,2,False,Primary role below 60 scored balls or six matches
+batter,403,Umesh Yadav,late_entrant,24,5,0.7272727272727273,2,False,Primary role below 60 scored balls or six matches
+batter,418,Richard Berrington,top_order,80,6,1.0,1,True,
+batter,443,Paul Stirling,opener,305,24,1.0,1,True,
+batter,470,Mohammad Amir,late_entrant,4,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,478,Eoin Morgan,middle_lower,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,479,Adil Rashid,late_entrant,57,10,0.7808219178082192,2,False,Primary role below 60 scored balls or six matches
+batter,492,Andre Fletcher,middle_lower,24,3,0.6153846153846154,2,False,Primary role below 60 scored balls or six matches
+batter,494,Kieron Pollard,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,499,Shakib Al Hasan,middle_lower,31,3,0.6458333333333334,3,False,Primary role below 60 scored balls or six matches
+batter,505,Mushfiqur Rahim,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,507,Mohammad Mahmudullah,middle_lower,139,7,0.972027972027972,3,True,
+batter,535,Ambati Rayudu,middle_lower,46,5,0.4946236559139785,3,False,Primary role below 60 scored balls or six matches
+batter,722,Liam Dawson,middle_lower,20,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,728,Dawid Malan,top_order,78,4,1.0,3,False,Primary role below 60 scored balls or six matches
+batter,757,Sybrand Engelbrecht,middle_lower,8,1,0.8,2,False,Primary role below 60 scored balls or six matches
+batter,768,Reeza Hendricks,opener,471,22,1.0,1,True,
+batter,772,Rilee Rossouw,top_order,199,14,0.8396624472573839,2,True,
+batter,773,Shadley Van Schalkwyk,middle_lower,7,2,0.5,2,False,Primary role below 60 scored balls or six matches
+batter,778,Darren Bravo,top_order,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,781,Sunil Narine,opener,431,27,0.9369565217391305,4,True,
+batter,786,Chris Jordan,late_entrant,10,2,0.5555555555555556,2,False,Primary role below 60 scored balls or six matches
+batter,796,Matthew Wade,middle_lower,65,4,0.6074766355140186,4,False,Primary role below 60 scored balls or six matches
+batter,813,Jos Buttler,top_order,944,42,0.4929503916449086,4,True,
+batter,818,Mitchell Marsh,opener,1053,44,0.7570093457943925,2,True,
+batter,820,Nathan Coulter Nile,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,829,Mitchell Starc,late_entrant,22,10,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,830,Josh Hazlewood,late_entrant,10,5,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,838,Glenn Maxwell,top_order,394,24,0.696113074204947,4,True,
+batter,914,Krishnappa Gowtham,late_entrant,17,3,0.5151515151515151,3,False,Primary role below 60 scored balls or six matches
+batter,930,Karun Nair,top_order,102,6,0.7906976744186046,3,True,
+batter,953,Lokesh Rahul,opener,1091,39,0.8624505928853755,3,True,
+batter,985,Brendan Taylor,top_order,59,7,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,988,Graeme Cremer,late_entrant,4,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,992,Mayank Agarwal,opener,234,11,0.7597402597402597,3,True,
+batter,1039,Mandeep Singh,middle_lower,11,1,0.9166666666666666,3,False,Primary role below 60 scored balls or six matches
+batter,1040,Harpreet Bhatia,middle_lower,70,4,0.7608695652173914,2,False,Primary role below 60 scored balls or six matches
+batter,1045,David Wiese,late_entrant,11,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,1071,Jaydev Unadkat,late_entrant,25,6,0.6944444444444444,2,False,Primary role below 60 scored balls or six matches
+batter,1077,David Miller,middle_lower,524,32,0.7129251700680272,3,True,
+batter,1100,Dinesh Chandimal,top_order,5,1,1.0,3,False,Primary role below 60 scored balls or six matches
+batter,1101,George Dockrell,middle_lower,243,18,0.8321917808219178,3,True,
+batter,1107,Mohammad Nabi,middle_lower,408,23,0.8176352705410822,3,True,
+batter,1116,Craig Ervine,opener,73,4,0.7604166666666666,2,False,Primary role below 60 scored balls or six matches
+batter,1159,Tendai Chatara,late_entrant,11,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,1171,Chris Woakes,late_entrant,17,3,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,1183,Alex Hales,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,1187,Jason Roy,opener,162,7,0.8617021276595744,2,True,
+batter,1195,Ben Stokes,middle_lower,8,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,1205,Jonny Bairstow,opener,360,17,0.9137055837563451,4,True,
+batter,1210,James Vince,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,1219,David Willey,middle_lower,20,1,0.625,3,False,Primary role below 60 scored balls or six matches
+batter,1233,Gary Ballance,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,1318,Andre Russell,middle_lower,384,26,0.7370441458733206,3,True,
+batter,1327,Johnson Charles,opener,273,16,0.8722044728434505,2,True,
+batter,1389,Sean Abbott,late_entrant,26,7,0.896551724137931,2,False,Primary role below 60 scored balls or six matches
+batter,1440,Rahul Tripathi,top_order,332,18,0.8668407310704961,3,True,
+batter,1481,Kusal Perera,top_order,417,27,0.9858156028368794,2,True,
+batter,1487,Adam Milne,middle_lower,30,5,0.6521739130434783,2,False,Primary role below 60 scored balls or six matches
+batter,1541,Sean Williams,top_order,74,8,0.961038961038961,2,True,
+batter,1556,David Payne,late_entrant,5,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,1566,Mohammed Shami,late_entrant,37,13,0.925,2,False,Primary role below 60 scored balls or six matches
+batter,1568,Kane Williamson,top_order,84,4,1.0,3,False,Primary role below 60 scored balls or six matches
+batter,1596,Moeen Ali,middle_lower,150,9,0.6122448979591837,4,True,
+batter,1612,Yuzvendra Chahal,late_entrant,2,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,1617,Rishi Dhawan,middle_lower,11,1,0.9166666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,1649,Regis Chakabva,top_order,0,0,,3,False,Primary role below 60 scored balls or six matches
+batter,1699,Suryakumar Yadav,top_order,1707,90,0.980470993681792,3,True,
+batter,1701,Swapnil Singh,late_entrant,16,5,0.64,2,False,Primary role below 60 scored balls or six matches
+batter,1758,Patrick Cummins,middle_lower,113,8,0.5854922279792746,2,True,
+batter,1791,Wesley Barresi,late_entrant,7,1,0.7777777777777778,2,False,Primary role below 60 scored balls or six matches
+batter,1801,Nitish Kumar,middle_lower,15,2,0.75,2,False,Primary role below 60 scored balls or six matches
+batter,1810,Devon Thomas,top_order,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,1813,Deepak Chahar,late_entrant,35,8,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,1924,Sam Billings,middle_lower,0,0,,4,False,Primary role below 60 scored balls or six matches
+batter,1941,Devon Conway,opener,890,39,1.0,1,True,
+batter,1944,Keshav Maharaj,late_entrant,26,4,0.65,2,False,Primary role below 60 scored balls or six matches
+batter,2003,Bhanuka Rajapaksa,top_order,48,4,0.5161290322580645,3,False,Primary role below 60 scored balls or six matches
+batter,2054,Jason Behrendorff,late_entrant,11,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2101,Quinton de Kock,opener,678,37,1.0,1,True,
+batter,2210,Sabbir Rahman,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,2213,Soumya Sarkar,opener,138,8,0.7666666666666667,2,True,
+batter,2214,Gulbadin Naib,top_order,111,7,0.555,3,True,
+batter,2218,Anamul Haque,top_order,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,2246,Tom Latham,opener,165,7,0.7568807339449541,2,True,
+batter,2258,Sanju Samson,opener,933,52,0.5371329879101899,4,True,
+batter,2261,Harshal Patel,late_entrant,36,9,0.6,2,False,Primary role below 60 scored balls or six matches
+batter,2296,Safyaan Sharif,late_entrant,6,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2304,Tymal Mills,late_entrant,1,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,2315,Reece Topley,late_entrant,7,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2320,Trent Boult,late_entrant,24,9,0.5217391304347826,2,False,Primary role below 60 scored balls or six matches
+batter,2321,Olly Stone,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,2334,Dwaine Pretorius,late_entrant,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,2351,Danushka Gunathilaka,top_order,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,2361,Temba Bavuma,opener,20,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2364,Ashton Agar,opener,0,0,,3,False,Primary role below 60 scored balls or six matches
+batter,2367,Travis Head,opener,1095,64,1.0,1,True,
+batter,2373,Ashton Turner,middle_lower,18,2,0.9,2,False,Primary role below 60 scored balls or six matches
+batter,2379,Ben Duckett,opener,127,9,0.9136690647482014,3,True,
+batter,2382,Jamie Overton,middle_lower,91,8,0.6232876712328768,2,True,
+batter,2399,Dushmantha Chameera,late_entrant,30,12,0.5555555555555556,2,False,Primary role below 60 scored balls or six matches
+batter,2407,Dhananjaya de Silva,top_order,106,7,0.8983050847457628,3,True,
+batter,2411,Sandeep Sharma,late_entrant,10,2,0.9090909090909091,2,False,Primary role below 60 scored balls or six matches
+batter,2416,Kyle Mayers,opener,330,23,0.8375634517766497,2,True,
+batter,2417,Akeal Hosein,late_entrant,79,18,0.572463768115942,2,True,
+batter,2418,Justin Greaves,top_order,20,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2436,Dasun Shanaka,middle_lower,337,24,0.764172335600907,3,True,
+batter,2439,Akila Dananjaya,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2463,Ryan Burl,middle_lower,466,27,0.848816029143898,3,True,
+batter,2483,Lizaad Williams,late_entrant,17,7,0.8095238095238095,2,False,Primary role below 60 scored balls or six matches
+batter,2485,Babar Azam,top_order,526,21,0.6902887139107612,2,True,
+batter,2490,Mohammad Nawaz,middle_lower,233,17,0.7169230769230769,3,True,
+batter,2523,Will Young,top_order,103,7,0.639751552795031,2,True,
+batter,2526,Ish Sodhi,late_entrant,78,13,0.7722772277227723,2,True,
+batter,2531,Joe Root,top_order,15,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2533,Najibullah Zadran,middle_lower,63,5,0.8181818181818182,3,False,Primary role below 60 scored balls or six matches
+batter,2534,Rahmat Shah,top_order,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2573,Evin Lewis,opener,182,12,0.914572864321608,3,True,
+batter,2633,Jason Holder,late_entrant,164,25,0.5899280575539568,4,True,
+batter,2636,Adam Zampa,late_entrant,28,11,0.6086956521739131,2,False,Primary role below 60 scored balls or six matches
+batter,2639,Marcus Stoinis,middle_lower,542,33,0.5441767068273092,3,True,
+batter,2650,Raymon Reifer,top_order,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,2661,Shamarh Brooks,opener,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,2671,Liton Das,top_order,443,26,0.6448326055312955,2,True,
+batter,2680,Nurul Hasan,middle_lower,86,7,0.8269230769230769,2,True,
+batter,2681,Taskin Ahmed,middle_lower,40,3,0.5633802816901409,2,False,Primary role below 60 scored balls or six matches
+batter,2687,Roston Chase,top_order,313,17,0.6427104722792608,3,True,
+batter,2750,Alex Carey,middle_lower,27,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2756,Shashank Singh,middle_lower,324,19,0.6377952755905512,3,True,
+batter,2790,Praveen Dubey,middle_lower,20,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2847,Shardul Thakur,late_entrant,63,14,0.5294117647058824,3,True,
+batter,2852,Jagadeesha Suchith,middle_lower,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,2860,KS Bharat,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,2876,Axar Patel,middle_lower,615,42,0.6212121212121212,3,True,
+batter,2877,Vijay Shankar,top_order,185,8,0.5606060606060606,3,True,
+batter,2878,Mohit Sharma,middle_lower,14,1,0.7368421052631579,2,False,Primary role below 60 scored balls or six matches
+batter,2884,Manan Vohra,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,2887,Harmeet Singh,middle_lower,28,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2892,Asif Ali,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,2921,Fakhar Zaman,top_order,531,25,0.6905071521456437,4,True,
+batter,2930,Rassie van der Dussen,middle_lower,128,6,0.6808510638297872,4,True,
+batter,2933,Jasprit Bumrah,late_entrant,21,8,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,2972,Yasim Murtaza,middle_lower,45,2,0.9183673469387755,3,False,Primary role below 60 scored balls or six matches
+batter,2984,Sikandar Raza,top_order,558,28,0.6747279322853688,3,True,
+batter,2985,Mark Wood,late_entrant,18,5,0.9473684210526315,2,False,Primary role below 60 scored balls or six matches
+batter,2996,Stephanus Myburgh,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,2997,Paul van Meekeren,late_entrant,11,4,0.6111111111111112,2,False,Primary role below 60 scored balls or six matches
+batter,3024,Mohammad Rizwan,opener,463,17,0.8955512572533849,2,True,
+batter,3033,Usman Qadir,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3038,Hussain Talat,middle_lower,43,4,0.7962962962962963,2,False,Primary role below 60 scored balls or six matches
+batter,3040,Kashif Daud,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3056,Iftikhar Ahmed,middle_lower,172,12,0.8514851485148515,3,True,
+batter,3077,Usama Mir,late_entrant,7,4,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3091,Sahibzada Farhan,opener,783,35,0.9678615574783683,3,True,
+batter,3097,Shan Masood,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3125,Nicholas Pooran,top_order,722,45,0.596694214876033,3,True,
+batter,3135,Yannic Cariah,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3174,Matt Henry,late_entrant,17,6,0.6071428571428571,2,False,Primary role below 60 scored balls or six matches
+batter,3260,Hashmatullah Shahidi,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3272,Fabian Allen,middle_lower,24,3,0.9230769230769231,2,False,Primary role below 60 scored balls or six matches
+batter,3275,Alzarri Joseph,late_entrant,51,8,0.68,2,False,Primary role below 60 scored balls or six matches
+batter,3276,Gudakesh Motie,middle_lower,99,9,0.6827586206896552,3,True,
+batter,3280,Nazmul Hossain Shanto,top_order,253,16,1.0,3,True,
+batter,3281,Mosaddek Hossain,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,3282,Mehidy Hasan Miraz,middle_lower,90,5,0.5806451612903226,4,False,Primary role below 60 scored balls or six matches
+batter,3297,Shimron Hetmyer,middle_lower,532,38,0.6432889963724304,3,True,
+batter,3298,Jofra Archer,late_entrant,81,21,0.5664335664335665,2,True,
+batter,3304,Munim Shahriar,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3306,Afsar Zazai,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3323,Jimmy Neesham,middle_lower,265,19,0.9464285714285714,2,True,
+batter,3330,Hardik Pandya,middle_lower,732,47,0.6734130634774609,3,True,
+batter,3361,Michael Leask,middle_lower,59,6,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3373,Aizaz Khan,late_entrant,12,2,0.5454545454545454,2,False,Primary role below 60 scored balls or six matches
+batter,3374,Mark Chapman,top_order,377,21,0.5309859154929577,3,True,
+batter,3377,Babar Hayat,top_order,65,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3382,Nizakat Khan,top_order,78,2,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,3383,Kinchit Shah,middle_lower,10,1,0.9090909090909091,3,False,Primary role below 60 scored balls or six matches
+batter,3415,Matthew Cross,middle_lower,110,5,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3451,Baba Indrajith,opener,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,3469,Shreyas Gopal,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3489,Salman Agha,top_order,547,28,0.8188622754491018,3,True,
+batter,3539,Ben McDermott,top_order,58,2,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,3543,Shahidullah Kamal,middle_lower,43,2,0.6615384615384615,3,False,Primary role below 60 scored balls or six matches
+batter,3544,Usman Ghani,opener,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,3545,Ihsanullah Janat,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3550,Sharafuddin Ashraf,middle_lower,12,1,0.8571428571428571,2,False,Primary role below 60 scored balls or six matches
+batter,3578,Imad Wasim,middle_lower,50,5,0.7692307692307693,2,False,Primary role below 60 scored balls or six matches
+batter,3595,Andy McBrine,late_entrant,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,3605,Aiden Markram,top_order,594,36,0.513840830449827,4,True,
+batter,3613,Shakeel Ahmed,middle_lower,23,1,0.696969696969697,2,False,Primary role below 60 scored balls or six matches
+batter,3622,Hayden Walsh,late_entrant,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,3623,Hasan Ali,late_entrant,17,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3627,Andile Phehlukwayo,middle_lower,20,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3628,Kagiso Rabada,late_entrant,39,11,0.5,2,False,Primary role below 60 scored balls or six matches
+batter,3629,Corbin Bosch,late_entrant,72,10,0.6206896551724138,2,True,
+batter,3635,Jason Smith,top_order,21,2,0.39622641509433965,3,False,Primary role below 60 scored balls or six matches
+batter,3639,Brandon King,opener,741,39,0.9906417112299465,2,True,
+batter,3641,Ben Dwarshuis,middle_lower,40,4,0.7142857142857143,2,False,Primary role below 60 scored balls or six matches
+batter,3644,Kuldeep Yadav,late_entrant,101,26,0.7318840579710145,2,True,
+batter,3645,Sarfaraz Khan,top_order,77,5,0.5202702702702703,3,False,Primary role below 60 scored balls or six matches
+batter,3647,Shreyas Iyer,top_order,1141,59,0.9084394904458599,4,True,
+batter,3648,Deepak Hooda,top_order,126,14,0.5806451612903226,4,True,
+batter,3651,Ricky Bhui,middle_lower,7,1,0.7777777777777778,2,False,Primary role below 60 scored balls or six matches
+batter,3653,Avesh Khan,late_entrant,25,10,0.6756756756756757,2,False,Primary role below 60 scored balls or six matches
+batter,3660,Luke Wood,late_entrant,4,2,0.5,2,False,Primary role below 60 scored balls or six matches
+batter,3664,Binura Fernando,late_entrant,14,5,0.6086956521739131,2,False,Primary role below 60 scored balls or six matches
+batter,3669,Sadeera Samarawickrama,top_order,144,6,0.8834355828220859,3,True,
+batter,3672,Kusal Mendis,opener,716,36,0.7799564270152506,3,True,
+batter,3683,Gavin Main,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3686,CB Sole,late_entrant,21,4,0.9545454545454546,2,False,Primary role below 60 scored balls or six matches
+batter,3689,Mark Watt,middle_lower,40,4,0.6896551724137931,2,False,Primary role below 60 scored balls or six matches
+batter,3697,Kyle Jamieson,middle_lower,36,6,0.5373134328358209,2,False,Primary role below 60 scored balls or six matches
+batter,3700,Tim Seifert,opener,566,30,0.8422619047619048,2,True,
+batter,3720,Craig Young,late_entrant,25,6,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,3727,Matthew Short,opener,185,14,0.4601990049751244,3,True,
+batter,3771,Vivian Kingma,middle_lower,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3772,Logan van Beek,middle_lower,14,1,0.6086956521739131,2,False,Primary role below 60 scored balls or six matches
+batter,3775,Sompal Kami,late_entrant,9,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3782,M Shahrukh Khan,middle_lower,106,10,0.3680555555555556,3,True,
+batter,3802,Anshuman Rath,opener,52,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3832,Rezza Gaznavi,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3839,Amjad Mahboob,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,3858,Jatinder Singh,opener,46,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3871,Aamir Kaleem,opener,59,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3876,Sufyan Mehmood,middle_lower,5,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3916,Jitesh Sharma,middle_lower,500,35,0.7575757575757576,3,True,
+batter,3926,Rahul Tewatia,middle_lower,222,16,0.6288951841359773,3,True,
+batter,3954,Andrew Balbirnie,opener,333,14,1.0,1,True,
+batter,3967,Tom Kohler,opener,54,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,3986,Matthew Renshaw,top_order,75,4,0.6944444444444444,2,False,Primary role below 60 scored balls or six matches
+batter,3995,Donald Tiripano,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,4007,Ryan Rickelton,opener,710,37,0.8700980392156863,2,True,
+batter,4101,Mitchell Santner,middle_lower,268,19,0.6836734693877551,3,True,
+batter,4102,George Munsey,opener,98,5,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4106,Daryl Mitchell,top_order,517,29,0.6536030341340076,3,True,
+batter,4111,Khushdil Shah,middle_lower,94,6,0.94,3,True,
+batter,4117,Ishan Kishan,top_order,1105,53,0.6684815486993345,4,True,
+batter,4201,Fareed Malik,late_entrant,6,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,4211,Vishnu Vinod,middle_lower,27,2,0.6923076923076923,2,False,Primary role below 60 scored balls or six matches
+batter,4219,Krunal Pandya,middle_lower,230,14,0.4811715481171548,3,True,
+batter,4221,Chris Green,late_entrant,3,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4229,George Linde,middle_lower,102,8,0.8031496062992126,2,True,
+batter,4237,Tabraiz Shamsi,late_entrant,2,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,4246,Nitish Rana,top_order,486,29,0.8601769911504424,3,True,
+batter,4260,Heinrich Klaasen,middle_lower,701,35,0.5498039215686275,3,True,
+batter,4265,T Natarajan,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4288,Navdeep Saini,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,4369,Shai Hope,top_order,537,29,0.5418768920282543,4,True,
+batter,4372,Rony Talukder,opener,22,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4373,Mustafizur Rahman,late_entrant,54,12,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4391,Liam Livingstone,top_order,342,18,0.5237366003062787,3,True,
+batter,4409,Sam Curran,middle_lower,461,24,0.6585714285714286,4,True,
+batter,4412,Max ODowd,opener,186,9,1.0,1,True,
+batter,4417,Karan KC,late_entrant,2,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4438,Jasdeep Singh,middle_lower,20,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4458,Aneurin Donald,opener,24,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4460,Jeffrey Vandersay,middle_lower,20,2,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,4486,BR Sharath,top_order,5,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4487,Vyshak Kumar,late_entrant,16,6,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4489,Prasidh Krishna,late_entrant,10,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4494,Abhinav Manohar,middle_lower,131,8,0.81875,3,True,
+batter,4499,Saqib Mahmood,late_entrant,16,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4505,Jhye Richardson,late_entrant,2,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,4604,Mitchell Swepson,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,4636,Bjorn Fortuin,middle_lower,28,4,0.5384615384615384,2,False,Primary role below 60 scored balls or six matches
+batter,4639,Wellington Masakadza,middle_lower,102,11,0.75,2,True,
+batter,4641,Lungi Ngidi,late_entrant,43,11,0.86,2,False,Primary role below 60 scored balls or six matches
+batter,4658,Nasum Ahmed,middle_lower,40,5,0.7272727272727273,2,False,Primary role below 60 scored balls or six matches
+batter,4662,Cole McConchie,middle_lower,74,6,0.7628865979381443,2,True,
+batter,4665,Tom Blundell,opener,19,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4684,Dane Cleaver,top_order,69,5,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4686,Joshua Clarkson,middle_lower,80,5,0.7017543859649122,2,False,Primary role below 60 scored balls or six matches
+batter,4692,Lockie Ferguson,late_entrant,8,5,0.5,2,False,Primary role below 60 scored balls or six matches
+batter,4695,Nick Kelly,top_order,83,6,1.0,1,True,
+batter,4703,Rishabh Pant,top_order,499,27,0.7128571428571429,4,True,
+batter,4708,Rinku Singh,middle_lower,839,47,0.7863167760074976,3,True,
+batter,4716,Mayank Dagar,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4722,Rashid Khan,middle_lower,229,17,0.6205962059620597,2,True,
+batter,4736,Josh Inglis,top_order,497,31,0.6836313617606602,4,True,
+batter,4755,Shivam Dube,middle_lower,741,44,0.578003120124805,3,True,
+batter,4773,Jaker Ali Anik,middle_lower,407,22,0.8172690763052208,3,True,
+batter,4779,Pieter Willem Mulder,opener,55,4,0.4954954954954955,3,False,Primary role below 60 scored balls or six matches
+batter,4780,Mohammad Saif Hassan,opener,308,14,0.7096774193548387,2,True,
+batter,4784,Tony de Zorzi,opener,61,4,0.6703296703296703,2,False,Primary role below 60 scored balls or six matches
+batter,4790,Lutho Sipamla,late_entrant,9,2,0.6428571428571429,2,False,Primary role below 60 scored balls or six matches
+batter,4793,Dean Foxcroft,top_order,69,3,0.8023255813953488,3,False,Primary role below 60 scored balls or six matches
+batter,4802,Stephen Doheny,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,4807,Joshua Little,late_entrant,7,3,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,4812,Harry Tector,top_order,535,27,1.0,1,True,
+batter,4814,Lorcan Tucker,top_order,410,24,0.9111111111111111,3,True,
+batter,4815,Benjamin White,late_entrant,10,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4816,Khaleel Ahmed,late_entrant,3,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4817,Anmolpreet Singh,opener,82,4,0.9318181818181818,2,False,Primary role below 60 scored balls or six matches
+batter,4821,Mahipal Lomror,middle_lower,83,9,0.5060975609756098,3,True,
+batter,4823,Washington Sundar,middle_lower,265,13,0.5216535433070866,3,True,
+batter,4826,George Garton,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,4830,Keacy Carty,middle_lower,42,3,0.65625,2,False,Primary role below 60 scored balls or six matches
+batter,4837,Obed McCoy,late_entrant,6,3,0.5,2,False,Primary role below 60 scored balls or six matches
+batter,4838,Keemo Paul,late_entrant,6,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,4840,Odean Smith,late_entrant,12,1,1.0,3,False,Primary role below 60 scored balls or six matches
+batter,4842,Shamar Springer,middle_lower,49,5,0.7101449275362319,2,False,Primary role below 60 scored balls or six matches
+batter,4847,Finn Allen,opener,607,33,1.0,1,True,
+batter,4853,Glenn Phillips,top_order,540,26,0.7780979827089337,3,True,
+batter,4854,Rachin Ravindra,opener,345,22,0.6295620437956204,4,True,
+batter,4856,Benjamin Sears,late_entrant,33,8,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4857,Nathan Smith,late_entrant,7,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4867,Wesley Madhevere,opener,145,8,0.5160142348754448,4,True,
+batter,4871,Brandon Mavuta,late_entrant,15,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4874,Richard Ngarava,late_entrant,36,14,0.5806451612903226,2,False,Primary role below 60 scored balls or six matches
+batter,4876,Milton Shumba,top_order,20,1,0.5128205128205128,3,False,Primary role below 60 scored balls or six matches
+batter,4880,Aarif Sheikh,middle_lower,3,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4881,Dipendra Airee,middle_lower,19,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4882,Kushal Bhurtel,opener,44,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4895,Charith Asalanka,middle_lower,340,23,0.7780320366132724,3,True,
+batter,4900,Wanindu Hasaranga,middle_lower,187,18,0.6584507042253521,3,True,
+batter,4901,Asitha Fernando,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4902,Avishka Fernando,top_order,34,3,0.68,3,False,Primary role below 60 scored balls or six matches
+batter,4904,Kamindu Mendis,middle_lower,338,18,0.6046511627906976,3,True,
+batter,4926,Shadab Khan,middle_lower,165,15,0.8870967741935484,3,True,
+batter,4947,Kasun Rajitha,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4974,Mohammad Nadeem,top_order,7,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4983,Sikander Zulfiqar,middle_lower,3,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,4986,Rovman Powell,middle_lower,846,45,0.8229571984435797,3,True,
+batter,5029,Prerak Mankad,top_order,66,3,0.9166666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,5034,Murugan Ashwin,late_entrant,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,5039,Rajat Patidar,top_order,643,37,0.9892307692307692,3,True,
+batter,5041,Mukesh Kumar,late_entrant,22,7,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,5189,Faheem Ashraf,middle_lower,100,7,0.5154639175257731,3,True,
+batter,5379,Mark Adair,middle_lower,92,6,0.5542168674698795,2,True,
+batter,5441,Barry McCarthy,middle_lower,33,2,0.6,2,False,Primary role below 60 scored balls or six matches
+batter,5547,Nosthush Kenjige,late_entrant,10,1,0.7692307692307693,2,False,Primary role below 60 scored balls or six matches
+batter,5553,Phil Salt,opener,1373,62,0.9835243553008596,4,True,
+batter,5561,Brad Wheal,middle_lower,8,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,5562,Richard Gleeson,late_entrant,2,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,5577,Sai Kishore,late_entrant,16,4,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,5608,Narayan Jagadeesan,opener,81,6,1.0,2,True,
+batter,5665,Sanjay Yadav,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,5738,Xavier Bartlett,middle_lower,55,5,0.6111111111111112,2,False,Primary role below 60 scored balls or six matches
+batter,5750,Ehsan Khan,late_entrant,13,2,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,5808,Karim Janat,middle_lower,127,8,0.7094972067039106,3,True,
+batter,5809,Naveen ul Haq,middle_lower,41,4,0.7884615384615384,2,False,Primary role below 60 scored balls or six matches
+batter,5837,Mahedi Hasan,middle_lower,192,14,0.909952606635071,3,True,
+batter,5839,Yasir Ali Chowdhury,middle_lower,38,1,0.6440677966101694,2,False,Primary role below 60 scored balls or six matches
+batter,5866,Patrick Kruger,middle_lower,42,3,0.711864406779661,2,False,Primary role below 60 scored balls or six matches
+batter,5877,Andries Gous,top_order,52,2,0.9122807017543859,2,False,Primary role below 60 scored balls or six matches
+batter,5882,Afif Hossain,opener,20,1,0.4,4,False,Primary role below 60 scored balls or six matches
+batter,5892,Blair Tickner,middle_lower,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,5928,Prithvi Shaw,opener,197,15,1.0,1,True,
+batter,5939,Cameron Green,top_order,785,35,0.825446898002103,4,True,
+batter,5940,Riley Meredith,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,5944,Mohammed Siraj,late_entrant,18,6,0.5806451612903226,2,False,Primary role below 60 scored balls or six matches
+batter,5977,Khary Pierre,late_entrant,15,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,5979,Abrar Ahmed,late_entrant,7,3,0.6363636363636364,2,False,Primary role below 60 scored balls or six matches
+batter,6025,Henry Shipley,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6035,Chirag Suri,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,6059,Ruturaj Gaikwad,opener,1154,43,0.8350217076700435,2,True,
+batter,6097,Brydon Carse,middle_lower,27,4,0.7941176470588235,2,False,Primary role below 60 scored balls or six matches
+batter,6160,Chamika Karunaratne,middle_lower,23,2,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,6161,Rahul Chahar,middle_lower,18,2,0.75,2,False,Primary role below 60 scored balls or six matches
+batter,6166,Jack Edwards,middle_lower,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6172,Lasith Croospulle,top_order,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6203,Surendran Chandramohan,opener,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,6256,Varun Chakravarthy,late_entrant,24,10,0.7741935483870968,2,False,Primary role below 60 scored balls or six matches
+batter,6272,William Jacks,top_order,342,22,0.5411392405063291,4,True,
+batter,6273,Tom Banton,middle_lower,74,5,0.5522388059701493,4,False,Primary role below 60 scored balls or six matches
+batter,6280,Harry Brook,top_order,428,21,0.7051070840197694,4,True,
+batter,6281,Abhishek Sharma,opener,1753,102,0.9532354540511148,3,True,
+batter,6284,Anukul Roy,middle_lower,34,5,0.6071428571428571,3,False,Primary role below 60 scored balls or six matches
+batter,6286,Shivam Mavi,late_entrant,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,6288,Shubman Gill,opener,2043,82,1.0,1,True,
+batter,6297,Matthew Parkinson,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,6314,Devdutt Padikkal,top_order,618,37,0.9335347432024169,4,True,
+batter,6342,Matthew Breetzke,top_order,112,8,0.8,3,True,
+batter,6350,Matthew Kuhnemann,middle_lower,12,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6354,Spencer Johnson,late_entrant,9,5,0.6923076923076923,2,False,Primary role below 60 scored balls or six matches
+batter,6355,Shaheen Afridi,late_entrant,97,16,0.5987654320987654,2,True,
+batter,6389,Tanvir Islam,late_entrant,16,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6395,Josh Philippe,middle_lower,35,3,0.7608695652173914,2,False,Primary role below 60 scored balls or six matches
+batter,6396,Tim David,middle_lower,648,41,0.6694214876033058,3,True,
+batter,6398,Aaron Hardie,middle_lower,47,4,0.4017094017094017,4,False,Primary role below 60 scored balls or six matches
+batter,6423,Riyan Parag,top_order,805,40,0.8875413450937155,3,True,
+batter,6433,Darwish Rasooli,top_order,203,12,0.7302158273381295,2,True,
+batter,6436,Qais Ahmad,late_entrant,4,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6440,Omair Yousuf,opener,30,3,0.7317073170731707,2,False,Primary role below 60 scored balls or six matches
+batter,6441,Abdullah Shafique,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,6448,Ibrahim Zadran,opener,558,22,0.6829865361077111,3,True,
+batter,6450,Mujeeb Ur Rahman,middle_lower,29,3,0.5471698113207547,2,False,Primary role below 60 scored balls or six matches
+batter,6457,Urvil Patel,top_order,96,10,1.0,1,True,
+batter,6460,Ayush Badoni,middle_lower,397,20,0.6145510835913313,4,True,
+batter,6464,Arshdeep Singh,late_entrant,83,25,0.9021739130434783,2,True,
+batter,6466,Atharwa Taide,top_order,124,5,0.7005649717514124,2,False,Primary role below 60 scored balls or six matches
+batter,6467,Anuj Rawat,middle_lower,116,7,0.7837837837837838,4,True,
+batter,6473,Nuwanidu Fernando,top_order,12,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6486,Tanush Kotian,opener,31,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6487,Priyam Garg,top_order,14,1,0.6086956521739131,3,False,Primary role below 60 scored balls or six matches
+batter,6489,Darshan Nalkande,middle_lower,11,1,0.9166666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,6503,Zahoor Khan,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6506,Mohammad Imran Randhawa,middle_lower,10,1,0.8333333333333334,2,False,Primary role below 60 scored balls or six matches
+batter,6512,Michael Bracewell,middle_lower,217,13,0.7431506849315068,3,True,
+batter,6514,Anil Nidamanuru,top_order,27,2,0.6923076923076923,3,False,Primary role below 60 scored balls or six matches
+batter,6515,Benjamin Lister,middle_lower,3,1,0.6,2,False,Primary role below 60 scored balls or six matches
+batter,6518,Daniel Sams,middle_lower,0,0,,3,False,Primary role below 60 scored balls or six matches
+batter,6523,Blessing Muzarabani,late_entrant,36,12,0.8372093023255814,2,False,Primary role below 60 scored balls or six matches
+batter,6526,Himmat Singh,middle_lower,58,3,0.9830508474576272,2,False,Primary role below 60 scored balls or six matches
+batter,6565,Katene Clarke,opener,46,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6574,Alick Athanaze,opener,235,12,0.9710743801652892,2,True,
+batter,6591,KM Asif,middle_lower,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6628,Gerald Coetzee,middle_lower,71,10,0.7319587628865979,2,True,
+batter,6643,Hasan Mahmud,middle_lower,30,2,0.8571428571428571,2,False,Primary role below 60 scored balls or six matches
+batter,6645,Mohammad Sheikh,top_order,29,1,0.5471698113207547,2,False,Primary role below 60 scored balls or six matches
+batter,6651,Towhid Hridoy,top_order,640,36,0.774818401937046,3,True,
+batter,6664,Dion Myers,top_order,288,16,0.8470588235294118,3,True,
+batter,6669,Mohsin Khan,middle_lower,7,1,0.5833333333333334,2,False,Primary role below 60 scored balls or six matches
+batter,6671,Lalit Yadav,middle_lower,43,4,0.6056338028169014,3,False,Primary role below 60 scored balls or six matches
+batter,6674,Rahmanullah Gurbaz,opener,741,48,0.9069767441860465,2,True,
+batter,6676,Azmatullah Omarzai,middle_lower,432,28,0.7513043478260869,3,True,
+batter,6677,Mohammad Hasnain,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,6683,Mayank Markande,late_entrant,13,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6697,Shams Mulani,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6705,Scott McKechnie,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,6725,Sherfane Rutherford,middle_lower,493,31,0.6781292984869326,3,True,
+batter,6726,Romario Shepherd,middle_lower,325,26,0.6827731092436975,3,True,
+batter,6739,Amir Jangoo,opener,94,4,0.8034188034188035,3,False,Primary role below 60 scored balls or six matches
+batter,6772,Chetan Sakariya,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6783,Azam Khan,middle_lower,46,7,0.8846153846153846,2,False,Primary role below 60 scored balls or six matches
+batter,6795,Terrance Hinds,late_entrant,3,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6797,Dominic Drakes,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,6806,Tushar Deshpande,late_entrant,21,7,0.875,2,False,Primary role below 60 scored balls or six matches
+batter,6819,Yashasvi Jaiswal,opener,1544,73,1.0,1,True,
+batter,6881,Scott Edwards,top_order,104,8,0.7428571428571429,2,True,
+batter,6900,Michael Jones,top_order,12,1,0.631578947368421,2,False,Primary role below 60 scored balls or six matches
+batter,6919,Tyrone Kane,middle_lower,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,6922,Abdul Samad,middle_lower,61,4,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6931,Pathum Nissanka,opener,1051,52,1.0,1,True,
+batter,6932,Pramod Madushan,late_entrant,3,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,6985,Bas de Leede,top_order,56,2,0.9032258064516129,2,False,Primary role below 60 scored balls or six matches
+batter,6995,Saad Zafar,middle_lower,36,1,0.9230769230769231,2,False,Primary role below 60 scored balls or six matches
+batter,7001,Dilon Heyliger,late_entrant,16,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7002,Nicholas Kirton,top_order,77,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7003,Rayyan Pathan,opener,2,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,7008,Gus Atkinson,middle_lower,13,1,0.5652173913043478,2,False,Primary role below 60 scored balls or six matches
+batter,7044,Jamie Smith,opener,51,3,0.7611940298507462,2,False,Primary role below 60 scored balls or six matches
+batter,7046,Tinashe Kamunhukamwe,opener,47,4,0.6351351351351351,2,False,Primary role below 60 scored balls or six matches
+batter,7049,Kamil Mishara,top_order,216,11,0.5917808219178082,2,True,
+batter,7052,Dunith Wellalage,middle_lower,72,4,0.8089887640449438,2,False,Primary role below 60 scored balls or six matches
+batter,7059,Nehal Wadhera,middle_lower,300,21,0.5692599620493358,4,True,
+batter,7060,Arjun Tendulkar,late_entrant,14,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7094,Curtis Campher,middle_lower,276,16,0.7931034482758621,3,True,
+batter,7120,Rohit Paudel,top_order,64,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7140,Senuran Muthusamy,late_entrant,9,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7152,Hazratullah Zazai,opener,39,4,0.7222222222222222,2,False,Primary role below 60 scored balls or six matches
+batter,7155,Sahan Arachchige,middle_lower,3,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7201,Haroon Arshad,late_entrant,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,7216,Prabhsimran Singh,opener,939,49,0.9169921875,2,True,
+batter,7227,Nijat Masood,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,7240,FazalHaq Farooqi,late_entrant,22,7,0.6285714285714286,2,False,Primary role below 60 scored balls or six matches
+batter,7250,Mukesh Choudhary,middle_lower,2,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,7260,Dhruv Jurel,top_order,353,16,0.4537275064267352,3,True,
+batter,7269,Sushant Mishra,late_entrant,3,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7270,Anrich Nortje,late_entrant,50,11,0.9433962264150944,2,False,Primary role below 60 scored balls or six matches
+batter,7304,Sanvir Singh,late_entrant,14,3,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,7312,Nandre Burger,middle_lower,19,2,0.6333333333333333,2,False,Primary role below 60 scored balls or six matches
+batter,7322,Yash Dayal,late_entrant,7,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7325,Harpreet Brar,middle_lower,64,6,0.5765765765765766,2,True,
+batter,7327,Rasikh Salam,middle_lower,27,3,0.84375,2,False,Primary role below 60 scored balls or six matches
+batter,7338,Haider Ali,top_order,0,0,,3,False,Primary role below 60 scored balls or six matches
+batter,7341,Jake McGurk,opener,184,18,0.6865671641791045,2,True,
+batter,7344,Shoriful Islam,middle_lower,38,4,0.5352112676056338,2,False,Primary role below 60 scored balls or six matches
+batter,7355,Tayyab Tahir,middle_lower,63,4,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,7364,Haris Rauf,late_entrant,63,14,0.8289473684210527,2,True,
+batter,7406,Rizwan CP,top_order,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,7409,Sundeep Jora,middle_lower,54,2,0.9,2,False,Primary role below 60 scored balls or six matches
+batter,7446,Abdul Samad,middle_lower,289,23,0.7506493506493507,3,True,
+batter,7472,Shahbaz Ahmed,middle_lower,198,13,0.7795275590551181,3,True,
+batter,7473,Akash Deep,middle_lower,8,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,7498,Abhijeet Tomar,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,7503,Ravi Bishnoi,late_entrant,65,20,0.7065217391304348,2,True,
+batter,7533,Simarjeet Singh,late_entrant,7,3,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,7544,Venkatesh Iyer,top_order,463,22,0.6652298850574713,4,True,
+batter,7545,Kuldeep Sen,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,7566,Ben Curran,opener,40,4,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7574,Kumar Kartikeya Singh,late_entrant,8,2,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,7625,Suryansh Shedge,middle_lower,77,5,0.6875,2,False,Primary role below 60 scored balls or six matches
+batter,7634,Aaron Jones,top_order,40,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7689,Dilshan Madushanka,late_entrant,8,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7690,Saim Ayub,opener,725,45,0.8819951338199513,3,True,
+batter,7692,Qasim Akram,middle_lower,15,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7696,Mohammad Wasim,middle_lower,8,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,7699,Abbas Afridi,middle_lower,62,5,0.7126436781609196,2,False,Primary role below 60 scored balls or six matches
+batter,7702,Chamindu Wickramasinghe,middle_lower,24,1,0.7272727272727273,2,False,Primary role below 60 scored balls or six matches
+batter,7704,Pavan Rathnayake,top_order,38,5,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7709,Ainsley Ndlovu,late_entrant,4,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7710,Brandon Glover,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7741,Gareth Delany,middle_lower,134,8,0.6442307692307693,3,True,
+batter,7744,Jordan Cox,top_order,49,3,0.875,2,False,Primary role below 60 scored balls or six matches
+batter,7755,Harsh Thaker,middle_lower,26,2,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,7756,Kaleem Sana,late_entrant,4,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7761,Ravinderpal Singh,middle_lower,20,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7808,Marco Jansen,middle_lower,191,18,0.7795918367346939,2,True,
+batter,7894,Tony Munyonga,middle_lower,84,7,0.8235294117647058,3,True,
+batter,7897,Namboori Tilak Varma,top_order,1053,47,0.533975659229209,3,True,
+batter,7900,Tanzid Hasan,opener,886,41,0.985539488320356,2,True,
+batter,7901,Parvez Emon,opener,375,25,0.7352941176470589,3,True,
+batter,7903,Shamim Hossain,middle_lower,271,24,0.8885245901639345,2,True,
+batter,7905,Tanzim Sakib,middle_lower,112,8,0.6871165644171779,2,True,
+batter,7911,Oliver Hairs,opener,49,5,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7912,Vikramjit Singh,top_order,96,7,0.7441860465116279,2,True,
+batter,7914,Clayton Floyd,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,7915,Monank Patel,opener,37,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7920,Nathan Ellis,middle_lower,30,3,0.5769230769230769,2,False,Primary role below 60 scored balls or six matches
+batter,7924,Kushal Malla,top_order,30,2,0.5882352941176471,2,False,Primary role below 60 scored balls or six matches
+batter,7925,Rohan Rangarajan,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,7926,Manpreet Singh,middle_lower,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,7927,Janak Prakash,top_order,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,7928,Vinoth Baskaran,late_entrant,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,7929,Aryaman Sunil Uchil,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,7931,Aritra Dutta,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,7935,Mohammad Ghazanfar,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,7937,Wasim Ali,top_order,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,7967,Noor Ahmad,late_entrant,74,20,0.6981132075471698,2,True,
+batter,7978,Johnathan Campbell,middle_lower,65,7,0.6435643564356436,2,True,
+batter,8005,Zawar Farid,middle_lower,0,0,,3,False,Primary role below 60 scored balls or six matches
+batter,8009,Junaid Siddique,late_entrant,22,6,0.88,2,False,Primary role below 60 scored balls or six matches
+batter,8014,Avi Dixit,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,8040,Ripal Patel,middle_lower,29,2,0.6744186046511628,2,False,Primary role below 60 scored balls or six matches
+batter,8049,Naseem Shah,middle_lower,28,3,0.8484848484848485,2,False,Primary role below 60 scored balls or six matches
+batter,8085,Suyash Prabhudessai,middle_lower,34,3,0.723404255319149,2,False,Primary role below 60 scored balls or six matches
+batter,8093,Nikhil Chaudhary,middle_lower,19,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8101,Ashutosh Sharma,middle_lower,179,11,0.6067796610169491,2,True,
+batter,8141,Auqib Nabi,middle_lower,2,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,8177,Akash Madhwal,middle_lower,9,1,0.6428571428571429,2,False,Primary role below 60 scored balls or six matches
+batter,8182,Donovan Ferreira,middle_lower,271,22,0.8187311178247734,2,True,
+batter,8217,Ansh Tandon,middle_lower,13,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8221,Nitish Reddy,top_order,317,16,0.47242921013412814,3,True,
+batter,8238,Sameer Rizvi,top_order,186,10,0.6348122866894198,3,True,
+batter,8241,Lokesh Bam,late_entrant,10,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8251,Kumar Kushagra,opener,14,1,0.6666666666666666,3,False,Primary role below 60 scored balls or six matches
+batter,8266,Sumit Kumar 1,middle_lower,15,2,0.625,2,False,Primary role below 60 scored balls or six matches
+batter,8295,Matthew Forde,middle_lower,51,7,0.49038461538461536,3,False,Primary role below 60 scored balls or six matches
+batter,8298,Ramon Simmonds,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8301,Asif Khan,middle_lower,124,7,0.62,2,True,
+batter,8311,Dan Mousley,late_entrant,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8326,Jayden Seales,late_entrant,6,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8380,Mohammad Rishad Hossain,middle_lower,99,12,0.6428571428571429,2,True,
+batter,8405,Kanwarpal Tathgur,opener,8,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8408,Shreyas Movva,middle_lower,67,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8424,Tanveer Sangha,late_entrant,4,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8530,Kartik Tyagi,late_entrant,5,2,0.5,2,False,Primary role below 60 scored balls or six matches
+batter,8580,Yudhvir Singh,middle_lower,14,2,0.875,2,False,Primary role below 60 scored balls or six matches
+batter,8600,Tadiwanashe Marumani,opener,302,27,0.8435754189944135,4,True,
+batter,8623,Kristian Clarke,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8634,Ashwani Kumar,late_entrant,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8637,Vriitya Aravind,top_order,40,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8638,Basil Hameed,middle_lower,50,4,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,8639,Kartik Meiyappan,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,8647,Sediqullah Atal,opener,278,14,0.5450980392156862,2,True,
+batter,8652,Mohammad Ishaq,middle_lower,48,3,0.6666666666666666,3,False,Primary role below 60 scored balls or six matches
+batter,8654,Cooper Connolly,top_order,345,16,0.9504132231404959,3,True,
+batter,8661,Matheesha Pathirana,late_entrant,18,6,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,8664,Victor Nyauchi,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,8719,Aryan Lakra,top_order,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,8723,Mohammed Faraazuddin,late_entrant,8,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8726,Alishan Sharafu,opener,137,5,0.6116071428571429,3,False,Primary role below 60 scored balls or six matches
+batter,8727,Sanchit Sharma,middle_lower,5,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,8739,Muhammad Irfan,middle_lower,105,6,0.813953488372093,3,True,
+batter,8741,Mohammad Haris,top_order,166,12,0.5551839464882943,4,True,
+batter,8746,Vaibhav Arora,late_entrant,7,6,0.5,2,False,Primary role below 60 scored balls or six matches
+batter,8771,Rubin Hermann,top_order,74,4,0.9024390243902439,2,False,Primary role below 60 scored balls or six matches
+batter,8805,Ottneil Baartman,middle_lower,25,2,0.7142857142857143,2,False,Primary role below 60 scored balls or six matches
+batter,15269,Mohammed Aslam,middle_lower,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,15271,Usmangani Ibrahim Patel,top_order,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,15274,Ravija Sandaruwan,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,15279,Shiraz Khan,middle_lower,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,15280,Sayed Monib,late_entrant,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,15303,Bilal Tahir,top_order,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,15551,Ackeem Auguste,top_order,71,7,0.568,3,True,
+batter,15629,Shayan Jahangir,middle_lower,39,2,0.8297872340425532,2,False,Primary role below 60 scored balls or six matches
+batter,16498,Sultan Ahmad,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,17413,Neil Rock,middle_lower,51,4,0.9272727272727272,2,False,Primary role below 60 scored balls or six matches
+batter,17419,Tim Tector,opener,72,5,0.8888888888888888,2,False,Primary role below 60 scored balls or six matches
+batter,17424,Graham Hume,late_entrant,11,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,17432,Ross Adair,opener,207,10,1.0,1,True,
+batter,17910,Mohammad Akram,opener,5,1,0.5555555555555556,2,False,Primary role below 60 scored balls or six matches
+batter,17911,Nangeyalia Kharote,middle_lower,11,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,17937,Zubaid Akbari,top_order,7,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,19012,Zeeshan Ali,opener,57,3,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,19020,Ateeq Iqbal,late_entrant,3,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,19125,Ayush Shukla,late_entrant,2,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,19145,Aamer Jamal,middle_lower,8,1,0.5333333333333333,2,False,Primary role below 60 scored balls or six matches
+batter,19147,Faraz Akram,middle_lower,42,3,0.7636363636363637,2,False,Primary role below 60 scored balls or six matches
+batter,19307,Tharindu Rathnayake,late_entrant,15,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,19309,Lahiru Udara,opener,88,5,0.9263157894736842,2,False,Primary role below 60 scored balls or six matches
+batter,19312,Nuwan Thushara,late_entrant,16,5,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,19315,Vijayakanth Viyaskanth,late_entrant,7,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,19316,Maheesh Theekshana,late_entrant,88,19,0.5176470588235295,2,True,
+batter,19530,Shahnawaz Dhani,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,19714,Abishek Porel,opener,234,11,0.4854771784232365,4,True,
+batter,19781,Mitchell Owen,middle_lower,104,10,0.9811320754716981,2,True,
+batter,19894,Mitchell Hay,middle_lower,49,7,0.9423076923076923,2,False,Primary role below 60 scored balls or six matches
+batter,19902,Tim Pringle,late_entrant,27,2,0.9310344827586207,2,False,Primary role below 60 scored balls or six matches
+batter,20005,Arshad Khan,middle_lower,73,5,0.8202247191011236,2,False,Primary role below 60 scored balls or six matches
+batter,20006,Ramandeep Singh,middle_lower,102,10,0.6375,3,True,
+batter,20023,Karan Sharma,opener,5,1,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,20163,Aasif Sheikh,opener,51,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,20175,Nandan Yadav,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,20229,Mohammad Ali,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,20310,Ahmed Daniyal,late_entrant,11,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,20316,Shahab Alam,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,20327,Usman Khan,top_order,165,12,0.5221518987341772,3,True,
+batter,20702,Tristan Stubbs,middle_lower,642,39,0.7062706270627063,3,True,
+batter,20704,Salman Mirza,late_entrant,5,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,20802,Abdul Basith,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,20894,Aman Khan,middle_lower,83,5,0.8645833333333334,2,False,Primary role below 60 scored balls or six matches
+batter,20989,Vivrant Sharma,opener,47,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,21777,Tafadzwa Tsiga,middle_lower,24,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,21780,Ernest Masuku,middle_lower,5,1,0.8333333333333334,2,False,Primary role below 60 scored balls or six matches
+batter,21781,Clive Madande,middle_lower,246,15,0.9389312977099237,2,True,
+batter,21784,Brad Evans,late_entrant,57,11,0.5327102803738317,2,False,Primary role below 60 scored balls or six matches
+batter,21790,Tashinga Musekiwa,middle_lower,156,14,0.8387096774193549,2,True,
+batter,21791,J Gumbie,opener,52,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,22134,Luke Jongwe,middle_lower,47,6,0.5662650602409639,2,False,Primary role below 60 scored balls or six matches
+batter,22137,Fionn Hand,late_entrant,6,2,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,22187,Ryan Klein,middle_lower,47,2,0.7966101694915254,2,False,Primary role below 60 scored balls or six matches
+batter,22188,Aryan Dutt,middle_lower,33,3,0.75,2,False,Primary role below 60 scored balls or six matches
+batter,22471,Matthew Humphreys,late_entrant,11,4,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,22565,Muhammad Waseem,opener,363,15,1.0,1,True,
+batter,22920,Jacob Duffy,late_entrant,18,8,0.6428571428571429,2,False,Primary role below 60 scored balls or six matches
+batter,23311,Jacob Bethell,top_order,184,11,0.4520884520884521,3,True,
+batter,23450,Sai Sudharsan,opener,1041,34,0.6926147704590818,2,True,
+batter,24017,Brian Bennett,opener,602,28,0.7828348504551366,4,True,
+batter,24346,Mohamed Shafeeq,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,24381,Shariz Ahmad,middle_lower,31,2,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,24475,Rehan Ahmed,late_entrant,25,6,0.7352941176470589,2,False,Primary role below 60 scored balls or six matches
+batter,24779,Ijaz Ahmadzai,middle_lower,77,4,0.9506172839506173,2,False,Primary role below 60 scored balls or six matches
+batter,24803,Gulshan Jha,middle_lower,16,1,0.47058823529411764,3,False,Primary role below 60 scored balls or six matches
+batter,24812,Chris Greaves,late_entrant,22,3,0.7857142857142857,2,False,Primary role below 60 scored balls or six matches
+batter,24887,Innocent Kaia,top_order,26,1,0.5531914893617021,2,False,Primary role below 60 scored balls or six matches
+batter,24978,Jack Jarvis,late_entrant,11,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,24982,Charlie Tear,top_order,19,2,0.76,2,False,Primary role below 60 scored balls or six matches
+batter,25011,Liam Mccarthy,late_entrant,24,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,25030,Zaman Khan,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,25048,Umran Malik,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,25128,Nqabayomzi Peter,late_entrant,13,3,0.65,2,False,Primary role below 60 scored balls or six matches
+batter,25132,Praful Hinge,middle_lower,8,1,0.8888888888888888,2,False,Primary role below 60 scored balls or six matches
+batter,25138,Harsh Dubey,late_entrant,9,4,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,25139,Shubham Dubey,middle_lower,88,9,0.6153846153846154,2,True,
+batter,25213,Dewald Brevis,top_order,256,15,0.5150905432595574,4,True,
+batter,25216,Andile Simelane,middle_lower,33,5,0.9428571428571428,2,False,Primary role below 60 scored balls or six matches
+batter,25231,Samay Shrivastava,middle_lower,11,1,0.5789473684210527,2,False,Primary role below 60 scored balls or six matches
+batter,25501,Meet Bhavsar,opener,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,25502,Adnan Idrees,top_order,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,25507,Edson Silva,middle_lower,0,0,,2,False,Primary role below 60 scored balls or six matches
+batter,25534,Chad Bowes,opener,115,9,1.0,1,True,
+batter,25669,Priyansh Arya,opener,391,28,1.0,1,True,
+batter,25679,Salil Arora,middle_lower,58,5,0.5918367346938775,2,False,Primary role below 60 scored balls or six matches
+batter,25809,Juanoy Drysdale,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,26519,Janith Liyanage,middle_lower,120,5,0.9836065573770492,2,False,Primary role below 60 scored balls or six matches
+batter,26646,Rahul Chopra,top_order,137,8,0.8896103896103896,3,True,
+batter,26663,Kwena Maphaka,late_entrant,25,6,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,26795,Joel Davies,late_entrant,14,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,26830,Nishant Kumar Sindhu,top_order,50,5,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,26834,Raj Bawa,late_entrant,18,2,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,26839,Haseebullah Khan,top_order,19,1,0.8636363636363636,2,False,Primary role below 60 scored balls or six matches
+batter,26843,Maaz Sadaqat,top_order,83,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,26906,Angkrish Raghuvanshi,top_order,553,25,0.9341216216216216,3,True,
+batter,26909,Yash Dhull,middle_lower,15,1,0.6521739130434783,2,False,Primary role below 60 scored balls or six matches
+batter,26913,Shaik Rasheed,opener,63,5,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,26916,Yasir Mohammad,middle_lower,6,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,26988,Jitenkumar Ramanandi,middle_lower,9,1,0.6428571428571429,2,False,Primary role below 60 scored balls or six matches
+batter,27004,Hassnain Shah,middle_lower,5,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,27071,Vinayak Shukla,middle_lower,21,2,0.9130434782608695,2,False,Primary role below 60 scored balls or six matches
+batter,27137,Hammad Mirza,top_order,63,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,27364,Simranjeet Kang,middle_lower,5,1,0.5555555555555556,2,False,Primary role below 60 scored balls or six matches
+batter,27380,Harshit Kaushik,middle_lower,38,6,0.8085106382978723,2,False,Primary role below 60 scored balls or six matches
+batter,27390,Matiullah Khan,late_entrant,5,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,27460,Ali Naseer,middle_lower,14,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,27464,Aayan Afzal Khan,middle_lower,36,1,0.782608695652174,2,False,Primary role below 60 scored balls or six matches
+batter,27466,Dhruv Parashar,middle_lower,69,6,0.75,2,True,
+batter,27469,Aryansh Sharma,opener,125,5,0.9689922480620154,2,False,Primary role below 60 scored balls or six matches
+batter,27504,Dushan Hemantha,middle_lower,10,1,0.5263157894736842,2,False,Primary role below 60 scored balls or six matches
+batter,27516,Ihsanullah Ihsanullah,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,27743,DT Doram,middle_lower,5,1,0.8333333333333334,2,False,Primary role below 60 scored balls or six matches
+batter,27959,Hrithik Shokeen,late_entrant,14,2,1.0,2,False,Primary role below 60 scored balls or six matches
+batter,27960,Mayank Yadav,late_entrant,12,5,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,27962,Saurav Chauhan,late_entrant,8,1,0.5333333333333333,3,False,Primary role below 60 scored balls or six matches
+batter,27964,Anshul Kamboj,late_entrant,43,9,0.8431372549019608,2,False,Primary role below 60 scored balls or six matches
+batter,28018,Ashok Sharma,middle_lower,3,1,0.75,2,False,Primary role below 60 scored balls or six matches
+batter,28021,Saurabh Dubey,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,28185,Kamil Pooran,opener,40,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,28655,Muhammad Rohid,middle_lower,2,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,28756,Haider Ali,late_entrant,36,8,0.9473684210526315,2,False,Primary role below 60 scored balls or six matches
+batter,28908,Vincent Masekesa,middle_lower,4,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,28915,Trevor Gwandu,late_entrant,19,3,0.7307692307692307,2,False,Primary role below 60 scored balls or six matches
+batter,28967,Tim Robinson,opener,284,17,0.7117794486215538,2,True,
+batter,28970,Connor Esterhuizen,top_order,76,3,0.562962962962963,2,False,Primary role below 60 scored balls or six matches
+batter,29066,Zakary Foulkes,late_entrant,41,8,0.6212121212121212,2,False,Primary role below 60 scored balls or six matches
+batter,29075,Aadil Ansari,late_entrant,5,1,0.5,2,False,Primary role below 60 scored balls or six matches
+batter,29080,Muhammad Khan,late_entrant,12,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,29558,Muhammad Arfan,late_entrant,32,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,29833,Bashir Ahmad,late_entrant,5,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,29888,Harshit Rana,middle_lower,93,6,0.6595744680851063,2,True,
+batter,30925,Bradley Currie,late_entrant,9,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,30927,Saiteja Mukkamalla,opener,43,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,31107,Yasin Patel,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,31513,Ethan Dsouza,top_order,29,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,31518,Akshat Raghuwanshi,middle_lower,25,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,31529,Robin Minz,middle_lower,15,2,0.7894736842105263,2,False,Primary role below 60 scored balls or six matches
+batter,31835,Akshay Roopak Puri,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,31836,Aman Desai,middle_lower,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,32399,Aaron Johnson,opener,14,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,32401,Akhil Kumar,late_entrant,12,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,32862,Allah Ghazanfar,middle_lower,7,1,0.6363636363636364,2,False,Primary role below 60 scored balls or six matches
+batter,33067,Ravichandran Smaran,top_order,19,2,0.76,3,False,Primary role below 60 scored balls or six matches
+batter,33440,Adwitya Bhargava,late_entrant,0,0,,1,False,Primary role below 60 scored balls or six matches
+batter,33969,Tinotenda Maposa,middle_lower,25,2,0.5555555555555556,2,False,Primary role below 60 scored balls or six matches
+batter,34466,Arafat Minhas,middle_lower,46,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,34485,Sufiyan Muqeem,late_entrant,23,8,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,34522,Brandon McMullen,top_order,96,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,34527,Jasper John Davidson,late_entrant,4,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,34546,Aryan Bisht,middle_lower,32,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,34969,Manav Suthar,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,35071,Kunal Rathore,top_order,5,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,35102,Zikria Islam,middle_lower,8,1,0.8,2,False,Primary role below 60 scored balls or six matches
+batter,35122,Shah Faisal,middle_lower,15,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,35318,Sakib Hussain,late_entrant,7,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,35506,Quentin Sampson,middle_lower,43,3,0.86,2,False,Primary role below 60 scored balls or six matches
+batter,36551,Zishan Motara,late_entrant,4,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,36553,Jediah Blades,late_entrant,10,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,36983,Mohit Rathee,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,37052,Naman Dhir,top_order,235,15,0.4835390946502058,3,True,
+batter,37201,Jewel Andrew,opener,85,5,0.8854166666666666,2,False,Primary role below 60 scored balls or six matches
+batter,37731,Musheer Khan,middle_lower,3,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,37879,Khawaja Nafay,middle_lower,32,3,0.8205128205128205,2,False,Primary role below 60 scored balls or six matches
+batter,37939,Nahid Rana,late_entrant,5,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,38855,Mohammad Saifuddin,middle_lower,41,2,0.5774647887323944,2,False,Primary role below 60 scored balls or six matches
+batter,39374,Muhammad Zohaib,opener,85,5,0.5862068965517241,2,False,Primary role below 60 scored balls or six matches
+batter,39640,Sineth Jayawardena,opener,47,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,39657,Eshan Malinga,late_entrant,26,9,0.7027027027027027,2,False,Primary role below 60 scored balls or six matches
+batter,39991,Parveen Kumar,middle_lower,8,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,41110,Mayank Kumar,middle_lower,7,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,42548,Muhammad Jawadullah,late_entrant,10,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,42810,Noah Croes,middle_lower,49,4,0.9245283018867925,2,False,Primary role below 60 scored balls or six matches
+batter,42811,Michael Levitt,opener,203,8,1.0,1,True,
+batter,42845,Arshin Kulkarni,opener,9,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,43250,Dilpreet Singh Bajwa,top_order,41,1,0.7735849056603774,2,False,Primary role below 60 scored balls or six matches
+batter,43774,Shivam Singh,late_entrant,3,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,43798,Lhuan Pretorius,top_order,45,7,0.6164383561643836,2,False,Primary role below 60 scored balls or six matches
+batter,43917,Krish Bhagat,middle_lower,15,1,0.7142857142857143,2,False,Primary role below 60 scored balls or six matches
+batter,45381,PV Satyanarayan Raju,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,45457,Zach Lion Cachet,middle_lower,47,3,0.9791666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,45749,Mukul Choudhary,middle_lower,110,7,0.9322033898305084,2,True,
+batter,45966,Prashant Veer,late_entrant,38,4,0.5671641791044776,2,False,Primary role below 60 scored balls or six matches
+batter,46066,Vipraj Nigam,middle_lower,44,3,0.6197183098591549,2,False,Primary role below 60 scored balls or six matches
+batter,46137,Kartik Sharma,top_order,152,5,0.7037037037037037,3,False,Primary role below 60 scored balls or six matches
+batter,46378,Kyle Klein,middle_lower,35,4,0.8974358974358975,2,False,Primary role below 60 scored balls or six matches
+batter,46929,Dian Forrester,middle_lower,64,4,0.8311688311688312,2,False,Primary role below 60 scored balls or six matches
+batter,47050,Shamar Joseph,late_entrant,29,7,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,47314,Wafiullah Tarakhil,top_order,17,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,47370,Aniket Verma,middle_lower,159,12,0.8112244897959183,2,True,
+batter,47371,Zuhaid Zubair,late_entrant,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,47403,Newman Nyamhuri,middle_lower,15,2,0.75,2,False,Primary role below 60 scored balls or six matches
+batter,47724,Jahandad Khan,middle_lower,27,2,0.84375,2,False,Primary role below 60 scored balls or six matches
+batter,48504,Ayush Mhatre,top_order,128,7,0.5333333333333333,2,True,
+batter,48575,Sahil Parakh,top_order,31,3,0.9393939393939394,2,False,Primary role below 60 scored balls or six matches
+batter,48616,Abdul Saqlain,late_entrant,11,1,0.5238095238095238,2,False,Primary role below 60 scored balls or six matches
+batter,48953,Danish Malewar,opener,5,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,49003,Hasan Nawaz,middle_lower,150,13,0.4672897196261682,4,True,
+batter,49027,Bevon Jacobs,middle_lower,156,10,0.9936305732484076,2,True,
+batter,49268,Sohaib Khan,top_order,7,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,50062,Nqobani Mokoena,middle_lower,21,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,50284,Vaibhav Sooryavanshi,opener,555,29,0.9857904085257548,2,True,
+batter,55747,Benjamin Calitz,middle_lower,81,6,1.0,1,True,
+batter,56685,Abdullah Ahmadzai,middle_lower,9,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,56817,Shivang Kumar,middle_lower,29,2,0.6444444444444445,2,False,Primary role below 60 scored balls or six matches
+batter,56830,Madhav Tiwari,late_entrant,8,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+batter,57747,Charlie Cassell,late_entrant,3,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,58134,Digvesh Rathi,late_entrant,8,3,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,58135,Tejasvi Dahiya,late_entrant,12,1,0.8,2,False,Primary role below 60 scored balls or six matches
+batter,58246,Prince Yadav,late_entrant,19,6,0.5,2,False,Primary role below 60 scored balls or six matches
+batter,59045,Jai Moondra,late_entrant,3,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,60609,Navin Bidaisee,middle_lower,30,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,60700,Ravi Singh,middle_lower,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,64604,Kalhan Challu,middle_lower,8,1,0.7272727272727273,2,False,Primary role below 60 scored balls or six matches
+batter,66103,Noor Rahman,middle_lower,15,1,0.8823529411764706,2,False,Primary role below 60 scored balls or six matches
+batter,67036,Brijesh Sharma,late_entrant,4,2,1.0,1,False,Primary role below 60 scored balls or six matches
+batter,71727,Razaullah Razaullah,late_entrant,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,23,Piyush Chawla,middle_bowler,450,26,0.8152173913043478,3,True,
+bowler,28,Ishant Sharma,powerplay_bowler,258,22,0.6113744075829384,3,True,
+bowler,47,Virat Kohli,death_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,143,Dinesh Karthik,death_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,147,Pradeep Sangwan,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,152,Ravindra Jadeja,middle_bowler,961,54,0.9600399600399601,3,True,
+bowler,158,Amit Mishra,middle_bowler,102,8,0.8095238095238095,2,True,
+bowler,161,Dwayne Bravo,death_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,232,Tom Cooper,death_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,278,Tim Southee,powerplay_bowler,192,16,0.5363128491620112,3,True,
+bowler,286,Kane Richardson,powerplay_bowler,12,1,0.6666666666666666,3,False,Primary role below 60 scored balls or six matches
+bowler,295,Wayne Parnell,powerplay_bowler,102,7,0.6754966887417219,3,True,
+bowler,305,Ravichandran Ashwin,middle_bowler,522,35,0.6641221374045801,3,True,
+bowler,332,Angelo Mathews,powerplay_bowler,97,8,0.8818181818181818,3,True,
+bowler,360,Bhuvneshwar Kumar,powerplay_bowler,822,61,0.5982532751091703,3,True,
+bowler,395,Karn Sharma,middle_bowler,297,19,0.908256880733945,2,True,
+bowler,403,Umesh Yadav,powerplay_bowler,174,14,0.8055555555555556,3,True,
+bowler,470,Mohammad Amir,powerplay_bowler,84,7,0.5753424657534246,2,True,
+bowler,479,Adil Rashid,middle_bowler,640,36,0.8290155440414507,3,True,
+bowler,494,Kieron Pollard,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,499,Shakib Al Hasan,middle_bowler,48,3,0.5454545454545454,3,False,Primary role below 60 scored balls or six matches
+bowler,507,Mohammad Mahmudullah,middle_bowler,24,3,1.0,2,False,Primary role below 60 scored balls or six matches
+bowler,722,Liam Dawson,middle_bowler,156,13,0.6023166023166023,3,True,
+bowler,768,Reeza Hendricks,middle_bowler,23,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,773,Shadley Van Schalkwyk,death_bowler,36,3,0.5454545454545454,3,False,Primary role below 60 scored balls or six matches
+bowler,781,Sunil Narine,middle_bowler,834,50,0.7433155080213903,3,True,
+bowler,786,Chris Jordan,death_bowler,90,9,0.45454545454545453,3,True,
+bowler,818,Mitchell Marsh,middle_bowler,144,13,0.7024390243902439,3,True,
+bowler,820,Nathan Coulter Nile,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,829,Mitchell Starc,powerplay_bowler,366,29,0.6110183639398998,3,True,
+bowler,830,Josh Hazlewood,powerplay_bowler,462,37,0.5441696113074205,3,True,
+bowler,838,Glenn Maxwell,middle_bowler,222,24,0.6032608695652174,3,True,
+bowler,914,Krishnappa Gowtham,powerplay_bowler,42,5,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,988,Graeme Cremer,middle_bowler,30,2,0.7142857142857143,2,False,Primary role below 60 scored balls or six matches
+bowler,1028,Varun Aaron,middle_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,1045,David Wiese,powerplay_bowler,12,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,1071,Jaydev Unadkat,middle_bowler,180,18,0.4358353510895884,3,True,
+bowler,1101,George Dockrell,middle_bowler,72,7,0.9230769230769231,2,True,
+bowler,1107,Mohammad Nabi,middle_bowler,342,29,0.7467248908296943,3,True,
+bowler,1159,Tendai Chatara,powerplay_bowler,36,4,0.4675324675324675,3,False,Primary role below 60 scored balls or six matches
+bowler,1171,Chris Woakes,powerplay_bowler,60,4,0.8823529411764706,3,False,Primary role below 60 scored balls or six matches
+bowler,1195,Ben Stokes,powerplay_bowler,6,1,1.0,2,False,Primary role below 60 scored balls or six matches
+bowler,1219,David Willey,powerplay_bowler,54,4,0.6,3,False,Primary role below 60 scored balls or six matches
+bowler,1318,Andre Russell,middle_bowler,269,31,0.47442680776014107,3,True,
+bowler,1389,Sean Abbott,middle_bowler,144,17,0.3711340206185567,3,True,
+bowler,1487,Adam Milne,powerplay_bowler,222,19,0.5260663507109005,3,True,
+bowler,1541,Sean Williams,middle_bowler,90,7,0.8823529411764706,3,True,
+bowler,1556,David Payne,middle_bowler,18,2,0.6,2,False,Primary role below 60 scored balls or six matches
+bowler,1566,Mohammed Shami,powerplay_bowler,540,37,0.6593406593406593,3,True,
+bowler,1596,Moeen Ali,middle_bowler,270,25,0.6887755102040817,3,True,
+bowler,1612,Yuzvendra Chahal,middle_bowler,959,56,0.7690457097032879,3,True,
+bowler,1617,Rishi Dhawan,powerplay_bowler,54,4,1.0,3,False,Primary role below 60 scored balls or six matches
+bowler,1701,Swapnil Singh,middle_bowler,60,7,0.5882352941176471,2,True,
+bowler,1758,Patrick Cummins,powerplay_bowler,354,37,0.40503432494279173,3,True,
+bowler,1772,Sheldon Cottrell,powerplay_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,1813,Deepak Chahar,powerplay_bowler,536,36,0.7976190476190477,3,True,
+bowler,1944,Keshav Maharaj,middle_bowler,282,16,0.8545454545454545,3,True,
+bowler,2054,Jason Behrendorff,powerplay_bowler,252,19,0.6,3,True,
+bowler,2210,Sabbir Rahman,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,2213,Soumya Sarkar,middle_bowler,24,4,1.0,2,False,Primary role below 60 scored balls or six matches
+bowler,2214,Gulbadin Naib,middle_bowler,36,5,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,2261,Harshal Patel,middle_bowler,438,41,0.5017182130584192,3,True,
+bowler,2296,Safyaan Sharif,middle_bowler,18,2,0.5454545454545454,3,False,Primary role below 60 scored balls or six matches
+bowler,2304,Tymal Mills,death_bowler,24,3,0.4444444444444444,3,False,Primary role below 60 scored balls or six matches
+bowler,2315,Reece Topley,powerplay_bowler,142,12,0.5991561181434599,3,True,
+bowler,2320,Trent Boult,powerplay_bowler,582,44,0.6056191467221644,3,True,
+bowler,2321,Olly Stone,powerplay_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,2334,Dwaine Pretorius,death_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,2351,Danushka Gunathilaka,death_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,2359,Prenelan Subrayen,middle_bowler,42,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,2364,Ashton Agar,middle_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,2367,Travis Head,middle_bowler,10,1,0.625,2,False,Primary role below 60 scored balls or six matches
+bowler,2382,Jamie Overton,middle_bowler,258,22,0.5682819383259912,3,True,
+bowler,2399,Dushmantha Chameera,powerplay_bowler,282,29,0.4279210925644917,3,True,
+bowler,2407,Dhananjaya de Silva,middle_bowler,28,4,0.6222222222222222,3,False,Primary role below 60 scored balls or six matches
+bowler,2411,Sandeep Sharma,powerplay_bowler,342,33,0.42803504380475593,3,True,
+bowler,2416,Kyle Mayers,powerplay_bowler,60,8,0.7142857142857143,3,True,
+bowler,2417,Akeal Hosein,powerplay_bowler,654,51,0.5190476190476191,3,True,
+bowler,2418,Justin Greaves,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,2436,Dasun Shanaka,middle_bowler,306,27,0.7251184834123223,3,True,
+bowler,2439,Akila Dananjaya,middle_bowler,30,2,0.8333333333333334,2,False,Primary role below 60 scored balls or six matches
+bowler,2463,Ryan Burl,middle_bowler,162,15,0.9310344827586207,2,True,
+bowler,2483,Lizaad Williams,powerplay_bowler,108,12,0.47161572052401746,3,True,
+bowler,2490,Mohammad Nawaz,middle_bowler,462,31,0.7573770491803279,3,True,
+bowler,2526,Ish Sodhi,middle_bowler,660,36,0.9065934065934066,3,True,
+bowler,2531,Joe Root,middle_bowler,12,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,2633,Jason Holder,middle_bowler,480,47,0.39279869067103107,3,True,
+bowler,2636,Adam Zampa,middle_bowler,648,38,0.7346938775510204,3,True,
+bowler,2639,Marcus Stoinis,middle_bowler,354,36,0.592964824120603,3,True,
+bowler,2650,Raymon Reifer,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,2681,Taskin Ahmed,powerplay_bowler,348,32,0.47802197802197804,3,True,
+bowler,2687,Roston Chase,middle_bowler,538,36,0.7535014005602241,3,True,
+bowler,2756,Shashank Singh,middle_bowler,60,6,0.7692307692307693,2,True,
+bowler,2790,Praveen Dubey,middle_bowler,30,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,2847,Shardul Thakur,middle_bowler,211,23,0.3425324675324675,3,True,
+bowler,2852,Jagadeesha Suchith,middle_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,2863,Sandeep Warrier,powerplay_bowler,60,5,0.9090909090909091,2,False,Primary role below 60 scored balls or six matches
+bowler,2872,Siddarth Kaul,death_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,2876,Axar Patel,middle_bowler,1314,92,0.6714358712314767,3,True,
+bowler,2877,Vijay Shankar,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,2878,Mohit Sharma,death_bowler,277,26,0.45634266886326197,3,True,
+bowler,2887,Harmeet Singh,middle_bowler,66,3,0.9166666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,2933,Jasprit Bumrah,powerplay_bowler,582,54,0.4504643962848297,3,True,
+bowler,2972,Yasim Murtaza,middle_bowler,42,3,0.5833333333333334,3,False,Primary role below 60 scored balls or six matches
+bowler,2984,Sikandar Raza,middle_bowler,785,43,0.8289334741288279,3,True,
+bowler,2985,Mark Wood,powerplay_bowler,78,8,0.4508670520231214,3,True,
+bowler,2997,Paul van Meekeren,middle_bowler,96,8,0.5680473372781065,3,True,
+bowler,3033,Usman Qadir,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,3038,Hussain Talat,middle_bowler,24,2,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,3040,Kashif Daud,powerplay_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,3056,Iftikhar Ahmed,middle_bowler,60,6,0.8333333333333334,3,True,
+bowler,3077,Usama Mir,middle_bowler,114,5,0.95,2,False,Primary role below 60 scored balls or six matches
+bowler,3135,Yannic Cariah,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,3174,Matt Henry,powerplay_bowler,360,28,0.6081081081081081,3,True,
+bowler,3253,Rohan Mustafa,powerplay_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,3255,Ahmed Raza 1,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,3272,Fabian Allen,middle_bowler,48,5,0.5714285714285714,3,False,Primary role below 60 scored balls or six matches
+bowler,3275,Alzarri Joseph,death_bowler,270,30,0.36885245901639346,3,True,
+bowler,3276,Gudakesh Motie,middle_bowler,606,35,0.8632478632478633,3,True,
+bowler,3280,Nazmul Hossain Shanto,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,3281,Mosaddek Hossain,middle_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,3282,Mehidy Hasan Miraz,middle_bowler,90,9,0.6818181818181818,3,True,
+bowler,3298,Jofra Archer,powerplay_bowler,606,47,0.561631139944393,3,True,
+bowler,3299,Andrew Tye,death_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,3320,Jayant Yadav,powerplay_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,3323,Jimmy Neesham,middle_bowler,228,21,0.6477272727272727,3,True,
+bowler,3330,Hardik Pandya,middle_bowler,582,51,0.49072512647554806,3,True,
+bowler,3337,Jeremy Gordon,powerplay_bowler,12,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,3361,Michael Leask,middle_bowler,24,2,0.8,2,False,Primary role below 60 scored balls or six matches
+bowler,3373,Aizaz Khan,middle_bowler,48,3,1.0,3,False,Primary role below 60 scored balls or six matches
+bowler,3374,Mark Chapman,death_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,3383,Kinchit Shah,middle_bowler,36,3,1.0,2,False,Primary role below 60 scored balls or six matches
+bowler,3469,Shreyas Gopal,middle_bowler,42,3,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,3489,Salman Agha,middle_bowler,84,12,0.7777777777777778,3,True,
+bowler,3543,Shahidullah Kamal,death_bowler,12,2,0.4,3,False,Primary role below 60 scored balls or six matches
+bowler,3550,Sharafuddin Ashraf,middle_bowler,54,5,0.6,3,False,Primary role below 60 scored balls or six matches
+bowler,3578,Imad Wasim,middle_bowler,126,10,0.7241379310344828,3,True,
+bowler,3595,Andy McBrine,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,3605,Aiden Markram,middle_bowler,198,22,0.6851211072664359,3,True,
+bowler,3613,Shakeel Ahmed,powerplay_bowler,36,3,0.6,3,False,Primary role below 60 scored balls or six matches
+bowler,3622,Hayden Walsh,middle_bowler,12,1,1.0,2,False,Primary role below 60 scored balls or six matches
+bowler,3623,Hasan Ali,powerplay_bowler,72,7,0.5142857142857142,3,True,
+bowler,3627,Andile Phehlukwayo,middle_bowler,48,3,0.8,3,False,Primary role below 60 scored balls or six matches
+bowler,3628,Kagiso Rabada,powerplay_bowler,576,44,0.576,3,True,
+bowler,3629,Corbin Bosch,middle_bowler,174,17,0.5072886297376094,3,True,
+bowler,3637,Dayyaan Galiem,middle_bowler,18,1,0.75,2,False,Primary role below 60 scored balls or six matches
+bowler,3641,Ben Dwarshuis,powerplay_bowler,114,11,0.3958333333333333,3,True,
+bowler,3644,Kuldeep Yadav,middle_bowler,1196,66,0.8328690807799443,3,True,
+bowler,3647,Shreyas Iyer,death_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,3648,Deepak Hooda,middle_bowler,30,4,1.0,3,False,Primary role below 60 scored balls or six matches
+bowler,3653,Avesh Khan,death_bowler,419,46,0.37815884476534295,3,True,
+bowler,3660,Luke Wood,powerplay_bowler,162,12,0.6923076923076923,3,True,
+bowler,3664,Binura Fernando,powerplay_bowler,180,15,0.5660377358490566,3,True,
+bowler,3683,Gavin Main,middle_bowler,18,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,3686,CB Sole,powerplay_bowler,36,3,0.3711340206185567,3,False,Primary role below 60 scored balls or six matches
+bowler,3689,Mark Watt,middle_bowler,95,6,0.76,3,True,
+bowler,3697,Kyle Jamieson,powerplay_bowler,306,28,0.5177664974619289,3,True,
+bowler,3720,Craig Young,middle_bowler,153,13,0.5032894736842105,3,True,
+bowler,3727,Matthew Short,powerplay_bowler,60,7,0.4316546762589928,3,True,
+bowler,3771,Vivian Kingma,powerplay_bowler,66,5,0.6804123711340206,3,False,Primary role below 60 scored balls or six matches
+bowler,3772,Logan van Beek,death_bowler,36,4,0.4,3,False,Primary role below 60 scored balls or six matches
+bowler,3775,Sompal Kami,powerplay_bowler,24,3,0.5454545454545454,3,False,Primary role below 60 scored balls or six matches
+bowler,3782,M Shahrukh Khan,middle_bowler,12,2,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,3839,Amjad Mahboob,powerplay_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,3871,Aamir Kaleem,middle_bowler,30,2,0.625,3,False,Primary role below 60 scored balls or six matches
+bowler,3876,Sufyan Mehmood,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,3926,Rahul Tewatia,death_bowler,7,1,0.5384615384615384,2,False,Primary role below 60 scored balls or six matches
+bowler,3986,Matthew Renshaw,middle_bowler,18,2,0.5,2,False,Primary role below 60 scored balls or six matches
+bowler,3995,Donald Tiripano,powerplay_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,4101,Mitchell Santner,middle_bowler,924,60,0.7350835322195705,3,True,
+bowler,4106,Daryl Mitchell,middle_bowler,36,2,0.72,2,False,Primary role below 60 scored balls or six matches
+bowler,4111,Khushdil Shah,middle_bowler,24,4,0.5714285714285714,3,False,Primary role below 60 scored balls or six matches
+bowler,4117,Ishan Kishan,death_bowler,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,4201,Fareed Malik,middle_bowler,96,9,0.4247787610619469,3,True,
+bowler,4219,Krunal Pandya,middle_bowler,750,50,0.7507507507507507,3,True,
+bowler,4221,Chris Green,middle_bowler,18,1,0.75,2,False,Primary role below 60 scored balls or six matches
+bowler,4229,George Linde,middle_bowler,204,14,0.7876447876447876,3,True,
+bowler,4235,Sisanda Magala,death_bowler,12,1,0.3333333333333333,3,False,Primary role below 60 scored balls or six matches
+bowler,4237,Tabraiz Shamsi,middle_bowler,60,3,0.8333333333333334,2,False,Primary role below 60 scored balls or six matches
+bowler,4246,Nitish Rana,middle_bowler,54,7,0.6067415730337079,3,False,Primary role below 60 scored balls or six matches
+bowler,4265,T Natarajan,death_bowler,316,33,0.41092327698309494,3,True,
+bowler,4276,Basil Thampi,powerplay_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,4288,Navdeep Saini,middle_bowler,24,2,0.5714285714285714,3,False,Primary role below 60 scored balls or six matches
+bowler,4373,Mustafizur Rahman,death_bowler,436,44,0.40671641791044777,3,True,
+bowler,4391,Liam Livingstone,middle_bowler,318,31,0.8412698412698413,3,True,
+bowler,4409,Sam Curran,powerplay_bowler,354,43,0.37579617834394907,3,True,
+bowler,4412,Max ODowd,middle_bowler,24,2,0.8,2,False,Primary role below 60 scored balls or six matches
+bowler,4417,Karan KC,powerplay_bowler,36,3,0.8571428571428571,2,False,Primary role below 60 scored balls or six matches
+bowler,4438,Jasdeep Singh,powerplay_bowler,36,3,0.5454545454545454,2,False,Primary role below 60 scored balls or six matches
+bowler,4460,Jeffrey Vandersay,middle_bowler,54,3,0.75,2,False,Primary role below 60 scored balls or six matches
+bowler,4487,Vyshak Kumar,middle_bowler,318,25,0.6127167630057804,3,True,
+bowler,4489,Prasidh Krishna,middle_bowler,396,33,0.528,3,True,
+bowler,4499,Saqib Mahmood,powerplay_bowler,108,7,0.72,3,True,
+bowler,4505,Jhye Richardson,middle_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,4604,Mitchell Swepson,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,4636,Bjorn Fortuin,middle_bowler,108,9,0.6,3,True,
+bowler,4639,Wellington Masakadza,middle_bowler,276,20,0.7301587301587301,3,True,
+bowler,4641,Lungi Ngidi,powerplay_bowler,276,28,0.4607679465776294,3,True,
+bowler,4658,Nasum Ahmed,powerplay_bowler,204,18,0.5,3,True,
+bowler,4662,Cole McConchie,middle_bowler,114,8,0.95,2,True,
+bowler,4686,Joshua Clarkson,middle_bowler,30,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,4692,Lockie Ferguson,middle_bowler,234,27,0.38870431893687707,3,True,
+bowler,4708,Rinku Singh,death_bowler,4,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,4716,Mayank Dagar,middle_bowler,108,8,0.7883211678832117,3,True,
+bowler,4722,Rashid Khan,middle_bowler,1386,87,0.717391304347826,3,True,
+bowler,4755,Shivam Dube,middle_bowler,379,35,0.8293216630196937,3,True,
+bowler,4779,Pieter Willem Mulder,powerplay_bowler,48,5,0.42105263157894735,3,False,Primary role below 60 scored balls or six matches
+bowler,4780,Mohammad Saif Hassan,middle_bowler,87,9,0.8787878787878788,2,True,
+bowler,4790,Lutho Sipamla,powerplay_bowler,48,5,0.43636363636363634,3,False,Primary role below 60 scored balls or six matches
+bowler,4807,Joshua Little,powerplay_bowler,192,16,0.42857142857142855,3,True,
+bowler,4812,Harry Tector,middle_bowler,90,9,0.8823529411764706,3,True,
+bowler,4815,Benjamin White,middle_bowler,300,16,0.9433962264150944,2,True,
+bowler,4816,Khaleel Ahmed,powerplay_bowler,630,44,0.6840390879478827,3,True,
+bowler,4821,Mahipal Lomror,middle_bowler,18,3,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,4823,Washington Sundar,middle_bowler,330,28,0.6470588235294118,3,True,
+bowler,4824,Zeeshan Ansari,middle_bowler,162,9,0.8756756756756757,2,True,
+bowler,4826,George Garton,powerplay_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,4837,Obed McCoy,death_bowler,96,11,0.3902439024390244,3,True,
+bowler,4838,Keemo Paul,middle_bowler,24,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,4840,Odean Smith,middle_bowler,6,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,4842,Shamar Springer,middle_bowler,108,10,0.5806451612903226,3,True,
+bowler,4853,Glenn Phillips,middle_bowler,60,9,0.7792207792207793,3,True,
+bowler,4854,Rachin Ravindra,middle_bowler,120,12,0.9090909090909091,3,True,
+bowler,4856,Benjamin Sears,middle_bowler,168,15,0.4666666666666667,3,True,
+bowler,4857,Nathan Smith,death_bowler,42,4,0.4666666666666667,3,False,Primary role below 60 scored balls or six matches
+bowler,4867,Wesley Madhevere,middle_bowler,36,3,1.0,2,False,Primary role below 60 scored balls or six matches
+bowler,4870,Kundai Matigimu,death_bowler,12,1,0.5,2,False,Primary role below 60 scored balls or six matches
+bowler,4871,Brandon Mavuta,middle_bowler,42,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,4874,Richard Ngarava,powerplay_bowler,414,34,0.552,3,True,
+bowler,4876,Milton Shumba,middle_bowler,12,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,4881,Dipendra Airee,powerplay_bowler,30,2,0.8333333333333334,2,False,Primary role below 60 scored balls or six matches
+bowler,4882,Kushal Bhurtel,middle_bowler,42,3,0.8571428571428571,2,False,Primary role below 60 scored balls or six matches
+bowler,4895,Charith Asalanka,middle_bowler,114,10,0.8769230769230769,3,True,
+bowler,4900,Wanindu Hasaranga,middle_bowler,1014,54,0.8284313725490197,3,True,
+bowler,4901,Asitha Fernando,powerplay_bowler,24,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,4903,Lahiru Kumara,powerplay_bowler,12,1,0.5217391304347826,3,False,Primary role below 60 scored balls or six matches
+bowler,4904,Kamindu Mendis,middle_bowler,132,13,1.0,1,True,
+bowler,4926,Shadab Khan,middle_bowler,402,24,0.9054054054054054,3,True,
+bowler,4947,Kasun Rajitha,powerplay_bowler,24,2,0.6666666666666666,3,False,Primary role below 60 scored balls or six matches
+bowler,4974,Mohammad Nadeem,powerplay_bowler,12,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,4986,Rovman Powell,middle_bowler,30,5,0.6976744186046512,2,False,Primary role below 60 scored balls or six matches
+bowler,5034,Murugan Ashwin,middle_bowler,18,1,0.75,3,False,Primary role below 60 scored balls or six matches
+bowler,5041,Mukesh Kumar,powerplay_bowler,462,48,0.42463235294117646,3,True,
+bowler,5189,Faheem Ashraf,powerplay_bowler,186,21,0.42660550458715596,3,True,
+bowler,5231,Oshane Thomas,powerplay_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,5379,Mark Adair,powerplay_bowler,246,22,0.5093167701863354,3,True,
+bowler,5441,Barry McCarthy,powerplay_bowler,180,18,0.4400977995110024,3,True,
+bowler,5547,Nosthush Kenjige,powerplay_bowler,48,3,0.7272727272727273,2,False,Primary role below 60 scored balls or six matches
+bowler,5561,Brad Wheal,powerplay_bowler,18,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,5562,Richard Gleeson,death_bowler,26,3,0.38235294117647056,3,False,Primary role below 60 scored balls or six matches
+bowler,5577,Sai Kishore,middle_bowler,258,18,0.7478260869565218,3,True,
+bowler,5665,Sanjay Yadav,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,5738,Xavier Bartlett,powerplay_bowler,288,25,0.5133689839572193,3,True,
+bowler,5750,Ehsan Khan,death_bowler,24,3,0.36363636363636365,3,False,Primary role below 60 scored balls or six matches
+bowler,5808,Karim Janat,middle_bowler,60,7,0.631578947368421,2,True,
+bowler,5809,Naveen ul Haq,powerplay_bowler,252,26,0.4193011647254576,3,True,
+bowler,5837,Mahedi Hasan,middle_bowler,372,31,0.49206349206349204,3,True,
+bowler,5844,Ebadot Hossain,middle_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,5866,Patrick Kruger,middle_bowler,72,6,0.7058823529411765,2,True,
+bowler,5882,Afif Hossain,middle_bowler,6,1,1.0,2,False,Primary role below 60 scored balls or six matches
+bowler,5892,Blair Tickner,death_bowler,18,2,0.375,3,False,Primary role below 60 scored balls or six matches
+bowler,5939,Cameron Green,middle_bowler,368,36,0.5758998435054773,3,True,
+bowler,5940,Riley Meredith,death_bowler,58,6,0.4084507042253521,3,False,Primary role below 60 scored balls or six matches
+bowler,5944,Mohammed Siraj,powerplay_bowler,864,60,0.6486486486486487,3,True,
+bowler,5977,Khary Pierre,middle_bowler,72,5,0.6,3,False,Primary role below 60 scored balls or six matches
+bowler,5979,Abrar Ahmed,middle_bowler,505,34,0.6609947643979057,3,True,
+bowler,6025,Henry Shipley,powerplay_bowler,30,3,0.5555555555555556,3,False,Primary role below 60 scored balls or six matches
+bowler,6097,Brydon Carse,middle_bowler,102,12,0.3953488372093023,3,True,
+bowler,6160,Chamika Karunaratne,middle_bowler,18,2,0.75,3,False,Primary role below 60 scored balls or six matches
+bowler,6161,Rahul Chahar,middle_bowler,420,24,0.8366533864541833,3,True,
+bowler,6162,Kulwant Khejroliya,middle_bowler,30,2,0.5357142857142857,3,False,Primary role below 60 scored balls or six matches
+bowler,6166,Jack Edwards,middle_bowler,6,1,0.5,2,False,Primary role below 60 scored balls or six matches
+bowler,6180,Praveen Jayawickrama,middle_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,6196,Josh Tongue,powerplay_bowler,60,5,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,6237,Manimaran Siddharth,middle_bowler,90,7,0.4838709677419355,3,True,
+bowler,6256,Varun Chakravarthy,middle_bowler,1224,80,0.6807563959955506,3,True,
+bowler,6272,William Jacks,middle_bowler,204,20,0.5589041095890411,3,True,
+bowler,6281,Abhishek Sharma,middle_bowler,270,28,0.6801007556675063,3,True,
+bowler,6284,Anukul Roy,middle_bowler,138,14,0.5369649805447471,3,True,
+bowler,6285,Kamlesh Nagarkoti,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,6286,Shivam Mavi,death_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,6287,Yash Thakur,death_bowler,199,22,0.3776091081593928,3,True,
+bowler,6297,Matthew Parkinson,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,6350,Matthew Kuhnemann,middle_bowler,60,5,0.5555555555555556,3,False,Primary role below 60 scored balls or six matches
+bowler,6354,Spencer Johnson,powerplay_bowler,222,19,0.5362318840579711,3,True,
+bowler,6355,Shaheen Afridi,powerplay_bowler,540,43,0.5781584582441114,3,True,
+bowler,6356,Khaled Ahmed,powerplay_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,6359,Raghu Sharma,middle_bowler,84,5,0.9333333333333333,2,False,Primary role below 60 scored balls or six matches
+bowler,6389,Tanvir Islam,middle_bowler,60,4,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,6396,Tim David,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,6398,Aaron Hardie,middle_bowler,108,10,0.43902439024390244,3,True,
+bowler,6423,Riyan Parag,middle_bowler,162,16,0.8901098901098901,3,True,
+bowler,6436,Qais Ahmad,middle_bowler,54,3,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,6449,Wafadar Momand,powerplay_bowler,18,2,0.5806451612903226,3,False,Primary role below 60 scored balls or six matches
+bowler,6450,Mujeeb Ur Rahman,powerplay_bowler,300,25,0.5454545454545454,3,True,
+bowler,6460,Ayush Badoni,death_bowler,16,3,0.5517241379310345,3,False,Primary role below 60 scored balls or six matches
+bowler,6464,Arshdeep Singh,powerplay_bowler,1260,107,0.5252188411838266,3,True,
+bowler,6466,Atharwa Taide,death_bowler,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,6489,Darshan Nalkande,middle_bowler,24,2,0.4528301886792453,3,False,Primary role below 60 scored balls or six matches
+bowler,6503,Zahoor Khan,death_bowler,36,3,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,6506,Mohammad Imran Randhawa,powerplay_bowler,48,3,0.6666666666666666,3,False,Primary role below 60 scored balls or six matches
+bowler,6512,Michael Bracewell,middle_bowler,313,25,0.7434679334916865,3,True,
+bowler,6515,Benjamin Lister,powerplay_bowler,114,10,0.5786802030456852,3,True,
+bowler,6518,Daniel Sams,powerplay_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,6523,Blessing Muzarabani,powerplay_bowler,435,36,0.54375,3,True,
+bowler,6566,Matthew John Fisher,middle_bowler,24,3,0.4444444444444444,3,False,Primary role below 60 scored balls or six matches
+bowler,6574,Alick Athanaze,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,6591,KM Asif,middle_bowler,36,3,0.5454545454545454,3,False,Primary role below 60 scored balls or six matches
+bowler,6628,Gerald Coetzee,powerplay_bowler,210,22,0.3756708407871199,3,True,
+bowler,6643,Hasan Mahmud,powerplay_bowler,72,8,0.4,3,True,
+bowler,6651,Towhid Hridoy,death_bowler,2,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,6664,Dion Myers,middle_bowler,12,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,6669,Mohsin Khan,powerplay_bowler,210,19,0.4861111111111111,3,True,
+bowler,6671,Lalit Yadav,powerplay_bowler,48,6,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,6676,Azmatullah Omarzai,powerplay_bowler,510,49,0.5598243688254665,3,True,
+bowler,6677,Mohammad Hasnain,powerplay_bowler,12,1,1.0,3,False,Primary role below 60 scored balls or six matches
+bowler,6683,Mayank Markande,middle_bowler,336,20,0.8615384615384616,2,True,
+bowler,6697,Shams Mulani,middle_bowler,18,2,0.6,3,False,Primary role below 60 scored balls or six matches
+bowler,6725,Sherfane Rutherford,middle_bowler,18,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,6726,Romario Shepherd,middle_bowler,688,63,0.5982608695652174,3,True,
+bowler,6772,Chetan Sakariya,middle_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,6795,Terrance Hinds,middle_bowler,18,2,0.6923076923076923,2,False,Primary role below 60 scored balls or six matches
+bowler,6797,Dominic Drakes,middle_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,6806,Tushar Deshpande,powerplay_bowler,438,40,0.4786885245901639,3,True,
+bowler,6819,Yashasvi Jaiswal,death_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,6926,Matty Potts,death_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,6932,Pramod Madushan,middle_bowler,12,2,0.3333333333333333,3,False,Primary role below 60 scored balls or six matches
+bowler,6984,Saqib Zulfiqar,middle_bowler,12,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,6985,Bas de Leede,middle_bowler,30,2,0.625,3,False,Primary role below 60 scored balls or six matches
+bowler,6995,Saad Zafar,middle_bowler,66,3,0.9166666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,7001,Dilon Heyliger,powerplay_bowler,30,3,0.5555555555555556,3,False,Primary role below 60 scored balls or six matches
+bowler,7002,Nicholas Kirton,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,7008,Gus Atkinson,powerplay_bowler,36,4,0.5538461538461539,3,False,Primary role below 60 scored balls or six matches
+bowler,7049,Kamil Mishara,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,7052,Dunith Wellalage,powerplay_bowler,108,10,0.45569620253164556,3,True,
+bowler,7059,Nehal Wadhera,middle_bowler,12,1,0.7058823529411765,2,False,Primary role below 60 scored balls or six matches
+bowler,7060,Arjun Tendulkar,powerplay_bowler,54,5,0.5567010309278351,3,False,Primary role below 60 scored balls or six matches
+bowler,7094,Curtis Campher,middle_bowler,132,13,0.6111111111111112,3,True,
+bowler,7120,Rohit Paudel,middle_bowler,30,2,0.7142857142857143,2,False,Primary role below 60 scored balls or six matches
+bowler,7140,Senuran Muthusamy,middle_bowler,36,2,0.8571428571428571,2,False,Primary role below 60 scored balls or six matches
+bowler,7201,Haroon Arshad,powerplay_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,7227,Nijat Masood,powerplay_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,7240,FazalHaq Farooqi,powerplay_bowler,378,31,0.6116504854368932,3,True,
+bowler,7241,Ziaur Rahman,death_bowler,18,2,0.375,3,False,Primary role below 60 scored balls or six matches
+bowler,7250,Mukesh Choudhary,powerplay_bowler,138,11,0.6571428571428571,3,True,
+bowler,7269,Sushant Mishra,middle_bowler,24,2,0.631578947368421,3,False,Primary role below 60 scored balls or six matches
+bowler,7270,Anrich Nortje,death_bowler,204,21,0.38202247191011235,3,True,
+bowler,7312,Nandre Burger,powerplay_bowler,258,20,0.6013986013986014,3,True,
+bowler,7322,Yash Dayal,powerplay_bowler,336,30,0.509090909090909,3,True,
+bowler,7325,Harpreet Brar,middle_bowler,390,28,0.705244122965642,3,True,
+bowler,7327,Rasikh Salam,middle_bowler,162,17,0.3894230769230769,3,True,
+bowler,7344,Shoriful Islam,powerplay_bowler,327,28,0.5667244367417678,3,True,
+bowler,7364,Haris Rauf,powerplay_bowler,216,28,0.3385579937304075,3,True,
+bowler,7403,Lalit Rajbanshi,middle_bowler,24,2,0.8,2,False,Primary role below 60 scored balls or six matches
+bowler,7446,Abdul Samad,death_bowler,3,2,1.0,2,False,Primary role below 60 scored balls or six matches
+bowler,7472,Shahbaz Ahmed,middle_bowler,213,22,0.6938110749185668,3,True,
+bowler,7473,Akash Deep,powerplay_bowler,84,8,0.5714285714285714,3,True,
+bowler,7503,Ravi Bishnoi,middle_bowler,1225,79,0.7180539273153576,3,True,
+bowler,7533,Simarjeet Singh,middle_bowler,72,7,0.5454545454545454,3,True,
+bowler,7544,Venkatesh Iyer,middle_bowler,6,1,1.0,3,False,Primary role below 60 scored balls or six matches
+bowler,7545,Kuldeep Sen,middle_bowler,54,5,0.6,3,False,Primary role below 60 scored balls or six matches
+bowler,7574,Kumar Kartikeya Singh,middle_bowler,180,12,0.8823529411764706,3,True,
+bowler,7625,Suryansh Shedge,middle_bowler,54,4,0.9,2,False,Primary role below 60 scored balls or six matches
+bowler,7634,Aaron Jones,death_bowler,12,2,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,7689,Dilshan Madushanka,powerplay_bowler,90,9,0.5921052631578947,3,True,
+bowler,7690,Saim Ayub,middle_bowler,342,26,0.6705882352941176,3,True,
+bowler,7696,Mohammad Wasim,powerplay_bowler,54,5,0.3698630136986301,3,False,Primary role below 60 scored balls or six matches
+bowler,7699,Abbas Afridi,middle_bowler,200,20,0.5089058524173028,3,True,
+bowler,7702,Chamindu Wickramasinghe,powerplay_bowler,18,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,7704,Pavan Rathnayake,death_bowler,12,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,7709,Ainsley Ndlovu,middle_bowler,12,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,7710,Brandon Glover,middle_bowler,12,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,7741,Gareth Delany,middle_bowler,222,17,0.8043478260869565,3,True,
+bowler,7755,Harsh Thaker,middle_bowler,24,3,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,7756,Kaleem Sana,powerplay_bowler,42,3,0.6268656716417911,3,False,Primary role below 60 scored balls or six matches
+bowler,7808,Marco Jansen,powerplay_bowler,492,46,0.4809384164222874,3,True,
+bowler,7896,Akash Singh,powerplay_bowler,157,11,0.7040358744394619,3,True,
+bowler,7897,Namboori Tilak Varma,middle_bowler,36,6,0.7346938775510204,3,False,Primary role below 60 scored balls or six matches
+bowler,7903,Shamim Hossain,middle_bowler,76,9,0.8351648351648352,3,True,
+bowler,7905,Tanzim Sakib,middle_bowler,282,27,0.42406015037593986,3,True,
+bowler,7912,Vikramjit Singh,middle_bowler,39,4,0.8666666666666667,2,False,Primary role below 60 scored balls or six matches
+bowler,7914,Clayton Floyd,powerplay_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,7916,Karima Gore,middle_bowler,18,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,7920,Nathan Ellis,death_bowler,314,31,0.4175531914893617,3,True,
+bowler,7927,Janak Prakash,death_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,7928,Vinoth Baskaran,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,7929,Aryaman Sunil Uchil,death_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,7935,Mohammad Ghazanfar,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,7967,Noor Ahmad,middle_bowler,1154,68,0.8098245614035088,3,True,
+bowler,8005,Zawar Farid,death_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,8009,Junaid Siddique,powerplay_bowler,120,11,0.4878048780487805,3,True,
+bowler,8049,Naseem Shah,powerplay_bowler,162,15,0.5110410094637224,3,True,
+bowler,8093,Nikhil Chaudhary,middle_bowler,24,3,0.5714285714285714,3,False,Primary role below 60 scored balls or six matches
+bowler,8141,Auqib Nabi,powerplay_bowler,72,5,0.9230769230769231,2,False,Primary role below 60 scored balls or six matches
+bowler,8177,Akash Madhwal,middle_bowler,138,14,0.39204545454545453,3,True,
+bowler,8182,Donovan Ferreira,middle_bowler,79,8,0.7247706422018348,3,True,
+bowler,8221,Nitish Reddy,middle_bowler,330,34,0.584070796460177,3,True,
+bowler,8266,Sumit Kumar 1,middle_bowler,18,2,0.9,2,False,Primary role below 60 scored balls or six matches
+bowler,8295,Matthew Forde,powerplay_bowler,228,19,0.6129032258064516,3,True,
+bowler,8298,Ramon Simmonds,middle_bowler,30,3,0.38461538461538464,3,False,Primary role below 60 scored balls or six matches
+bowler,8311,Dan Mousley,death_bowler,24,3,0.4444444444444444,3,False,Primary role below 60 scored balls or six matches
+bowler,8326,Jayden Seales,powerplay_bowler,96,9,0.5333333333333333,3,True,
+bowler,8380,Mohammad Rishad Hossain,middle_bowler,828,46,0.8571428571428571,2,True,
+bowler,8424,Tanveer Sangha,middle_bowler,156,7,0.9285714285714286,2,True,
+bowler,8530,Kartik Tyagi,middle_bowler,132,15,0.3848396501457726,3,True,
+bowler,8580,Yudhvir Singh,powerplay_bowler,84,8,0.6086956521739131,3,True,
+bowler,8611,Adithya Ashok,middle_bowler,24,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,8614,William ORourke,powerplay_bowler,78,8,0.42857142857142855,3,True,
+bowler,8623,Kristian Clarke,powerplay_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,8634,Ashwani Kumar,middle_bowler,84,7,0.5283018867924528,3,True,
+bowler,8638,Basil Hameed,middle_bowler,48,4,0.8,3,False,Primary role below 60 scored balls or six matches
+bowler,8639,Kartik Meiyappan,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,8654,Cooper Connolly,middle_bowler,60,7,0.5263157894736842,3,True,
+bowler,8661,Matheesha Pathirana,death_bowler,484,43,0.491869918699187,3,True,
+bowler,8664,Victor Nyauchi,death_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,8719,Aryan Lakra,powerplay_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,8723,Mohammed Faraazuddin,middle_bowler,48,3,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,8726,Alishan Sharafu,death_bowler,1,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,8727,Sanchit Sharma,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,8746,Vaibhav Arora,powerplay_bowler,432,35,0.6075949367088608,3,True,
+bowler,8763,Duan Jansen,death_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,8805,Ottneil Baartman,powerplay_bowler,114,13,0.3665594855305466,3,True,
+bowler,15269,Mohammed Aslam,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,15279,Shiraz Khan,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,15280,Sayed Monib,powerplay_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,16498,Sultan Ahmad,powerplay_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,17424,Graham Hume,powerplay_bowler,54,5,0.627906976744186,3,False,Primary role below 60 scored balls or six matches
+bowler,17430,Conor Olphert,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,17911,Nangeyalia Kharote,middle_bowler,60,3,0.9090909090909091,2,False,Primary role below 60 scored balls or six matches
+bowler,17918,Abdullah Tarakhail,powerplay_bowler,12,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,17919,Mohammad Saleem Safi,middle_bowler,12,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,19020,Ateeq Iqbal,powerplay_bowler,42,3,0.7368421052631579,2,False,Primary role below 60 scored balls or six matches
+bowler,19125,Ayush Shukla,powerplay_bowler,42,3,0.7,3,False,Primary role below 60 scored balls or six matches
+bowler,19145,Aamer Jamal,middle_bowler,24,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,19147,Faraz Akram,middle_bowler,54,6,0.5454545454545454,3,False,Primary role below 60 scored balls or six matches
+bowler,19307,Tharindu Rathnayake,middle_bowler,12,1,0.5,2,False,Primary role below 60 scored balls or six matches
+bowler,19312,Nuwan Thushara,powerplay_bowler,402,33,0.5775862068965517,3,True,
+bowler,19315,Vijayakanth Viyaskanth,middle_bowler,102,5,0.9444444444444444,2,False,Primary role below 60 scored balls or six matches
+bowler,19316,Maheesh Theekshana,middle_bowler,643,59,0.43504736129905275,3,True,
+bowler,19530,Shahnawaz Dhani,powerplay_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,19754,Raja Khan,middle_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,19781,Mitchell Owen,middle_bowler,18,2,0.6,2,False,Primary role below 60 scored balls or six matches
+bowler,19892,Theo van Woerkom,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,19902,Tim Pringle,middle_bowler,42,4,0.5833333333333334,3,False,Primary role below 60 scored balls or six matches
+bowler,19998,Rajvardhan Hangargekar,death_bowler,6,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,20005,Arshad Khan,powerplay_bowler,162,15,0.47093023255813954,3,True,
+bowler,20006,Ramandeep Singh,death_bowler,22,4,0.55,2,False,Primary role below 60 scored balls or six matches
+bowler,20175,Nandan Yadav,powerplay_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,20229,Mohammad Ali,powerplay_bowler,24,2,0.8,2,False,Primary role below 60 scored balls or six matches
+bowler,20310,Ahmed Daniyal,middle_bowler,18,2,0.42857142857142855,3,False,Primary role below 60 scored balls or six matches
+bowler,20316,Shahab Alam,middle_bowler,12,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,20693,Kuldip Yadav,middle_bowler,18,2,0.42857142857142855,3,False,Primary role below 60 scored balls or six matches
+bowler,20702,Tristan Stubbs,middle_bowler,30,5,0.8333333333333334,2,False,Primary role below 60 scored balls or six matches
+bowler,20704,Salman Mirza,powerplay_bowler,222,15,0.676829268292683,3,True,
+bowler,20894,Aman Khan,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,20989,Vivrant Sharma,middle_bowler,18,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,21780,Ernest Masuku,middle_bowler,24,3,0.4,3,False,Primary role below 60 scored balls or six matches
+bowler,21784,Brad Evans,powerplay_bowler,162,17,0.4263157894736842,3,True,
+bowler,21786,Tanaka Chivanga,powerplay_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,22134,Luke Jongwe,middle_bowler,126,10,0.5833333333333334,3,True,
+bowler,22137,Fionn Hand,middle_bowler,24,3,0.4444444444444444,3,False,Primary role below 60 scored balls or six matches
+bowler,22187,Ryan Klein,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,22188,Aryan Dutt,powerplay_bowler,78,6,0.65,3,True,
+bowler,22471,Matthew Humphreys,middle_bowler,132,11,0.49070631970260226,3,True,
+bowler,22565,Muhammad Waseem,death_bowler,11,2,0.6470588235294118,2,False,Primary role below 60 scored balls or six matches
+bowler,22920,Jacob Duffy,powerplay_bowler,414,33,0.5648021828103683,3,True,
+bowler,23311,Jacob Bethell,middle_bowler,72,5,0.8275862068965517,2,False,Primary role below 60 scored balls or six matches
+bowler,23467,Gurjapneet Singh,middle_bowler,96,7,0.6357615894039735,3,True,
+bowler,24017,Brian Bennett,middle_bowler,84,11,0.6363636363636364,2,True,
+bowler,24346,Mohamed Shafeeq,powerplay_bowler,0,0,,3,False,Primary role below 60 scored balls or six matches
+bowler,24381,Shariz Ahmad,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,24473,Sonny Baker,powerplay_bowler,60,4,0.631578947368421,3,False,Primary role below 60 scored balls or six matches
+bowler,24475,Rehan Ahmed,middle_bowler,162,9,0.9,2,True,
+bowler,24767,Ripon Mondol,death_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,24779,Ijaz Ahmadzai,death_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,24812,Chris Greaves,middle_bowler,54,4,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,24887,Innocent Kaia,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,24978,Jack Jarvis,middle_bowler,16,2,0.7272727272727273,2,False,Primary role below 60 scored balls or six matches
+bowler,25011,Liam Mccarthy,middle_bowler,36,3,0.5454545454545454,3,False,Primary role below 60 scored balls or six matches
+bowler,25030,Zaman Khan,powerplay_bowler,66,6,0.6111111111111112,3,True,
+bowler,25048,Umran Malik,middle_bowler,78,7,0.7222222222222222,3,True,
+bowler,25128,Nqabayomzi Peter,middle_bowler,132,9,0.8148148148148148,3,True,
+bowler,25132,Praful Hinge,powerplay_bowler,66,7,0.4230769230769231,3,True,
+bowler,25138,Harsh Dubey,middle_bowler,108,9,0.5625,3,True,
+bowler,25213,Dewald Brevis,death_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,25216,Andile Simelane,middle_bowler,54,6,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,25231,Samay Shrivastava,middle_bowler,42,3,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,25502,Adnan Idrees,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,25507,Edson Silva,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,25809,Juanoy Drysdale,middle_bowler,18,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,26663,Kwena Maphaka,middle_bowler,120,10,0.4181184668989547,3,True,
+bowler,26795,Joel Davies,middle_bowler,36,3,0.75,3,False,Primary role below 60 scored balls or six matches
+bowler,26834,Raj Bawa,middle_bowler,18,2,0.75,2,False,Primary role below 60 scored balls or six matches
+bowler,26916,Yasir Mohammad,middle_bowler,36,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,26988,Jitenkumar Ramanandi,middle_bowler,24,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,27004,Hassnain Shah,middle_bowler,24,2,0.5714285714285714,3,False,Primary role below 60 scored balls or six matches
+bowler,27364,Simranjeet Kang,middle_bowler,42,2,0.8235294117647058,3,False,Primary role below 60 scored balls or six matches
+bowler,27373,Muhammad Farooq,middle_bowler,18,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,27380,Harshit Kaushik,middle_bowler,42,4,0.7,2,False,Primary role below 60 scored balls or six matches
+bowler,27390,Matiullah Khan,powerplay_bowler,24,3,0.4,3,False,Primary role below 60 scored balls or six matches
+bowler,27460,Ali Naseer,death_bowler,18,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,27464,Aayan Afzal Khan,powerplay_bowler,36,3,0.6,2,False,Primary role below 60 scored balls or six matches
+bowler,27466,Dhruv Parashar,middle_bowler,114,9,0.6129032258064516,2,True,
+bowler,27504,Dushan Hemantha,middle_bowler,68,3,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,27516,Ihsanullah Ihsanullah,middle_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,27743,DT Doram,middle_bowler,96,8,0.5714285714285714,3,True,
+bowler,27956,Prashant Solanki,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,27959,Hrithik Shokeen,middle_bowler,78,6,0.7222222222222222,3,True,
+bowler,27960,Mayank Yadav,middle_bowler,186,17,0.39658848614072495,3,True,
+bowler,27964,Anshul Kamboj,powerplay_bowler,282,25,0.5743380855397149,3,True,
+bowler,27970,Gurnoor Brar,powerplay_bowler,12,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,28018,Ashok Sharma,middle_bowler,78,8,0.4482758620689655,3,True,
+bowler,28021,Saurabh Dubey,powerplay_bowler,52,4,0.6753246753246753,2,False,Primary role below 60 scored balls or six matches
+bowler,28655,Muhammad Rohid,powerplay_bowler,78,6,0.6964285714285714,3,True,
+bowler,28756,Haider Ali,middle_bowler,138,11,0.5111111111111111,3,True,
+bowler,28908,Vincent Masekesa,middle_bowler,19,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,28911,John Masara,middle_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,28915,Trevor Gwandu,powerplay_bowler,60,7,0.4,3,True,
+bowler,29066,Zakary Foulkes,powerplay_bowler,156,17,0.4508670520231214,3,True,
+bowler,29075,Aadil Ansari,middle_bowler,30,2,0.8333333333333334,2,False,Primary role below 60 scored balls or six matches
+bowler,29080,Muhammad Khan,middle_bowler,54,4,0.5625,3,False,Primary role below 60 scored balls or six matches
+bowler,29558,Muhammad Arfan,middle_bowler,30,2,0.625,3,False,Primary role below 60 scored balls or six matches
+bowler,29833,Bashir Ahmad,powerplay_bowler,12,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,29888,Harshit Rana,powerplay_bowler,402,38,0.481437125748503,3,True,
+bowler,30925,Bradley Currie,powerplay_bowler,66,5,0.6111111111111112,3,False,Primary role below 60 scored balls or six matches
+bowler,31107,Yasin Patel,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,31227,Vidhwath Kaverappa,powerplay_bowler,18,1,0.75,2,False,Primary role below 60 scored balls or six matches
+bowler,31513,Ethan Dsouza,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,31835,Akshay Roopak Puri,middle_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,32244,Tripurana Vijay,middle_bowler,6,1,0.5,2,False,Primary role below 60 scored balls or six matches
+bowler,32401,Akhil Kumar,death_bowler,12,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,32862,Allah Ghazanfar,middle_bowler,144,12,0.49146757679180886,3,True,
+bowler,33009,John Turner,powerplay_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,33440,Adwitya Bhargava,powerplay_bowler,0,0,,1,False,Primary role below 60 scored balls or six matches
+bowler,33443,Sabir Ali,powerplay_bowler,0,0,,2,False,Primary role below 60 scored balls or six matches
+bowler,33969,Tinotenda Maposa,middle_bowler,78,8,0.4431818181818182,3,True,
+bowler,34466,Arafat Minhas,middle_bowler,36,2,0.8571428571428571,2,False,Primary role below 60 scored balls or six matches
+bowler,34485,Sufiyan Muqeem,middle_bowler,274,17,0.7965116279069767,2,True,
+bowler,34522,Brandon McMullen,powerplay_bowler,48,3,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,34527,Jasper John Davidson,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,34969,Manav Suthar,death_bowler,18,2,0.375,3,False,Primary role below 60 scored balls or six matches
+bowler,35072,Ramakrishna Ghosh,middle_bowler,18,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,35102,Zikria Islam,middle_bowler,18,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,35122,Shah Faisal,death_bowler,36,3,0.5,2,False,Primary role below 60 scored balls or six matches
+bowler,35318,Sakib Hussain,middle_bowler,114,11,0.4523809523809524,3,True,
+bowler,36551,Zishan Motara,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,36553,Jediah Blades,powerplay_bowler,42,5,0.4158415841584158,3,False,Primary role below 60 scored balls or six matches
+bowler,36981,Himanshu Sharma,middle_bowler,30,2,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,36982,Suyash Sharma,middle_bowler,660,37,0.8538163001293662,3,True,
+bowler,36983,Mohit Rathee,middle_bowler,12,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,36984,Raghav Goyal,middle_bowler,24,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,37052,Naman Dhir,middle_bowler,100,11,0.8064516129032258,3,True,
+bowler,37731,Musheer Khan,middle_bowler,12,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,37939,Nahid Rana,middle_bowler,33,5,0.3548387096774194,3,False,Primary role below 60 scored balls or six matches
+bowler,38044,Mahli Beardman,death_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,38855,Mohammad Saifuddin,death_bowler,137,14,0.408955223880597,3,True,
+bowler,39657,Eshan Malinga,middle_bowler,287,34,0.3761467889908257,3,True,
+bowler,39991,Parveen Kumar,middle_bowler,42,2,0.875,2,False,Primary role below 60 scored balls or six matches
+bowler,41503,Yash Punja,middle_bowler,156,8,0.8666666666666667,3,True,
+bowler,42548,Muhammad Jawadullah,middle_bowler,84,9,0.4117647058823529,3,True,
+bowler,43917,Krish Bhagat,death_bowler,18,2,0.5,2,False,Primary role below 60 scored balls or six matches
+bowler,45381,PV Satyanarayan Raju,death_bowler,12,1,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,45457,Zach Lion Cachet,middle_bowler,54,4,0.7714285714285715,3,False,Primary role below 60 scored balls or six matches
+bowler,45966,Prashant Veer,middle_bowler,6,1,0.5,2,False,Primary role below 60 scored balls or six matches
+bowler,46066,Vipraj Nigam,middle_bowler,198,17,0.7021276595744681,3,True,
+bowler,46378,Kyle Klein,powerplay_bowler,90,7,0.6474820143884892,3,True,
+bowler,46929,Dian Forrester,middle_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,47050,Shamar Joseph,powerplay_bowler,174,21,0.3841059602649007,3,True,
+bowler,47371,Zuhaid Zubair,middle_bowler,12,1,0.6666666666666666,2,False,Primary role below 60 scored balls or six matches
+bowler,47403,Newman Nyamhuri,powerplay_bowler,48,4,0.5783132530120482,3,False,Primary role below 60 scored balls or six matches
+bowler,47724,Jahandad Khan,powerplay_bowler,78,7,0.7722772277227723,3,True,
+bowler,48557,Vignesh Puthur,middle_bowler,60,5,0.8333333333333334,2,False,Primary role below 60 scored balls or six matches
+bowler,48616,Abdul Saqlain,middle_bowler,48,3,0.7058823529411765,3,False,Primary role below 60 scored balls or six matches
+bowler,50062,Nqobani Mokoena,middle_bowler,27,3,0.42857142857142855,3,False,Primary role below 60 scored balls or six matches
+bowler,52338,Usman Tariq,middle_bowler,54,3,0.84375,2,False,Primary role below 60 scored balls or six matches
+bowler,56685,Abdullah Ahmadzai,middle_bowler,138,10,0.7263157894736842,3,True,
+bowler,56817,Shivang Kumar,middle_bowler,216,13,0.9230769230769231,3,True,
+bowler,56830,Madhav Tiwari,middle_bowler,48,3,0.8,2,False,Primary role below 60 scored balls or six matches
+bowler,57747,Charlie Cassell,powerplay_bowler,6,1,1.0,1,False,Primary role below 60 scored balls or six matches
+bowler,58134,Digvesh Rathi,middle_bowler,294,21,0.5903614457831325,3,True,
+bowler,58246,Prince Yadav,middle_bowler,260,29,0.39334341906202724,3,True,
+bowler,58727,Abhinandan Singh,middle_bowler,24,3,0.41379310344827586,3,False,Primary role below 60 scored balls or six matches
+bowler,59045,Jai Moondra,powerplay_bowler,30,2,0.625,2,False,Primary role below 60 scored balls or six matches
+bowler,60609,Navin Bidaisee,middle_bowler,42,3,0.875,2,False,Primary role below 60 scored balls or six matches
+bowler,67036,Brijesh Sharma,middle_bowler,108,11,0.3956043956043956,3,True,
+bowler,67864,Matt Hollard,middle_bowler,24,2,0.5,3,False,Primary role below 60 scored balls or six matches
+bowler,71727,Razaullah Razaullah,powerplay_bowler,18,2,0.4864864864864865,3,False,Primary role below 60 scored balls or six matches

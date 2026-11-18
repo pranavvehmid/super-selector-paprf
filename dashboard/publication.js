@@ -37,11 +37,15 @@ function describe(text, explanation) {
   return node;
 }
 
+function selectedDiscipline() {
+  return data.disciplines.lists[$("unified-discipline").value];
+}
+
 function renderUnifiedPlayer(player) {
   const target = $("unified-player");
   target.replaceChildren();
   if (!player) return;
-  const profiles = data.unified.profiles[player.player_id];
+  const profiles = selectedDiscipline().profiles[player.player_id];
   const primary = profiles.find((r) => r.role === player.primary_role);
   const weights = data.role_profiles.weights[player.primary_role];
   const head = element("div", undefined, "analysis-head");
@@ -68,7 +72,7 @@ function renderUnifiedPlayer(player) {
   const details = element("details");
   details.open = true;
   details.append(element("summary", "Trace the calculation"),
-    element("p", `Role assignment: ${player.primary_balls} scored balls, ${player.primary_matches} scored matches and ${fmt(player.primary_share * 100, 1)}% of this player's scored opportunities in their primary role.`),
+    element("p", `Role assignment: ${player.primary_balls} scored balls, ${player.primary_matches} scored matches and ${fmt(player.primary_share * 100, 1)}% of this player's scored opportunities within this discipline in their primary role.`),
     table(["Primary metric", "Signed z", "Weight", "Weighted contribution"],
       ["Runs", "Boundaries", "Dismissals or wickets"].map((label, i) =>
         [label, fmt(primary.signed_z[i], 4), `${fmt(weights[i]*100, 0)}%`, fmt(weights[i]*primary.signed_z[i], 4)])),
@@ -96,11 +100,11 @@ function renderUnifiedPlayer(player) {
 }
 
 function renderUnified() {
-  const model = data.unified;
+  const model = selectedDiscipline();
   const query = $("unified-search").value.trim().toLowerCase();
   const matches = (r) => `${r.name} ${r.player_id}`.toLowerCase().includes(query);
   const rows = query ? model.ranked.filter(matches).slice(0, 25) : model.top10;
-  $("unified-coverage").textContent = `Historical contextual index · ${model.eligible} of ${model.observed} observed players qualify · select a player to audit their score.`;
+  $("unified-coverage").textContent = `Historical contextual index · ${model.eligible} of ${model.observed} observed players qualify · ${model.pressure_submission_overlap}/10 shared with the archived Round 1 pressure list.`;
   const rankTable = table(["Rank", "Player", "Primary role", "Scored balls", "Index / 100"], rows.map(r =>
     [r.rank, r.name, ROLE_TITLES[r.primary_role], r.primary_balls, fmt(r.score, 3)]));
   const body = rankTable.querySelector("tbody");
@@ -120,6 +124,14 @@ function renderUnified() {
         unranked.map(r => [r.name, r.player_id, ROLE_TITLES[r.primary_role], r.primary_balls, r.primary_matches, r.reason])));
   }
   renderUnifiedPlayer(rows[0]);
+  const methodLabels = {primary_only:"No secondary credit", india_1_5:"India observations × 1.5", residualised_boundary:"Residualised boundary metric"};
+  const names = new Map(model.ranked.map((r) => [r.player_id, r.name]));
+  $("unified-sensitivity").replaceChildren(table(["Alternative", "Top-ten overlap", "Largest eligible rank shift", "Entered", "Left", "Leader"],
+    Object.entries(methodLabels).map(([key, description]) => {
+      const r = model.methods[key];
+      return [description, `${r.overlap}/10`, r.max_rank_shift, r.entered.join(", ") || "—",
+        r.left.join(", ") || "—", names.get(r.top10_ids[0])];
+    })));
 }
 
 function renderFigure() {
@@ -134,20 +146,16 @@ function renderFigure() {
     document.createTextNode(note + " Source: "), link);
 }
 
-if (globalThis.paprfEvidence?.unified) {
+if (globalThis.paprfEvidence?.disciplines) {
   document.querySelectorAll("[data-tex]").forEach((node) => {
     if (globalThis.katex) globalThis.katex.render(node.dataset.tex, node, {displayMode: true, throwOnError: false});
   });
   $("unified-search").addEventListener("input", renderUnified);
+  $("unified-discipline").addEventListener("change", () => {
+    $("unified-search").value = "";
+    renderUnified();
+  });
   renderUnified();
-  const methodLabels = {primary_only:"No secondary credit", india_1_5:"India observations × 1.5", residualised_boundary:"Residualised boundary metric"};
-  const names = new Map(data.unified.ranked.map((r) => [r.player_id, r.name]));
-  $("unified-sensitivity").append(table(["Alternative", "Top-ten overlap", "Largest eligible rank shift", "Entered", "Left", "Leader"],
-    Object.entries(methodLabels).map(([key, description]) => {
-      const r = data.unified.methods[key];
-      return [description, `${r.overlap}/10`, r.max_rank_shift, r.entered.join(", ") || "—",
-        r.left.join(", ") || "—", names.get(r.top10_ids[0])];
-    })));
   FIGURES.forEach((record, i) => {
     const opt = element("option", record[1]);
     opt.value = i;

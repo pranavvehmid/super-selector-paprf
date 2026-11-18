@@ -48,7 +48,7 @@ def main():
                 split_reliability=read_json("work/paprf_split_reliability.json"),
                 role_profiles=read_json("work/paprf_contextual_roles.json"),
                 role_validation=read_json("work/paprf_role_profile_validation.json"),
-                unified=read_json("work/paprf_unified_ranking.json"),
+                disciplines=read_json("work/paprf_contextual_discipline_v2.json"),
                 robustness=read_json("work/robustness-validation.json"))
     path = ROOT / "dashboard/evidence.js"
     path.write_text("globalThis.paprfEvidence = " + json.dumps(data, ensure_ascii=True, separators=(",", ":")) + ";\n",

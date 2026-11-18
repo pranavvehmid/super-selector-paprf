@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Validate cross-role calibration and whole-match uncertainty of the unified index. Connect Vercel when project access permits.
+**Next action:** Verify the Vercel URL and share it.
 
 ---
 
@@ -252,3 +252,9 @@
 - Files: docs/methodology/paprf_unified_ranking.md,scripts/build_paprf_unified_ranking.py,scripts/build_paprf_research_library.py,outputs/rankings/paprf_unified_top10_v1.csv,outputs/tables/paprf_unified_assignments.csv,outputs/tables/paprf_unified_score_ledger.csv,work/paprf_unified_ranking.json,dashboard/
 - Decision: Use within-role magnitude-based reference scaling, one sample shrinkage adjustment and bounded secondary credit. Treat the unified index as historical and record the opener concentration.
 - Next: Validate cross-role calibration and whole-match uncertainty of the unified index. Connect Vercel when project access permits.
+
+## 2026-11-18 — Re-read the organiser PDF and confirmed separate batting and bowling Round 1 lis (step: 9-12)
+- Re-read the organiser PDF and confirmed separate batting and bowling Round 1 lists. Reran the contextual role method independently by discipline, verified 1940 score calculations and the archived pressure hashes, and tested the category selector on mobile. Started the Vercel deployment flow.
+- Files: docs/methodology/paprf_discipline_rankings_v2.md,scripts/build_paprf_discipline_rankings.py,outputs/rankings/paprf_contextual_batters_top10_v2.csv,outputs/rankings/paprf_contextual_bowlers_top10_v2.csv,dashboard/
+- Decision: Compute primary and secondary role credit separately for batters and bowlers. Keep the submission pressure lists clearly labeled.
+- Next: Verify the Vercel URL and share it.
