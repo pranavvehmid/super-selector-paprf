@@ -237,7 +237,10 @@ def write_evidence(data, report, report_table, tex):
         text.append(figure(path, tex(caption)))
     text.extend((r"\clearpage", r"\section{Research documentation and data provenance}",
                  "The research library preserves full protocols, data definitions, exclusions, experiment history "
-                 "and linked ledgers. The editable report archive also includes these chapters as Markdown.",
+                 "and linked ledgers. Start with the dashboard reading guide below for a page-by-page map. "
+                 "The editable report archive includes these chapters as Markdown and "
+                 r"\path{dashboard_evidence.json}, which contains the data behind the dashboard filters and "
+                 "comparisons, including observations beyond the printed top tens.",
                  r"\begin{enumerate}",
                  *(rf"\item \href{{{SITE}library.html\#{key}}}{{{tex(title)}}}" for key, title, _ in CHAPTERS),
                  r"\end{enumerate}"))

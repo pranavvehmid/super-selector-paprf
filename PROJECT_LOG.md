@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Review the expanded project report and dashboard Home.
+**Next action:** Review the published dashboard and report evidence index.
 
 ---
 
@@ -279,3 +279,9 @@
 - Files: dashboard/index.html, dashboard/atlas.js, scripts/build_paprf_report_evidence.py, outputs/report/latex, docs/research/paprf_publication_qa.md
 - Decision: Share the dashboard evidence loader with the report and verify both contextual lists and the archived pressure lists. Include all 18 source chapters in the editable archive.
 - Next: Review the expanded project report and dashboard Home.
+
+## 2026-11-18 — Updated the dashboard's LaTeX-inspired typography, ranks-first layout, grouped n (step: 11)
+- Updated the dashboard's LaTeX-inspired typography, ranks-first layout, grouped navigation and legible local KaTeX formulas. Added a dashboard-to-report reading guide and the complete published evidence JSON to the editable archive.
+- Files: dashboard, docs/research/paprf_dashboard_reading_guide.md, outputs/report/latex
+- Decision: Preserve the analytical evidence run and ranking outputs while extending presentation and documentation.
+- Next: Review the published dashboard and report evidence index.

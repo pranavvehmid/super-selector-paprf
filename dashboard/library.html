@@ -2,112 +2,90 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PAPRF research library</title><script src="theme.js"></script><link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="publication.css"><link rel="stylesheet" href="atlas.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css" integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js" integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<script defer src="vendor/katex/katex.min.js"></script>
 <script defer src="formula.js"></script></head><body>
 <header class="site-header"><div class="mast"><a class="brand" href="index.html">PAPRF</a>
 <span class="mast-label">Research library</span><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></div>
-<nav aria-label="Research"><a href="index.html#unified">Unified index</a><a href="index.html#pipeline">Methods overview</a>
+<nav aria-label="Research"><a href="index.html">Rankings</a><a href="#reading-guide">Reading guide</a><a href="#formula-reference">Formula reference</a>
 <a href="index.html#figures">Figure atlas</a><a href="#library-top">Contents</a></nav></header>
 <main class="library" id="library-top"><section class="panel"><p class="kicker">RESEARCH RECORD</p>
 <h1>Methods &amp; evidence</h1><p>Full research chapters, formulas and versioned validation. File links open the underlying evidence in the project's private GitHub repository.</p>
-<ol class="library-index"><li><a href="#plan">Research plan and phase history</a></li><li><a href="#unified">Unified index and leaderboard directory</a></li><li><a href="#discipline">Separate batting and bowling indices</a></li><li><a href="#formula-reference">Numbered formula reference</a></li><li><a href="#roles">Contextual outcomes and seven roles</a></li><li><a href="#role-validation">Role validation and score uncertainty</a></li><li><a href="#source-dictionary">Organiser data dictionary</a></li><li><a href="#source-audit">Dataset quality and exclusions</a></li><li><a href="#phase-one">Phase 1 evidence and distribution</a></li><li><a href="#pressure-method">Pre-delivery pressure definition</a></li><li><a href="#v1">Archived Lens A formula ledger</a></li><li><a href="#experiment">Pressure and weight experiments</a></li><li><a href="#matched">Matched-context audit</a></li><li><a href="#v2">Pressure v2 and resampling</a></li><li><a href="#v3">Pressure v3 and cell granularity</a></li><li><a href="#v4">Pressure v4 regularisation</a></li><li><a href="#forward">Forward validation of pressure rankings</a></li><li><a href="#split">Interleaved split-half reliability</a></li></ol></section>
-<article id="plan"><h2>PAPRF Round 1 research plan</h2>
-<p>The four phases group stages A–I from the user’s Round 1 project master prompt, sections 17–18 (attachment SHA-256 A22B8BBE657808F29EB06F92C5980946F079DD91A87F0A6B321AE98E2AA0AEDB). The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/docs/00_official_requirements.md">official requirements</a> establish the two ordered top-10 submissions and methodology review. The project specification adds an interactive dashboard and a research PDF. Scope is historical T20 pressure performance. Auction, retention, recruitment and video production are outside this research plan.</p>
+<ol class="library-index"><li><a href="#reading-guide">Start here: rankings and evidence index</a></li><li><a href="#discipline">Separate batting and bowling indices</a></li><li><a href="#formula-reference">Numbered formula reference</a></li><li><a href="#unified">Unified index and leaderboard directory</a></li><li><a href="#roles">Contextual outcomes and seven roles</a></li><li><a href="#role-validation">Role validation and score uncertainty</a></li><li><a href="#source-dictionary">Organiser data dictionary</a></li><li><a href="#source-audit">Dataset quality and exclusions</a></li><li><a href="#phase-one">Phase 1 evidence and distribution</a></li><li><a href="#pressure-method">Pre-delivery pressure definition</a></li><li><a href="#v1">Archived Lens A formula ledger</a></li><li><a href="#experiment">Pressure and weight experiments</a></li><li><a href="#matched">Matched-context audit</a></li><li><a href="#v2">Pressure v2 and resampling</a></li><li><a href="#v3">Pressure v3 and cell granularity</a></li><li><a href="#v4">Pressure v4 regularisation</a></li><li><a href="#forward">Forward validation of pressure rankings</a></li><li><a href="#split">Interleaved split-half reliability</a></li><li><a href="#plan">Research plan and phase history</a></li></ol></section>
+<article id="reading-guide"><h2>Dashboard reading guide and evidence index</h2>
+<h3>Start with the rankings</h3>
+<p>The <a href="https://dashboard-seven-delta-35.vercel.app/">Home page</a> shows the complete contextual top tens for batters and bowlers. Open a name to jump to its score calculation. The <a href="https://dashboard-seven-delta-35.vercel.app/reports/paprf_research.pdf">project report</a> starts with the same tables, then explains the data, equations and validation before presenting the detailed ledgers.</p>
+<p>The competition asks for two pressure-only lists. These are the frozen Lens A v1 tables in the report's Ranking evidence section and the dashboard's Pressure page. The contextual index answers a broader question about player effectiveness. Later-window tests show weak repeatability for the pressure-only ranking and stronger but role-dependent carryover for some contextual roles.</p>
+<h3>Read the calculations and their evidence</h3>
 <table>
 <thead>
 <tr>
-<th>Phase</th>
-<th>Original stages</th>
-<th>Work and completion evidence</th>
+<th>Page</th>
+<th>What you can inspect</th>
+<th>Report or archive location</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1. Data and pressure foundation</td>
-<td>A, B and C</td>
-<td>Verify source structure and coverage. Map the five PAPRF pillars to supported fields. Recalculate the current pressure index and quantify where it classifies pressure. Record alternatives and bring the definition to the user for review.</td>
+<td>Home</td>
+<td>Both contextual top tens, evidence totals, pressure bands, principal findings</td>
+<td>Ultimate Top 10, Validation, Appendix A, <code>disciplines</code>, <code>audit</code>, <code>distribution</code></td>
 </tr>
 <tr>
-<td>2. Statistical models and research execution</td>
-<td>D and H</td>
-<td>Evaluate batter and bowler outcomes separately. Compare shared pressure context with role-specific alternatives using the same matches and an explicitly documented evaluation design. Test phase and competition effects, weight changes, repeatability, sample size and match-clustered uncertainty where viable. Record numerator, denominator, units, transformation, seed and cutoff for each estimate.</td>
+<td>Ultimate Top 10</td>
+<td>Discipline switch, eligible and unranked players, role inputs, contribution bridge, sensitivity, venue and annual evidence</td>
+<td>Mathematical framework, Appendices B and E, <code>disciplines</code></td>
 </tr>
 <tr>
-<td>3. Dashboard and research PDF</td>
-<td>E, F and G</td>
-<td>Review WASM versus browser JavaScript with Python-generated aggregates, then agree on navigation and report structure. Build two views from one versioned evidence bundle. Show official results and sensitivity scenarios with distinct labels. Validate interaction and render the PDF for layout checks.</td>
+<td>Player profiles</td>
+<td>Name or ID search, eligibility, primary and secondary role trace, annual rates and residuals</td>
+<td>Appendix B prints the 20 leaders. <code>disciplines.lists</code> has the other eligible profiles and observed unranked players.</td>
 </tr>
 <tr>
-<td>4. Validation and submission package</td>
-<td>I</td>
-<td>Reproduce results, reconcile the PDF, dashboard and ordered ranking CSVs by ID, document coverage and uncertainty, check platform labels where accessible, and obtain final approval.</td>
+<td>Role leaderboards</td>
+<td>Seven deployments, weights, resample shares, score bins, India weighting, equal weights, residualised boundaries and later tests</td>
+<td>Appendices C and E, <code>role_profiles</code>, <code>role_histograms</code>, <code>role_validation</code></td>
+</tr>
+<tr>
+<td>Dataset</td>
+<td>Six files, rows, columns, duplicate rows, field blanks and raw versus retained scope</td>
+<td>Problem and data, Appendix A, data dictionary, <code>datasets</code>, <code>audit</code></td>
+</tr>
+<tr>
+<td>Framework and formulas</td>
+<td>Data pipeline, rate metrics, context hierarchy, standardisation, pressure bands, role assignment, bounded credit and glossary</td>
+<td>Mathematical framework, Glossary and the formula reference</td>
+</tr>
+<tr>
+<td>Pressure and Round 1</td>
+<td>Counts and shares, pressure sliders, v1 and three experimental rankings, player inputs and the matched audit</td>
+<td>Ranking evidence, Appendices A, D and E, <code>distribution</code>, <code>rankings</code>, <code>ledger</code>, <code>model</code>, <code>contexts</code>, <code>context_audit</code>, <code>robustness</code></td>
+</tr>
+<tr>
+<td>Compare players</td>
+<td>Same-discipline comparisons of role, evidence, score components and latest raw rates. The figure selector has eight charts.</td>
+<td>Appendix B gives rank-one and rank-two examples. Appendix E has all eight charts. <code>disciplines.lists</code> has the other comparison inputs.</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>v2–v4 leaders, prior-list exits, matching and support sensitivity, chronological folds, alternate predictors, interleaved splits and shuffle benchmarks</td>
+<td>Appendices C–E, <code>research</code>, <code>granularity</code>, <code>regularised</code>, <code>forward</code>, <code>split_reliability</code>, <code>role_validation</code></td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Run ID, report and source downloads, methodology and milestones</td>
+<td>Version history and reproducibility, Appendix F, <code>publication</code></td>
+</tr>
+<tr>
+<td>About</td>
+<td>Author and supplied contact links</td>
+<td>Report title page and the dashboard’s About page</td>
 </tr>
 </tbody>
 </table>
-<p>Stages H and I span analysis and validation. Phase 2 is where model experiments run, while Phase 4 is the final end-to-end check. The existing Lens A v1 rankings are the reference for comparisons. The user authorised starting Phase 1. The attachment reserves final model, dashboard architecture, PDF structure and delivery decisions for user review.</p>
-<h3>Evidence standard</h3>
-<p>Phase 2 evidence includes the <a href="#experiment">pressure and weight experiment</a>, <a href="#matched">matched-context and temporal audit</a>, <a href="#v2">v2 uncertainty audit</a>, <a href="#v3">v3 granularity comparison</a> and <a href="#v4">v4 regularised fine-cell reanalysis</a>. The <a href="#v1">formula ledger</a> records the baseline algorithms. The dashboard and v4 research review supplement include the <a href="#forward">forward validation</a> and <a href="#split">matched split-half reliability audit</a>. The clean rebuild implements the reproducibility portion of Phase 4. Final submission model choice and untouched external validation remain open.</p>
-<p>For each result, record the source path and version or hash, row grain, ID join, population, exclusions, numerator, denominator, formula, units, precision, code entry point and verification result. Use the claim and source registers for external facts. Keep proposed and measured values identifiable. An unavailable result is reported as unavailable with its reason. The <a href="#phase-one">Phase 1 record</a> provides the first reproducible calculation and audit.</p>
-<p>The <a href="#roles">contextual role profiles</a> extend the project with earlier-date opposition benchmarks, deployment-specific leaderboards, geography and annual splits, and alternative weights. These profiles estimate a broader question than the pressure-only rankings and are accessible in their own dashboard section.</p>
-<p>The <a href="#unified">unified index</a> integrates those role signals, while the website publishes the versioned methods and figures in a research library. This historical index is a separate output from the archived Round 1 pressure selections.</p></article><article id="unified"><h2>Unified player index v1</h2>
-<p>The index answers which players exceeded the expectations of their usual T20 deployment by the largest supported margin in the supplied sample. It integrates the seven <a href="#roles">contextual role leaderboards</a>. The archived submission and the pressure-only research ranks answer a different question.</p>
-<h3>Ranking directory</h3>
-<table>
-<thead>
-<tr>
-<th>Leaderboard</th>
-<th>Purpose and algorithm</th>
-<th>Relationship and main limitation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Lens A v1</td>
-<td>Archived Round 1 batting and bowling top tens. Three equally weighted signed z-scores of pressure versus ordinary rates, multiplied by n/(n+60). <a href="#v1">Formula ledger</a>.</td>
-<td>Historical pressure baseline. Pooled context can mix roles and competitions.</td>
-</tr>
-<tr>
-<td>Pressure research v2–v4</td>
-<td>Match within contexts and rank by the tenth percentile of 500 match resamples. <a href="#v2">v2</a>, <a href="#v3">v3</a>, <a href="#v4">v4</a>.</td>
-<td>Diagnostics for pressure lift, independent of the unified index. Rankings show weak temporal stability.</td>
-</tr>
-<tr>
-<td>Contextual role profiles</td>
-<td>Seven distinct deployments. Earlier-date expected outcomes give opposition and context adjustments. Role weights combine scoring, boundaries and dismissals or wickets. <a href="#roles">Weights and definitions</a>.</td>
-<td>The unified index uses their component values. Run and boundary residuals have substantial overlap.</td>
-</tr>
-<tr>
-<td>Unified player index</td>
-<td>Common role-relative scale, opportunity-based role assignment and capped secondary credit. Equations below.</td>
-<td>Relative demonstrated effectiveness. It is not a forecast, auction shortlist or replacement for the official pressure submission.</td>
-</tr>
-<tr>
-<td>Experimental leaderboards</td>
-<td>Equal weights, extra India weighting, residualised boundaries and alternative versatility.</td>
-<td>Diagnostics show how assumptions affect rankings. No experimental setting was selected based on preferred names.</td>
-</tr>
-</tbody>
-</table>
-<h3>Equations</h3>
-<p><strong>(1) Role assignment.</strong> Among a player's observed deployments, primary role is the one with most scored opportunities. If no opportunities fall after warm-up, use observed raw opportunities. Ties use scored match count, then the unshrunk role signal if available, then role ID. A primary needs at least 60 scored balls and six scored matches to receive an index. Players who do not qualify are recorded with a reason. More opportunities determine deployment and sample support, not raw run or wicket superiority.</p>
-<p><strong>(2) Within-role scaling.</strong> For each eligible player and role, recover the unshrunk contextual signal c = Σ wⱼzⱼ from the signed capped components and the published role weights. Compute μ and sample standard deviation σ over all eligible players in that role. Define Q = 100Φ[(c−μ)/σ], where Φ is the standard normal cumulative distribution function. A flat cohort uses Q = 50. Q is a smooth reference score in (0, 100), with 50 at the role mean. It is not the percentage of actual peers defeated and not a probability of future success. Unlike averaging rank positions, the transformation retains differences in component magnitudes. Normal reference scaling reduces units and scale incompatibilities, though skew and unequal role strength can still matter.</p>
-<p><strong>(3) Evidence shrinkage.</strong> Define R = n/(n+120) and S = 50 + R(Q−50). This uses the existing role prior and shrinks toward neutral exactly once. Applying reliability to the already shrunken published role score would count sample size twice. At n = 120, R = 0.5. With Q = 90, S = 70. S ranges from 0 to 100 and is a historical role-relative index.</p>
-<p><strong>(4) Overall index.</strong> Select at most one supported secondary role with the largest credit, where credit = 0.10 × min(1, nₛ/nₚ) × max(0, Sₛ−50). Here p and s identify primary and secondary roles. Other roles remain visible without accumulating credits. The index I = min(100, Sₚ + credit). For Sₚ = 70, Sₛ = 80 and nₛ/nₚ = 0.5, credit is 1.5 and I = 71.5. The bonus is at most 5 points before clipping. Rank by score at six decimal places and break ties by numeric player ID.</p>
-<p>Opposition quality and pressure context are already included in the expected-outcome benchmark. Pressure lift, India support, annual/recency contrast and historical bootstrap membership are shown as evidence. They receive no separate automatic bonus. That avoids rewarding the same balls twice or assigning an unvalidated India or recency multiplier. The prior forward tests do not establish stable player ordering in every role. Consistency and forecast interpretation remain limitations. Age and pitch characteristics require further verified data.</p>
-<h3>Sensitivity and reproducibility</h3>
-<p>Compare the primary index with three alternatives: no secondary credit, a 1.5× India source scenario, and a boundary-residualised source scenario. Role assignment and sample requirements are held fixed. The latter two recalculate role reference centres and scales. These are historical sensitivity tests rather than independent predictive validation. Run <code>python scripts/build_paprf_unified_ranking.py</code>. The evidence bundle records source hashes, role peer scales, every eligible component, all observed role assignments, and overlaps between alternatives.</p>
-<h3>Results and worked trace</h3>
-<p>The index ranks 397 of 881 observed player IDs. The 484 unranked records record the primary evidence gate and stay searchable. Five of the top ten are openers, compared with 64 of the 397 eligible primary assignments. This concentration should be reviewed alongside differences in role opportunity counts, pool sizes, and tail shapes. No role quota is applied. The shared scale compares within-role evidence and does not guarantee equivalent difficulty or equal representation across roles.</p>
-<p>Abhishek Sharma (ID 6281) has 1,753 opener balls across 102 scored matches, 78.4% of his scored opportunities. His capped signed components are approximately +2.506577 for runs, +2.241210 for boundaries and −0.105743 for dismissals. Applying 45%, 30% and 25% gives c = 1.773887. Against the opener mean −0.004546 and sample SD 0.716492, the reference z is 2.482139 and Q = 99.347018. Retention 1,753/1,873 = 0.935932 gives S = 96.185437. His supported secondary middle-bowling score is 26.603370, so it adds zero. His final index is 96.185437.</p>
-<p>The primary-only and India-weighted alternatives each retain 10 of the 10 primary names. Residualising boundaries retains 9 of 10, with Yashasvi Jaiswal entering and Harry Brook leaving. The maximum absolute rank movements across the full cohort are 16, 71 and 179 places, respectively. Stable top-ten membership can coexist with substantial shifts elsewhere. The new index has no predecessor with the same criterion. Historical role or pressure ranks remain available as comparisons, while bootstrapped top-ten shares correspond to the source role profiles. They are not unified rank confidence intervals.</p>
-<ul>
-<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/rankings/paprf_unified_top10_v1.csv">Unified top ten</a></li>
-<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_unified_assignments.csv">All player assignments</a></li>
-<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_unified_score_ledger.csv">Four scenario score ledgers</a></li>
-<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_unified_ranking.json">Player-level components and input hashes</a></li>
-</ul>
-<p>Next validation should test whether different roles have comparable score calibration in future windows. It should also recompute unified ranks inside a shared whole-match resample rather than transplanting source-role inclusion probabilities.</p></article><article id="discipline"><h2>Separate batting and bowling top tens</h2>
+<h3>Reuse the evidence</h3>
+<p>The <a href="https://dashboard-seven-delta-35.vercel.app/reports/paprf_research_source.zip">editable report archive</a> contains the research chapters, LaTeX, figures and <code>dashboard_evidence.json</code>, a machine-readable copy of the dashboard data. It includes rows beyond the printed top tens and inputs behind the interactive filters. The report presents comparison examples. The JSON lets you reconstruct other player pairs and filter settings. The organiser's raw CSVs are separate.</p>
+<p>For reproduction commands and verification results, see the <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/docs/research/paprf_publication_qa.md">publication QA record</a>. The <a href="#formula-reference">formula reference</a> explains the inputs, interpretation and limitations.</p></article><article id="discipline"><h2>Separate batting and bowling top tens</h2>
 <h3>Organiser requirement</h3>
 <p>The organiser's Round 1 problem statement, pages 1–2, requires an ordered top ten for batters under pressure and a separate ordered top ten for bowlers under pressure. Highest rating comes first in each category. The Unstop choices must agree with the submitted methodology report. The archived Lens A v1 pressure lists on the website address those two categories. This project also publishes a broader contextual index that measures effectiveness against role expectations across all eligible situations.</p>
 <h3>Contextual rerun</h3>
@@ -165,7 +143,84 @@
 <h3>M06. Rank agreement and uncertainty</h3>
 <div class="equation"><span data-tex="\rho=\mathrm{Corr}(\mathrm{midrank}(x),\mathrm{midrank}(y)),\qquad J(A,B)=\frac{|A\cap B|}{|A\cup B|}" data-display="block">\rho=\mathrm{Corr}(\mathrm{midrank}(x),\mathrm{midrank}(y)),\qquad J(A,B)=\frac{|A\cap B|}{|A\cup B|}</span></div>
 
-<p><span data-tex="x,y" data-display="inline">x,y</span> are score vectors on common eligible IDs. Spearman <span data-tex="\rho" data-display="inline">\rho</span> ranges from −1 to 1, with undefined correlation when a rank vector is constant. <span data-tex="A" data-display="inline">A</span> and <span data-tex="B" data-display="inline">B</span> are top-ten membership sets. Jaccard overlap ranges from 0 to 1. Two lists sharing nine names have <span data-tex="J=9/11" data-display="inline">J=9/11</span>. The core evidence reports shared names as a count out of ten. Empirical p10 and p90 denote uncertainty quantiles over clustered match draws conditional on the fitted method. The <a href="#forward">forward</a>, <a href="#split">split-half</a> and <a href="#role-validation">role</a> tests report coverage and weak points. No significance or causality is implied by these summaries.</p></article><article id="roles"><h2>Contextual T20 role profiles</h2>
+<p><span data-tex="x,y" data-display="inline">x,y</span> are score vectors on common eligible IDs. Spearman <span data-tex="\rho" data-display="inline">\rho</span> ranges from −1 to 1, with undefined correlation when a rank vector is constant. <span data-tex="A" data-display="inline">A</span> and <span data-tex="B" data-display="inline">B</span> are top-ten membership sets. Jaccard overlap ranges from 0 to 1. Two lists sharing nine names have <span data-tex="J=9/11" data-display="inline">J=9/11</span>. The core evidence reports shared names as a count out of ten. Empirical p10 and p90 denote uncertainty quantiles over clustered match draws conditional on the fitted method. The <a href="#forward">forward</a>, <a href="#split">split-half</a> and <a href="#role-validation">role</a> tests report coverage and weak points. No significance or causality is implied by these summaries.</p>
+<h3>M07. Frozen Lens A score</h3>
+<div class="equation"><span data-tex="\begin{aligned} \delta_j &amp;= x_{j,P}-x_{j,O}\\ z_j &amp;= \frac{\delta_j-\bar\delta_j}{s_j}\\ L &amp;= \frac{n_P}{n_P+60}\frac{\sum_j d_jz_j}{3} \end{aligned}" data-display="block">\begin{aligned} \delta_j &amp;= x_{j,P}-x_{j,O}\\ z_j &amp;= \frac{\delta_j-\bar\delta_j}{s_j}\\ L &amp;= \frac{n_P}{n_P+60}\frac{\sum_j d_jz_j}{3} \end{aligned}</span></div>
+
+<p><span data-tex="x_{j,P}" data-display="inline">x_{j,P}</span> and <span data-tex="x_{j,O}" data-display="inline">x_{j,O}</span> are pressure and ordinary rates. The eligible discipline peers provide the mean gap <span data-tex="\bar\delta_j" data-display="inline">\bar\delta_j</span> and sample spread <span data-tex="s_j" data-display="inline">s_j</span>. Signs <span data-tex="d_j" data-display="inline">d_j</span> are <span data-tex="(+1,-1,-1)" data-display="inline">(+1,-1,-1)</span> for batting runs per ball, dots and dismissals, and <span data-tex="(-1,+1,+1)" data-display="inline">(-1,+1,+1)</span> for bowling economy, dots and wickets. Each group needs 60 opportunities and six matches. This is a signed, unitless lift score. For signed components 1.2, 0.6 and 0.3 over 120 pressure opportunities, the average 0.7 is multiplied by 2/3 to give approximately 0.467. Pooled rates can reflect different phase mixes. See the <a href="#v1">archived formula ledger</a>.</p>
+<h3>M08. Matched cells and pressure share</h3>
+<div class="equation"><span data-tex="\begin{aligned} \bar\Delta &amp;= \frac{\sum_c n_{c,P}\Delta_c}{\sum_c n_{c,P}}\\ \mathrm{share}_{g,b} &amp;= 100\,\frac{N_{g,b}}{\sum_b N_{g,b}} \end{aligned}" data-display="block">\begin{aligned} \bar\Delta &amp;= \frac{\sum_c n_{c,P}\Delta_c}{\sum_c n_{c,P}}\\ \mathrm{share}_{g,b} &amp;= 100\,\frac{N_{g,b}}{\sum_b N_{g,b}} \end{aligned}</span></div>
+
+<p><span data-tex="c" data-display="inline">c</span> identifies a matched cell, <span data-tex="n_{c,P}" data-display="inline">n_{c,P}</span> is its pressure opportunity count and <span data-tex="\Delta_c" data-display="inline">\Delta_c</span> is its within-cell pressure-minus-ordinary rate. This weights cells by observed pressure exposure. Cells with lifts 0.2 and −0.1 and pressure counts 30 and 10 yield 0.125. Refinements change cell definitions or regularisation as described in M03. For the pressure bars, <span data-tex="N_{g,b}" data-display="inline">N_{g,b}</span> counts delivery events in band <span data-tex="b" data-display="inline">b</span> and innings-phase group <span data-tex="g" data-display="inline">g</span>. For 18 elevated events out of 60 in that group, the share is 30%. Whole-sample percentages use all retained events as the denominator.</p>
+<h3>M09. Signed standardisation and role score</h3>
+<div class="equation"><span data-tex="\begin{aligned} z_{ij} &amp;= \operatorname{clip}_{[-3,3]}\left(d_j\frac{x_{ij}-\bar x_j}{s_j}\right)\\ C_i &amp;= \frac{n_i}{n_i+120}\sum_j w_j z_{ij} \end{aligned}" data-display="block">\begin{aligned} z_{ij} &amp;= \operatorname{clip}_{[-3,3]}\left(d_j\frac{x_{ij}-\bar x_j}{s_j}\right)\\ C_i &amp;= \frac{n_i}{n_i+120}\sum_j w_j z_{ij} \end{aligned}</span></div>
+
+<p><span data-tex="x_{ij}" data-display="inline">x_{ij}</span> is the player's mean outcome residual in the role, compared with eligible peers' mean <span data-tex="\bar x_j" data-display="inline">\bar x_j</span> and sample spread <span data-tex="s_j" data-display="inline">s_j</span>. Zero spread gives zero. Batting runs, boundaries and dismissals use signs +, +, −. Bowling conceded runs, boundaries and credited wickets use −, −, +. The role leaderboard uses <span data-tex="C_i" data-display="inline">C_i</span>. The discipline reference in M05 normalises the unshrunk sum first. With opener weights 45%, 30%, 25%, components 2, 1, −0.4 and 120 balls, the weighted sum is 1.10 and the role score is 0.55. Clipping caps individual extremes; correlated run and boundary components still share information.</p>
+<h3>M10. India sensitivity and boundary residualisation</h3>
+<div class="equation"><span data-tex="\begin{aligned} \bar e^{\,*} &amp;= \frac{A+0.5 A_{\mathrm{India}}}{n+0.5 n_{\mathrm{India}}}\\ y^{\,*} &amp;= y-\beta(x-\bar x)\\ \beta &amp;= \frac{\sum_i(x_i-\bar x)(y_i-\bar y)}{\sum_i(x_i-\bar x)^2} \end{aligned}" data-display="block">\begin{aligned} \bar e^{\,*} &amp;= \frac{A+0.5 A_{\mathrm{India}}}{n+0.5 n_{\mathrm{India}}}\\ y^{\,*} &amp;= y-\beta(x-\bar x)\\ \beta &amp;= \frac{\sum_i(x_i-\bar x)(y_i-\bar y)}{\sum_i(x_i-\bar x)^2} \end{aligned}</span></div>
+
+<p><span data-tex="A" data-display="inline">A</span> and <span data-tex="n" data-display="inline">n</span> are the total residual sum and scored balls; the subscripted values select India venues. For total residual sum 12 in 100 balls, of which 8 came from 40 India balls, the sensitivity average is <span data-tex="(12+0.5(8))/(100+0.5(40))=0.1333" data-display="inline">(12+0.5(8))/(100+0.5(40))=0.1333</span>. In the alternate boundary score, <span data-tex="x" data-display="inline">x</span> and <span data-tex="y" data-display="inline">y</span> are peer run and boundary residual means. The slope is zero for a flat run component. This tests dependence on a shared linear signal. These settings are sensitivity comparisons.</p>
+<h3>M11. Coverage and resample share</h3>
+<div class="equation"><span data-tex="\begin{aligned} \mathrm{missing}\% &amp;= 100\,N_{\mathrm{blank}}/N_{\mathrm{rows}}\\ \mathrm{top10\ share}\% &amp;= 100\,D_{\mathrm{top10}}/D\\ \operatorname{E}|A\cap B| &amp;= \frac{100}{N} \end{aligned}" data-display="block">\begin{aligned} \mathrm{missing}\% &amp;= 100\,N_{\mathrm{blank}}/N_{\mathrm{rows}}\\ \mathrm{top10\ share}\% &amp;= 100\,D_{\mathrm{top10}}/D\\ \operatorname{E}|A\cap B| &amp;= \frac{100}{N} \end{aligned}</span></div>
+
+<p>The dataset share divides field blanks by all rows of that file, so 6/100 is 6%. The role top-ten share divides appearances by the 500 historical whole-match draws, so 375 appearances correspond to 75%. The last formula uses two independent uniform ten-member sets from <span data-tex="N\ge10" data-display="inline">N\ge10</span> common players. At <span data-tex="N=40" data-display="inline">N=40</span>, chance overlap is 2.5 names. In the split-half tests, within-exposure shuffles supply the more specific comparison.</p></article><article id="unified"><h2>Unified player index v1</h2>
+<p>The index answers which players exceeded the expectations of their usual T20 deployment by the largest supported margin in the supplied sample. It integrates the seven <a href="#roles">contextual role leaderboards</a>. The archived submission and the pressure-only research ranks answer a different question.</p>
+<h3>Ranking directory</h3>
+<table>
+<thead>
+<tr>
+<th>Leaderboard</th>
+<th>Purpose and algorithm</th>
+<th>Relationship and main limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lens A v1</td>
+<td>Archived Round 1 batting and bowling top tens. Three equally weighted signed z-scores of pressure versus ordinary rates, multiplied by n/(n+60). <a href="#v1">Formula ledger</a>.</td>
+<td>Historical pressure baseline. Pooled context can mix roles and competitions.</td>
+</tr>
+<tr>
+<td>Pressure research v2–v4</td>
+<td>Match within contexts and rank by the tenth percentile of 500 match resamples. <a href="#v2">v2</a>, <a href="#v3">v3</a>, <a href="#v4">v4</a>.</td>
+<td>Diagnostics for pressure lift, independent of the unified index. Rankings show weak temporal stability.</td>
+</tr>
+<tr>
+<td>Contextual role profiles</td>
+<td>Seven distinct deployments. Earlier-date expected outcomes give opposition and context adjustments. Role weights combine scoring, boundaries and dismissals or wickets. <a href="#roles">Weights and definitions</a>.</td>
+<td>The unified index uses their component values. Run and boundary residuals have substantial overlap.</td>
+</tr>
+<tr>
+<td>Unified player index</td>
+<td>Common role-relative scale, opportunity-based role assignment and capped secondary credit. Equations below.</td>
+<td>Relative demonstrated effectiveness. It is not a forecast, auction shortlist or replacement for the official pressure submission.</td>
+</tr>
+<tr>
+<td>Experimental leaderboards</td>
+<td>Equal weights, extra India weighting, residualised boundaries and alternative versatility.</td>
+<td>Diagnostics show how assumptions affect rankings. No experimental setting was selected based on preferred names.</td>
+</tr>
+</tbody>
+</table>
+<h3>Equations</h3>
+<p><strong>(1) Role assignment.</strong> Among a player's observed deployments, primary role is the one with most scored opportunities. If no opportunities fall after warm-up, use observed raw opportunities. Ties use scored match count, then the unshrunk role signal if available, then role ID. A primary needs at least 60 scored balls and six scored matches to receive an index. Players who do not qualify are recorded with a reason. More opportunities determine deployment and sample support, not raw run or wicket superiority.</p>
+<p><strong>(2) Within-role scaling.</strong> For each eligible player and role, recover the unshrunk contextual signal c = Σ wⱼzⱼ from the signed capped components and the published role weights. Compute μ and sample standard deviation σ over all eligible players in that role. Define Q = 100Φ[(c−μ)/σ], where Φ is the standard normal cumulative distribution function. A flat cohort uses Q = 50. Q is a smooth reference score in (0, 100), with 50 at the role mean. It is not the percentage of actual peers defeated and not a probability of future success. Unlike averaging rank positions, the transformation retains differences in component magnitudes. Normal reference scaling reduces units and scale incompatibilities, though skew and unequal role strength can still matter.</p>
+<p><strong>(3) Evidence shrinkage.</strong> Define R = n/(n+120) and S = 50 + R(Q−50). This uses the existing role prior and shrinks toward neutral exactly once. Applying reliability to the already shrunken published role score would count sample size twice. At n = 120, R = 0.5. With Q = 90, S = 70. S ranges from 0 to 100 and is a historical role-relative index.</p>
+<p><strong>(4) Overall index.</strong> Select at most one supported secondary role with the largest credit, where credit = 0.10 × min(1, nₛ/nₚ) × max(0, Sₛ−50). Here p and s identify primary and secondary roles. Other roles remain visible without accumulating credits. The index I = min(100, Sₚ + credit). For Sₚ = 70, Sₛ = 80 and nₛ/nₚ = 0.5, credit is 1.5 and I = 71.5. The bonus is at most 5 points before clipping. Rank by score at six decimal places and break ties by numeric player ID.</p>
+<p>Opposition quality and pressure context are already included in the expected-outcome benchmark. Pressure lift, India support, annual/recency contrast and historical bootstrap membership are shown as evidence. They receive no separate automatic bonus. That avoids rewarding the same balls twice or assigning an unvalidated India or recency multiplier. The prior forward tests do not establish stable player ordering in every role. Consistency and forecast interpretation remain limitations. Age and pitch characteristics require further verified data.</p>
+<h3>Sensitivity and reproducibility</h3>
+<p>Compare the primary index with three alternatives: no secondary credit, a 1.5× India source scenario, and a boundary-residualised source scenario. Role assignment and sample requirements are held fixed. The latter two recalculate role reference centres and scales. These are historical sensitivity tests rather than independent predictive validation. Run <code>python scripts/build_paprf_unified_ranking.py</code>. The evidence bundle records source hashes, role peer scales, every eligible component, all observed role assignments, and overlaps between alternatives.</p>
+<h3>Results and worked trace</h3>
+<p>The index ranks 397 of 881 observed player IDs. The 484 unranked records record the primary evidence gate and stay searchable. Five of the top ten are openers, compared with 64 of the 397 eligible primary assignments. This concentration should be reviewed alongside differences in role opportunity counts, pool sizes, and tail shapes. No role quota is applied. The shared scale compares within-role evidence and does not guarantee equivalent difficulty or equal representation across roles.</p>
+<p>Abhishek Sharma (ID 6281) has 1,753 opener balls across 102 scored matches, 78.4% of his scored opportunities. His capped signed components are approximately +2.506577 for runs, +2.241210 for boundaries and −0.105743 for dismissals. Applying 45%, 30% and 25% gives c = 1.773887. Against the opener mean −0.004546 and sample SD 0.716492, the reference z is 2.482139 and Q = 99.347018. Retention 1,753/1,873 = 0.935932 gives S = 96.185437. His supported secondary middle-bowling score is 26.603370, so it adds zero. His final index is 96.185437.</p>
+<p>The primary-only and India-weighted alternatives each retain 10 of the 10 primary names. Residualising boundaries retains 9 of 10, with Yashasvi Jaiswal entering and Harry Brook leaving. The maximum absolute rank movements across the full cohort are 16, 71 and 179 places, respectively. Stable top-ten membership can coexist with substantial shifts elsewhere. The new index has no predecessor with the same criterion. Historical role or pressure ranks remain available as comparisons, while bootstrapped top-ten shares correspond to the source role profiles. They are not unified rank confidence intervals.</p>
+<ul>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/rankings/paprf_unified_top10_v1.csv">Unified top ten</a></li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_unified_assignments.csv">All player assignments</a></li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_unified_score_ledger.csv">Four scenario score ledgers</a></li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_unified_ranking.json">Player-level components and input hashes</a></li>
+</ul>
+<p>Next validation should test whether different roles have comparable score calibration in future windows. It should also recompute unified ranks inside a shared whole-match resample rather than transplanting source-role inclusion probabilities.</p></article><article id="roles"><h2>Contextual T20 role profiles</h2>
 <h3>Protocol</h3>
 <p>This research iteration measures effectiveness relative to expected delivered outcomes. The historical PAPRF v4 pressure ranks remain a distinct comparison. All role and opponent estimates use the supplied organiser data.</p>
 <p>Batting roles are based on the source batting slot and first pre-delivery phase seen as striker or non-striker in that innings. Slots 1–2 are openers, 3–4 top order and 5+ middle/lower order, except players in slots 5+ first seen in the death phase, who are classified as late entrants. This is an observed deployment proxy, not a permanent finisher designation. Bowlers are evaluated separately in each phase. A player can qualify in multiple roles. Batting uses balls faced and bowling uses legal balls. Bowling model runs use legal-ball concessions. Wides and no-ball concessions remain in the conventional economy column, assigned to the same phase, and are outside the legal-ball residual model. A boundary must have the matching four or six flag and attributed runs. A batting dismissal must occur on a counted striker ball.</p>
@@ -2076,4 +2131,42 @@ Matched score = round(raw signal × shrinkage, 6) = 0.763706
 </table>
 <p>All component values are medians. Batting scoring-rate lift shows a small positive relationship. Neither wicket nor dismissal lift reproduces strongly enough here to justify reweighting based on this test. Calendar drift alone cannot account for the low repeatability because the interleaved halves balance competition family and calendar year. Support changes, opponent and venue differences, and the construct measured by the pressure label can still matter. The top-ten lists remain defensible as descriptions of the observed sample under a declared method. These checks give little basis for claiming persistent player-level pressure skill.</p>
 <h3>Reproduction</h3>
-<p>Run <code>python scripts/audit_paprf_split_reliability.py</code>. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_split_reliability.json">audit JSON</a> records input hashes, seed, strata and distributions. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_split_reliability.csv">split summary</a>, <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_split_match_membership.csv">match membership</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_split_player_ledger.csv">player ledger</a> provide scores, sample counts and exact match assignments. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_split_reliability.png">figure</a> compares observed intervals with the exposure-conditioned shuffle. See <a href="#forward">forward validation</a> for the chronological check.</p></article></main><footer><a href="#library-top">Back to contents</a></footer></body></html>
+<p>Run <code>python scripts/audit_paprf_split_reliability.py</code>. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_split_reliability.json">audit JSON</a> records input hashes, seed, strata and distributions. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_split_reliability.csv">split summary</a>, <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_split_match_membership.csv">match membership</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_split_player_ledger.csv">player ledger</a> provide scores, sample counts and exact match assignments. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_split_reliability.png">figure</a> compares observed intervals with the exposure-conditioned shuffle. See <a href="#forward">forward validation</a> for the chronological check.</p></article><article id="plan"><h2>PAPRF Round 1 research plan</h2>
+<p>The four phases group stages A–I from the user’s Round 1 project master prompt, sections 17–18 (attachment SHA-256 A22B8BBE657808F29EB06F92C5980946F079DD91A87F0A6B321AE98E2AA0AEDB). The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/docs/00_official_requirements.md">official requirements</a> establish the two ordered top-10 submissions and methodology review. The project specification adds an interactive dashboard and a research PDF. Scope is historical T20 pressure performance. Auction, retention, recruitment and video production are outside this research plan.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Original stages</th>
+<th>Work and completion evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Data and pressure foundation</td>
+<td>A, B and C</td>
+<td>Verify source structure and coverage. Map the five PAPRF pillars to supported fields. Recalculate the current pressure index and quantify where it classifies pressure. Record alternatives and bring the definition to the user for review.</td>
+</tr>
+<tr>
+<td>2. Statistical models and research execution</td>
+<td>D and H</td>
+<td>Evaluate batter and bowler outcomes separately. Compare shared pressure context with role-specific alternatives using the same matches and an explicitly documented evaluation design. Test phase and competition effects, weight changes, repeatability, sample size and match-clustered uncertainty where viable. Record numerator, denominator, units, transformation, seed and cutoff for each estimate.</td>
+</tr>
+<tr>
+<td>3. Dashboard and research PDF</td>
+<td>E, F and G</td>
+<td>Review WASM versus browser JavaScript with Python-generated aggregates, then agree on navigation and report structure. Build two views from one versioned evidence bundle. Show official results and sensitivity scenarios with distinct labels. Validate interaction and render the PDF for layout checks.</td>
+</tr>
+<tr>
+<td>4. Validation and submission package</td>
+<td>I</td>
+<td>Reproduce results, reconcile the PDF, dashboard and ordered ranking CSVs by ID, document coverage and uncertainty, check platform labels where accessible, and obtain final approval.</td>
+</tr>
+</tbody>
+</table>
+<p>Stages H and I span analysis and validation. Phase 2 is where model experiments run, while Phase 4 is the final end-to-end check. The existing Lens A v1 rankings are the reference for comparisons. The user authorised starting Phase 1. The attachment reserves final model, dashboard architecture, PDF structure and delivery decisions for user review.</p>
+<h3>Evidence standard</h3>
+<p>Phase 2 evidence includes the <a href="#experiment">pressure and weight experiment</a>, <a href="#matched">matched-context and temporal audit</a>, <a href="#v2">v2 uncertainty audit</a>, <a href="#v3">v3 granularity comparison</a> and <a href="#v4">v4 regularised fine-cell reanalysis</a>. The <a href="#v1">formula ledger</a> records the baseline algorithms. The dashboard and v4 research review supplement include the <a href="#forward">forward validation</a> and <a href="#split">matched split-half reliability audit</a>. The clean rebuild implements the reproducibility portion of Phase 4. Final submission model choice and untouched external validation remain open.</p>
+<p>For each result, record the source path and version or hash, row grain, ID join, population, exclusions, numerator, denominator, formula, units, precision, code entry point and verification result. Use the claim and source registers for external facts. Keep proposed and measured values identifiable. An unavailable result is reported as unavailable with its reason. The <a href="#phase-one">Phase 1 record</a> provides the first reproducible calculation and audit.</p>
+<p>The <a href="#roles">contextual role profiles</a> extend the project with earlier-date opposition benchmarks, deployment-specific leaderboards, geography and annual splits, and alternative weights. These profiles estimate a broader question than the pressure-only rankings and are accessible in their own dashboard section.</p>
+<p>The <a href="#unified">unified index</a> integrates those role signals, while the website publishes the versioned methods and figures in a research library. This historical index is a separate output from the archived Round 1 pressure selections.</p></article></main><footer><a href="#library-top">Back to contents</a></footer></body></html>

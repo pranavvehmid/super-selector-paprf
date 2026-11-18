@@ -6,45 +6,58 @@
   <meta name="description" content="Explore T20 pressure exposure, model sensitivity and player evidence for Super Selector Round 1.">
   <title>PAPRF · A research atlas of T20 performance</title>
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="publication.css">
   <link rel="stylesheet" href="atlas.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css" integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js" integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <script defer src="vendor/katex/katex.min.js"></script>
+  <script defer src="formula.js"></script>
   <script defer src="evidence.js"></script>
   <script defer src="app.js"></script>
   <script defer src="publication.js"></script>
   <script defer src="author.js"></script>
   <script defer src="atlas.js"></script>
 </head>
-<body>
+<body class="atlas">
+  <a class="skip-link" href="#overview">Skip to content</a>
   <header class="site-header">
-    <div class="mast"><a class="brand" href="?page=home">PAPRF</a><span class="mast-label">Super Selector · Round 1</span><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></div>
-    <nav id="atlas-nav" aria-label="Research pages">
-      <a data-route="home" href="?page=home">Home</a><a data-route="dataset" href="?page=dataset">Dataset</a>
-      <a data-route="framework" href="?page=framework">Framework</a><a data-route="pressure" href="?page=pressure">Pressure</a>
-      <a data-route="players" href="?page=players">Players</a><a data-route="roles" href="?page=roles">Roles</a>
-      <a data-route="top-ten" href="?page=top-ten">Ultimate Top 10</a><a data-route="compare" href="?page=compare">Compare</a>
-      <a data-route="validation" href="?page=validation">Validation</a><a data-route="documentation" href="?page=documentation">Documentation</a>
-      <a data-route="about" href="?page=about">About</a>
-    </nav>
+    <div class="mast"><a class="brand" href="?page=home">PAPRF</a><span class="mast-label">T20 player evaluation</span><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></div>
   </header>
-  <main id="overview">
+  <div class="atlas-shell">
+    <aside class="contents-rail">
+    <button id="sections-toggle" aria-expanded="false" aria-controls="atlas-nav" type="button">Browse sections <span id="current-section"></span></button>
+    <nav id="atlas-nav" aria-label="Research pages">
+      <div class="contents-group"><strong>Rankings</strong>
+        <a data-route="home" href="?page=home">Home</a>
+        <a data-route="top-ten" href="?page=top-ten">Ultimate Top 10</a>
+        <a data-route="players" href="?page=players">Player profiles</a>
+        <a data-route="roles" href="?page=roles">Role leaderboards</a>
+      </div>
+      <div class="contents-group"><strong>Methods</strong>
+        <a data-route="dataset" href="?page=dataset">Dataset</a>
+        <a data-route="framework" href="?page=framework">Framework &amp; formulas</a>
+        <a data-route="pressure" href="?page=pressure">Pressure &amp; Round 1</a>
+      </div>
+      <div class="contents-group"><strong>Evidence</strong>
+        <a data-route="compare" href="?page=compare">Compare players</a>
+        <a data-route="validation" href="?page=validation">Validation</a>
+        <a data-route="documentation" href="?page=documentation">Documentation</a>
+        <a data-route="about" href="?page=about">About</a>
+      </div>
+    </nav>
+    </aside>
+  <main id="overview" tabindex="-1">
     <section class="panel" id="home-rankings">
-      <h1>Ultimate Top 10</h1>
-      <p>Separate batting and bowling rankings based on how players performed relative to expectations for their roles.</p>
+      <div class="ranking-intro">
+        <div><p class="kicker">Super Selector · Round 1 research</p><h1>Ultimate Top 10</h1></div>
+        <a class="report-link" href="reports/paprf_research.pdf">Project report <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="lede">Batters and bowlers ranked separately by how they performed against expectations for their roles. Select a player to see the calculation.</p>
       <div id="home-preview" class="home-rankings"></div>
-      <p><a href="?page=top-ten">Open player score breakdowns</a> · <a href="reports/paprf_research.pdf">Read the full project report</a> · <a href="?page=pressure">View the archived Round 1 pressure lists</a></p>
-      <p><a href="?page=dataset">Dataset</a> · <a href="?page=framework">Framework</a> · <a href="?page=validation">Validation</a></p>
+      <div class="ranking-follow"><a href="?page=pressure#rankings">Archived Round 1 pressure lists</a><a href="?page=dataset">Next · Dataset →</a></div>
     </section>
     <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="kicker">SUPER SELECTOR ROUND 1 · RESEARCH ATLAS</p>
-        <h2>T20 performance in context</h2>
-        <p>How much did a player exceed the expectations of their role? Explore separate batting and bowling indices, or open the archived Round 1 pressure lists.</p>
-        <div class="hero-links"><a href="#unified">Explore the rankings ↓</a><a href="library.html">Read the research ↗</a></div>
-      </div>
+      <h2>Evidence at a glance</h2>
       <div class="hero-scorecard">
         <div id="summary" class="stats stats-left"></div>
         <div id="pressure-summary" class="stats stats-right"></div>
@@ -78,7 +91,9 @@
       <details><summary>Compare modelling assumptions</summary><div id="unified-sensitivity"></div></details>
     </section>
     <section class="panel" id="pipeline">
-      <p class="kicker">02 / METHODS</p><h2>From delivery to index</h2>
+      <h1>Framework and formulas</h1>
+      <p class="lede">Follow the contextual index from a pre-delivery forecast to the final 0–100 score. The pressure-only and validation equations follow.</p>
+      <p class="section-links"><a href="#method">Pressure and validation equations ↓</a> · <a href="library.html#formula-reference">Full formula reference ↗</a></p>
       <ol class="pipeline" aria-label="Ranking pipeline">
         <li>Organiser CSVs<br><small>Audit IDs, extras and legal balls</small></li>
         <li>Pre-delivery state<br><small>Reconstruct chase and pressure</small></li>
@@ -87,13 +102,16 @@
         <li>Unified index<br><small>Normalise and add bounded role credit</small></li>
       </ol>
       <p>Batting and bowling use different scoring directions. Scoring rates and boundaries count positively for batters. Run and boundary prevention count positively for bowlers. Dismissals and wickets carry role-specific weights.</p>
-      <div class="equation"><span data-tex="c=\sum_j w_j z_j,\qquad Q=100\Phi\!\left(\frac{c-\mu}{\sigma}\right)">c = Σ wⱼzⱼ; Q = 100Φ((c−μ)/σ)</span><small>(1)</small></div>
-      <p>Here <var>c</var> is the unshrunk role signal, <var>z</var> is a signed standardised component capped at ±3, and <var>w</var> is its role weight. The role pool supplies its mean <var>μ</var> and sample standard deviation <var>σ</var>. The normal cumulative function Φ maps the result onto a 0–100 reference scale.</p>
-      <div class="equation"><span data-tex="R=\frac{n}{n+120},\qquad S=50+R(Q-50)">R = n/(n+120); S = 50 + R(Q−50)</span><small>(2)</small></div>
-      <p><var>n</var> is scored balls in the role. At 120 balls the factor <var>R</var> is 0.5, so a role reference of 90 becomes an adjusted role score of 70. The most-used role within the selected discipline is primary.</p>
-      <div class="equation"><span data-tex="I=\min\!\left(100,\;S_p+0.10\min(1,n_s/n_p)\max(0,S_s-50)\right)">I = min(100, Sₚ + 0.10 min(1, nₛ/nₚ) max(0, Sₛ−50))</span><small>(3)</small></div>
-      <p>A secondary role at 80 with half the primary ball count adds 1.5 points. Primary 70 plus that credit gives a unified index of 71.5. The detail below each ranked player shows the same calculation with their actual inputs.</p>
-      <p><a href="library.html#formula-reference">Numbered formula reference</a> · <a href="library.html#discipline">Discipline split and worked methodology</a> · <a href="#glossary">Metric glossary</a></p>
+      <h2>Expected outcome and residual</h2>
+      <div class="equation" id="eq-expectation"><span data-tex="\begin{aligned} m &= \frac{A+120\mu}{n+120}\\ \hat y &= \operatorname{clip}(m+.75e_{\mathrm{player}}+.25e_{\mathrm{team}})\\ \varepsilon &= y-\hat y \end{aligned}">m = (A + 120μ) / (n + 120); ŷ = clip(m + .75e-player + .25e-team); residual = y − ŷ.</span><a href="#eq-expectation">(1)</a></div>
+      <p><var>A</var> is the earlier context’s outcome total over <var>n</var> opportunities and <var>μ</var> is its parent mean. Opponent and team effects use earlier residuals, shrunk with 120 and 360 opportunities respectively. An observed run against a prediction of 0.8 leaves a residual of +0.2 runs.</p>
+      <h2>Role components and reference</h2>
+      <div class="equation" id="eq-role"><span data-tex="\begin{aligned} z_j &= \operatorname{clip}_{[-3,3]}\!\left(d_j\frac{x_j-\bar{x}_j}{s_j}\right)\\ c &= \sum_j w_j z_j\\ Q &= 100\Phi\!\left(\frac{c-\mu_r}{\sigma_r}\right) \end{aligned}">z = signed residual standardisation capped at ±3; c = Σ wⱼzⱼ; Q = 100Φ((c−μᵣ)/σᵣ).</span><a href="#eq-role">(2)</a></div>
+      <p>Each <var>x</var> is a player’s mean outcome residual. Peers in the same role supply the mean and sample spread. The sign <var>d</var> favours runs and boundaries for batters and prevention for bowlers. Role weights <var>w</var> are listed in the <a href="?page=roles">role leaderboards</a>. A zero component spread gives zero; a flat overall role cohort gives <var>Q</var> = 50.</p>
+      <h2>Evidence adjustment and final index</h2>
+      <div class="equation" id="eq-index"><span data-tex="\begin{aligned} R &= \frac{n}{n+120}\\ S &= 50+R(Q-50)\\ U &= .10\min(1,n_s/n_p)\max(0,S_s-50)\\ I &= \min(100,S_p+U) \end{aligned}">R = n/(n+120); S = 50 + R(Q−50); U = .10 min(1, nₛ/nₚ) max(0, Sₛ−50); I = min(100, Sₚ + U).</span><a href="#eq-index">(3)</a></div>
+      <p>The most-used role within the discipline is primary. Ranking requires at least 60 scored balls and six matches in that role. At 120 balls, a reference of 90 becomes 70. A supported secondary role at 80 with half the primary ball count adds 1.5 points. Select a player in the top ten to see the same steps with actual inputs.</p>
+      <p><a href="library.html#discipline">Discipline split and worked methodology</a> · <a href="#glossary">Metric glossary</a></p>
     </section>
     <section class="panel" id="research">
       <div class="section-head"><div><p class="kicker">03 / PRESSURE RESEARCH</p><h2>Match-adjusted pressure rankings</h2></div>
@@ -171,23 +189,21 @@
       <details><summary>Additional sensitivity checks</summary><div id="sensitivity"></div></details>
       <details><summary>Matched context and repeatability audit</summary><div id="context-audit"></div>
         <p>Matched cells compare the same innings, phase and competition family. Each retained cell needs at least 12 balls on each side. The matched delta weights each cell by its pressure balls.</p>
-        <code>Matched delta = Σ pressure balls × (pressure rate − ordinary rate) / Σ pressure balls</code>
+          <div class="equation"><span data-tex="\Delta=\frac{\sum_c n_{c,P}(x_{c,P}-x_{c,O})}{\sum_c n_{c,P}}">Matched delta = Σ pressure balls × (pressure rate − ordinary rate) / Σ pressure balls.</span></div>
         <p>The time split uses whole matches. Spearman correlation compares ranks among players who qualified in both periods.</p>
       </details>
     </section>
     <section class="panel" id="method">
-      <p class="kicker">REPRODUCIBILITY</p><h2>The calculation</h2>
-      <details open><summary>Pressure before the ball</summary>
-        <p>Let L be completed legal balls, W be wickets lost, R be runs required and B be balls remaining. Clamp limits values to [0, 1].</p>
-        <code>Innings 1: 0.70 × clamp((L − 72) / 48) + 0.30 × clamp(W / 10)</code>
-        <code>Innings 2: 0.55 × clamp((6R / max(B, 1) − 7) / 5) + 0.25 × clamp(W / 10) + 0.20 × clamp(L / 120)</code>
-        <p>Ordinary is below 0.40, elevated is 0.40 to below 0.65, and high is at least 0.65. The first innings can only qualify after the late-innings term starts contributing.</p>
-      </details>
-      <details><summary>Player score and evidence thresholds</summary>
-        <p>Take the pressure rate minus the ordinary rate for each metric. Standardise each difference using the eligible role pool mean and sample standard deviation and orient the signs so higher is better. Batting uses runs per ball, dot rate and dismissal rate. Bowling uses economy, dot rate and wicket rate.</p>
-        <code>Raw = Σ(weight × signed z) / Σ(weight)</code><code>Score = Raw × n / (n + 60)</code>
-        <p>Each context requires at least 60 role-specific balls and six recorded matches. The shrinkage factor uses pressure balls n. Scores are ranked at six decimal places.</p>
-      </details>
+      <h2>Pressure and validation equations</h2>
+      <h3>Pressure before the ball</h3>
+      <div class="equation" id="eq-pressure"><span data-tex="\begin{aligned} g(x)&=\min(1,\max(0,x))\\ v&=\frac{6r}{\max(b,1)}\\ P_1&=.70g((\ell-72)/48)+.30g(w/10)\\ P_2&=.55g((v-7)/5)+.25g(w/10)\\ &\quad+.20g(\ell/120)\end{aligned}">Clamp g(x) to [0, 1]. Required rate v = 6r/max(b,1). P₁ = .70g((ℓ−72)/48) + .30g(w/10). P₂ = .55g((v−7)/5) + .25g(w/10) + .20g(ℓ/120).</span><a href="#eq-pressure">(4)</a></div>
+      <p>Before the ball, <var>ℓ</var> is legal balls completed, <var>w</var> is wickets lost, <var>r</var> is runs required and <var>b</var> is balls remaining. The ordinary band ends at 0.40 and the high band starts at 0.65. At 90 balls, four wickets and a required rate of 12, the chase index is 0.80. <a href="?page=pressure">Open the interactive curve</a>.</p>
+      <h3>Archived pressure score and matched-cell refinement</h3>
+      <div class="equation" id="eq-lift"><span data-tex="\begin{aligned} \delta_j &= x_{j,P}-x_{j,O}\\ L &= \frac{n}{n+60}\frac{\sum_j w_j z_j}{\sum_j w_j}\\ \theta &= \frac{ab}{ab+12(a+b)}\,\delta \end{aligned}">δ is pressure minus ordinary; L = weighted signed z × n/(n+60); θ = δ × ab/(ab+12(a+b)).</span><a href="#eq-lift">(5)</a></div>
+      <p>In frozen v1, all three signed components receive equal weight. Each context requires 60 opportunities and six matches. The factor uses pressure opportunities <var>n</var>. In v4, <var>a</var> and <var>b</var> are the ordinary and pressure opportunities within a supported cell. The coefficient 12 reduces noisy cell differences toward zero before aggregation.</p>
+      <h3>Rank agreement and conventional rates</h3>
+      <div class="equation" id="eq-validation"><span data-tex="\begin{aligned} \rho &= \operatorname{Corr}(\operatorname{midrank}(x), \operatorname{midrank}(y))\\ J &= \frac{|A\cap B|}{|A\cup B|}\\ \mathrm{SR} &= 100\,\frac{\text{batting runs}}{\text{balls faced}}\\ \mathrm{Econ} &= 6\,\frac{\text{runs conceded}}{\text{legal balls}} \end{aligned}">Spearman ρ is the correlation of midranks. Jaccard J is shared membership divided by the union. Strike rate = runs per 100 balls. Economy = runs conceded per six legal balls.</span><a href="#eq-validation">(6)</a></div>
+      <p>Spearman uses common eligible player IDs. Whole-match resampling estimates historical variation; p10 and p90 are the tenth and ninetieth empirical score percentiles. Conventional strike rate and economy are reference metrics with different units from the index.</p>
       <details><summary>Which assumptions were tested?</summary>
         <p>The batting scenario adds early first-innings collapses with three or more wickets lost inside 36 legal balls. The bowling scenario adds chases with 6–24 balls left, at least two wickets in hand and a required rate of 7–12 runs per over.</p>
         <p>These are sensitivity settings. The matched-context and repeatability results are in the rankings explorer. Pressure bands describe scoreboard context.</p>
@@ -198,7 +214,7 @@
       <ol class="timeline">
         <li><strong>Data and pressure foundation</strong><span>Recalculated index, phase and band across the retained delivery sample.</span></li>
         <li><strong>Statistical modelling</strong><span>v4 retains innings, phase and competition family, regularises thin cells, and audits the influence of each outcome component.</span></li>
-        <li><strong>Dashboard and research PDF</strong><span>Interactive version comparison and a five-page research review draft are available.</span></li>
+        <li><strong>Dashboard and research PDF</strong><span>The expanded project report includes both top tens, all player score traces, validation tables and the figure atlas.</span></li>
         <li><strong>Validation and submission</strong><span>Cross-check final deliverables and verify submission labels before release.</span></li>
       </ol>
     </section>
@@ -206,7 +222,7 @@
       <h1>Research documentation</h1>
       <p>Read the full methods and version history, then download the typeset report or its source.</p>
       <p id="publication-run" class="note"></p>
-      <ul><li><a href="library.html">Research library</a></li><li><a id="publication-pdf" href="reports/paprf_research.pdf">Research report PDF</a></li><li><a href="reports/paprf_research_source.zip">LaTeX report and compilation files</a></li></ul>
+      <ul><li><a id="publication-pdf" href="reports/paprf_research.pdf">Project report (PDF)</a></li><li><a href="library.html#reading-guide">Dashboard reading guide and evidence index</a></li><li><a href="library.html#formula-reference">Numbered formula reference</a></li><li><a href="reports/paprf_research_source.zip">Editable report and complete dashboard evidence (ZIP)</a></li></ul>
     </section>
     <section class="panel" id="about">
       <h1>About <span data-author="name">[AUTHOR_NAME]</span></h1>
@@ -221,6 +237,7 @@
       <p><a href="library.html">Read the full methods, validation and version record</a></p>
     </section>
   </main>
+  </div>
   <footer>Super Selector Round 1 · <span data-author="name">[AUTHOR_NAME]</span></footer>
 </body>
 </html>

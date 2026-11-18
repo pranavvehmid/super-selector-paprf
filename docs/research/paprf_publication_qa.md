@@ -48,3 +48,9 @@ The report includes worked reconstructions for each of the 20 contextual leaders
 The generator reconciled both contextual CSVs with the shared dashboard export and independently recomputed the published six-decimal final scores. Text extraction verified 40 name-and-score pairs, the 20 detailed traces and all 12 numbered figure captions. All 57 PDF pages were rendered for inspection. The PDF SHA-256 is `0442bffe4f0de8f31b7362d1d1697bd6414a8bd5fcb8875a2d1bdca2771ca918`.
 
 The Edge checks passed on the local preview and production across 11 routes, five widths, and both themes, including an ordered comparison of the 20 Home rows with the published evidence. Production Home, the evidence export, the PDF and the editable source matched local files byte for byte.
+
+## Editorial layout and evidence index
+
+The grouped contents rail replaces the single navigation strip. The Home tables still show all 20 ranked players, with links that open their score traces and can be reloaded or shared. The six numbered framework panels fit a 390-pixel viewport. The expanded library contains 12 display equations and 11 named formula topics. Edge verified that the local math font loaded with external requests blocked, along with route navigation in both themes.
+
+The research library starts with the dashboard reading guide and the two ranking methodologies. The editable archive includes 19 Markdown chapters and a JSON snapshot tested for equality against the complete published dashboard evidence. The update changes presentation and documentation. The analytical evidence run remains `33b601c24ae8`. The updated 57-page PDF SHA-256 is `3466c985b48ae664d58ef96ecabf123db5cc0be367729044f1e9edc7dd0c0810`.

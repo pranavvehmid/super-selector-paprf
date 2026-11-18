@@ -147,9 +147,6 @@ function renderFigure() {
 }
 
 if (globalThis.paprfEvidence?.disciplines) {
-  document.querySelectorAll("[data-tex]").forEach((node) => {
-    if (globalThis.katex) globalThis.katex.render(node.dataset.tex, node, {displayMode: true, throwOnError: false});
-  });
   $("unified-search").addEventListener("input", renderUnified);
   $("unified-discipline").addEventListener("change", () => {
     $("unified-search").value = "";

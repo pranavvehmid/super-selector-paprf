@@ -87,7 +87,8 @@ def main():
     (REPORT / "generated.tex").write_text("\n".join(macros) + "\n", encoding="utf-8")
     appendix = REPORT / "evidence_appendix.tex"
     write_evidence(evidence, appendix, report_table, tex)
-    manifest = dict(run_id=run, input_hashes=inputs, independently_rebuilt_files=rebuild["identical_count"])
+    manifest = dict(run_id=run, input_hashes=inputs, independently_rebuilt_files=rebuild["identical_count"],
+                    pdf_available=bool(args.engine))
     DOWNLOAD.mkdir(exist_ok=True)
     files = [REPORT / name for name in ("paprf_research.tex", "generated.tex", "README.md")] + [appendix, *figures]
     with tempfile.TemporaryDirectory(prefix="paprf-latex-") as temp:
@@ -104,7 +105,8 @@ def main():
                 archive.write(file, file.name)
             for _, _, name in CHAPTERS:
                 archive.write(ROOT / "docs" / name, "research/" + name)
-    manifest["pdf_available"] = bool(args.engine)
+            archive.writestr("dashboard_evidence.json", json.dumps(
+                {**evidence, "publication": manifest}, ensure_ascii=True, separators=(",", ":")) + "\n")
     (ROOT / "work/publication_manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     print(f"Prepared publication evidence run {run}.")
 

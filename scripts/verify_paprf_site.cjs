@@ -26,13 +26,7 @@ async function main() {
     const page = await browser.newPage({viewport: {width: 1440, height: 900}, colorScheme: "dark"});
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
-    if (process.env.PAPRF_KATEX_DIR) {
-      await page.route("https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/**", async route => {
-        const name = route.request().url().split("/dist/")[1];
-        await route.fulfill({path:path.join(process.env.PAPRF_KATEX_DIR, name),headers:{"Access-Control-Allow-Origin":"*"}});
-      });
-    }
-    await page.route("https://fonts.googleapis.com/**", r => r.abort());
+    await page.route(/^https?:\/\//, r => new URL(r.request().url()).origin === new URL(base).origin ? r.continue() : r.abort());
     await page.goto(base, {waitUntil:"load"});
     assert.equal(await page.locator("html").getAttribute("data-theme"), "dark");
     assert.equal(await page.locator("main > section:visible").first().locator("h1").innerText(), "Ultimate Top 10");
@@ -42,11 +36,20 @@ async function main() {
     const actualHome = await page.locator("#home-preview table").evaluateAll(tables => tables.map(table =>
       Array.from(table.tBodies[0].rows, row => Array.from(row.cells, cell => cell.textContent))));
     assert.deepEqual(actualHome, expectedHome);
+    await page.locator("#home-preview a").last().click();
+    assert.match(await page.locator("#unified-player h3").innerText(), /Bhuvneshwar Kumar/);
+    assert.equal(await page.locator("#unified-discipline").inputValue(), "bowler");
+    await page.reload();
+    assert.match(await page.locator("#unified-player h3").innerText(), /Bhuvneshwar Kumar/);
+    await page.goBack();
+    assert.equal(await page.locator("#home-rankings").isVisible(), true);
     for (const theme of ["dark", "light"]) {
       if (await page.locator("html").getAttribute("data-theme") !== theme) await page.locator("#theme-toggle").click();
       for (const width of [390, 768, 1280, 1440, 1920]) {
         await page.setViewportSize({width,height:900});
         for (const route of routes) {
+          const toggle = page.locator("#sections-toggle");
+          if (await toggle.isVisible()) await toggle.click();
           await page.locator(`a[data-route="${route}"]`).first().click();
           const current = page.locator("#atlas-nav [aria-current=page]");
           assert.equal(await current.getAttribute("data-route"), route);
@@ -59,7 +62,7 @@ async function main() {
       const styles = await page.evaluate(() => {
         const swatch = (selector, field) => getComputedStyle(document.querySelector(selector))[field];
         return [[swatch("body","color"),swatch("body","backgroundColor")],
-                [swatch(".site-header nav a[aria-current=page]","color"),swatch(".site-header","backgroundColor")],
+                [swatch("#atlas-nav a[aria-current=page]","color"),swatch("#atlas-nav a[aria-current=page]","backgroundColor")],
                 [swatch("#unified-table th","color"),swatch("#unified-table th","backgroundColor")]];
       });
       assert.ok(styles.every(pair => contrast(...pair) >= 4.5), `${theme} text contrast`);
@@ -78,7 +81,19 @@ async function main() {
     assert.equal(await page.locator("#atlas-nav [aria-current=page]").getAttribute("data-route"), "top-ten");
     await page.goto(new URL("?page=framework", base).href, {waitUntil:"load"});
     assert.equal(await page.locator("html").getAttribute("data-theme"), "light");
-    assert.equal(await page.locator(".equation .katex").count(), 3);
+    assert.equal(await page.locator("#pipeline .katex, #method .katex").count(), 6);
+    await page.setViewportSize({width: 390, height: 844});
+    await page.locator('#pipeline a[href="#method"]').click();
+    assert.equal(new URL(page.url()).hash, "#method");
+    assert.ok(await page.locator("#eq-pressure .katex").isVisible());
+    const fits = await page.locator("#pipeline .equation > span, #method .equation > span")
+      .evaluateAll(nodes => nodes.every(node => node.scrollWidth <= node.clientWidth + 2));
+    assert.ok(fits, "all six main equations fit at 390px");
+    await page.locator("#sections-toggle").click();
+    await page.locator("#atlas-nav a").first().focus();
+    await page.keyboard.press("Escape");
+    assert.equal(await page.locator("#sections-toggle").getAttribute("aria-expanded"), "false");
+    await page.setViewportSize({width: 1440, height: 900});
     await page.locator('a[data-route="compare"]').focus();
     await page.keyboard.press("Enter");
     assert.match(await page.locator("#compare-matrix").innerText(), /Final contextual index/);
@@ -101,6 +116,13 @@ async function main() {
     assert.equal(await page.locator('#about [data-author="bio"]').innerText(), author.bio);
     const contactLinks = await page.locator("#author-links a").evaluateAll(links => links.map(link => link.getAttribute("href")));
     assert.deepEqual(contactLinks, [`mailto:${author.email}`, `tel:${author.phone.replace(/\s/g, "")}`, author.linkedin, author.repository]);
+    await page.goto(new URL("library.html#formula-reference", base).href, {waitUntil:"load"});
+    assert.equal(await page.locator("#formula-reference .equation .katex").count(), 12);
+    assert.equal(await page.locator("#formula-reference .katex-error").count(), 0);
+    assert.equal(await page.evaluate(async () => {
+      await document.fonts.ready;
+      return [...document.fonts].some(font => font.family === "KaTeX_Main" && font.status === "loaded");
+    }), true);
     assert.deepEqual(errors, []);
     console.log("11 routes × 5 widths × 2 themes, contrast, keyboard, history, calculations and report downloads passed.");
   } finally { await browser.close(); }

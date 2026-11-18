@@ -17,6 +17,22 @@ const atlasPages = {
 const atlasSections = [...document.querySelectorAll("main > section")];
 const unifiedHeading = $("unified").querySelector("h2");
 const atlasNav = [...document.querySelectorAll("#atlas-nav [data-route]")];
+const sectionsToggle = $("sections-toggle");
+function setContentsOpen(open) {
+  sectionsToggle.setAttribute("aria-expanded", String(open));
+}
+sectionsToggle.addEventListener("click", () => setContentsOpen(sectionsToggle.getAttribute("aria-expanded") !== "true"));
+$("atlas-nav").addEventListener("keydown", event => {
+  if (event.key === "Escape" && sectionsToggle.getAttribute("aria-expanded") === "true") {
+    setContentsOpen(false);
+    sectionsToggle.focus();
+  }
+});
+
+function routeForAnchor(anchor) {
+  const section = document.getElementById(anchor)?.closest("main > section")?.id;
+  return section === "unified" ? "top-ten" : Object.keys(atlasPages).find(key => atlasPages[key].slice(1).includes(section));
+}
 
 function showAtlasPage(route, anchor = "", focus = false) {
   const safe = Object.hasOwn(atlasPages, route) ? route : "home";
@@ -26,22 +42,42 @@ function showAtlasPage(route, anchor = "", focus = false) {
     if (a.dataset.route === safe) a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
   });
+  $("current-section").textContent = title;
+  setContentsOpen(false);
   unifiedHeading.textContent = safe === "players" ? "Searchable player profiles" : "Ultimate top ten by discipline";
   document.title = `${title} · PAPRF research atlas`;
-  const target = anchor && sections.includes(anchor) ? document.getElementById(anchor) : document.getElementById(sections[0]);
-  if (focus) {
-    const heading = target.querySelector("h1,h2");
-    if (heading) { heading.tabIndex = -1; heading.focus({preventScroll: true}); }
+  const params = new URL(location.href).searchParams;
+  const discipline = params.get("discipline");
+  const player = params.get("player");
+  if (sections.includes("unified") && player && data?.disciplines && Object.hasOwn(data.disciplines.lists, discipline)) {
+    const record = data.disciplines.lists[discipline].ranked.find(row => row.player_id === player);
+    if (record) {
+      $("unified-discipline").value = discipline;
+      $("unified-search").value = "";
+      renderUnified();
+      renderUnifiedPlayer(record);
+      const heading = $("unified-player").querySelector("h3");
+      heading.tabIndex = -1;
+      heading.focus({preventScroll: true});
+      $("unified-player").scrollIntoView({behavior: "instant"});
+      return;
+    }
   }
-  if (anchor && anchor !== sections[0]) target.scrollIntoView({behavior: "instant"});
+  const anchored = document.getElementById(anchor);
+  const target = sections.includes(anchored?.closest("main > section")?.id) ? anchored : document.getElementById(sections[0]);
+  if (focus) {
+    const heading = target.querySelector("h1,h2") ?? target;
+    heading.tabIndex = -1;
+    heading.focus({preventScroll: true});
+  }
+  if (target.id !== sections[0]) target.scrollIntoView({behavior: "instant"});
   else window.scrollTo({top: 0, behavior: "instant"});
 }
 
 function atlasRouteFromLocation() {
   const url = new URL(location.href);
   const anchor = url.hash.slice(1);
-  const route = url.searchParams.get("page") || (anchor === "unified" ? "top-ten" :
-    Object.keys(atlasPages).find(key => atlasPages[key].slice(1).includes(anchor))) || "home";
+  const route = url.searchParams.get("page") || routeForAnchor(anchor) || "home";
   return [route, anchor];
 }
 
@@ -51,11 +87,12 @@ document.addEventListener("click", (event) => {
   const url = new URL(link.href);
   if (url.origin !== location.origin || url.pathname !== location.pathname) return;
   const anchor = url.hash.slice(1);
-  const route = link.dataset.route || url.searchParams.get("page") ||
-    (anchor === "unified" ? "top-ten" : Object.keys(atlasPages).find(key => atlasPages[key].slice(1).includes(anchor)));
+  const route = link.dataset.route || url.searchParams.get("page") || routeForAnchor(anchor);
   if (!route || !Object.hasOwn(atlasPages, route)) return;
   event.preventDefault();
-  const key = `?page=${encodeURIComponent(route)}${anchor ? "#" + anchor : ""}`;
+  const params = new URLSearchParams(url.search);
+  params.set("page", route);
+  const key = `?${params}${url.hash}`;
   if (location.search + location.hash !== key) history.pushState({}, "", key);
   showAtlasPage(route, anchor, true);
 });
@@ -176,9 +213,20 @@ if (globalThis.paprfEvidence?.datasets) {
   for (const id of ["compare-a", "compare-b"]) $(id).addEventListener("change", comparisonView);
   comparisonOptions();
   for (const [discipline, label] of [["batter", "Batters"], ["bowler", "Bowlers"]]) {
-    const group = element("div");
-    group.append(element("h2", label), table(["Rank", "Player", "Index / 100"],
-      data.disciplines.lists[discipline].top10.map(r => [r.rank, r.name, fmt(r.score, 3)])));
+    const group = element("article", undefined, "ranking-sheet");
+    const leaderboard = data.disciplines.lists[discipline].top10;
+    const heading = element("h2", label);
+    heading.id = `home-${discipline}-heading`;
+    const rankings = table(["Rank", "Player", "Index / 100"],
+      leaderboard.map(r => [r.rank, r.name, fmt(r.score, 3)]));
+    rankings.querySelector("table").setAttribute("aria-labelledby", heading.id);
+    for (const [i, row] of Array.from(rankings.querySelector("tbody").rows).entries()) {
+      const player = leaderboard[i];
+      const link = element("a", player.name);
+      link.href = `?page=top-ten&discipline=${discipline}&player=${encodeURIComponent(player.player_id)}`;
+      row.cells[1].replaceChildren(link);
+    }
+    group.append(heading, rankings);
     $("home-preview").append(group);
   }
   $("publication-run").textContent = `Evidence run ${data.publication.run_id} · ${data.publication.independently_rebuilt_files} rebuilt artifacts verified`;

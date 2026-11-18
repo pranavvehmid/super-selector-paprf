@@ -50,7 +50,6 @@ td { font-size: .85rem; }
 .pipeline li::before { content: counter(stage, decimal-leading-zero); counter-increment: stage; display: block; font: 700 .73rem system-ui,sans-serif; color: var(--accent); }
 .pipeline small { color: var(--muted); }
 .equation { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 10px; border-block: 1px solid var(--line); padding: .45rem .75rem; background: var(--surface); }
-.equation span:first-child { overflow-x: auto; }
 .equation small { color: var(--accent); }
 .equation .katex-display { margin: .55em 0; }
 figure { margin: 1rem 0; }

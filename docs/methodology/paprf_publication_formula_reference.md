@@ -56,3 +56,61 @@ J(A,B)=\frac{|A\cap B|}{|A\cup B|}
 $$
 
 $x,y$ are score vectors on common eligible IDs. Spearman $\rho$ ranges from −1 to 1, with undefined correlation when a rank vector is constant. $A$ and $B$ are top-ten membership sets. Jaccard overlap ranges from 0 to 1. Two lists sharing nine names have $J=9/11$. The core evidence reports shared names as a count out of ten. Empirical p10 and p90 denote uncertainty quantiles over clustered match draws conditional on the fitted method. The [forward](paprf_forward_validation.md), [split-half](paprf_split_reliability.md) and [role](paprf_role_profile_validation.md) tests report coverage and weak points. No significance or causality is implied by these summaries.
+
+## M07. Frozen Lens A score
+
+$$
+\begin{aligned}
+\delta_j &= x_{j,P}-x_{j,O}\\
+z_j &= \frac{\delta_j-\bar\delta_j}{s_j}\\
+L &= \frac{n_P}{n_P+60}\frac{\sum_j d_jz_j}{3}
+\end{aligned}
+$$
+
+$x_{j,P}$ and $x_{j,O}$ are pressure and ordinary rates. The eligible discipline peers provide the mean gap $\bar\delta_j$ and sample spread $s_j$. Signs $d_j$ are $(+1,-1,-1)$ for batting runs per ball, dots and dismissals, and $(-1,+1,+1)$ for bowling economy, dots and wickets. Each group needs 60 opportunities and six matches. This is a signed, unitless lift score. For signed components 1.2, 0.6 and 0.3 over 120 pressure opportunities, the average 0.7 is multiplied by 2/3 to give approximately 0.467. Pooled rates can reflect different phase mixes. See the [archived formula ledger](lens_a_formula_ledger.md).
+
+## M08. Matched cells and pressure share
+
+$$
+\begin{aligned}
+\bar\Delta &= \frac{\sum_c n_{c,P}\Delta_c}{\sum_c n_{c,P}}\\
+\mathrm{share}_{g,b} &= 100\,\frac{N_{g,b}}{\sum_b N_{g,b}}
+\end{aligned}
+$$
+
+$c$ identifies a matched cell, $n_{c,P}$ is its pressure opportunity count and $\Delta_c$ is its within-cell pressure-minus-ordinary rate. This weights cells by observed pressure exposure. Cells with lifts 0.2 and −0.1 and pressure counts 30 and 10 yield 0.125. Refinements change cell definitions or regularisation as described in M03. For the pressure bars, $N_{g,b}$ counts delivery events in band $b$ and innings-phase group $g$. For 18 elevated events out of 60 in that group, the share is 30%. Whole-sample percentages use all retained events as the denominator.
+
+## M09. Signed standardisation and role score
+
+$$
+\begin{aligned}
+z_{ij} &= \operatorname{clip}_{[-3,3]}\left(d_j\frac{x_{ij}-\bar x_j}{s_j}\right)\\
+C_i &= \frac{n_i}{n_i+120}\sum_j w_j z_{ij}
+\end{aligned}
+$$
+
+$x_{ij}$ is the player's mean outcome residual in the role, compared with eligible peers' mean $\bar x_j$ and sample spread $s_j$. Zero spread gives zero. Batting runs, boundaries and dismissals use signs +, +, −. Bowling conceded runs, boundaries and credited wickets use −, −, +. The role leaderboard uses $C_i$. The discipline reference in M05 normalises the unshrunk sum first. With opener weights 45%, 30%, 25%, components 2, 1, −0.4 and 120 balls, the weighted sum is 1.10 and the role score is 0.55. Clipping caps individual extremes; correlated run and boundary components still share information.
+
+## M10. India sensitivity and boundary residualisation
+
+$$
+\begin{aligned}
+\bar e^{\,*} &= \frac{A+0.5 A_{\mathrm{India}}}{n+0.5 n_{\mathrm{India}}}\\
+y^{\,*} &= y-\beta(x-\bar x)\\
+\beta &= \frac{\sum_i(x_i-\bar x)(y_i-\bar y)}{\sum_i(x_i-\bar x)^2}
+\end{aligned}
+$$
+
+$A$ and $n$ are the total residual sum and scored balls; the subscripted values select India venues. For total residual sum 12 in 100 balls, of which 8 came from 40 India balls, the sensitivity average is $(12+0.5(8))/(100+0.5(40))=0.1333$. In the alternate boundary score, $x$ and $y$ are peer run and boundary residual means. The slope is zero for a flat run component. This tests dependence on a shared linear signal. These settings are sensitivity comparisons.
+
+## M11. Coverage and resample share
+
+$$
+\begin{aligned}
+\mathrm{missing}\% &= 100\,N_{\mathrm{blank}}/N_{\mathrm{rows}}\\
+\mathrm{top10\ share}\% &= 100\,D_{\mathrm{top10}}/D\\
+\operatorname{E}|A\cap B| &= \frac{100}{N}
+\end{aligned}
+$$
+
+The dataset share divides field blanks by all rows of that file, so 6/100 is 6%. The role top-ten share divides appearances by the 500 historical whole-match draws, so 375 appearances correspond to 75%. The last formula uses two independent uniform ten-member sets from $N\ge10$ common players. At $N=40$, chance overlap is 2.5 names. In the split-half tests, within-exposure shuffles supply the more specific comparison.

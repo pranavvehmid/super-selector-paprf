@@ -18,7 +18,7 @@ python scripts/build_dashboard_data.py
 python scripts/build_paprf_research_library.py
 ```
 
-The research-library builder uses the pinned Markdown package in `requirements.txt`. The site loads the pinned KaTeX browser assets and leaves readable equation text in place when those assets are unavailable. The figure atlas serves selected generated plots with short interpretations and chapter references.
+The research-library builder uses the pinned Markdown package in `requirements.txt`. The site serves KaTeX, Inter and Source Serif 4 from its own domain. Readable equation text remains in place if the renderer is unavailable. The figure atlas serves selected generated plots with interpretations and chapter references.
 
 Open http://127.0.0.1:8765. The page also works by opening index.html directly because the evidence export is bundled as a local script.
 

@@ -12,10 +12,10 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "dashboard"
 REPO = "https://github.com/pranavvehmid/super-selector-paprf/blob/main/"
 CHAPTERS = (
-    ("plan", "Research plan and phase history", "methodology/paprf_four_phase_plan.md"),
-    ("unified", "Unified index and leaderboard directory", "methodology/paprf_unified_ranking.md"),
+    ("reading-guide", "Start here: rankings and evidence index", "research/paprf_dashboard_reading_guide.md"),
     ("discipline", "Separate batting and bowling indices", "methodology/paprf_discipline_rankings_v2.md"),
     ("formula-reference", "Numbered formula reference", "methodology/paprf_publication_formula_reference.md"),
+    ("unified", "Unified index and leaderboard directory", "methodology/paprf_unified_ranking.md"),
     ("roles", "Contextual outcomes and seven roles", "methodology/paprf_contextual_role_profiles.md"),
     ("role-validation", "Role validation and score uncertainty", "methodology/paprf_role_profile_validation.md"),
     ("source-dictionary", "Organiser data dictionary", "data_dictionary.md"),
@@ -30,6 +30,7 @@ CHAPTERS = (
     ("v4", "Pressure v4 regularisation", "methodology/paprf_v4_reanalysis.md"),
     ("forward", "Forward validation of pressure rankings", "methodology/paprf_forward_validation.md"),
     ("split", "Interleaved split-half reliability", "methodology/paprf_split_reliability.md"),
+    ("plan", "Research plan and phase history", "methodology/paprf_four_phase_plan.md"),
 )
 FIGURES = (
     "paprf_role_annual_examples.png", "paprf_role_component_heatmaps.png",
@@ -79,12 +80,12 @@ def main():
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PAPRF research library</title><script src="theme.js"></script><link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="publication.css"><link rel="stylesheet" href="atlas.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css" integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js" integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<script defer src="vendor/katex/katex.min.js"></script>
 <script defer src="formula.js"></script></head><body>
 <header class="site-header"><div class="mast"><a class="brand" href="index.html">PAPRF</a>
 <span class="mast-label">Research library</span><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></div>
-<nav aria-label="Research"><a href="index.html#unified">Unified index</a><a href="index.html#pipeline">Methods overview</a>
+<nav aria-label="Research"><a href="index.html">Rankings</a><a href="#reading-guide">Reading guide</a><a href="#formula-reference">Formula reference</a>
 <a href="index.html#figures">Figure atlas</a><a href="#library-top">Contents</a></nav></header>
 <main class="library" id="library-top"><section class="panel"><p class="kicker">RESEARCH RECORD</p>
 <h1>Methods &amp; evidence</h1><p>Full research chapters, formulas and versioned validation. File links open the underlying evidence in the project's private GitHub repository.</p>
