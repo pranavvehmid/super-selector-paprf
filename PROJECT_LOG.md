@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Review the published dashboard and report evidence index.
+**Next action:** Review the redesigned live dashboard.
 
 ---
 
@@ -285,3 +285,8 @@
 - Files: dashboard, docs/research/paprf_dashboard_reading_guide.md, outputs/report/latex
 - Decision: Preserve the analytical evidence run and ranking outputs while extending presentation and documentation.
 - Next: Review the published dashboard and report evidence index.
+
+## 2026-11-18 — Restyled the dashboard with a blush canvas, rounded ranking and evidence cards,  (step: 11)
+- Restyled the dashboard with a blush canvas, rounded ranking and evidence cards, and a compact navigation rail. Added a Home pressure chart from the existing audited distribution.
+- Files: dashboard/index.html, dashboard/atlas.css, dashboard/atlas.js, docs/research/paprf_publication_qa.md
+- Next: Review the redesigned live dashboard.

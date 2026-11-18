@@ -180,6 +180,42 @@ function comparisonView() {
     element("p", "Conventional rate is batting strike rate (runs per 100 balls) or bowling economy (runs per six legal balls). The reported calendar year may differ between players.", "note"));
 }
 
+function homeEvidence() {
+  const {ordinary, elevated, high} = data.audit.band_totals;
+  const coverage = [
+    ["Validated matches", number.format(data.audit.distinct_match_ids)],
+    ["Retained deliveries", number.format(ordinary + elevated + high)],
+    ["Elevated or high pressure", fmt(100 * (elevated + high) / data.audit.delivery_rows, 1) + "%"],
+  ];
+  for (const [label, value] of coverage) {
+    const card = element("div");
+    card.append(element("dt", label), element("dd", value));
+    $("home-key-metrics").append(card);
+  }
+  for (const innings of ["1", "2"]) {
+    const group = element("div", undefined, "home-pressure-innings");
+    for (const [phase, title] of [["powerplay", "Powerplay"], ["middle", "Middle"], ["death", "Death"]]) {
+      const column = element("div", undefined, "home-pressure-column");
+      const rows = data.distribution.filter(row => row.innings === innings && row.innings_phase === phase);
+      const stack = element("div", undefined, "home-pressure-stack");
+      stack.setAttribute("role", "img");
+      stack.setAttribute("aria-label", rows.map(row => row.pressure_band + " " + fmt(+row.pct_within_innings_phase, 1) + "%").join(", "));
+      for (const row of rows) {
+        if (Number(row.pct_within_innings_phase) === 0) continue;
+        const segment = element("span", undefined, row.pressure_band);
+        segment.style.height = Number(row.pct_within_innings_phase) + "%";
+        segment.title = row.pressure_band + " · " + fmt(+row.pct_within_innings_phase, 1) + "%";
+        stack.append(segment);
+      }
+      column.append(stack, element("span", title));
+      group.append(column);
+    }
+    const section = element("div");
+    section.append(group, element("strong", "Innings " + innings));
+    $("home-pressure-chart").append(section);
+  }
+}
+
 for (const tag of document.querySelectorAll("[data-author]")) tag.textContent = paprfAuthor[tag.dataset.author];
 for (const [key, label] of [["email", "Email"], ["phone", "Phone"], ["linkedin", "LinkedIn"], ["repository", "GitHub repository"]]) {
   const value = paprfAuthor[key];
@@ -198,6 +234,7 @@ for (const [key, label] of [["email", "Email"], ["phone", "Phone"], ["linkedin",
   $("author-links").append(item);
 }
 if (globalThis.paprfEvidence?.datasets) {
+  homeEvidence();
   $("dataset-summary").append(table(["Scope", "Count"], [
     ["Source delivery events", number.format(data.datasets["ball_by_ball.csv"].row_count)],
     ["Retained delivery events", number.format(data.audit.delivery_rows)],

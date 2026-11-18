@@ -21,7 +21,10 @@
 <body class="atlas">
   <a class="skip-link" href="#overview">Skip to content</a>
   <header class="site-header">
-    <div class="mast"><a class="brand" href="?page=home">PAPRF</a><span class="mast-label">T20 player evaluation</span><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></div>
+    <div class="mast">
+      <a class="brand" href="?page=home" aria-label="PAPRF Home">PAPRF<span aria-hidden="true"></span></a>
+      <div class="mast-tools"><a href="library.html">Research library</a><button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button></div>
+    </div>
   </header>
   <div class="atlas-shell">
     <aside class="contents-rail">
@@ -48,21 +51,29 @@
     </aside>
   <main id="overview" tabindex="-1">
     <section class="panel" id="home-rankings">
-      <div class="ranking-intro">
-        <div><p class="kicker">Super Selector · Round 1 research</p><h1>Ultimate Top 10</h1></div>
-        <a class="report-link" href="reports/paprf_research.pdf">Project report <span aria-hidden="true">↗</span></a>
+      <div class="ranking-card">
+        <div class="ranking-intro">
+          <div><p class="kicker">Super Selector · Round 1 research</p><h1>Ultimate Top 10</h1></div>
+          <a class="report-link" href="reports/paprf_research.pdf">Project report <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="lede">Batters and bowlers ranked within their roles. Select a player to see the calculation.</p>
+        <div id="home-preview" class="home-rankings"></div>
+        <div class="ranking-follow"><a href="?page=pressure#rankings">Archived Round 1 pressure lists</a><a href="?page=dataset">Dataset →</a></div>
       </div>
-      <p class="lede">Batters and bowlers ranked separately by how they performed against expectations for their roles. Select a player to see the calculation.</p>
-      <div id="home-preview" class="home-rankings"></div>
-      <div class="ranking-follow"><a href="?page=pressure#rankings">Archived Round 1 pressure lists</a><a href="?page=dataset">Next · Dataset →</a></div>
+      <dl id="home-key-metrics" class="home-key-metrics" aria-label="Match coverage and pressure"></dl>
     </section>
     <section class="hero" id="home">
-      <h2>Evidence at a glance</h2>
-      <div class="hero-scorecard">
-        <div id="summary" class="stats stats-left"></div>
-        <div id="pressure-summary" class="stats stats-right"></div>
-      </div>
-      <p class="note">Author: <span data-author="name">[AUTHOR_NAME]</span></p>
+      <h2>Pressure by innings and phase</h2>
+      <p class="note">Share of retained delivery events within each phase.</p>
+      <div class="legend"><span class="ordinary">Ordinary</span><span class="elevated">Elevated</span><span class="high">High</span></div>
+      <div id="home-pressure-chart" class="home-pressure-chart"></div>
+      <p><a href="?page=pressure">Explore the pressure evidence →</a></p>
+      <details><summary>Coverage and delivery counts</summary>
+        <div class="hero-scorecard">
+          <div id="summary" class="stats stats-left"></div>
+          <div id="pressure-summary" class="stats stats-right"></div>
+        </div>
+      </details>
     </section>
     <section class="panel" id="home-findings">
       <h2>What the research found</h2>
