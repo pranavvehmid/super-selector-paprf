@@ -1,0 +1,2018 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PAPRF research library</title><link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="publication.css"></head><body>
+<header class="site-header"><div class="mast"><a class="brand" href="index.html">PAPRF</a>
+<span class="mast-label">Research library</span></div>
+<nav aria-label="Research"><a href="index.html#unified">Unified index</a><a href="index.html#pipeline">Methods overview</a>
+<a href="index.html#figures">Figure atlas</a><a href="#library-top">Contents</a></nav></header>
+<main class="library" id="library-top"><section class="panel"><p class="kicker">RESEARCH RECORD</p>
+<h1>Methods &amp; evidence</h1><p>Full research chapters, formulas and versioned validation. File links open the underlying evidence in the project's private GitHub repository.</p>
+<ol class="library-index"><li><a href="#plan">Research plan and phase history</a></li><li><a href="#unified">Unified index and leaderboard directory</a></li><li><a href="#roles">Contextual outcomes and seven roles</a></li><li><a href="#role-validation">Role validation and score uncertainty</a></li><li><a href="#source-dictionary">Organiser data dictionary</a></li><li><a href="#source-audit">Dataset quality and exclusions</a></li><li><a href="#phase-one">Phase 1 evidence and distribution</a></li><li><a href="#pressure-method">Pre-delivery pressure definition</a></li><li><a href="#v1">Archived Lens A formula ledger</a></li><li><a href="#experiment">Pressure and weight experiments</a></li><li><a href="#matched">Matched-context audit</a></li><li><a href="#v2">Pressure v2 and resampling</a></li><li><a href="#v3">Pressure v3 and cell granularity</a></li><li><a href="#v4">Pressure v4 regularisation</a></li><li><a href="#forward">Forward validation of pressure rankings</a></li><li><a href="#split">Interleaved split-half reliability</a></li></ol></section>
+<article id="plan"><h2>PAPRF Round 1 research plan</h2>
+<p>The four phases group stages A–I from the user’s Round 1 project master prompt, sections 17–18 (attachment SHA-256 A22B8BBE657808F29EB06F92C5980946F079DD91A87F0A6B321AE98E2AA0AEDB). The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/docs/00_official_requirements.md">official requirements</a> establish the two ordered top-10 submissions and methodology review. The project specification adds an interactive dashboard and a research PDF. Scope is historical T20 pressure performance. Auction, retention, recruitment and video production are outside this research plan.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Original stages</th>
+<th>Work and completion evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Data and pressure foundation</td>
+<td>A, B and C</td>
+<td>Verify source structure and coverage. Map the five PAPRF pillars to supported fields. Recalculate the current pressure index and quantify where it classifies pressure. Record alternatives and bring the definition to the user for review.</td>
+</tr>
+<tr>
+<td>2. Statistical models and research execution</td>
+<td>D and H</td>
+<td>Evaluate batter and bowler outcomes separately. Compare shared pressure context with role-specific alternatives using the same matches and an explicitly documented evaluation design. Test phase and competition effects, weight changes, repeatability, sample size and match-clustered uncertainty where viable. Record numerator, denominator, units, transformation, seed and cutoff for each estimate.</td>
+</tr>
+<tr>
+<td>3. Dashboard and research PDF</td>
+<td>E, F and G</td>
+<td>Review WASM versus browser JavaScript with Python-generated aggregates, then agree on navigation and report structure. Build two views from one versioned evidence bundle. Show official results and sensitivity scenarios with distinct labels. Validate interaction and render the PDF for layout checks.</td>
+</tr>
+<tr>
+<td>4. Validation and submission package</td>
+<td>I</td>
+<td>Reproduce results, reconcile the PDF, dashboard and ordered ranking CSVs by ID, document coverage and uncertainty, check platform labels where accessible, and obtain final approval.</td>
+</tr>
+</tbody>
+</table>
+<p>Stages H and I span analysis and validation. Phase 2 is where model experiments run, while Phase 4 is the final end-to-end check. The existing Lens A v1 rankings are the reference for comparisons. The user authorised starting Phase 1. The attachment reserves final model, dashboard architecture, PDF structure and delivery decisions for user review.</p>
+<h3>Evidence standard</h3>
+<p>Phase 2 evidence includes the <a href="#experiment">pressure and weight experiment</a>, <a href="#matched">matched-context and temporal audit</a>, <a href="#v2">v2 uncertainty audit</a>, <a href="#v3">v3 granularity comparison</a> and <a href="#v4">v4 regularised fine-cell reanalysis</a>. The <a href="#v1">formula ledger</a> records the baseline algorithms. The dashboard and v4 research review supplement include the <a href="#forward">forward validation</a> and <a href="#split">matched split-half reliability audit</a>. The clean rebuild implements the reproducibility portion of Phase 4. Final submission model choice and untouched external validation remain open.</p>
+<p>For each result, record the source path and version or hash, row grain, ID join, population, exclusions, numerator, denominator, formula, units, precision, code entry point and verification result. Use the claim and source registers for external facts. Keep proposed and measured values identifiable. An unavailable result is reported as unavailable with its reason. The <a href="#phase-one">Phase 1 record</a> provides the first reproducible calculation and audit.</p>
+<p>The <a href="#roles">contextual role profiles</a> extend the project with earlier-date opposition benchmarks, deployment-specific leaderboards, geography and annual splits, and alternative weights. These profiles estimate a broader question than the pressure-only rankings and are accessible in their own dashboard section.</p>
+<p>The <a href="#unified">unified index</a> integrates those role signals, while the website publishes the versioned methods and figures in a research library. This historical index is a separate output from the archived Round 1 pressure selections.</p></article><article id="unified"><h2>Unified player index v1</h2>
+<p>The index answers which players exceeded the expectations of their usual T20 deployment by the largest supported margin in the supplied sample. It integrates the seven <a href="#roles">contextual role leaderboards</a>. The archived submission and the pressure-only research ranks answer a different question.</p>
+<h3>Ranking directory</h3>
+<table>
+<thead>
+<tr>
+<th>Leaderboard</th>
+<th>Purpose and algorithm</th>
+<th>Relationship and main limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lens A v1</td>
+<td>Archived Round 1 batting and bowling top tens. Three equally weighted signed z-scores of pressure versus ordinary rates, multiplied by n/(n+60). <a href="#v1">Formula ledger</a>.</td>
+<td>Historical pressure baseline. Pooled context can mix roles and competitions.</td>
+</tr>
+<tr>
+<td>Pressure research v2–v4</td>
+<td>Match within contexts and rank by the tenth percentile of 500 match resamples. <a href="#v2">v2</a>, <a href="#v3">v3</a>, <a href="#v4">v4</a>.</td>
+<td>Diagnostics for pressure lift, independent of the unified index. Rankings show weak temporal stability.</td>
+</tr>
+<tr>
+<td>Contextual role profiles</td>
+<td>Seven distinct deployments. Earlier-date expected outcomes give opposition and context adjustments. Role weights combine scoring, boundaries and dismissals or wickets. <a href="#roles">Weights and definitions</a>.</td>
+<td>The unified index uses their component values. Run and boundary residuals have substantial overlap.</td>
+</tr>
+<tr>
+<td>Unified player index</td>
+<td>Common role-relative scale, opportunity-based role assignment and capped secondary credit. Equations below.</td>
+<td>Relative demonstrated effectiveness. It is not a forecast, auction shortlist or replacement for the official pressure submission.</td>
+</tr>
+<tr>
+<td>Experimental leaderboards</td>
+<td>Equal weights, extra India weighting, residualised boundaries and alternative versatility.</td>
+<td>Diagnostics show how assumptions affect rankings. No experimental setting was selected based on preferred names.</td>
+</tr>
+</tbody>
+</table>
+<h3>Equations</h3>
+<p><strong>(1) Role assignment.</strong> Among a player's observed deployments, primary role is the one with most scored opportunities. If no opportunities fall after warm-up, use observed raw opportunities. Ties use scored match count, then the unshrunk role signal if available, then role ID. A primary needs at least 60 scored balls and six scored matches to receive an index. Players who do not qualify are recorded with a reason. More opportunities determine deployment and sample support, not raw run or wicket superiority.</p>
+<p><strong>(2) Within-role scaling.</strong> For each eligible player and role, recover the unshrunk contextual signal c = Σ wⱼzⱼ from the signed capped components and the published role weights. Compute μ and sample standard deviation σ over all eligible players in that role. Define Q = 100Φ[(c−μ)/σ], where Φ is the standard normal cumulative distribution function. A flat cohort uses Q = 50. Q is a smooth reference score in (0, 100), with 50 at the role mean. It is not the percentage of actual peers defeated and not a probability of future success. Unlike averaging rank positions, the transformation retains differences in component magnitudes. Normal reference scaling reduces units and scale incompatibilities, though skew and unequal role strength can still matter.</p>
+<p><strong>(3) Evidence shrinkage.</strong> Define R = n/(n+120) and S = 50 + R(Q−50). This uses the existing role prior and shrinks toward neutral exactly once. Applying reliability to the already shrunken published role score would count sample size twice. At n = 120, R = 0.5. With Q = 90, S = 70. S ranges from 0 to 100 and is a historical role-relative index.</p>
+<p><strong>(4) Overall index.</strong> Select at most one supported secondary role with the largest credit, where credit = 0.10 × min(1, nₛ/nₚ) × max(0, Sₛ−50). Here p and s identify primary and secondary roles. Other roles remain visible without accumulating credits. The index I = min(100, Sₚ + credit). For Sₚ = 70, Sₛ = 80 and nₛ/nₚ = 0.5, credit is 1.5 and I = 71.5. The bonus is at most 5 points before clipping. Rank by score at six decimal places and break ties by numeric player ID.</p>
+<p>Opposition quality and pressure context are already included in the expected-outcome benchmark. Pressure lift, India support, annual/recency contrast and historical bootstrap membership are shown as evidence. They receive no separate automatic bonus. That avoids rewarding the same balls twice or assigning an unvalidated India or recency multiplier. The prior forward tests do not establish stable player ordering in every role. Consistency and forecast interpretation remain limitations. Age and pitch characteristics require further verified data.</p>
+<h3>Sensitivity and reproducibility</h3>
+<p>Compare the primary index with three alternatives: no secondary credit, a 1.5× India source scenario, and a boundary-residualised source scenario. Role assignment and sample requirements are held fixed. The latter two recalculate role reference centres and scales. These are historical sensitivity tests rather than independent predictive validation. Run <code>python scripts/build_paprf_unified_ranking.py</code>. The evidence bundle records source hashes, role peer scales, every eligible component, all observed role assignments, and overlaps between alternatives.</p>
+<h3>Results and worked trace</h3>
+<p>The index ranks 397 of 881 observed player IDs. The 484 unranked records record the primary evidence gate and stay searchable. Five of the top ten are openers, compared with 64 of the 397 eligible primary assignments. This concentration should be reviewed alongside differences in role opportunity counts, pool sizes, and tail shapes. No role quota is applied. The shared scale compares within-role evidence and does not guarantee equivalent difficulty or equal representation across roles.</p>
+<p>Abhishek Sharma (ID 6281) has 1,753 opener balls across 102 scored matches, 78.4% of his scored opportunities. His capped signed components are approximately +2.506577 for runs, +2.241210 for boundaries and −0.105743 for dismissals. Applying 45%, 30% and 25% gives c = 1.773887. Against the opener mean −0.004546 and sample SD 0.716492, the reference z is 2.482139 and Q = 99.347018. Retention 1,753/1,873 = 0.935932 gives S = 96.185437. His supported secondary middle-bowling score is 26.603370, so it adds zero. His final index is 96.185437.</p>
+<p>The primary-only and India-weighted alternatives each retain 10 of the 10 primary names. Residualising boundaries retains 9 of 10, with Yashasvi Jaiswal entering and Harry Brook leaving. The maximum absolute rank movements across the full cohort are 16, 71 and 179 places, respectively. Stable top-ten membership can coexist with substantial shifts elsewhere. The new index has no predecessor with the same criterion. Historical role or pressure ranks remain available as comparisons, while bootstrapped top-ten shares correspond to the source role profiles. They are not unified rank confidence intervals.</p>
+<ul>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/rankings/paprf_unified_top10_v1.csv">Unified top ten</a></li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_unified_assignments.csv">All player assignments</a></li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_unified_score_ledger.csv">Four scenario score ledgers</a></li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_unified_ranking.json">Player-level components and input hashes</a></li>
+</ul>
+<p>Next validation should test whether different roles have comparable score calibration in future windows. It should also recompute unified ranks inside a shared whole-match resample rather than transplanting source-role inclusion probabilities.</p></article><article id="roles"><h2>Contextual T20 role profiles</h2>
+<h3>Protocol</h3>
+<p>This research iteration measures effectiveness relative to expected delivered outcomes. The historical PAPRF v4 pressure ranks remain a distinct comparison. All role and opponent estimates use the supplied organiser data.</p>
+<p>Batting roles are based on the source batting slot and first pre-delivery phase seen as striker or non-striker in that innings. Slots 1–2 are openers, 3–4 top order and 5+ middle/lower order, except players in slots 5+ first seen in the death phase, who are classified as late entrants. This is an observed deployment proxy, not a permanent finisher designation. Bowlers are evaluated separately in each phase. A player can qualify in multiple roles. Batting uses balls faced and bowling uses legal balls. Bowling model runs use legal-ball concessions. Wides and no-ball concessions remain in the conventional economy column, assigned to the same phase, and are outside the legal-ball residual model. A boundary must have the matching four or six flag and attributed runs. A batting dismissal must occur on a counted striker ball.</p>
+<h4>Earlier-date baseline and opposition adjustment</h4>
+<p>Process whole match dates in order. Freeze all rates until the date's rows are scored, then update the rates. Keep the first 195 matches before 3 April 2023 as warm-up. For each role, define the observation vector Y = (runs, boundary indicator, dot indicator, dismissal or credited wicket indicator, six indicator). Coaching and recruitment interpretations are outside these metrics.</p>
+<p>The context key includes innings, phase, competition family, batting deployment or bowling phase, India venue indicator, pressure band, and observed opposing style (pace/spin or batting hand). Let a historical group have outcome sum S and n opportunities. Calculate its mean as (S + k × parent mean)/(n + k). The hierarchy moves from discipline mean to deployment/phase/family parent with k = 120 and then to the full cell with k = 120. Before any role history exists, use fixed priors of 1 run, 0.15 boundaries, 0.35 dots, 0.04 dismissals or wickets and 0.05 sixes per opportunity. Priors are initialisation assumptions.</p>
+<p>Compute earlier-date residuals as actual minus the unadjusted context expectation. Estimate a team residual mean with denominator n + 360 and an individual opponent residual mean with denominator n + 120. Use 25% team and 75% individual in the adjustment, independently on each outcome. Clip runs to [0, 6] for batting or [0, 8] for legal bowling and indicators to [0, 1]. The opponent is the delivering bowler for batting, and current striker for bowling. This is a historical proxy and does not separate individual skill, other opponents and scheduling effects. Quality tiers use the prior individual contextual run residual, oriented so harder opposition is positive. A tier requires 120 prior opportunities, with strong at +0.10 or above, weaker at −0.10 or below, average between, and unknown otherwise. Report an out-of-date prediction MSE comparison against the unadjusted model. Competition family adjustment controls observed baseline differences and is not a causal tournament-quality ranking.</p>
+<h4>Scores and dimensions</h4>
+<p>Aggregate residuals per opportunity. In each eligible role pool, z-standardise runs, boundary and event residual rates using sample standard deviations. Orient scoring and boundaries up and dismissal risk down for batters, and orient run and boundary prevention up and credited wickets up for bowlers. Clip signed z-scores at ±3. Eligibility requires 60 scored balls and six scored matches. Multiply the weighted composite by n/(n+120), with n the unweighted role opportunity count. The primary score weights all locations equally. Stress-test India at 1.5× event weight, and compare the prespecified role weights with equal weights. No arbitrary age bonus is applied.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: right;">Runs or prevention</th>
+<th style="text-align: right;">Boundaries or prevention</th>
+<th style="text-align: right;">Dismissals or wickets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opener</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">0.25</td>
+</tr>
+<tr>
+<td>Top order</td>
+<td style="text-align: right;">0.40</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.40</td>
+</tr>
+<tr>
+<td>Middle/lower order</td>
+<td style="text-align: right;">0.40</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.35</td>
+</tr>
+<tr>
+<td>Late entrant</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">0.15</td>
+</tr>
+<tr>
+<td>Powerplay bowler</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.45</td>
+</tr>
+<tr>
+<td>Middle bowler</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.45</td>
+</tr>
+<tr>
+<td>Death bowler</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.25</td>
+</tr>
+</tbody>
+</table>
+<p>The batting Explosiveness Index is [0.60 z(runs) + 0.40 z(boundaries)] × n/(n+120). Sixes and dots remain available as diagnostics. Inspect rank correlation between scored components for redundancy. The role-conditioned pressure comparison is the difference between pressure and ordinary contextual residual means for each metric. Report a pressure difference only with at least 30 opportunities in both buckets. This overlay improves comparability without introducing a newly calibrated pressure label.</p>
+<p>Annual and split tables contain raw opportunity counts, strike rate or economy, boundary and event rates, and mean contextual residuals. Publish the annual raw series for 2022–2026 when observations exist. Trend regression requires at least three years with 60 scored balls each. Let t be year, y annual run residual and n scored balls. The weighted slope is Σ n(t−t̄)(y−ȳ) / Σ n(t−t̄)², with ball-weighted means. The recency contrast uses weights n × 2⁻⁽²⁰²⁶⁻ᵗ⁾⁄². Negative raw conceded-run slopes favour bowlers. No age, origin, home advantage, physical pitch trait, ground dimensions or future potential is inferred from location or career appearance dates. Venue country measures India exposure. A schedule-side label is not a player's home ground.</p>
+<h4>Follow-up redundancy test</h4>
+<p>The first run showed strong scoring–boundary correlation. Keep the original primary score as the declared reference. For the follow-up sensitivity case, let x be the role pool's run residual and y its boundary residual. Replace y with y − β(x − mean(x)), where β = Σ (x − mean(x))(y − mean(y)) / Σ (x − mean(x))². Re-standardise the transformed boundary component and keep the original weights. This strips linear dependence in the fitted role cohort. It does not make the components independent or establish predictive superiority.</p>
+<h3>Results</h3>
+<p>The source audit found consistent batting positions across 12,630 observed player-innings. On batting opportunities, the four flag disagrees with a four-run attribution on 19 rows and the six flag disagrees with a six-run attribution on three. Requiring both signals prevents unverified boundary attributions. These are discrepancy counts across flag fields.</p>
+<table>
+<thead>
+<tr>
+<th>Discipline</th>
+<th style="text-align: right;">Scored balls</th>
+<th style="text-align: right;">Context run MSE</th>
+<th style="text-align: right;">Opposition-adjusted run MSE</th>
+<th style="text-align: right;">Relative reduction</th>
+<th style="text-align: right;">Unknown opposition tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Batting</td>
+<td style="text-align: right;">134,060</td>
+<td style="text-align: right;">3.083991</td>
+<td style="text-align: right;">3.079331</td>
+<td style="text-align: right;">0.151%</td>
+<td style="text-align: right;">26,269 / 134,060</td>
+</tr>
+<tr>
+<td>Bowling</td>
+<td style="text-align: right;">133,652</td>
+<td style="text-align: right;">3.102292</td>
+<td style="text-align: right;">3.076754</td>
+<td style="text-align: right;">0.823%</td>
+<td style="text-align: right;">27,811 / 133,652</td>
+</tr>
+</tbody>
+</table>
+<p>Relative reduction is 100 × (1 − adjusted MSE / context MSE). These are per-ball chronological errors from one historical sequence, with no independent interval or external test. Batting dismissal MSE worsened slightly from 0.051624 to 0.051647. The run improvement is modest and does not establish that the profile ranking will predict future player performance.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: right;">Eligible</th>
+<th>Historical leader</th>
+<th style="text-align: right;">India stress overlap</th>
+<th style="text-align: right;">Equal-weight overlap</th>
+<th style="text-align: right;">Boundary residualisation overlap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opener</td>
+<td style="text-align: right;">78</td>
+<td>Vaibhav Sooryavanshi</td>
+<td style="text-align: right;">10/10</td>
+<td style="text-align: right;">10/10</td>
+<td style="text-align: right;">8/10</td>
+</tr>
+<tr>
+<td>Top order</td>
+<td style="text-align: right;">107</td>
+<td>Harry Brook</td>
+<td style="text-align: right;">8/10</td>
+<td style="text-align: right;">8/10</td>
+<td style="text-align: right;">8/10</td>
+</tr>
+<tr>
+<td>Middle/lower order</td>
+<td style="text-align: right;">123</td>
+<td>Tim David</td>
+<td style="text-align: right;">10/10</td>
+<td style="text-align: right;">9/10</td>
+<td style="text-align: right;">8/10</td>
+</tr>
+<tr>
+<td>Late entrant</td>
+<td style="text-align: right;">45</td>
+<td>Mahendra Singh Dhoni</td>
+<td style="text-align: right;">9/10</td>
+<td style="text-align: right;">10/10</td>
+<td style="text-align: right;">9/10</td>
+</tr>
+<tr>
+<td>Powerplay bowling</td>
+<td style="text-align: right;">172</td>
+<td>Kyle Klein</td>
+<td style="text-align: right;">10/10</td>
+<td style="text-align: right;">9/10</td>
+<td style="text-align: right;">7/10</td>
+</tr>
+<tr>
+<td>Middle bowling</td>
+<td style="text-align: right;">221</td>
+<td>Mohammad Nawaz</td>
+<td style="text-align: right;">8/10</td>
+<td style="text-align: right;">7/10</td>
+<td style="text-align: right;">8/10</td>
+</tr>
+<tr>
+<td>Death bowling</td>
+<td style="text-align: right;">138</td>
+<td>Jasprit Bumrah</td>
+<td style="text-align: right;">9/10</td>
+<td style="text-align: right;">9/10</td>
+<td style="text-align: right;">8/10</td>
+</tr>
+</tbody>
+</table>
+<p>Run–boundary residual correlations range from roughly +0.89 to +0.94. Residualising changes one to three top-ten memberships per role. Compare the runs-only or residualised-boundary formulation on a subsequent validation sample before relying on the composite as an independent measure of explosiveness. The role leaderboards share four v4 batting and three v4 bowling top-ten names across their respective role lists. They estimate overall contextual effectiveness rather than pressure lift alone.</p>
+<p>The trend ledger has 173 qualifying player-role records, 97 with three scored years and 76 with four. Raw annual splits may cover 2022–2026, while chronology-adjusted values begin on 3 April 2023. Partial calendar years should not be treated as equivalent to complete seasons. A change in residuals can reflect changing roles, schedules or opposition alongside player performance.</p>
+<h3>Evidence map and remaining work</h3>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Current evidence and unresolved scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opposition</td>
+<td>Earlier-date individual and team residuals, prior-support tiers, style splits and chronologically scored errors. A tournament-strength hierarchy and opponent adjustment by specific phase need separate validation.</td>
+</tr>
+<tr>
+<td>Sample size and quality</td>
+<td>Role scores are shrunk, with balls, matches and innings recorded. Whole-match uncertainty for these new role scores remains open.</td>
+</tr>
+<tr>
+<td>Explosiveness and roles</td>
+<td>Seven role-specific leaderboards, boundary and six frequencies, dots and scoring rate. Immediate scoring after entry, chase completion and strike rotation sequences remain untested.</td>
+</tr>
+<tr>
+<td>Time and age</td>
+<td>Annual rates, weighted slopes and recency contrast. Age curves need date-of-birth data linked and verified by player ID. Career potential remains unestimated.</td>
+</tr>
+<tr>
+<td>Pressure</td>
+<td>Residual pressure-minus-ordinary splits per role, with minimum support reported. Calibrated role-specific exposure, win probability and match importance remain open.</td>
+</tr>
+<tr>
+<td>Geography</td>
+<td>India versus outside India and 1.5× weighting sensitivity. That sensitivity does not validate an optimal India preference. Home advantage, pitch characteristics and ground size need separate sources.</td>
+</tr>
+<tr>
+<td>Audit</td>
+<td>Earlier-date forecast error and overlap across weights, geography and boundary treatment. Player-level future forecast accuracy and stability remain untested for this role model.</td>
+</tr>
+</tbody>
+</table>
+<p>Run <code>python scripts/build_paprf_role_profiles.py</code>. See the <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/rankings/paprf_contextual_role_top10_v1.csv">seven ordered top tens</a>, <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_role_profile_scores.csv">player and scenario scores</a>, <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_role_profile_splits.csv">annual, phase, pressure, style and geography splits</a>, <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_role_profile_trends.csv">trend ledger</a>, <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_contextual_roles.json">audit JSON</a>, <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_role_component_heatmaps.png">correlation heatmaps</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_role_annual_examples.png">illustrative annual trajectories</a>.</p>
+<p>The <a href="#role-validation">follow-up validation</a> adds whole-match score uncertainty and two later-window comparisons on common eligible players.</p></article><article id="role-validation"><h2>Contextual role profile validation</h2>
+<h3>Design recorded before evaluation</h3>
+<p>This pass tests the role leaderboards released in commit 173d13c. It checks uncertainty in the historical ranking and tests whether the ranked differences recur in later player samples. No result is used to tune the original ranking.</p>
+<p>Recreate per-match player-role sums of the three scored contextual residuals: runs, boundaries and dismissals or wickets. Context and opponent expectations for each date use only preceding dates, as in the original profile. Forward-score training uses the 3 April 2023 warm-up cutoff and ends before each test window. Test windows are 8 May 2024 to 5 September 2025, and 6 September 2025 to the end of the supplied data. Within these windows, the contextual baseline may update after an observed match date. Fitted ranking parameters stay fixed.</p>
+<p>Compare four training predictors on the common eligible test players: the original role score, the original score with the boundary residual orthogonalised to runs, direction-corrected runs-only and opportunity volume. Fit peer means, sample standard deviations and the boundary-on-runs slope on eligible training players only. Training requires 60 balls and six matches in the role. Test outcomes require 60 scored balls and six matches in the same role. The realised test target uses runs and events only, with the configured boundary weight allocated to runs, so boundary duplication does not define success. Standardise the target using training means and scales, orient signs and cap z-scores at ±3. Test ranks omit the ball-count shrinkage penalty. Score comparisons use Spearman correlation and, where the common pool exceeds ten, top-ten overlap. Count original training leaders who are test eligible separately. Report a signed run-residual target as a secondary correlation.</p>
+<p>For historical uncertainty, draw 500 whole-match samples with replacement within IPL and T20I, with seed 20261118 and a shared set of match multiplicities for every player. Keep the original eligible player pool and peer scales fixed. Recalculate each player's mean residuals and n/(n+120) factor from the resample. Rank each draw at six decimal places with numeric player ID as tie-break. Record p10, median, p90 and the fraction of draws in the top ten. These are conditional results given earlier-date residuals, fitted scales and observed eligibility. They do not propagate uncertainty from fitting opponent baselines or establish future performance.</p>
+<h3>Results</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: right;">Common players, earlier / later window</th>
+<th style="text-align: right;">Primary rho, earlier / later</th>
+<th style="text-align: right;">Runs-only rho, earlier / later</th>
+<th style="text-align: right;">Historical leader in resampled top ten</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opener</td>
+<td style="text-align: right;">22 / 39</td>
+<td style="text-align: right;">+0.582 / +0.396</td>
+<td style="text-align: right;">+0.509 / +0.452</td>
+<td style="text-align: right;">499/500</td>
+</tr>
+<tr>
+<td>Top order</td>
+<td style="text-align: right;">27 / 30</td>
+<td style="text-align: right;">+0.380 / +0.192</td>
+<td style="text-align: right;">+0.366 / +0.250</td>
+<td style="text-align: right;">467/500</td>
+</tr>
+<tr>
+<td>Middle/lower order</td>
+<td style="text-align: right;">25 / 33</td>
+<td style="text-align: right;">+0.352 / −0.228</td>
+<td style="text-align: right;">+0.394 / −0.267</td>
+<td style="text-align: right;">426/500</td>
+</tr>
+<tr>
+<td>Late entrant</td>
+<td style="text-align: right;">1 / 0</td>
+<td style="text-align: right;">Unavailable</td>
+<td style="text-align: right;">Unavailable</td>
+<td style="text-align: right;">476/500</td>
+</tr>
+<tr>
+<td>Powerplay bowling</td>
+<td style="text-align: right;">44 / 52</td>
+<td style="text-align: right;">+0.317 / −0.048</td>
+<td style="text-align: right;">+0.163 / −0.005</td>
+<td style="text-align: right;">309/500</td>
+</tr>
+<tr>
+<td>Middle bowling</td>
+<td style="text-align: right;">56 / 69</td>
+<td style="text-align: right;">+0.346 / +0.217</td>
+<td style="text-align: right;">+0.463 / +0.264</td>
+<td style="text-align: right;">289/500</td>
+</tr>
+<tr>
+<td>Death bowling</td>
+<td style="text-align: right;">35 / 34</td>
+<td style="text-align: right;">+0.301 / −0.185</td>
+<td style="text-align: right;">+0.245 / −0.121</td>
+<td style="text-align: right;">479/500</td>
+</tr>
+</tbody>
+</table>
+<p>The opener profile showed the strongest consistent primary association. Top order and middle bowling were also positive in both windows. Middle bowling's runs-only predictor beat the composite in both windows. Middle/lower batting, powerplay bowling and death bowling reversed sign. Late-entrant coverage is too sparse to quantify rank association, despite high retention of the historical leader in resampling. Among the two opener windows, six and eight members of the original training top ten had enough later evidence. The forward analyses apply to those with common eligibility.</p>
+<p>The residualised-boundary predictor beat the primary predictor in three of the twelve assessable role-window comparisons. Runs-only beat it in seven of twelve. Those counts are descriptive. Test windows are disjoint in match IDs but can include the same players, and predictions share expanding training history. The target also puts no direct weight on boundaries. These results support testing simpler scores on a future sample. They do not establish that replacing the current scoring weights will improve future rankings.</p>
+<p>Leader stability varies separately from list stability. For example, 479/500 resamples include Jasprit Bumrah in the death-bowling top ten, yet six of the ten published death bowlers appear in fewer than half the draws. In powerplay bowling, eight of the historical ten have a resampling share below 50%. Resampling shares describe the historical sample and should not be interpreted as selection probabilities for future matches.</p>
+<h3>Reproduction</h3>
+<p>Run <code>python scripts/validate_paprf_role_profiles.py</code>. The script rebuilds player-match residuals, checks the full-sample peer scales and eligible counts, and reproduces all 70 original top-ten scores and positions before writing validation evidence.</p>
+<ul>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_role_profile_validation.json">Audit JSON</a> includes training peer scales, test cohorts, target correlations, top-ten reproducibility and bootstrap intervals.</li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_role_forward_player_ledger.csv">Forward player ledger</a> provides the train predictions, realised outcomes and evaluation membership.</li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_role_bootstrap_ledger.csv">Bootstrap ledger</a> provides the score intervals and top-ten shares for every eligible profile.</li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_role_forward_validation.png">Benchmark figure</a> compares the four training predictors across roles and windows. No plotted marker for late entry means there was insufficient evidence to estimate a correlation.</li>
+</ul>
+<p>The historical role top tens remain the reference. The next priority is a whole-match validation of the run-only alternative for middle bowling and a separate check of how pool depth changes with playing time in late-entry batting.</p></article><article id="source-dictionary"><h2>Data Dictionary (Step 2)</h2>
+<h3>Evidence and use rules</h3>
+<p>This dictionary uses the supplied CSV headers, the file-level descriptions in <code>docs/original/RR_Super_Select_Hackathon_Project_Handoff.md</code>, <code>work/schema-profile.json</code>, and <code>work/field-domain-profile.json</code>. It does not infer cricket-accounting rules from a column name or value pattern.</p>
+<ul>
+<li><strong>Observed</strong> means the field name, type, blankness, and listed values/ranges are directly present in the supplied CSV.</li>
+<li><strong>Verified join</strong> means <code>work/relationship-check.json</code> found no unmatched IDs for that relationship on 18 November 2026.</li>
+<li><strong>Unresolved</strong> means the supplied materials do not define the field semantics well enough to use it for a derived match-state or performance calculation. It must not be used for that purpose until Step 4 validates it.</li>
+</ul>
+<h3>Relationship and join specification</h3>
+<table>
+<thead>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>Key</th>
+<th>Status and permitted use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ball_by_ball</code></td>
+<td><code>matches</code></td>
+<td><code>match_id</code></td>
+<td>Verified join; attach match context to a delivery.</td>
+</tr>
+<tr>
+<td><code>playing_eleven</code></td>
+<td><code>matches</code></td>
+<td><code>match_id</code></td>
+<td>Verified join; attach match context to a participation record.</td>
+</tr>
+<tr>
+<td><code>matches</code></td>
+<td><code>competitions</code></td>
+<td><code>comp_id</code></td>
+<td>Verified join; attach competition context to a match.</td>
+</tr>
+<tr>
+<td><code>competition_team_player_mapping</code></td>
+<td><code>competitions</code></td>
+<td><code>comp_id</code></td>
+<td>Verified join; attach competition context to a mapping record.</td>
+</tr>
+<tr>
+<td><code>teams</code></td>
+<td><code>competitions</code></td>
+<td><code>comp_id</code></td>
+<td>Verified join; identify a team within a competition with <code>(comp_id, team_id)</code>.</td>
+</tr>
+<tr>
+<td><code>playing_eleven</code></td>
+<td><code>competition_team_player_mapping</code></td>
+<td><code>(comp_id, team_id, player_id)</code> after joining the match to its competition</td>
+<td>Join specification; use IDs only.</td>
+</tr>
+</tbody>
+</table>
+<p>The relationship check also found no player ID with more than one display name within either the mapping or ball-by-ball file. This is name-consistency evidence, not proof that names are safe join keys.</p>
+<h3><code>ball_by_ball.csv</code> — 200,999 observed delivery records</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Observed type / domain</th>
+<th>Source-supported description and status</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>match_id</code></td>
+<td>integer; 867 values</td>
+<td>Match identifier; verified to join <code>matches.match_id</code>.</td>
+<td>key</td>
+</tr>
+<tr>
+<td><code>innings</code></td>
+<td>integer; 1–4</td>
+<td>Innings-sequence field; ordering and treatment of innings 3–4 are unresolved.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>overid</code></td>
+<td>integer; 1–20</td>
+<td>Over-labelled sequence field; exact ordering rule is unresolved.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>over_ball_num</code></td>
+<td>integer; 1–13</td>
+<td>Ball-labelled value within an over; values above 6 show it is not a legal-ball count by itself.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>innings_ball_num</code></td>
+<td>integer; 1–136</td>
+<td>Ball-labelled value within an innings; exact ordering and legal-ball semantics are unresolved.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>batting_team_id</code></td>
+<td>integer; 38 values</td>
+<td>Team identifier on the delivery record.</td>
+<td>context identifier</td>
+</tr>
+<tr>
+<td><code>bowling_team_id</code></td>
+<td>integer; 38 values</td>
+<td>Team identifier on the delivery record.</td>
+<td>context identifier</td>
+</tr>
+<tr>
+<td><code>striker_id</code></td>
+<td>integer; 888 values</td>
+<td>Player identifier in the source's striker-labelled field.</td>
+<td>participant identifier</td>
+</tr>
+<tr>
+<td><code>striker_name</code></td>
+<td>text; 885 values</td>
+<td>Display name in the striker-labelled field; not a join key.</td>
+<td>display context</td>
+</tr>
+<tr>
+<td><code>non_striker_id</code></td>
+<td>integer; 867 values</td>
+<td>Player identifier in the non-striker-labelled field.</td>
+<td>participant identifier</td>
+</tr>
+<tr>
+<td><code>non_striker_name</code></td>
+<td>text; 864 values</td>
+<td>Display name in the non-striker-labelled field; not a join key.</td>
+<td>display context</td>
+</tr>
+<tr>
+<td><code>bowler_id</code></td>
+<td>integer; 647 values</td>
+<td>Player identifier in the source's bowler-labelled field.</td>
+<td>participant identifier</td>
+</tr>
+<tr>
+<td><code>bowler_name</code></td>
+<td>text; 646 values</td>
+<td>Display name in the bowler-labelled field; not a join key.</td>
+<td>display context</td>
+</tr>
+<tr>
+<td><code>batting_type</code></td>
+<td>text; <code>RHB</code>, <code>LHB</code></td>
+<td>Source categorical field; its formal coding definition is not supplied.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>bowling_type</code></td>
+<td>text; 12 values</td>
+<td>Source categorical field; its formal coding definition is not supplied.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>batting_order</code></td>
+<td>integer; 1–13</td>
+<td>Source order-labelled field; calculation and treatment of values above 11 are unresolved.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>runs</code></td>
+<td>integer; 0–6</td>
+<td>Delivery outcome field. Its attribution to batter or team, and relation to extras, are unresolved.</td>
+<td>outcome — do not use for metrics yet</td>
+</tr>
+<tr>
+<td><code>is_four</code></td>
+<td>text boolean; <code>true</code>/<code>false</code></td>
+<td>Source flag; its relationship to <code>runs</code> is unresolved.</td>
+<td>outcome — do not use for metrics yet</td>
+</tr>
+<tr>
+<td><code>is_six</code></td>
+<td>text boolean; <code>true</code>/<code>false</code></td>
+<td>Source flag; its relationship to <code>runs</code> is unresolved.</td>
+<td>outcome — do not use for metrics yet</td>
+</tr>
+<tr>
+<td><code>is_wicket</code></td>
+<td>text boolean; <code>true</code>/<code>false</code></td>
+<td>Source flag; dismissal and bowler-credit treatment are unresolved.</td>
+<td>outcome — do not use for metrics yet</td>
+</tr>
+<tr>
+<td><code>dismissal_type_id</code></td>
+<td>integer or blank; 8 values</td>
+<td>Source dismissal-category identifier, populated on 10,881 records; codebook is not supplied.</td>
+<td>outcome — unresolved</td>
+</tr>
+<tr>
+<td><code>dismissal_type</code></td>
+<td>text or blank; 9 labels</td>
+<td>Source dismissal-category label, populated on 10,881 records; attribution treatment is unresolved.</td>
+<td>outcome — unresolved</td>
+</tr>
+<tr>
+<td><code>dismissed_player_id</code></td>
+<td>integer or blank; 814 values</td>
+<td>Source dismissed-player identifier, populated on 10,892 records; its relation to <code>is_wicket</code> needs validation.</td>
+<td>outcome — unresolved</td>
+</tr>
+<tr>
+<td><code>extras_type</code></td>
+<td>text; 7 labels</td>
+<td>Source extras category (<code>None</code>, <code>wide</code>, <code>legbyes</code>, <code>Overstep</code>, <code>byes</code>, <code>other</code>, <code>Penalty</code>); accounting and legal-ball treatment are unresolved.</td>
+<td>outcome — unresolved</td>
+</tr>
+<tr>
+<td><code>extras1_runs</code></td>
+<td>integer; 0–5</td>
+<td>Source extras-labelled numeric field; exact attribution and combination rule are unresolved.</td>
+<td>outcome — unresolved</td>
+</tr>
+<tr>
+<td><code>extras_2_runs</code></td>
+<td>integer; 0, 1, or 4</td>
+<td>Source extras-labelled numeric field; exact attribution and combination rule are unresolved.</td>
+<td>outcome — unresolved</td>
+</tr>
+<tr>
+<td><code>pace_or_spin</code></td>
+<td>text; <code>Pace</code>/<code>Spin</code></td>
+<td>Source categorical field; formal classification rule is not supplied.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>bowl_speed</code></td>
+<td>numeric; -1–1456.1</td>
+<td>Source speed-labelled numeric field; unit and sentinel-value definition are not supplied.</td>
+<td>context — unresolved</td>
+</tr>
+<tr>
+<td><code>stroke</code></td>
+<td>text or blank; 31 values</td>
+<td>Source stroke-labelled categorical field; taxonomy is not supplied.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>delivery_style</code></td>
+<td>text or blank; 35 values</td>
+<td>Source delivery-style-labelled categorical field; taxonomy is not supplied.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>over_or_around</code></td>
+<td>text or blank; <code>Over</code>/<code>Around</code></td>
+<td>Source categorical field; formal coding definition is not supplied.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>on_or_off</code></td>
+<td>text; <code>Off-side</code>/<code>On-side</code></td>
+<td>Source categorical field; formal coding definition is not supplied.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>delivery_ist_time</code></td>
+<td>text timestamp; 200,826 values</td>
+<td>Header says IST but observed strings end in UTC; time interpretation needs validation before ordering use.</td>
+<td>context — unresolved</td>
+</tr>
+</tbody>
+</table>
+<h3><code>matches.csv</code> — 883 observed match records</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Observed type / domain</th>
+<th>Source-supported description and status</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>match_id</code></td>
+<td>integer; 883 values</td>
+<td>Match identifier; joins to ball-by-ball and playing-XI records.</td>
+<td>key</td>
+</tr>
+<tr>
+<td><code>comp_id</code></td>
+<td>integer; 138 values</td>
+<td>Competition identifier; verified to join <code>competitions.comp_id</code>.</td>
+<td>foreign key</td>
+</tr>
+<tr>
+<td><code>match_number</code></td>
+<td>integer; 1–75</td>
+<td>Source match-number field; numbering scope is not supplied.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>match_date</code></td>
+<td>date-like text; 686 values</td>
+<td>Source match-date field.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>stage</code></td>
+<td>text; 7 values</td>
+<td>Source stage field.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>venue_id</code></td>
+<td>integer; 98 values</td>
+<td>Source venue identifier; no venue lookup table is supplied.</td>
+<td>context identifier</td>
+</tr>
+<tr>
+<td><code>venue_country</code></td>
+<td>text; 17 values</td>
+<td>Source venue-country field.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>home_team_id</code></td>
+<td>integer; 36 values</td>
+<td>Source home-team identifier.</td>
+<td>context identifier</td>
+</tr>
+<tr>
+<td><code>home_team</code></td>
+<td>text; 36 values</td>
+<td>Source home-team display name; not a join key.</td>
+<td>display context</td>
+</tr>
+<tr>
+<td><code>away_team_id</code></td>
+<td>integer; 36 values</td>
+<td>Source away-team identifier.</td>
+<td>context identifier</td>
+</tr>
+<tr>
+<td><code>away_team</code></td>
+<td>text; 36 values</td>
+<td>Source away-team display name; not a join key.</td>
+<td>display context</td>
+</tr>
+<tr>
+<td><code>home_team_captain_id</code></td>
+<td>integer or blank</td>
+<td>Source home-captain identifier; blank-value semantics are not supplied.</td>
+<td>context identifier</td>
+</tr>
+<tr>
+<td><code>away_team_captain_id</code></td>
+<td>integer or blank</td>
+<td>Source away-captain identifier; blank-value semantics are not supplied.</td>
+<td>context identifier</td>
+</tr>
+<tr>
+<td><code>toss_win_team_id</code></td>
+<td>integer or blank</td>
+<td>Source toss-winner team identifier; blank-value semantics are not supplied.</td>
+<td>context identifier</td>
+</tr>
+<tr>
+<td><code>toss_opted</code></td>
+<td>text or blank; <code>Fielding</code>/<code>Batting</code></td>
+<td>Source toss-decision field.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>man_of_the_match</code></td>
+<td>integer; includes 0</td>
+<td>Source award-labelled identifier; the meaning of 0 is not supplied.</td>
+<td>context — unresolved</td>
+</tr>
+<tr>
+<td><code>first_inn_revised_overs</code></td>
+<td>integer or blank; 30–114</td>
+<td>Source revised-overs field; unit and blank-value semantics are unresolved.</td>
+<td>context — unresolved</td>
+</tr>
+<tr>
+<td><code>second_inn_revised_overs</code></td>
+<td>integer or blank; 30–114</td>
+<td>Source revised-overs field; unit and blank-value semantics are unresolved.</td>
+<td>context — unresolved</td>
+</tr>
+<tr>
+<td><code>revised_target</code></td>
+<td>integer or blank; 33–213</td>
+<td>Source revised-target field; blank-value semantics are unresolved.</td>
+<td>context — unresolved</td>
+</tr>
+<tr>
+<td><code>knock_out</code></td>
+<td>integer; 0/1</td>
+<td>Source knockout-labelled flag; formal coding definition is not supplied.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>win_team_id</code></td>
+<td>integer or blank</td>
+<td>Source winning-team identifier; blank-value semantics are not supplied.</td>
+<td>outcome context</td>
+</tr>
+<tr>
+<td><code>result</code></td>
+<td>text; 670 values</td>
+<td>Source result text. It must not label pressure because it contains post-match information.</td>
+<td>post-outcome — prohibited for pressure</td>
+</tr>
+</tbody>
+</table>
+<h3><code>competitions.csv</code> — 141 observed competition records</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Observed type / domain</th>
+<th>Source-supported description and status</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>comp_id</code></td>
+<td>integer; 141 values</td>
+<td>Competition identifier; join key.</td>
+<td>key</td>
+</tr>
+<tr>
+<td><code>comp_name</code></td>
+<td>text; 141 values</td>
+<td>Competition display name; not a join key.</td>
+<td>display context</td>
+</tr>
+<tr>
+<td><code>match_format</code></td>
+<td>text; <code>T20I</code>/<code>T20</code></td>
+<td>Source match-format field. Scope decision D-001 controls its use.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>season</code></td>
+<td>text-like; 8 values</td>
+<td>Source season field, including split-season labels such as <code>2022/23</code>.</td>
+<td>context</td>
+</tr>
+</tbody>
+</table>
+<h3><code>teams.csv</code> — 353 observed competition-team records</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Observed type / domain</th>
+<th>Source-supported description and status</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>comp_id</code></td>
+<td>integer; 141 values</td>
+<td>Competition identifier; verified to join <code>competitions.comp_id</code>.</td>
+<td>foreign key</td>
+</tr>
+<tr>
+<td><code>team_id</code></td>
+<td>integer; 38 values</td>
+<td>Team identifier; combine with <code>comp_id</code> for this file's team identity.</td>
+<td>key component</td>
+</tr>
+<tr>
+<td><code>team_name</code></td>
+<td>text; 38 values</td>
+<td>Team display name; not a join key.</td>
+<td>display context</td>
+</tr>
+</tbody>
+</table>
+<h3><code>playing_eleven.csv</code> — 28,381 observed participation records</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Observed type / domain</th>
+<th>Source-supported description and status</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>match_id</code></td>
+<td>integer; 880 values</td>
+<td>Match identifier; verified to join <code>matches.match_id</code>.</td>
+<td>foreign key</td>
+</tr>
+<tr>
+<td><code>team_id</code></td>
+<td>integer; 38 values</td>
+<td>Source team identifier.</td>
+<td>key component</td>
+</tr>
+<tr>
+<td><code>player_id</code></td>
+<td>integer; 1,082 values</td>
+<td>Source player identifier.</td>
+<td>key component</td>
+</tr>
+<tr>
+<td><code>batting_order</code></td>
+<td>integer or blank; 1–13</td>
+<td>Source order-labelled field; blank-value and values-above-11 treatment are unresolved.</td>
+<td>context — unresolved</td>
+</tr>
+<tr>
+<td><code>is_played</code></td>
+<td>text boolean; <code>true</code>/<code>false</code></td>
+<td>Source participation-labelled flag; formal coding definition is not supplied.</td>
+<td>context</td>
+</tr>
+<tr>
+<td><code>is_captain</code></td>
+<td>text boolean or blank</td>
+<td>Source captain-labelled flag; blank-value semantics are not supplied.</td>
+<td>context — unresolved</td>
+</tr>
+<tr>
+<td><code>is_wk</code></td>
+<td>text boolean or blank</td>
+<td>Source wicketkeeper-labelled flag; blank-value semantics are not supplied.</td>
+<td>context — unresolved</td>
+</tr>
+<tr>
+<td><code>is_impact</code></td>
+<td>integer; 0/1</td>
+<td>Source impact-labelled flag; formal coding definition is not supplied.</td>
+<td>context — unresolved</td>
+</tr>
+<tr>
+<td><code>is_impact_off</code></td>
+<td>integer; 0/1</td>
+<td>Source impact-off-labelled flag; formal coding definition is not supplied.</td>
+<td>context — unresolved</td>
+</tr>
+</tbody>
+</table>
+<h3><code>competition_team_player_mapping.csv</code> — 6,413 observed mapping records</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Observed type / domain</th>
+<th>Source-supported description and status</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>comp_id</code></td>
+<td>integer; 140 values</td>
+<td>Competition identifier; verified to join <code>competitions.comp_id</code>.</td>
+<td>key component</td>
+</tr>
+<tr>
+<td><code>comp_name</code></td>
+<td>text; 140 values</td>
+<td>Competition display name; not a join key.</td>
+<td>display context</td>
+</tr>
+<tr>
+<td><code>team_id</code></td>
+<td>integer; 38 values</td>
+<td>Team identifier.</td>
+<td>key component</td>
+</tr>
+<tr>
+<td><code>team_name</code></td>
+<td>text; 38 values</td>
+<td>Team display name; not a join key.</td>
+<td>display context</td>
+</tr>
+<tr>
+<td><code>player_id</code></td>
+<td>integer; 1,217 values</td>
+<td>Player identifier. Use with competition and team identifiers for this mapping.</td>
+<td>key component</td>
+</tr>
+<tr>
+<td><code>player_name</code></td>
+<td>text; 1,210 values</td>
+<td>Player display name; not a join key.</td>
+<td>display context</td>
+</tr>
+</tbody>
+</table>
+<h3>Step 2 gate decision</h3>
+<p><strong>Gate passed on 18 November 2026.</strong> The repository now has a source-traceable dictionary for every supplied field, the documented joins are verified, and every unresolved delivery/accounting semantic is explicitly prohibited from metric or match-state use until Step 4 validation. No player analysis or ranking has been performed.</p>
+<p>The next step is the Step 3 data-quality and coverage audit. That audit must define eligibility and exclusions before Step 4 attempts to validate delivery accounting.</p></article><article id="source-audit"><h2>Step 3 Data-Quality and Coverage Audit</h2>
+<p><strong>Audit source:</strong> scripts/audit_data_quality.py<br />
+<strong>Machine-readable result:</strong> work/data-quality-audit.json<br />
+<strong>Run date:</strong> 18 November 2026</p>
+<h3>Structural result</h3>
+<p>All six CSV files have zero exact duplicate rows. The audit confirms 200,999 delivery rows, 883 match rows, 141 competition rows, 353 team rows, 28,381 playing-XI rows, and 6,413 competition-team-player mapping rows.</p>
+<p>All ball-by-ball and playing-XI match IDs are present in matches.csv; all match competition IDs are present in competitions.csv. No player ID has multiple display names within the mapping, striker, non-striker, or bowler fields.</p>
+<h3>Coverage and ordering</h3>
+<ul>
+<li>Ball-by-ball data covers 867 matches; matches.csv covers 883; playing-XI data covers 880.</li>
+<li>The 16 matches with no delivery rows are all labelled Match Abandoned.</li>
+<li>Delivery records cover 105,727 first-innings rows, 95,234 second-innings rows, 25 third-innings rows, and 13 fourth-innings rows.</li>
+<li>innings_ball_num is populated as an integer on every delivery. There are no duplicate (match_id, innings, innings_ball_num) coordinates and no regressions in raw-file order. This supports its use as a candidate ordering field, but does not establish legal-ball semantics.</li>
+</ul>
+<h3>Special-match flags</h3>
+<p>The audit flags 40 matches labelled Match Abandoned or No Result, 34 matches with at least one revised-overs or revised-target field populated, and 6 matches containing innings 3 or 4 (34429, 40725, 45512, 48027, 48029, 50359). The union contains 70 matches.</p>
+<h3>Provisional inclusion and exclusion policy</h3>
+<p>For the primary statistical population, retain only the 813 ball-by-ball matches not in the 70-match special-condition union. Hold out the following categories until Step 4 validates state reconstruction and any required special-match handling:</p>
+<ol>
+<li>Matches labelled Match Abandoned or No Result.</li>
+<li>Matches with populated revised-overs or revised-target fields.</li>
+<li>Matches containing innings 3 or 4.</li>
+</ol>
+<p>This is an evidence-preserving holdout, not a judgement that those records are erroneous. Re-admit a category only through a documented, validated Step 4 rule. The policy does not validate runs, extras, legal balls, dismissals, or targets; those remain Step 4 requirements.</p>
+<h3>Step 3 gate decision</h3>
+<p><strong>Gate passed on 18 November 2026.</strong> The audit creates a reproducible inclusion/exclusion policy and prevents special-condition records from entering future scoring before their context can be reconstructed reliably. No player scoring or ranking has been performed.</p></article><article id="phase-one"><h2>PAPRF Phase 1 evidence record</h2>
+<h3>Source and grain</h3>
+<p>The organiser pack has six CSVs. Delivery events carry match, innings and ball identifiers. Match metadata carries date, venue ID and host country. Competition, team, participation and player mappings provide the other lookup and participation records. See the <a href="#source-dictionary">77-field dictionary</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/data-quality-audit.json">quality audit</a>. Match-to-competition joins use competition ID. Delivery-to-match joins use match ID. Player aggregation uses player ID.</p>
+<p>The raw delivery CSV has 200,999 rows and the match CSV has 883 records. The earliest and latest values of the raw match date field are 2022-01-22 and 2026-11-01. The <a href="#source-dictionary">validated pressure file</a> has 186,620 delivery events from 782 distinct IPL/T20I match IDs. Pressure exposure counts every event in this file, including events that may be illegal balls or excluded for player-rate attribution. The separate attribution stage holds out 257 rows, leaving 186,363 metric-eligible events. These figures answer different questions and use different denominators.</p>
+<h3>Five pillars and evidence readiness</h3>
+<table>
+<thead>
+<tr>
+<th>Pillar</th>
+<th>Phase 1 evidence</th>
+<th>Boundary or next test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pressure context</td>
+<td>Pre-delivery innings, legal balls, wickets and known chase state. The existing formula assigns three bands.</td>
+<td>Compare phase coverage and threshold sensitivity before approving a changed model.</td>
+</tr>
+<tr>
+<td>Pressure-adjusted performance</td>
+<td>Separate player outcomes with runs, dots and dismissals or wickets, plus ordinary baselines and shrinkage.</td>
+<td>Test whether matching on phase or competition changes the conclusions.</td>
+</tr>
+<tr>
+<td>Execution quality</td>
+<td>The raw file contains labels such as pace/spin, stroke and delivery style.</td>
+<td>A label can support a descriptive split after validation. Technique, intent, yorker accuracy and physical conditions need additional evidence.</td>
+</tr>
+<tr>
+<td>Consistency and resilience</td>
+<td>Distinct match counts and sample-size shrinkage are available.</td>
+<td>Repeatability requires match-level or temporal tests. Shrinkage alone does not estimate it.</td>
+</tr>
+<tr>
+<td>Opposition and contextual difficulty</td>
+<td>Venue, opponent and competition identifiers are available.</td>
+<td>An identity is not a strength or pitch rating. Any strength estimate needs a dated, leakage-safe method and coverage checks.</td>
+</tr>
+</tbody>
+</table>
+<h3>Calculation and independent reconciliation</h3>
+<p>The <a href="#v1">formula ledger</a> gives the equations and role-specific scoring signs. Run <code>python scripts/build_paprf_descriptives.py</code> from the repository root. The script recalculates the index and phase directly from the pre-delivery columns, compares the index at the six-decimal storage precision, derives its band and checks it against the stored label. It then counts events by innings, phase and band, emits all 18 cells including zeros, and records the input and ranking hashes in the <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_phase1_audit.json">audit JSON</a>.</p>
+<p>For cell count C, total delivery events N and events in the same innings and phase M:</p>
+<pre><code>Percentage of the full sample = 100 × C / N
+Percentage within innings and phase = 100 × C / M
+</code></pre>
+<p>The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_pressure_distribution.csv">distribution CSV</a> publishes C, N and M for every cell. Display percentages are rounded to six decimals. A zero within-phase denominator is left blank.</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th style="text-align: right;">Count</th>
+<th>Calculation</th>
+<th style="text-align: right;">Share of all deliveries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ordinary</td>
+<td style="text-align: right;">117,832</td>
+<td>100 × 117,832 / 186,620</td>
+<td style="text-align: right;">63.140071%</td>
+</tr>
+<tr>
+<td>Elevated</td>
+<td style="text-align: right;">33,343</td>
+<td>100 × 33,343 / 186,620</td>
+<td style="text-align: right;">17.866788%</td>
+</tr>
+<tr>
+<td>High</td>
+<td style="text-align: right;">35,445</td>
+<td>100 × 35,445 / 186,620</td>
+<td style="text-align: right;">18.993141%</td>
+</tr>
+<tr>
+<td>Elevated or high</td>
+<td style="text-align: right;">68,788</td>
+<td>100 × (33,343 + 35,445) / 186,620</td>
+<td style="text-align: right;">36.859929%</td>
+</tr>
+</tbody>
+</table>
+<p>For example, the 611 high-pressure chasing powerplay events are 2.082907% of the 29,334 events in that phase and 0.327403% of all 186,620 events. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_pressure_distribution.png">distribution figure</a> plots counts to show the size of each sample. The CSV gives within-phase percentages for comparing unequal samples.</p>
+<p>The audit found zero disagreements in the index, phase and band. This establishes agreement with the published calculation. Calibration against an independent measure of pressure remains open.</p>
+<h3>Structural finding and model decision</h3>
+<p>For the first 72 legal balls of innings one, the late-innings term is zero. The wicket term is capped at 0.30, below the 0.40 elevated threshold. The model therefore classifies all 29,322 first-innings powerplay events as ordinary by construction. Conversely, 4,629 chase death-over events were ordinary. Phase and pressure overlap asymmetrically, which can change who gets enough qualifying opportunities and can confound pressure lift with usual phase-specific scoring patterns.</p>
+<p>The recommended Phase 2 comparison starts with the shared pre-delivery context and separate batting and bowling outcomes. An experimental role-specific model can distinguish the batting side’s resource stress from the bowling side’s defending difficulty, with an explicit test for first-innings early collapses. The experiment should report eligible pools, phase and competition composition, and top-10 overlap against v1 before any replacement decision. Thresholds should be declared before reviewing individual ranks.</p></article><article id="pressure-method"><h2>Pressure Definition (Step 5)</h2>
+<p><strong>Status:</strong> GATE PASSED
+<strong>Version:</strong> v1, 18 November 2026</p>
+<h3>Scope and guardrail</h3>
+<p>The pressure label describes the pre-delivery match context faced by both players on a delivery. Batter and bowler performance are measured separately in Step 6; the shared context label does not make their outcomes equivalent.</p>
+<p>The calculation reads only pre-delivery state, innings number, and the second-innings target known before that innings begins. It does not read the rated delivery's outcome, a later delivery, the match result, or the winning team.</p>
+<h3>Inputs</h3>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pre_delivery_legal_balls</td>
+<td>Validated legal balls before the delivery.</td>
+</tr>
+<tr>
+<td>pre_delivery_wickets</td>
+<td>Source wicket flags before the delivery.</td>
+</tr>
+<tr>
+<td>pre_delivery_runs_required</td>
+<td>Runs needed before a second-innings delivery.</td>
+</tr>
+<tr>
+<td>pre_delivery_balls_remaining</td>
+<td>Legal balls available before the delivery.</td>
+</tr>
+<tr>
+<td>target</td>
+<td>First-innings total plus one, known before the second innings.</td>
+</tr>
+</tbody>
+</table>
+<h3>Continuous pressure index</h3>
+<p>All components are bounded between zero and one.</p>
+<h4>First innings</h4>
+<p>First-innings pressure uses late-innings urgency and wickets lost:</p>
+<p>late_innings_stress = clamp((legal_balls - 72) / 48)</p>
+<p>wicket_stress = wickets / 10</p>
+<p>pressure_index = 0.70 × late_innings_stress + 0.30 × wicket_stress</p>
+<p>The first 12 overs do not receive late-innings urgency. The final eight overs progressively do.</p>
+<h4>Second innings</h4>
+<p>Second-innings pressure uses chase difficulty, wickets lost, and innings progress:</p>
+<p>required_run_rate = 6 × runs_required / max(balls_remaining, 1)</p>
+<p>run_rate_stress = clamp((required_run_rate - 7) / 5)</p>
+<p>progress = legal_balls / 120</p>
+<p>pressure_index = 0.55 × run_rate_stress + 0.25 × wicket_stress + 0.20 × progress</p>
+<p>This treats a 7-run required rate as the start of rate stress and caps the rate component at 12 runs per over. These are transparent modelling choices, not official facts.</p>
+<h3>Bands</h3>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th style="text-align: right;">Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ordinary</td>
+<td style="text-align: right;">&lt; 0.40</td>
+</tr>
+<tr>
+<td>Elevated</td>
+<td style="text-align: right;">0.40–&lt;0.65</td>
+</tr>
+<tr>
+<td>High</td>
+<td style="text-align: right;">≥ 0.65</td>
+</tr>
+</tbody>
+</table>
+<p>The official ranking workflow will compare high/elevated pressure performance with ordinary-context baselines. Step 9 will test alternative thresholds and weights.</p>
+<h3>Implementation and checks</h3>
+<p>src/rrselect/pressure.py contains the pure definition; scripts/apply_pressure_definition.py writes data/processed/pressure_labeled_deliveries.csv.</p>
+<p>The v1 output contains 186,620 primary-scope deliveries. Its independent validation in work/pressure-definition-validation.json found zero band, range, target, or leakage-guard errors.</p></article><article id="v1"><h2>Lens A v1 Formula and Calculation Ledger</h2>
+<p><strong>Purpose:</strong> Exact equations, signs, populations and evidence locations behind the frozen Round 1 rankings.<br />
+<strong>Scope:</strong> IPL and T20I only; 782 validated matches and 186,620 reconstructed deliveries.<br />
+<strong>Ranking version:</strong> v1.</p>
+<h3>Evidence provenance</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Evidence file or implementation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope/exclusions</td>
+<td>docs/data_quality_report.md; work/data-quality-audit.json</td>
+</tr>
+<tr>
+<td>Pre-delivery state</td>
+<td>scripts/reconstruct_state.py; work/state-reconstruction-validation.json</td>
+</tr>
+<tr>
+<td>Pressure</td>
+<td>src/rrselect/pressure.py; work/pressure-definition-validation.json</td>
+</tr>
+<tr>
+<td>Attribution</td>
+<td>src/rrselect/metrics.py; work/player-metrics-validation.json</td>
+</tr>
+<tr>
+<td>Baselines</td>
+<td>src/rrselect/baselines.py; work/baseline-validation.json</td>
+</tr>
+<tr>
+<td>Reliability</td>
+<td>src/rrselect/reliability.py; outputs/tables/*_reliability_signals.csv</td>
+</tr>
+<tr>
+<td>Sensitivity</td>
+<td>scripts/validate_robustness.py; work/robustness-validation.json</td>
+</tr>
+<tr>
+<td>Frozen result</td>
+<td>outputs/rankings/ranking_manifest_v1.json; work/ranking-validation.json</td>
+</tr>
+</tbody>
+</table>
+<h3>1. Pre-delivery pressure</h3>
+<p>Let L be legal balls completed before the rated delivery, W wickets lost, R runs required, B legal balls remaining, and Clamp(x) = max(0, min(1, x)).</p>
+<p>First innings:</p>
+<pre><code>progress = Clamp(L / 120)
+wicket_stress = Clamp(W / 10)
+late_innings_stress = Clamp((L - 72) / 48)
+pressure_index = 0.70 × late_innings_stress + 0.30 × wicket_stress
+</code></pre>
+<p>Second innings:</p>
+<pre><code>required_run_rate = 6 × R / max(B, 1)
+run_rate_stress = Clamp((required_run_rate - 7) / 5)
+progress = Clamp(L / 120)
+wicket_stress = Clamp(W / 10)
+pressure_index = 0.55 × run_rate_stress + 0.25 × wicket_stress + 0.20 × progress
+
+ordinary: index &lt; 0.40
+elevated: 0.40 ≤ index &lt; 0.65
+high: index ≥ 0.65
+</code></pre>
+<p>Official pressure opportunities are elevated plus high. The rated delivery's outcome does not enter its label.</p>
+<h3>2. Attribution and eligibility</h3>
+<p>Rows are excluded from player-rate metrics when extras_type is other or Penalty, when a None row has non-zero extras, or when a bye/leg-bye row has non-zero batter runs. That leaves 186,363 eligible deliveries and holds out 257 ambiguous rows.</p>
+<pre><code>batter_runs = 0 for wide/byes/legbyes/other/Penalty; else source runs
+batter_ball_faced = eligible and extras_type ≠ wide
+bowler_runs = batter_runs + extras1_runs + extras_2_runs for wide or Overstep
+bowler_legal_ball = eligible and source legal-ball rule
+</code></pre>
+<p>Run outs, retire outs and obstructing-the-field dismissals are not bowler wickets. Batter dots are balls faced with zero batter runs; bowler dots are eligible legal balls with zero team runs.</p>
+<h3>3. Baseline deltas</h3>
+<p>Rate(x) = x / opportunities. Eligibility requires at least 60 ordinary opportunities, 60 pressure opportunities, six ordinary matches and six pressure matches.</p>
+<pre><code>batter delta_RPB = pressure runs/balls − ordinary runs/balls
+batter delta_dot = pressure dots/balls − ordinary dots/balls
+batter delta_dismissal = pressure dismissals/balls − ordinary dismissals/balls
+
+bowler delta_economy = 6 × pressure conceded/legal balls − 6 × ordinary conceded/legal balls
+bowler delta_dot = pressure dots/legal balls − ordinary dots/legal balls
+bowler delta_wicket = pressure wickets/legal balls − ordinary wickets/legal balls
+</code></pre>
+<p>Better batting has positive RPB and negative dot/dismissal deltas. Better bowling has negative economy and positive dot/wicket deltas.</p>
+<h3>4. Standardisation, weighting and shrinkage</h3>
+<p>For delta j within an eligible role-specific peer population:</p>
+<pre><code>z_j = (delta_j − mean(delta_j of eligible peers)) / sample_sd(delta_j of eligible peers)
+batter_raw = (z_RPB − z_dot − z_dismissal) / 3
+bowler_raw = (−z_economy + z_dot + z_wicket) / 3
+shrinkage_weight = pressure_opportunities / (pressure_opportunities + 60)
+reliability_signal = raw_signal × shrinkage_weight
+</code></pre>
+<p>The freeze script sorts the reliability_signal stored to six decimal places in the signal CSV. Equal stored scores preserve the input row order. Charts display two decimals. IDs are the identity key.</p>
+<h3>5. Sensitivity mathematics</h3>
+<p>For prior P in {30, 60, 90}:</p>
+<pre><code>alternative_signal(P) = raw_signal × pressure_opportunities / (pressure_opportunities + P)
+</code></pre>
+<p>Top-10 overlap is the size of the intersection between the official P=60 top ten and each alternative top ten. A high-only test rebuilds eligibility, peer distributions and signals using high pressure only. Results: 10/10 batter overlap for each prior; bowler overlap is 9/10 at P=30 and 10/10 at P=60/90; high-only overlap is 7/10 batters and 5/10 bowlers.</p></article><article id="experiment"><h2>PAPRF Phase 2 pressure sensitivity</h2>
+<h3>Rules specified before running</h3>
+<p>The comparison uses the exact same delivery rows, eligibility thresholds, attribution, three signed metrics and 60-opportunity shrinkage as Lens A v1. Its purpose is to isolate pressure-label effects. All cutoffs below are exploratory modelling choices. They carry no claim of calibrated probabilities or proven psychological pressure.</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Rule for pressure classification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reproduce v1</td>
+<td>Elevated or high in the stored band.</td>
+</tr>
+<tr>
+<td>Batter early-collapse</td>
+<td>v1 pressure, or first innings with fewer than 36 completed legal balls and at least three wickets already lost. The extra rule represents the loss of batting resources during the powerplay.</td>
+</tr>
+<tr>
+<td>Bowler late defence</td>
+<td>v1 pressure, or second innings with 6–24 balls remaining, at least two batting wickets in hand, and a required rate from 7 to 12 runs per over inclusive. The extra rule tests a challenging but reachable target range during the closing overs.</td>
+</tr>
+</tbody>
+</table>
+<p>The rules only promote ordinary events into the pooled pressure comparison. They assign no separate high label. For the bowler rule, use integer inequalities 7B ≤ 6R ≤ 12B, with R runs required and B balls remaining, so threshold comparisons avoid floating-point rounding. This proxy describes the scoreboard situation and cannot establish how close the teams’ win probabilities actually were. A pre-delivery win probability would need independently validated, time-separated training. The scenarios test different hypotheses, so compare each role only with its own reference.</p>
+<p>Primary comparison outputs are newly flagged delivery events by match phase and competition family, eligibility changes, and top-10 overlaps. On v1 labels, test weights 50/25/25 for scoring rate plus the two complementary measures and 25/25/50 for dismissal or wicket rate. Compare each with equal weighting. These are stress tests, with no search for weights that favour specific players.</p>
+<h3>Reproduction and calculation ledger</h3>
+<p>Run <code>python scripts/run_paprf_phase2.py</code> from the repository root. The script reads the <a href="#source-dictionary">delivery attribution file</a> and joins match and competition metadata by ID for the exposure split. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_phase2_score_ledger.csv">score ledger</a> contains each eligible player’s runs, balls, dots, dismissals or credited wickets, and match counts in each bucket. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_phase2_sensitivity.json">sensitivity JSON</a> records source hashes, peer statistics, weights, exposure counts and the exact candidate IDs in rank order.</p>
+<p>For each role, metric and player, subtract the ordinary rate from the pressure rate. Rates divide each numerator by eligible opportunities. Economy multiplies runs conceded per legal ball by six. Round deltas to six decimals before standardising against eligible peers, as in v1. On each metric, compute the signed z-score as s × (delta − peer mean) / peer sample standard deviation. A zero standard deviation contributes zero. Batters use signs (+, −, −) for scoring, dot and dismissal rates. Bowlers use (−, +, +) for economy, dot and wicket rates.</p>
+<pre><code>Raw score = sum(weight parts × signed z-scores) / sum(weight parts)
+Shrinkage factor = pressure opportunities / (pressure opportunities + 60)
+Ranking score = round(raw score × shrinkage factor, 6)
+Top-ten overlap = count of shared player IDs / 10
+</code></pre>
+<p>Both ordinary and pressure buckets require 60 opportunities and six distinct matches. The v1 replay retains the historical match-count and dismissal conventions, including counting an attributed player's recorded context appearance even on some rows that contribute no eligible opportunity. As a separate fairness check, Phase 2 should test counting only matches with an eligible opportunity. The script requires exact agreement with all 20 frozen top-ten rank and score pairs before writing the comparison outputs.</p>
+<h3>Results</h3>
+<p>The batting rule promoted 636 IPL and 959 T20I first-innings powerplay events. The resulting 1,595 promotions are 100 × 1,595 / 186,620 = 0.854678% of all delivery rows. The bowling rule promoted 325 IPL and 259 T20I second-innings death-over events. Its 584 promotions are 100 × 584 / 186,620 = 0.312935%. These percentages use delivery events as their denominator. Player-rate denominators use attributed opportunities.</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th style="text-align: right;">Eligible batters</th>
+<th style="text-align: right;">Batters shared with v1</th>
+<th style="text-align: right;">Eligible bowlers</th>
+<th style="text-align: right;">Bowlers shared with v1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1 replay, equal weights</td>
+<td style="text-align: right;">176</td>
+<td style="text-align: right;">10/10</td>
+<td style="text-align: right;">219</td>
+<td style="text-align: right;">10/10</td>
+</tr>
+<tr>
+<td>Role-specific rule, equal weights</td>
+<td style="text-align: right;">178</td>
+<td style="text-align: right;">9/10</td>
+<td style="text-align: right;">219</td>
+<td style="text-align: right;">9/10</td>
+</tr>
+<tr>
+<td>v1 labels, scoring or economy at 50%</td>
+<td style="text-align: right;">176</td>
+<td style="text-align: right;">10/10</td>
+<td style="text-align: right;">219</td>
+<td style="text-align: right;">9/10</td>
+</tr>
+<tr>
+<td>v1 labels, dismissal or wicket rate at 50%</td>
+<td style="text-align: right;">176</td>
+<td style="text-align: right;">8/10</td>
+<td style="text-align: right;">219</td>
+<td style="text-align: right;">8/10</td>
+</tr>
+</tbody>
+</table>
+<p>Under the early-collapse scenario, Romario Shepherd entered the batting top ten and Gulbadin Naib left it. Under the late-defence scenario, Anshul Kamboj entered the bowling top ten and Mohit Sharma left it. These are scenario-specific movements from the ID-keyed results. Overlap measures membership. Players can change position even when overlap is ten out of ten.</p>
+<p>This sensitivity analysis measures how assumptions affect the same historical sample. It does not establish which rule identifies pressure more accurately. The weight test changed more top-ten memberships than the tested exposure additions. Phase- and competition-matched baselines and match-level repeatability remain necessary before recommending a replacement model. Nationality, opposition strength and psychological pressure were not measured in this experiment.</p></article><article id="matched"><h2>PAPRF matched-context and repeatability audit</h2>
+<h3>Design declared before calculation</h3>
+<p>Both diagnostics use Lens A v1 pressure labels, the same delivery attribution and separate batting and bowling outcome models. Changes in eligible opportunity and match counts are part of the evidence. Match IDs count toward eligibility when the player has at least one role-eligible opportunity in the relevant bucket. Runs, dots, dismissals and wickets retain the v1 attribution conventions.</p>
+<h4>Matched-context comparison</h4>
+<p>For each player, define a cell by innings, phase and competition family (IPL or T20I). Keep cells with at least 12 ordinary balls and 12 pressure balls. A player needs at least 60 balls and six opportunity-bearing matches in each context across retained cells. This design compares the player with their own baseline in situations with comparable phase and competition family. It trades coverage for comparability. It does not match teams, opponents or venues.</p>
+<p>For metric j in cell k, let P and O be pressure and ordinary rates and let n be pressure balls. Compute the player’s matched delta as Σ nₖ(Pⱼₖ − Oⱼₖ) / Σ nₖ. The pressure weighting estimates lift over the distribution of pressure opportunities retained for that player. Each rate uses the cell’s own denominator. For bowling economy, multiply runs per legal ball by six before subtracting. Standardise deltas within the matched eligible role pool with the sample standard deviation, orient the signs as in v1, average the three signed z-scores and multiply by N/(N+60), where N is retained pressure balls. Ties at six decimals use ascending player ID.</p>
+<h4>Chronological repeatability</h4>
+<p>Sort retained matches by the source match date and match ID. Use the date of the middle match as the split, with all matches on the split date in the later period. Independently rank each half with pooled v1-style ordinary-to-pressure deltas. A half requires at least 30 balls and three opportunity-bearing matches in each bucket. Use the same component signs and 60-ball shrinkage prior. The smaller gate is a diagnostic choice that preserves more players despite shorter windows. Compare only players eligible in both periods. Spearman correlation is Pearson correlation of their within-common-pool score ranks, with average ranks for ties. The top-ten overlap uses each half’s full eligible pool and therefore includes eligibility changes. These results describe temporal stability, with no predictive accuracy claim.</p>
+<h3>Results</h3>
+<p>The input reconciles to 186,620 delivery events in 782 matches. The earlier period runs from 22 January 2022 through 7 May 2024, and the later period starts on 8 May 2024 and ends on 1 November 2026. Each contains 391 matches.</p>
+<table>
+<thead>
+<tr>
+<th>Diagnostic</th>
+<th style="text-align: right;">Batters</th>
+<th style="text-align: right;">Bowlers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eligible in matched contexts</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">119</td>
+</tr>
+<tr>
+<td>Frozen top 10 still eligible</td>
+<td style="text-align: right;">4/10</td>
+<td style="text-align: right;">3/10</td>
+</tr>
+<tr>
+<td>Matched and frozen top-ten overlap</td>
+<td style="text-align: right;">2/10</td>
+<td style="text-align: right;">2/10</td>
+</tr>
+<tr>
+<td>Matched overlap against v1 top ten restricted to the same eligible IDs</td>
+<td style="text-align: right;">6/10</td>
+<td style="text-align: right;">3/10</td>
+</tr>
+<tr>
+<td>Early eligible</td>
+<td style="text-align: right;">163</td>
+<td style="text-align: right;">195</td>
+</tr>
+<tr>
+<td>Late eligible</td>
+<td style="text-align: right;">171</td>
+<td style="text-align: right;">206</td>
+</tr>
+<tr>
+<td>Eligible in both halves</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">128</td>
+</tr>
+<tr>
+<td>Spearman ρ among the common pool</td>
+<td style="text-align: right;">0.0625</td>
+<td style="text-align: right;">0.1484</td>
+</tr>
+<tr>
+<td>Shared between the two period top tens</td>
+<td style="text-align: right;">0/10</td>
+<td style="text-align: right;">1/10</td>
+</tr>
+</tbody>
+</table>
+<p>The restricted comparator filters the original pooled score table to matched-eligible IDs and retains the original scores. The comparison isolates the ranking agreement after restricting who can be selected, with changes from both context weighting and peer re-standardisation still present. The original 2/10 overlaps combine eligibility loss and changes in scoring. The weak period correlations give little support for claiming persistent rank order over time. Opponents, venues, role changes and sampling variation remain plausible contributors. An eligibility failure means insufficient evidence under this particular rule.</p>
+<h3>Worked example</h3>
+<p>Babar Azam (ID 2485) retained three second-innings T20I cells. Each runs-per-ball calculation uses these numerators and denominators.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th style="text-align: right;">Ordinary runs / balls</th>
+<th style="text-align: right;">Pressure runs / balls</th>
+<th style="text-align: right;">Weight in matched delta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Death</td>
+<td style="text-align: right;">44/36</td>
+<td style="text-align: right;">51/21</td>
+<td style="text-align: right;">21/173</td>
+</tr>
+<tr>
+<td>Middle</td>
+<td style="text-align: right;">225/172</td>
+<td style="text-align: right;">155/98</td>
+<td style="text-align: right;">98/173</td>
+</tr>
+<tr>
+<td>Powerplay</td>
+<td style="text-align: right;">180/164</td>
+<td style="text-align: right;">78/54</td>
+<td style="text-align: right;">54/173</td>
+</tr>
+</tbody>
+</table>
+<pre><code>Scoring delta = [21 × (51/21 − 44/36)
+              + 98 × (155/98 − 225/172)
+              + 54 × (78/54 − 180/164)] / 173
+              ≈ 0.409638 runs per ball
+Raw signal ≈ (1.077967 + 1.858828 + 0.148932) / 3 = 1.028576
+Shrinkage = 173 / (173 + 60) ≈ 0.742489
+Matched score = round(raw signal × shrinkage, 6) = 0.763706
+</code></pre>
+<p>Counts sum to 372 ordinary balls and 173 pressure balls. Distinct match IDs are unioned across cells before counting, yielding 22 ordinary matches and nine pressure matches. Rank eight is specific to the matched batting diagnostic. Full precision is retained during scoring and the displayed rank score is rounded once.</p>
+<h3>Reproduction and file map</h3>
+<p>Run <code>python scripts/audit_paprf_context.py</code> from the repository root. The algorithm is deterministic. The source files are the attributed deliveries and the organiser’s match and competition tables, joined by IDs. The summary records their SHA-256 hashes and the hashes of the frozen ranking files.</p>
+<table>
+<thead>
+<tr>
+<th>Artifact</th>
+<th>What to check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_matched_cells.csv">Matched-cell ledger</a></td>
+<td>Player, innings, phase, competition family, retained flag and all ordinary and pressure numerators and denominators.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_temporal_periods.csv">Temporal ledger</a></td>
+<td>One player-role-period row with both evidence buckets and match counts.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_context_audit_scores.csv">Score ledger</a></td>
+<td>Eligible player, diagnostic, contributing cells, aggregate counts, deltas, signed standardised inputs, shrinkage and rank.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_context_audit.json">Audit JSON</a></td>
+<td>Input versions, peer scaling parameters, cutoff, eligible pools, overlaps and correlation.</td>
+</tr>
+</tbody>
+</table>
+<p>The audit motivates a match-cluster uncertainty analysis and a shorter support-threshold sensitivity check before any ranking change is considered.</p></article><article id="v2"><h2>PAPRF v2 research ranking and uncertainty</h2>
+<h3>Design recorded before running the comparison</h3>
+<p>The matched-context audit exposed two problems with pooled v1 rank interpretation. Scoring rates vary with phase and competition mix, and rank repeatability across the chronological halves was weak. The v2 research iteration therefore uses the matched point estimate and ranks the lower tail of its match-resampling distribution. The main estimand is pressure lift within a player's observed innings, phase and competition family. The organiser submission version remains recorded as v1 for traceability. The project's evolving research ranking is v2.</p>
+<p>Use the 12-ball-per-context cell cutoff from the previous audit as the primary design. Check matched point rankings at 6 and 24 balls per context, while retaining the player-level gate of 60 balls and six opportunity-bearing matches per bucket. Use exactly 500 bootstrap replicates and seed 20261118. Within each competition family, draw the original number of distinct matches with replacement. A match's multiplicity applies to all players and deliveries from that match and a replicate uses the same draw for both roles. Preserve the observed eligible player pool, retained cells and peer standardisation parameters. Recompute rates, pressure-cell weights and shrinkage for each draw. A draw is invalid for a player if any retained cell loses either opportunity denominator. Require at least 95% valid draws for the v2 ranking.</p>
+<p>The research score is the empirical 10th percentile of a player's valid bootstrap scores. Also publish the median and 90th percentile. Quantiles are computed by linear interpolation and scores are rounded to six decimals for ranking, with smaller numeric player ID breaking ties. This conservative score accounts for match-to-match variability in the observed sample. The percentile range is conditional on observed cell support and peer scaling. It is neither a rank confidence interval nor evidence of out-of-sample predictive accuracy.</p>
+<h3>Calculation details</h3>
+<p>For each player, cell, metric and context, the observed match contributes a numerator x and a ball denominator n. In draw b, let wᵦₘ be the number of times match m is selected. Each resampled rate is Σₘ wᵦₘxₘ / Σₘ wᵦₘnₘ. Bowling economy multiplies that ratio by six. Subtract ordinary from pressure in each cell. Average those differences across retained cells weighted by their resampled pressure-ball counts. Convert each difference to a signed z-score using the observed matched cohort's mean and sample standard deviation, average the three z-scores, then apply nᵦ/(nᵦ+60), where nᵦ is the draw's pressure-ball total. For M valid sorted scores, quantile q is linearly interpolated at the zero-indexed position (M − 1)q.</p>
+<p>For example, batting leader Reeza Hendricks (ID 768) had 265 matched pressure balls and 140 ordinary balls, with a matched point score of 1.815560. There were 491 valid draws out of 500, or 98.2%. The 10th percentile therefore uses zero-indexed position 49, giving 1.061415. The 90th percentile is 3.449639. The coverage gate requires at least 475 valid draws. Bowling leader Sufiyan Muqeem (ID 34485) qualified in 500/500 draws. His matched point score of 1.024149 and 10th percentile of 0.271975 quantify different aspects of the same evidence.</p>
+<h3>Cohort sensitivity and ranking movement</h3>
+<table>
+<thead>
+<tr>
+<th>Diagnostic</th>
+<th style="text-align: right;">Batters</th>
+<th style="text-align: right;">Bowlers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6-ball cells, matched eligible</td>
+<td style="text-align: right;">127</td>
+<td style="text-align: right;">144</td>
+</tr>
+<tr>
+<td>6-ball versus 12-ball point top-ten overlap</td>
+<td style="text-align: right;">4/10</td>
+<td style="text-align: right;">4/10</td>
+</tr>
+<tr>
+<td>12-ball cells, matched eligible</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">119</td>
+</tr>
+<tr>
+<td>24-ball cells, matched eligible</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">92</td>
+</tr>
+<tr>
+<td>24-ball versus 12-ball point top-ten overlap</td>
+<td style="text-align: right;">6/10</td>
+<td style="text-align: right;">2/10</td>
+</tr>
+<tr>
+<td>12-ball design, at least 95% valid draws</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">44</td>
+</tr>
+<tr>
+<td>v2 top-ten overlap with matched point model</td>
+<td style="text-align: right;">8/10</td>
+<td style="text-align: right;">2/10</td>
+</tr>
+<tr>
+<td>v2 top-ten overlap with v1</td>
+<td style="text-align: right;">2/10</td>
+<td style="text-align: right;">1/10</td>
+</tr>
+</tbody>
+</table>
+<p>Fakhar Zaman and Babar Azam remain in the batting top ten. Six v1 top-ten batters lack matched support, one lacks enough valid draws and one qualifies outside the v2 top ten. Sufiyan Muqeem moves from ninth in v1 to first in v2. Seven v1 top-ten bowlers lack matched support and two lack enough valid draws. Among qualifying bowlers, Tushar Deshpande moves from matched point rank 18 to research rank 3 when ordered by the lower tail. The versioned ledgers give exact ranks and scores for the whole assessed population.</p>
+<p>Cell granularity and the resampling gate substantially affect coverage. Even among ranked players, a negative p10 indicates the lower tail is below the matched peer reference. The bootstrap conditions on observed cells and does not account for selection of cells, temporal drift or model formulation. The 95% gate may preferentially remove players with sparse exposure across many cells. Before treating v2 as a final submission model, compare it with partial pooling or coarser cells that keep the pre-delivery pressure definition and reduce sparse-cell attrition.</p>
+<h3>Reproduction and artifacts</h3>
+<p>Run <code>python scripts/build_paprf_v2.py</code> from the repository root with the original local data files and the Phase 2 context audit available. Random weights are generated by NumPy's default generator and the recorded seed. The script checks the number of resampled matches and replays both 12-ball point top tens before writing v2. Input and frozen ranking hashes are in the audit JSON.</p>
+<table>
+<thead>
+<tr>
+<th>Artifact</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/rankings/paprf_batters_v2.csv">Batters</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/rankings/paprf_bowlers_v2.csv">bowlers</a></td>
+<td>Versioned v2 top tens with v1 top-ten rank, matched point rank and uncertainty.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_v2_uncertainty.csv">Uncertainty ledger</a></td>
+<td>Valid draw counts, matched point scores, quantiles and research ranks for all 224 matched-eligible player-role records.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_v2_threshold_sensitivity.csv">Threshold ledger</a></td>
+<td>Samples, deltas, standardised components and point scores at every tested threshold.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_v2_validation.json">Validation and movement JSON</a></td>
+<td>Source hashes, seeds, cohorts, overlaps and the reason each departing v1 player left the list.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_v2_uncertainty.png">Uncertainty plot</a></td>
+<td>Horizontal 10th–90th percentile ranges with lower-tail scores and matched point estimates. Wider ranges indicate greater resampling variability.</td>
+</tr>
+</tbody>
+</table></article><article id="v3"><h2>PAPRF v3 cell-granularity experiment</h2>
+<h3>Protocol declared before calculation</h3>
+<p>The v2 audit left 46 batters and 44 bowlers eligible after resampling. This experiment asks how much of that loss came from splitting the same opportunities into small cells. The v3 research candidate merges innings within each phase and competition family. This preserves powerplay, middle and death roles and keeps IPL and T20I baselines distinct. The sensitivity alternative merges competition families while preserving innings and phase. Both retain v1 pressure labels, player attribution, the 12-ball gate per cell and context, the 60-ball and six-match overall gates, 500 family-stratified match resamples and ranking by p10 with at least 475 valid draws. The fine-cell v2 model is replayed as a control.</p>
+<p>Merging innings can confound pressure with the different scores and available resources of setting and chasing a target. Merging competitions can confound pressure with tournament mix. The v3 label identifies the prespecified phase-and-family comparison. It carries no presumption of superior validity.</p>
+<p>For temporal checks rerun the point ranking independently in the two 391-match windows from the earlier audit. Use 12 balls per cell and 30 balls and three matches per player and context in each window. Compute Spearman correlation on the common eligible players, using midranks for ties. Compare point ranks to point ranks across all granularity options. This check measures repeatability across the observed windows and does not evaluate prediction.</p>
+<h3>Results</h3>
+<table>
+<thead>
+<tr>
+<th>Cell dimensions</th>
+<th style="text-align: right;">Matched eligible B / W</th>
+<th style="text-align: right;">Bootstrap eligible B / W</th>
+<th style="text-align: right;">Shared with v2 B / W</th>
+<th style="text-align: right;">Temporal ρ B / W</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fine v2</td>
+<td style="text-align: right;">105 / 119</td>
+<td style="text-align: right;">46 / 44</td>
+<td style="text-align: right;">10 / 10</td>
+<td style="text-align: right;">+0.048 / −0.288</td>
+</tr>
+<tr>
+<td>Phase + family v3</td>
+<td style="text-align: right;">144 / 156</td>
+<td style="text-align: right;">81 / 79</td>
+<td style="text-align: right;">4 / 3</td>
+<td style="text-align: right;">+0.059 / −0.026</td>
+</tr>
+<tr>
+<td>Innings + phase</td>
+<td style="text-align: right;">111 / 123</td>
+<td style="text-align: right;">77 / 74</td>
+<td style="text-align: right;">6 / 5</td>
+<td style="text-align: right;">+0.080 / −0.149</td>
+</tr>
+</tbody>
+</table>
+<p>B and W denote batting and bowling. V3 admits 35 more players per role than v2. Its temporal correlations are computed on 76 common batters and 79 common bowlers. There were zero shared top-ten players across the two halves in either role under v3. These common pools differ across designs, so correlation differences cannot be interpreted as a controlled improvement for the same players. Broader coverage is an observed gain. Persistent top-ten membership remains unsupported by this test.</p>
+<p>The v3 list is ordered by the same conditional p10 as v2. Shahbaz Ahmed leads batting with p10 = 1.360511 and 499/500 valid draws. His signed dismissal-rate component, 6.189138, dominates his point raw signal. It deserves attribution and component-weight sensitivity checks. Naseem Shah leads bowling with p10 = 0.548019 and 485/500 valid draws. His seventh-place point estimate moves to first under lower-tail ordering. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_v3_granularity_ledger.csv">full ledger</a> records each player’s deltas, signed components, sample sizes and scores separately. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_v3_validation.json">movement JSON</a> gives the reason for every v2 top-ten departure in each design.</p>
+<h3>Calculation and reproduction</h3>
+<p>For a coarser cell, sum the fine-cell numerators and denominators within each match and context before dividing. For example, the v3 pressure scoring rate for a death-over IPL cell is the sum of the player's attributed pressure runs from both innings divided by the sum of their pressure balls faced from both innings. Averaging two innings rates without their denominators would estimate a different quantity. The remaining steps use the <a href="#v2">v2 bootstrap equations</a>. Players with under 95% valid draws receive no research rank. An observed score does not measure a causal effect of pressure.</p>
+<p>Run <code>python scripts/build_paprf_v3.py</code>. The script first verifies exact agreement with both v2 top tens and their p10 scores on fine cells. It writes <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/rankings/paprf_batters_v3.csv">batting</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/rankings/paprf_bowlers_v3.csv">bowling</a> rankings and a <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_v3_temporal_ledger.csv">temporal ledger</a>. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_v3_granularity.png">comparison figure</a> shows the gain in coverage and the limited repeatability side by side. The next methodological test should partially pool sparse fine cells while preserving innings, and audit dismissal-rate influence on batting ranks.</p></article><article id="v4"><h2>PAPRF v4 reanalysis protocol</h2>
+<h3>Four research passes</h3>
+<ol>
+<li>Audit scoring attribution. Count all observed dismissal flags and separate striker events on a counted ball from non-striker events, events without a counted ball and events lacking an ID.</li>
+<li>Fit a regularised fine-cell model to the same pre-delivery pressure indicators. Compare outcomes within innings, phase and competition family. Use the historical 60-ball and six-match thresholds in both contexts, summed across overlapping cells.</li>
+<li>Recalculate under different regularisation and outcome assumptions and repeat the chronological test.</li>
+<li>Rebuild attribution from the organiser CSVs in a clean temporary directory, then recompute v4 and compare the resulting rankings and calculation ledgers byte for byte.</li>
+</ol>
+<h3>Prespecified model</h3>
+<p>Batting dismissal risk is the number of recorded striker dismissals on counted balls faced divided by those balls. This aligns the at-risk unit with the numerator. A non-striker dismissal still affects subsequent match state. Bowling retains credited wickets per legal ball and conceded runs per six legal balls, including attributed illegal-delivery runs. No outcome enters the pressure label for its own delivery.</p>
+<p>Let a and b be ordinary and pressure opportunities in a player's cell. Require a &gt; 0 and b &gt; 0. With raw cell rate difference d, estimate the cell lift by minimising</p>
+<pre><code>(a b / (a + b)) × (theta − d)^2 + lambda × theta^2.
+</code></pre>
+<p>Differentiation gives theta = d × a b / [a b + lambda × (a + b)]. Thus small cells contribute an attenuated change. This is a zero-lift regulariser. It does not assume that an unobserved ordinary rate equals the player's observed pressure rate. Aggregate theta across supported cells with pressure-ball weights b. Use lambda = 12 for the primary model and test 6 and 24. Use observed role-peer mean and sample standard deviation for each aggregate component. Cap each signed z-score at ±3, give the three metrics equal weights and multiply the average by n/(n+60). This caps influence without deleting outlying observations. Test uncapped scores, historical dismissal attribution for batters and a two-component model that drops dismissal or wicket rate.</p>
+<p>For the primary score, draw 500 whole-match samples within IPL and T20I with seed 20261118. Keep the observed qualifying cell set and peer scaling. A cell contributes in a resample only when both denominators are positive, and the pressure-ball denominator and shrinkage reflect the contributing cells in that draw. A draw with no overlapping opportunities is invalid. Require at least 475 valid draws. Rank by the 10th percentile using linear interpolation, six-decimal rounding and player ID as tie-break. Report the median, 90th percentile and conditional range. This conditional bootstrap does not reselect the model or estimate future performance.</p>
+<p>Sensitivity scenarios compare point top tens with the primary point top ten. The temporal check splits at the existing 391-match boundary, uses 30 balls and three matches per context, fits role-peer scaling independently in each window and reports Spearman correlation on common eligible players.</p>
+<h3>Results and interpretation</h3>
+<p>The 10,024 flagged dismissal events reconcile to 9,738 striker events on counted balls, 250 non-striker events, 35 striker events on uncounted balls and one event without an ID. This corrects the interim non-striker subtotal. See the band-by-band attribution counts in the validation JSON. Returning to historical player attribution preserves the batting point top-ten membership in this experiment. Removing the event metric changes five batting and two bowling positions by membership, making event weighting more consequential here than the attribution correction.</p>
+<table>
+<thead>
+<tr>
+<th>Diagnostic</th>
+<th style="text-align: right;">Batters</th>
+<th style="text-align: right;">Bowlers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v4 point eligible</td>
+<td style="text-align: right;">149</td>
+<td style="text-align: right;">156</td>
+</tr>
+<tr>
+<td>v4 bootstrap eligible</td>
+<td style="text-align: right;">149</td>
+<td style="text-align: right;">156</td>
+</tr>
+<tr>
+<td>Shared with v1 top ten</td>
+<td style="text-align: right;">2/10</td>
+<td style="text-align: right;">2/10</td>
+</tr>
+<tr>
+<td>Shared with v2 research top ten</td>
+<td style="text-align: right;">4/10</td>
+<td style="text-align: right;">2/10</td>
+</tr>
+<tr>
+<td>Shared with v3 research top ten</td>
+<td style="text-align: right;">6/10</td>
+<td style="text-align: right;">2/10</td>
+</tr>
+<tr>
+<td>Lambda 6, shared with primary point top ten</td>
+<td style="text-align: right;">8/10</td>
+<td style="text-align: right;">8/10</td>
+</tr>
+<tr>
+<td>Lambda 24, shared with primary point top ten</td>
+<td style="text-align: right;">7/10</td>
+<td style="text-align: right;">8/10</td>
+</tr>
+<tr>
+<td>Uncapped z, shared with primary point top ten</td>
+<td style="text-align: right;">10/10</td>
+<td style="text-align: right;">10/10</td>
+</tr>
+<tr>
+<td>No event metric, shared with primary point top ten</td>
+<td style="text-align: right;">5/10</td>
+<td style="text-align: right;">8/10</td>
+</tr>
+<tr>
+<td>Early / late point eligible</td>
+<td style="text-align: right;">124 / 133</td>
+<td style="text-align: right;">137 / 143</td>
+</tr>
+<tr>
+<td>Common early and late eligible</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">81</td>
+</tr>
+<tr>
+<td>Temporal Spearman</td>
+<td style="text-align: right;">+0.154</td>
+<td style="text-align: right;">+0.002</td>
+</tr>
+<tr>
+<td>Shared across the early and late point top tens</td>
+<td style="text-align: right;">1/10</td>
+<td style="text-align: right;">0/10</td>
+</tr>
+</tbody>
+</table>
+<p>The broader pool is associated with two changes. Ridge attenuation replaces a hard 12-ball cell cutoff. In a resample, cells missing either context are omitted instead of invalidating the whole draw. Because a different subset of cells can contribute across draws, the v4 distribution answers a different support-conditioned question from v2 or v3. Low temporal agreement remains the strongest reason to qualify claims about historical rank order. The bootstrap guards against variation under resampling and cannot remove time drift or establish predictive reliability.</p>
+<h3>Worked example</h3>
+<p>Reeza Hendricks (ID 768) had 17 runs from six ordinary balls and one run from four pressure balls in the first-innings T20I death cell. The unregularised lift is 1/4 − 17/6 = −2.583333 runs per ball. The regularisation factor is 6×4 / [6×4 + 12×(6+4)] = 1/6, hence the adjusted cell lift is −0.430556. It receives 4/269 of the full pressure weight. Combining all three supported cells yields a regularised scoring delta of +0.340801. His signed capped z-scores are 1.730557, 3, and 2.087024. Their average, about 2.272527, is multiplied by 269/329 to give a point score of 1.858084. His bootstrap p10 of 0.929171 ranks first in batting. Kyle Jamieson ranks first in bowling with p10 = 0.723396.</p>
+<h3>Reproduction and review files</h3>
+<p>Run <code>python scripts/build_paprf_v4.py</code> for the attribution audit, model and stress tests. Run <code>python scripts/verify_paprf_rebuild.py</code> for the clean rebuild and scalar check. The clean replay starts with only the six organiser CSVs and source code in a temporary directory. It reconstructs match state, labels, player attribution and each ranking version in order. The separate scalar calculation recomputes every v4 point score from the cell numerators and independently orders the published p10 scores.</p>
+<ul>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/rankings/paprf_batters_v4.csv">v4 batters</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/rankings/paprf_bowlers_v4.csv">v4 bowlers</a> give the ordered research lists and their bootstrap quantiles.</li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_v4_cells.csv">Cell evidence</a> gives the numerators and denominators for every included player cell.</li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_v4_rank_ledger.csv">Player score ledger</a>, <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_v4_sensitivity.csv">threshold and component tests</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_v4_temporal.csv">temporal scores</a> give the individual calculations.</li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_v4_progression.csv">v1–v4 progression</a> puts successive top-ten ranks side by side. Blank ranks indicate absence from that version’s top ten.</li>
+<li><a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_v4_sensitivity.png">Sensitivity heatmap</a> compares point top-ten membership across tests. <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_v4_validation.json">Validation JSON</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_clean_rebuild.json">clean rebuild hashes</a> preserve the audit trail.</li>
+</ul>
+<p>The <a href="#forward">forward-validation audit</a> evaluates later periods with fixed pre-period peer scaling. It found weak and inconsistent predictive ordering. Wicket and dismissal weighting remains an open research question. The current rankings are the output of the declared historical estimand.</p></article><article id="forward"><h2>PAPRF forward validation</h2>
+<h3>Protocol</h3>
+<p>The full-sample v4 ranking estimates historical pressure lift. This audit tests whether earlier scores predict later pressure lift. Sort matches by date and ID. Take the dates at indices floor(N/4), floor(N/2) and floor(3N/4) as cutoffs. Keep every match on a cutoff date on the later side. The three test windows are disjoint and the training window expands. No match contributes to both training and testing in one fold. These are retrospective forward tests of a model already developed using the supplied dataset. They do not constitute an untouched external validation.</p>
+<p>Compute four training-only predictors in each fold:</p>
+<table>
+<thead>
+<tr>
+<th>Predictor</th>
+<th>Calculation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v4 p10</td>
+<td>v4 with its original eligibility gates, training-only peer scales and 500 family-stratified training match resamples.</td>
+</tr>
+<tr>
+<td>v4 point</td>
+<td>The same matched model before bootstrap quantile ranking.</td>
+</tr>
+<tr>
+<td>Pooled point</td>
+<td>Same attribution, component directions, clipping and score shrinkage. Pool contexts per player before differencing and omit cell regularisation.</td>
+</tr>
+<tr>
+<td>Pressure volume</td>
+<td>Training pressure balls in the v4-supported cells.</td>
+</tr>
+</tbody>
+</table>
+<p>The test target uses v4 regularised cell differences and the frozen training peer means and standard deviations. It averages the three signed capped z-scores without multiplying by test sample-size shrinkage. Test eligibility requires at least 30 balls and three opportunity-bearing matches in each bucket across supported test cells. This target describes the same measured construct as v4 and can favour a matched predictor. The secondary target uses only signed scoring-rate or economy lift. Evaluate all predictors on the intersection of their available predictions and test eligibility. To keep missing evidence visible, also count how many of each predictor's original training top ten satisfy the test eligibility gate. Never treat lack of test evidence as a zero score.</p>
+<p>Report Spearman rank correlation (Pearson correlation of midranks), overlap with the test top ten and the original training top ten's assessable count. Top-ten overlap filters predictions to the common pool before comparing. No tuning uses test-window results, and folds can share training observations. Report all folds separately. Do not interpret repeated player rows as independent trials.</p>
+<h3>Results</h3>
+<table>
+<thead>
+<tr>
+<th>Fold</th>
+<th>Last training date</th>
+<th>Test dates</th>
+<th style="text-align: right;">Train matches</th>
+<th style="text-align: right;">Test matches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2023-04-02</td>
+<td>2023-04-03 through 2024-05-07</td>
+<td style="text-align: right;">195</td>
+<td style="text-align: right;">196</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2024-05-07</td>
+<td>2024-05-08 through 2025-09-05</td>
+<td style="text-align: right;">391</td>
+<td style="text-align: right;">195</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2025-09-05</td>
+<td>2025-09-06 through 2026-11-01</td>
+<td style="text-align: right;">586</td>
+<td style="text-align: right;">196</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Fold / role</th>
+<th style="text-align: right;">Common N</th>
+<th style="text-align: right;">v4 p10 ρ</th>
+<th style="text-align: right;">v4 point ρ</th>
+<th style="text-align: right;">Pooled point ρ</th>
+<th style="text-align: right;">Pressure volume ρ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 batters</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">−0.117</td>
+<td style="text-align: right;">−0.214</td>
+<td style="text-align: right;">+0.161</td>
+<td style="text-align: right;">+0.234</td>
+</tr>
+<tr>
+<td>1 bowlers</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">−0.094</td>
+<td style="text-align: right;">−0.115</td>
+<td style="text-align: right;">+0.030</td>
+<td style="text-align: right;">−0.263</td>
+</tr>
+<tr>
+<td>2 batters</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">+0.050</td>
+<td style="text-align: right;">+0.038</td>
+<td style="text-align: right;">+0.052</td>
+<td style="text-align: right;">−0.165</td>
+</tr>
+<tr>
+<td>2 bowlers</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">−0.286</td>
+<td style="text-align: right;">−0.217</td>
+<td style="text-align: right;">−0.084</td>
+<td style="text-align: right;">−0.106</td>
+</tr>
+<tr>
+<td>3 batters</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">−0.106</td>
+<td style="text-align: right;">−0.032</td>
+<td style="text-align: right;">−0.183</td>
+<td style="text-align: right;">−0.245</td>
+</tr>
+<tr>
+<td>3 bowlers</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">+0.119</td>
+<td style="text-align: right;">+0.144</td>
+<td style="text-align: right;">+0.199</td>
+<td style="text-align: right;">−0.029</td>
+</tr>
+</tbody>
+</table>
+<p>The v4 p10 score beats the pooled point correlation in one of six role-window comparisons. It has negative correlation in four. Under the secondary rate-only target, v4 p10 correlations range from −0.222 to +0.138. The pooled point score and pressure volume also change sign across windows. This sample gives no clear basis for claiming a consistently superior predictor.</p>
+<p>For a common pool of N players, two independent uniformly sampled top tens have expected overlap 100/N. Each of the ten names from the first list has inclusion probability 10/N in the second. This is a descriptive reference, with no significance claim.</p>
+<table>
+<thead>
+<tr>
+<th>Fold / role</th>
+<th style="text-align: right;">v4 p10 common-pool overlap</th>
+<th style="text-align: right;">Random reference 100/N</th>
+<th style="text-align: right;">Original v4 p10 top ten assessable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 batters</td>
+<td style="text-align: right;">4/10</td>
+<td style="text-align: right;">4.76</td>
+<td style="text-align: right;">9/10</td>
+</tr>
+<tr>
+<td>1 bowlers</td>
+<td style="text-align: right;">4/10</td>
+<td style="text-align: right;">4.00</td>
+<td style="text-align: right;">7/10</td>
+</tr>
+<tr>
+<td>2 batters</td>
+<td style="text-align: right;">3/10</td>
+<td style="text-align: right;">2.70</td>
+<td style="text-align: right;">7/10</td>
+</tr>
+<tr>
+<td>2 bowlers</td>
+<td style="text-align: right;">0/10</td>
+<td style="text-align: right;">2.13</td>
+<td style="text-align: right;">5/10</td>
+</tr>
+<tr>
+<td>3 batters</td>
+<td style="text-align: right;">1/10</td>
+<td style="text-align: right;">2.13</td>
+<td style="text-align: right;">2/10</td>
+</tr>
+<tr>
+<td>3 bowlers</td>
+<td style="text-align: right;">2/10</td>
+<td style="text-align: right;">2.04</td>
+<td style="text-align: right;">4/10</td>
+</tr>
+</tbody>
+</table>
+<p>The common-pool calculation asks how the model orders players with enough evidence on both sides. Original top-ten coverage answers a separate operational question. The final batting window has 47 common players, yet eight of the original training leaders lack adequate test-side opportunities. This attrition prevents generalising the common-pool results to every selected player. Short windows also make realised pressure estimates noisy. Earlier development used the entire dataset, so the retrospective dates test the ordering protocol and do not provide an untouched competition holdout.</p>
+<h3>Reproduction and decision</h3>
+<p>Run <code>python scripts/validate_paprf_forward.py</code> from the repository root. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_forward_validation.json">validation JSON</a> records cutoffs, sample sizes, training means and standard deviations, predictor coverage, IDs and correlation for both targets. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_forward_validation_ledger.csv">player ledger</a> lists every prediction and test observation with denominators and common-pool flag. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_forward_validation.png">comparison figure</a> displays the six common-pool correlations per predictor.</p>
+<p>The forward results do not justify switching historical rankings to any competing predictor. Retain the existing historical ordering and report forecast performance as unresolved. A useful next test is to compare historical lift with a null model that preserves match clustering and phase, then estimate how much repeatable signal is detectable under observed player exposure.</p></article><article id="split"><h2>PAPRF matched split-half reliability audit</h2>
+<h3>Design recorded before evaluation</h3>
+<p>The forward test combines calendar drift with measurement variation. Here, 32 random splits interleave the calendar. For each split, shuffle whole matches within competition family and calendar year, then assign alternate matches to two disjoint halves. Randomise which half gets the first match in each stratum. This keeps adjacent deliveries and shared player appearances within a match together. Use seed 20261119. Evaluate the v4 point composite and individual components using the published full-sample peer scaling in both halves. This is a retrospective measurement diagnostic.</p>
+<p>Rebuild both halves from opportunity counts, with a primary 30-ball and three-match gate in each context and a stricter 60-ball and six-match gate as sensitivity. The stricter gate filters the same scored halves so comparisons reflect coverage and composition. Use only player IDs with evidence on both sides. Compute Spearman correlation using midranks for both the composite and the signed component deltas. Top-ten membership uses the common pool and the same ID tie-break as v4.</p>
+<p>For a descriptive null, sort common players by their full-sample pressure opportunity count and split them into three nearly equal exposure groups. Within each group, shuffle the second-half player assignments independently 200 times while preserving both halves' measured scores and their rank distributions. The first and second half samples themselves retain whole-match structure. This null breaks persistent player pairing conditional on these exposure groups. It does not create a new outcome data set or give a design-based significance test. Exposure strata do not control all differences in competition mix, roles, or shared match dependencies.</p>
+<p>Report medians and 10th–90th percentile ranges across splits. Splits reuse matches, so these quantiles measure sensitivity to partition assignment. Do not treat 32 splits or 6,400 shuffles as independent realised seasons. Under the parallel-measurement assumption, the Spearman–Brown expression 2r/(1+r) translates a half-sample reliability r to a same-population full-sample heuristic. It is descriptive only because these halves differ in eligibility and support and Spearman correlation is rank based.</p>
+<h3>Results</h3>
+<table>
+<thead>
+<tr>
+<th>Role and gate</th>
+<th style="text-align: right;">Median common players</th>
+<th style="text-align: right;">Observed median ρ [p10, p90]</th>
+<th style="text-align: right;">Shuffle p10 to p90</th>
+<th style="text-align: right;">Splits above own shuffle p90</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Batting, 30 balls and 3 matches</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">+0.012 [−0.083, +0.095]</td>
+<td style="text-align: right;">−0.133 to +0.128</td>
+<td style="text-align: right;">1/32</td>
+</tr>
+<tr>
+<td>Bowling, 30 balls and 3 matches</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">−0.037 [−0.135, +0.068]</td>
+<td style="text-align: right;">−0.120 to +0.131</td>
+<td style="text-align: right;">0/32</td>
+</tr>
+<tr>
+<td>Batting, 60 balls and 6 matches</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">−0.031 [−0.149, +0.123]</td>
+<td style="text-align: right;">−0.178 to +0.181</td>
+<td style="text-align: right;">0/32</td>
+</tr>
+<tr>
+<td>Bowling, 60 balls and 6 matches</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: right;">−0.055 [−0.237, +0.059]</td>
+<td style="text-align: right;">−0.164 to +0.149</td>
+<td style="text-align: right;">1/32</td>
+</tr>
+</tbody>
+</table>
+<p>The stricter gate changes who qualifies and gives no observable improvement in median composite correlation. In the primary gate, median top-ten overlap is one name for batting and 0.5 for bowling, compared with median uniform random references of 1.05 and 0.93. The 0.5 is a median across integer overlaps.</p>
+<table>
+<thead>
+<tr>
+<th>Role and gate</th>
+<th style="text-align: right;">Rate ρ</th>
+<th style="text-align: right;">Dot ρ</th>
+<th style="text-align: right;">Dismissal or wicket ρ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Batting, primary</td>
+<td style="text-align: right;">+0.057</td>
+<td style="text-align: right;">−0.017</td>
+<td style="text-align: right;">−0.054</td>
+</tr>
+<tr>
+<td>Bowling, primary</td>
+<td style="text-align: right;">−0.057</td>
+<td style="text-align: right;">−0.016</td>
+<td style="text-align: right;">−0.003</td>
+</tr>
+<tr>
+<td>Batting, strict</td>
+<td style="text-align: right;">+0.079</td>
+<td style="text-align: right;">+0.009</td>
+<td style="text-align: right;">−0.043</td>
+</tr>
+<tr>
+<td>Bowling, strict</td>
+<td style="text-align: right;">−0.184</td>
+<td style="text-align: right;">−0.054</td>
+<td style="text-align: right;">+0.019</td>
+</tr>
+</tbody>
+</table>
+<p>All component values are medians. Batting scoring-rate lift shows a small positive relationship. Neither wicket nor dismissal lift reproduces strongly enough here to justify reweighting based on this test. Calendar drift alone cannot account for the low repeatability because the interleaved halves balance competition family and calendar year. Support changes, opponent and venue differences, and the construct measured by the pressure label can still matter. The top-ten lists remain defensible as descriptions of the observed sample under a declared method. These checks give little basis for claiming persistent player-level pressure skill.</p>
+<h3>Reproduction</h3>
+<p>Run <code>python scripts/audit_paprf_split_reliability.py</code>. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/paprf_split_reliability.json">audit JSON</a> records input hashes, seed, strata and distributions. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_split_reliability.csv">split summary</a>, <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_split_match_membership.csv">match membership</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/tables/paprf_split_player_ledger.csv">player ledger</a> provide scores, sample counts and exact match assignments. The <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/outputs/figures/paprf_split_reliability.png">figure</a> compares observed intervals with the exposure-conditioned shuffle. See <a href="#forward">forward validation</a> for the chronological check.</p></article></main><footer><a href="#library-top">Back to contents</a></footer></body></html>

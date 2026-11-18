@@ -228,8 +228,8 @@ if (!data) {
   const percentage = 100 * (bands.elevated + bands.high) / data.audit.delivery_rows;
   $("summary").append(tile("Validated matches", number.format(data.audit.distinct_match_ids), "stat"),
     tile("Delivery events", number.format(data.audit.delivery_rows), "stat"),
-    tile("Eligible batters", number.format(data.model.roles.batter.scenarios.v1_equal.eligible), "stat"),
-    tile("Eligible bowlers", number.format(data.model.roles.bowler.scenarios.v1_equal.eligible), "stat"));
+    tile("Unified eligible players", number.format(data.unified.eligible), "stat"),
+    tile("Supported role pools", Object.keys(data.role_profiles.roles).length, "stat"));
   $("pressure-summary").append(tile("Ordinary events", number.format(bands.ordinary), "stat"),
     tile("Elevated events", number.format(bands.elevated), "stat"),
     tile("High-pressure events", number.format(bands.high), "stat"),

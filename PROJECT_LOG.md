@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Audit role-specific support and opposition transfers on fresh samples.
+**Next action:** Validate cross-role calibration and whole-match uncertainty of the unified index. Connect Vercel when project access permits.
 
 ---
 
@@ -246,3 +246,9 @@
 - Files: scripts/validate_paprf_role_profiles.py,docs/methodology/paprf_role_profile_validation.md,outputs/tables/paprf_role_forward_player_ledger.csv,outputs/tables/paprf_role_bootstrap_ledger.csv,work/paprf_role_profile_validation.json,dashboard/
 - Decision: Keep the role lists as historical references. Further test runs-only middle bowling, and report late-entrant predictive evidence as unavailable at the declared support gate.
 - Next: Audit role-specific support and opposition transfers on fresh samples.
+
+## 2026-11-18 — Audited existing role metrics and pressure archives, developed a unified histori (step: 9-12)
+- Audited existing role metrics and pressure archives, developed a unified historical role index for 397 of 881 observed player IDs, verified 1588 scenario score traces, and published 16 research chapters with an eight-figure atlas, KaTeX methods and per-player breakdowns. Checked both desktop and mobile in Edge.
+- Files: docs/methodology/paprf_unified_ranking.md,scripts/build_paprf_unified_ranking.py,scripts/build_paprf_research_library.py,outputs/rankings/paprf_unified_top10_v1.csv,outputs/tables/paprf_unified_assignments.csv,outputs/tables/paprf_unified_score_ledger.csv,work/paprf_unified_ranking.json,dashboard/
+- Decision: Use within-role magnitude-based reference scaling, one sample shrinkage adjustment and bounded secondary credit. Treat the unified index as historical and record the opener concentration.
+- Next: Validate cross-role calibration and whole-match uncertainty of the unified index. Connect Vercel when project access permits.

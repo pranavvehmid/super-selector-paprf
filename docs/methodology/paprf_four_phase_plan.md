@@ -18,3 +18,5 @@ Phase 2 evidence includes the [pressure and weight experiment](paprf_phase2_expe
 For each result, record the source path and version or hash, row grain, ID join, population, exclusions, numerator, denominator, formula, units, precision, code entry point and verification result. Use the claim and source registers for external facts. Keep proposed and measured values identifiable. An unavailable result is reported as unavailable with its reason. The [Phase 1 record](paprf_phase1_evidence.md) provides the first reproducible calculation and audit.
 
 The [contextual role profiles](paprf_contextual_role_profiles.md) extend the project with earlier-date opposition benchmarks, deployment-specific leaderboards, geography and annual splits, and alternative weights. These profiles estimate a broader question than the pressure-only rankings and are accessible in their own dashboard section.
+
+The [unified index](paprf_unified_ranking.md) integrates those role signals, while the website publishes the versioned methods and figures in a research library. This historical index is a separate output from the archived Round 1 pressure selections.

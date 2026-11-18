@@ -7,6 +7,16 @@ python scripts/build_dashboard_data.py
 python -m http.server 8765 --bind 127.0.0.1 --directory dashboard
 ```
 
+When updating the publication, regenerate the index and library before deployment:
+
+```powershell
+python scripts/build_paprf_unified_ranking.py
+python scripts/build_dashboard_data.py
+python scripts/build_paprf_research_library.py
+```
+
+The research-library builder uses the pinned Markdown package in `requirements.txt`. The site loads the pinned KaTeX browser assets and leaves readable equation text in place when those assets are unavailable. The figure atlas serves selected generated plots with short interpretations and chapter references.
+
 Open http://127.0.0.1:8765. The page also works by opening index.html directly because the evidence export is bundled as a local script.
 
 The export verifies the frozen top tens against the Phase 2 replay and reconciles the pressure distribution with the audit. It includes the ranking and sensitivity evidence, exposure counts, peer statistics, and aggregate player counts. Raw deliveries, the supplied archive and local credentials stay outside the hosted directory. Update the project milestone list in index.html when a phase changes and regenerate evidence.js after changing the inputs. Commit both source changes and the regenerated export.
