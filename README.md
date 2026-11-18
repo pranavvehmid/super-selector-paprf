@@ -4,6 +4,8 @@
 
 **Required deliverables:** (A) ordered top-10 batters and top-10 bowlers on Unstop; (B) a reproducible methodology report.
 
+For submission, use the [Round 1 upload PDF](outputs/report/latex/round1_submission.pdf) and its page-one dropdown order. See the [submission review](docs/submission_review.md) for checks and evidence.
+
 ## PAPRF Round 1 dashboard
 
 Open [the dashboard](dashboard/index.html) from a local checkout to explore pressure exposure, player calculations, ranking sensitivity and the research milestones. The [v1–v3 review draft](outputs/report/paprf_research_review_v3.pdf) and the [v4 research review supplement](outputs/report/paprf_research_review_v4_supplement.pdf) cover the model versions and validation. See the [dashboard setup and publishing guide](dashboard/README.md) and the [current four-phase research plan](docs/methodology/paprf_four_phase_plan.md).

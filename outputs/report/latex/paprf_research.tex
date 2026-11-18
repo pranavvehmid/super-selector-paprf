@@ -34,6 +34,8 @@ The organiser requires ordered lists of ten batters and ten bowlers under pressu
 
 The organiser supplied six CSV files describing delivery events, matches, competitions, teams, playing elevens and player mappings. The delivery ledger joins match and competition data by their IDs. The pressure population uses the validated IPL and T20I matches. The quality checks exclude unsupported innings and inconsistent or revised results. The evaluator performs pressure-state reconstruction and ambiguity checks before aggregating performance. A missing value is distinct from numeric zero. Player names are display labels only.
 
+The attribution ledger flags 252 ambiguous events out of 186,620, leaving 186,368 metric-eligible events. In the frozen v1 calculation those rows supply no attributed runs, counted balls, dots or bowler wickets. The v1 batter dismissal numerator uses the wicket flag and dismissed-player ID, including two flagged events. The dedicated Round 1 submission PDF documents this distinction and gives the dropdown order.
+
 \begin{center}\begin{minipage}{\linewidth}\centering
 \textbf{Raw data} $\longrightarrow$ \textbf{Identity and result checks} $\longrightarrow$ \textbf{Pre-delivery state}\\[3pt]
 $\mathord{\downarrow}$\\[3pt]

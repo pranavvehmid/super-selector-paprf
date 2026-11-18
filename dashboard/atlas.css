@@ -229,6 +229,33 @@ body { background-color: var(--canvas); }
 .home-pressure-stack .ordinary { --band: #f0b2c7; }
 .home-pressure-stack .elevated { --band: #d56a98; }
 .home-pressure-stack .high { --band: #a8245c; }
+.metric-comparison {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 205px), 1fr));
+  gap: 10px; padding: 12px 0;
+}
+.metric-comparison figcaption { grid-column: 1 / -1; }
+.metric-comparison > div { padding: 10px 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 11px; }
+.metric-comparison h4 { margin: 0 0 10px; font: 650 .79rem var(--sans); }
+.metric-bar { display: grid; grid-template-columns: 3.8rem minmax(0, 1fr) 3.4rem; align-items: center; gap: 5px; margin-block: 6px; font: .72rem var(--sans); }
+.metric-bar strong { text-align: right; font-variant-numeric: tabular-nums; }
+.metric-track { border-radius: 3px; background: var(--grid-track); overflow: hidden; }
+.metric-track span { display: block; height: .48rem; border-radius: 3px; background: var(--ordinary); }
+.metric-bar.pressure .metric-track span { background: var(--chart-accent); }
+.pressure-ranks-grid { display: grid; gap: 20px; align-items: start; margin-bottom: 16px; }
+.pressure-ranks-grid .player { min-width: 0; padding: 14px; border: 1px solid var(--line); border-radius: 14px; }
+.pressure-ranks-grid .player:empty { display: none; }
+.pressure-ranks-grid[data-scenario="v1_equal"] > .scroll :is(th, td):nth-child(6) { display: none; }
+#rank-rows button[aria-pressed="true"] { font-weight: 700; }
+@media (min-width: 1200px) {
+  .pressure-ranks-grid { grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); }
+  .pressure-ranks-grid .metric-comparison { grid-template-columns: 1fr; }
+  .pressure-ranks-grid > .scroll :is(td, th) { padding-inline: .48rem; }
+}
+.annual-comparison { display: grid; gap: 5px; }
+.annual-row { display: grid; grid-template-columns: 2.8rem minmax(0, 1fr) auto; align-items: center; gap: 8px; font: .78rem var(--sans); }
+.annual-track { position: relative; background: var(--grid-track); height: .75rem; border-radius: 3px; }
+.annual-track::after { content: ""; position: absolute; inset: 0 auto 0 50%; width: 1px; background: var(--ink); }
+.annual-track span { position: absolute; height: 100%; background: var(--chart-accent); }
 #home .legend .ordinary { --band: #f0b2c7; }
 #home .legend .elevated { --band: #d56a98; }
 #home .legend .high { --band: #a8245c; }

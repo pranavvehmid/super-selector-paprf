@@ -103,6 +103,8 @@ def main():
         with ZipFile(DOWNLOAD / "paprf_research_source.zip", "w", ZIP_DEFLATED) as archive:
             for file in files:
                 archive.write(file, file.name)
+            for name in ("round1_submission.tex", "round1_evidence.tex"):
+                archive.write(REPORT / name, name)
             for _, _, name in CHAPTERS:
                 archive.write(ROOT / "docs" / name, "research/" + name)
             archive.writestr("dashboard_evidence.json", json.dumps(

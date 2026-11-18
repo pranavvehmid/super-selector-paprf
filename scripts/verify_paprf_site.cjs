@@ -36,6 +36,7 @@ async function main() {
     const actualHome = await page.locator("#home-preview table").evaluateAll(tables => tables.map(table =>
       Array.from(table.tBodies[0].rows, row => Array.from(row.cells, cell => cell.textContent))));
     assert.deepEqual(actualHome, expectedHome);
+    assert.match(await page.locator("#home-rankings .report-link").getAttribute("href"), /round1_submission\.pdf$/);
     await page.locator("#home-preview a").last().click();
     assert.match(await page.locator("#unified-player h3").innerText(), /Bhuvneshwar Kumar/);
     assert.equal(await page.locator("#unified-discipline").inputValue(), "bowler");
@@ -102,9 +103,20 @@ async function main() {
     assert.match(await page.locator("#figure-caption").innerText(), /Later-window role/);
     await page.goto(new URL("?page=documentation",base).href,{waitUntil:"load"});
     assert.match(await page.locator("#publication-run").innerText(), /Evidence run [a-f0-9]{12}/);
-    for (const file of ["reports/paprf_research_source.zip","library.html"]) {
+    for (const file of ["reports/round1_submission.pdf","reports/paprf_research_source.zip","library.html"]) {
       assert.equal((await page.request.get(new URL(file,base).href)).status(),200);
     }
+    await page.goto(new URL("?page=pressure",base).href,{waitUntil:"load"});
+    for (const role of ["batter", "bowler"]) {
+      await page.locator("#role").selectOption(role);
+      const frozen = await page.evaluate(role => globalThis.paprfEvidence.rankings[role].map(r => r.player_name),role);
+      assert.deepEqual(await page.locator("#rank-rows button").allTextContents(), frozen);
+      await page.locator("#rank-rows button").last().click();
+      assert.equal(await page.locator("#player h3").innerText(), frozen[9]);
+      assert.equal(await page.locator("#player .metric-bar").count(), 6);
+    }
+    await page.goto(new URL("?page=validation", base).href,{waitUntil:"load"});
+    assert.match(await page.locator("#validation-summary").innerText(), /5 of 6/);
     if (await page.locator("#publication-pdf").isVisible()) {
       const response = await page.request.get(new URL("reports/paprf_research.pdf",base).href);
       assert.equal(response.status(),200);

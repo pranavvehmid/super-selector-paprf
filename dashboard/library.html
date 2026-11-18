@@ -1141,7 +1141,7 @@
 <p><strong>Gate passed on 18 November 2026.</strong> The audit creates a reproducible inclusion/exclusion policy and prevents special-condition records from entering future scoring before their context can be reconstructed reliably. No player scoring or ranking has been performed.</p></article><article id="phase-one"><h2>PAPRF Phase 1 evidence record</h2>
 <h3>Source and grain</h3>
 <p>The organiser pack has six CSVs. Delivery events carry match, innings and ball identifiers. Match metadata carries date, venue ID and host country. Competition, team, participation and player mappings provide the other lookup and participation records. See the <a href="#source-dictionary">77-field dictionary</a> and <a href="https://github.com/pranavvehmid/super-selector-paprf/blob/main/work/data-quality-audit.json">quality audit</a>. Match-to-competition joins use competition ID. Delivery-to-match joins use match ID. Player aggregation uses player ID.</p>
-<p>The raw delivery CSV has 200,999 rows and the match CSV has 883 records. The earliest and latest values of the raw match date field are 2022-01-22 and 2026-11-01. The <a href="#source-dictionary">validated pressure file</a> has 186,620 delivery events from 782 distinct IPL/T20I match IDs. Pressure exposure counts every event in this file, including events that may be illegal balls or excluded for player-rate attribution. The separate attribution stage holds out 257 rows, leaving 186,363 metric-eligible events. These figures answer different questions and use different denominators.</p>
+<p>The raw delivery CSV has 200,999 rows and the match CSV has 883 records. The earliest and latest values of the raw match date field are 2022-01-22 and 2026-11-01. The <a href="#source-dictionary">validated pressure file</a> has 186,620 delivery events from 782 distinct IPL/T20I match IDs. Pressure exposure counts every event in this file, including events that may be illegal balls or excluded for player-rate attribution. The separate attribution stage holds out 252 rows, leaving 186,368 metric-eligible events. These figures answer different questions and use different denominators.</p>
 <h3>Five pillars and evidence readiness</h3>
 <table>
 <thead>
@@ -1372,7 +1372,7 @@ high: index ≥ 0.65
 </code></pre>
 <p>Official pressure opportunities are elevated plus high. The rated delivery's outcome does not enter its label.</p>
 <h3>2. Attribution and eligibility</h3>
-<p>Rows are excluded from player-rate metrics when extras_type is other or Penalty, when a None row has non-zero extras, or when a bye/leg-bye row has non-zero batter runs. That leaves 186,363 eligible deliveries and holds out 257 ambiguous rows.</p>
+<p>Attribution flags rows when extras_type is other or Penalty, when a None row has non-zero extras, or when a bye/leg-bye row has non-zero batter runs. The final ledger has 186,368 metric-eligible events and 252 ambiguous rows. Ambiguous rows contribute zero attributed runs, opportunities, dots and bowler wickets. Frozen v1 retains applicable match IDs and counts two flagged batter dismissals from the source wicket flag and dismissed-player ID. The v4 research model restricts batter dismissals to the striker on a counted ball.</p>
 <pre><code>batter_runs = 0 for wide/byes/legbyes/other/Penalty; else source runs
 batter_ball_faced = eligible and extras_type ≠ wide
 bowler_runs = batter_runs + extras1_runs + extras_2_runs for wide or Overstep

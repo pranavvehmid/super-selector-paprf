@@ -1,7 +1,7 @@
 # Step 12 — Prepare the methodology report and submission materials
 
 **Status:** GATE PASSED
-**Code:** `outputs/report/round1_methodology_report_v1.md`
+**Build:** `scripts/build_round1_submission.py`
 
 ## Goal
 Turn the analysis into a transparent, judge-friendly deliverable.
@@ -13,7 +13,7 @@ Turn the analysis into a transparent, judge-friendly deliverable.
 - [ ] Optional 30–60 s video/screenshots only after the core analysis is complete.
 
 ## Output of this step
-Final report (outputs/report/) and matching Unstop rankings.
+The [submission PDF](../../outputs/report/latex/round1_submission.pdf) opens with both matching Unstop rankings. Separate contextual work is in the full research report.
 
 ## Decision gate
 Report, tables and Unstop entries are consistent.

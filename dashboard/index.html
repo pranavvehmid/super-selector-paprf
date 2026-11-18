@@ -54,11 +54,11 @@
       <div class="ranking-card">
         <div class="ranking-intro">
           <div><p class="kicker">Super Selector · Round 1 research</p><h1>Ultimate Top 10</h1></div>
-          <a class="report-link" href="reports/paprf_research.pdf">Project report <span aria-hidden="true">↗</span></a>
+          <a class="report-link" href="reports/round1_submission.pdf">Round 1 submission PDF <span aria-hidden="true">↗</span></a>
         </div>
         <p class="lede">Batters and bowlers ranked within their roles. Select a player to see the calculation.</p>
         <div id="home-preview" class="home-rankings"></div>
-        <div class="ranking-follow"><a href="?page=pressure#rankings">Archived Round 1 pressure lists</a><a href="?page=dataset">Dataset →</a></div>
+        <div class="ranking-follow"><a href="?page=pressure#rankings">Round 1 pressure rankings and player evidence →</a><a href="reports/paprf_research.pdf">Full research report</a></div>
       </div>
       <dl id="home-key-metrics" class="home-key-metrics" aria-label="Match coverage and pressure"></dl>
     </section>
@@ -125,6 +125,9 @@
       <p><a href="library.html#discipline">Discipline split and worked methodology</a> · <a href="#glossary">Metric glossary</a></p>
     </section>
     <section class="panel" id="research">
+      <h1>Does the ranking hold up?</h1>
+      <p id="validation-summary" class="lede"></p>
+      <figure><img src="figures/paprf_forward_validation.png" loading="lazy" alt="Spearman correlations for four predictors in three later-match windows, separated into batting and bowling. Values cluster near zero and vary by window."><figcaption>Earlier-only fits, later outcomes. Spearman rank correlation is shown vertically. The tables below give the exact correlations and common player counts.</figcaption></figure>
       <div class="section-head"><div><p class="kicker">03 / PRESSURE RESEARCH</p><h2>Match-adjusted pressure rankings</h2></div>
       <div class="controls"><label>Version<select id="research-version"><option value="v4">v4 · regularised fine cells</option><option value="v3">v3 · phase and competition family</option><option value="v2">v2 · innings, phase and competition family</option></select></label>
       <label>Role<select id="research-role"><option value="batter">Batters</option><option value="bowler">Bowlers</option></select></label></div></div>
@@ -169,6 +172,28 @@
       <div class="controls"><label>Discipline<select id="compare-discipline"><option value="batter">Batters</option><option value="bowler">Bowlers</option></select></label><label>Player A<select id="compare-a"></select></label><label>Player B<select id="compare-b"></select></label></div>
       <div id="compare-matrix"></div>
     </section>
+    <section class="panel" id="rankings">
+      <div class="section-head"><div><p class="kicker">ROUND 1 SUBMISSION</p><h2>Top 10 under pressure</h2></div><a class="report-link" href="reports/round1_submission.pdf">Upload-ready PDF ↗</a></div>
+      <p class="lede">Choose batters or bowlers, then select a player to compare pressure and ordinary performance. Frozen v1 is the dropdown order in the submission PDF.</p>
+      <div id="featured" class="featured-ranks" aria-label="Frozen ranking leaders"></div>
+      <div class="controls">
+        <label>Role<select id="role"><option value="batter">Batters</option><option value="bowler">Bowlers</option></select></label>
+        <label>Model<select id="scenario"><option value="v1_equal">Frozen v1 · equal weights</option><option value="role_rule_equal">Experimental · role-specific pressure</option><option value="v1_rate_heavy">Experimental · rate weighted 50%</option><option value="v1_event_heavy">Experimental · dismissal / wicket weighted 50%</option></select></label>
+        <label>Player search<input id="search" type="search" placeholder="Name or player ID"></label>
+        <label>Rows<select id="limit"><option value="10">Top 10</option><option value="20">Top 20</option><option value="all">All eligible</option></select></label>
+      </div>
+      <p id="scenario-summary" class="note" aria-live="polite"></p>
+      <div id="pressure-ranks-grid" class="pressure-ranks-grid">
+        <div class="scroll"><table><caption class="sr-only">Ranked players and pressure sample sizes</caption><thead><tr><th scope="col">Rank</th><th scope="col">Player</th><th scope="col">Score</th><th scope="col">Pressure balls</th><th scope="col">Matches</th><th scope="col">v1 rank</th></tr></thead><tbody id="rank-rows"></tbody></table></div>
+        <div id="player" class="player" aria-live="polite"></div>
+      </div>
+      <details><summary>Additional sensitivity checks</summary><div id="sensitivity"></div></details>
+      <details><summary>Matched context and repeatability audit</summary><div id="context-audit"></div>
+        <p>Matched cells compare the same innings, phase and competition family. Each retained cell needs at least 12 balls on each side. The matched delta weights each cell by its pressure balls.</p>
+          <div class="equation"><span data-tex="\Delta=\frac{\sum_c n_{c,P}(x_{c,P}-x_{c,O})}{\sum_c n_{c,P}}">Matched delta = Σ pressure balls × (pressure rate − ordinary rate) / Σ pressure balls.</span></div>
+        <p>The time split uses whole matches. Spearman correlation compares ranks among players who qualified in both periods.</p>
+      </details>
+    </section>
     <section class="panel" id="pressure">
       <div class="section-head"><div><p class="kicker">MATCH CONTEXT</p><h2>Pressure exposure</h2></div><label>Chart scale<select id="scale"><option value="share">Within-phase share</option><option value="count">Delivery count</option></select></label></div>
       <p>Each row combines an innings and phase. Hover or focus a segment for its numerator, denominator and share.</p>
@@ -184,25 +209,6 @@
       <figure class="pressure-figure"><canvas id="pressure-curve" width="1000" height="320" aria-describedby="pressure-curve-alt"></canvas>
         <figcaption id="pressure-curve-alt"></figcaption>
       </figure>
-    </section>
-    <section class="panel" id="rankings">
-      <div class="section-head"><div><p class="kicker">SUBMISSION ARCHIVE AND EXPERIMENTS</p><h2>Lens A rankings explorer</h2></div></div>
-      <div id="featured" class="featured-ranks" aria-label="Frozen ranking leaders"></div>
-      <div class="controls">
-        <label>Role<select id="role"><option value="batter">Batters</option><option value="bowler">Bowlers</option></select></label>
-        <label>Model<select id="scenario"><option value="v1_equal">Frozen v1 · equal weights</option><option value="role_rule_equal">Experimental · role-specific pressure</option><option value="v1_rate_heavy">Experimental · rate weighted 50%</option><option value="v1_event_heavy">Experimental · dismissal / wicket weighted 50%</option></select></label>
-        <label>Player search<input id="search" type="search" placeholder="Name or player ID"></label>
-        <label>Rows<select id="limit"><option value="10">Top 10</option><option value="20">Top 20</option><option value="all">All eligible</option></select></label>
-      </div>
-      <p id="scenario-summary" class="note" aria-live="polite"></p>
-      <div class="scroll"><table><caption class="sr-only">Ranked players and pressure sample sizes</caption><thead><tr><th scope="col">Rank</th><th scope="col">Player</th><th scope="col">Score</th><th scope="col">Pressure balls</th><th scope="col">Matches</th><th scope="col">v1 rank</th></tr></thead><tbody id="rank-rows"></tbody></table></div>
-      <div id="player" class="player" aria-live="polite"></div>
-      <details><summary>Additional sensitivity checks</summary><div id="sensitivity"></div></details>
-      <details><summary>Matched context and repeatability audit</summary><div id="context-audit"></div>
-        <p>Matched cells compare the same innings, phase and competition family. Each retained cell needs at least 12 balls on each side. The matched delta weights each cell by its pressure balls.</p>
-          <div class="equation"><span data-tex="\Delta=\frac{\sum_c n_{c,P}(x_{c,P}-x_{c,O})}{\sum_c n_{c,P}}">Matched delta = Σ pressure balls × (pressure rate − ordinary rate) / Σ pressure balls.</span></div>
-        <p>The time split uses whole matches. Spearman correlation compares ranks among players who qualified in both periods.</p>
-      </details>
     </section>
     <section class="panel" id="method">
       <h2>Pressure and validation equations</h2>
@@ -233,7 +239,7 @@
       <h1>Research documentation</h1>
       <p>Read the full methods and version history, then download the typeset report or its source.</p>
       <p id="publication-run" class="note"></p>
-      <ul><li><a id="publication-pdf" href="reports/paprf_research.pdf">Project report (PDF)</a></li><li><a href="library.html#reading-guide">Dashboard reading guide and evidence index</a></li><li><a href="library.html#formula-reference">Numbered formula reference</a></li><li><a href="reports/paprf_research_source.zip">Editable report and complete dashboard evidence (ZIP)</a></li></ul>
+      <ul><li><a href="reports/round1_submission.pdf">Round 1 submission PDF</a></li><li><a id="publication-pdf" href="reports/paprf_research.pdf">Full research report and appendices (PDF)</a></li><li><a href="library.html#reading-guide">Dashboard reading guide and evidence index</a></li><li><a href="library.html#formula-reference">Numbered formula reference</a></li><li><a href="reports/paprf_research_source.zip">Editable research report and complete dashboard evidence (ZIP)</a></li></ul>
     </section>
     <section class="panel" id="about">
       <h1>About <span data-author="name">[AUTHOR_NAME]</span></h1>

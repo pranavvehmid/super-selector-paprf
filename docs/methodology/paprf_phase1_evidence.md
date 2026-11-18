@@ -4,7 +4,7 @@
 
 The organiser pack has six CSVs. Delivery events carry match, innings and ball identifiers. Match metadata carries date, venue ID and host country. Competition, team, participation and player mappings provide the other lookup and participation records. See the [77-field dictionary](../data_dictionary.md) and [quality audit](../../work/data-quality-audit.json). Match-to-competition joins use competition ID. Delivery-to-match joins use match ID. Player aggregation uses player ID.
 
-The raw delivery CSV has 200,999 rows and the match CSV has 883 records. The earliest and latest values of the raw match date field are 2022-01-22 and 2026-11-01. The [validated pressure file](../../data/processed/pressure_labeled_deliveries.csv) has 186,620 delivery events from 782 distinct IPL/T20I match IDs. Pressure exposure counts every event in this file, including events that may be illegal balls or excluded for player-rate attribution. The separate attribution stage holds out 257 rows, leaving 186,363 metric-eligible events. These figures answer different questions and use different denominators.
+The raw delivery CSV has 200,999 rows and the match CSV has 883 records. The earliest and latest values of the raw match date field are 2022-01-22 and 2026-11-01. The [validated pressure file](../../data/processed/pressure_labeled_deliveries.csv) has 186,620 delivery events from 782 distinct IPL/T20I match IDs. Pressure exposure counts every event in this file, including events that may be illegal balls or excluded for player-rate attribution. The separate attribution stage holds out 252 rows, leaving 186,368 metric-eligible events. These figures answer different questions and use different denominators.
 
 ## Five pillars and evidence readiness
 

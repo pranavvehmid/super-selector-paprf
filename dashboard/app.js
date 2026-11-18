@@ -73,23 +73,55 @@ function renderPlayer(r, role) {
   const stats = element("div", undefined, "player-grid");
   stats.append(tile("Raw signal", fmt(r.raw_signal, 6)), tile("Shrinkage factor", fmt(r.shrinkage, 6)), tile("Final score", fmt(r.score, 6)));
   panel.append(title, element("p", `Player ID ${r.player_id} · rank ${r.rank} in this scenario`, "note"), stats);
-  panel.append(table(["Scenario bucket", "Runs", "Balls", "Dots", role === "batter" ? "Dismissals" : "Wickets", "Matches"],
+  const figure = element("figure", undefined, "metric-comparison");
+  figure.append(element("figcaption", "Pressure vs ordinary · each pair shares its own scale"));
+  const metrics = [
+    [role === "batter" ? "Strike rate · runs per 100 balls" : "Economy · runs per six legal balls",
+      "runs", role === "batter" ? 100 : 6, 1],
+    ["Dot-ball rate", "dots", 100, 1],
+    [role === "batter" ? "Dismissal rate" : "Credited wicket rate", "events", 100, 1],
+  ];
+  for (const [label, key, factor, digits] of metrics) {
+    const metric = element("div");
+    metric.append(element("h4", label));
+    const buckets = ["ordinary", "pressure"];
+    const values = buckets.map(bucket => factor * r[`${bucket}_${key}`] / r[`${bucket}_balls`]);
+    const maximum = Math.max(...values, 1);
+    for (const [i, bucket] of buckets.entries()) {
+      const bar = element("div", undefined, `metric-bar ${bucket}`);
+      const fill = element("span");
+      fill.style.width = 100 * values[i] / maximum + "%";
+      const track = element("div", undefined, "metric-track");
+      track.setAttribute("aria-hidden", "true");
+      track.append(fill);
+      bar.append(element("span", bucket === "ordinary" ? "Ordinary" : "Pressure"), track,
+        element("strong", fmt(values[i], digits) + (key === "runs" ? "" : "%")));
+      metric.append(bar);
+    }
+    figure.append(metric);
+  }
+  panel.append(figure);
+  const workings = element("details");
+  workings.append(element("summary", "Inspect counts and signed score components"));
+  workings.append(table(["Scenario bucket", "Runs", "Balls", "Dots", role === "batter" ? "Dismissals" : "Wickets", "Matches"],
     ["ordinary", "pressure"].map((key) => [key, ...["runs", "balls", "dots", "events", "matches"].map((m) => r[`${key}_${m}`])])));
-  panel.append(table(["Metric", "Pressure − ordinary", "Signed z-score"], metricNames[role].map((name, i) => [
+  workings.append(table(["Metric", "Pressure − ordinary", "Signed z-score"], metricNames[role].map((name, i) => [
     name, fmt(r[`delta_${i + 1}`], 6), fmt(r[`signed_z_${i + 1}`], 6)
   ])));
   const bands = data.contexts[role].filter((row) => row.player_id === r.player_id);
   if (bands.length) {
     const columns = role === "batter" ? ["runs", "balls_faced", "dot_balls", "dismissals"] : ["runs_conceded", "legal_balls", "dot_balls", "wickets"];
-    panel.append(element("h4", "Original v1 pressure-band totals"),
+    workings.append(element("h4", "Original v1 pressure-band totals"),
       table(["Band", "Runs", "Balls", "Dots", role === "batter" ? "Dismissal matches" : "Wickets"],
         bands.map((row) => [row.pressure_band, ...columns.map((col) => row[col])])));
   }
+  panel.append(workings);
 }
 
 function renderRankings() {
   const role = $("role").value;
   const scenario = $("scenario").value;
+  $("pressure-ranks-grid").dataset.scenario = scenario;
   const limit = $("limit").value;
   const query = $("search").value.trim().toLowerCase();
   const summary = data.model.roles[role].scenarios[scenario];

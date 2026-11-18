@@ -44,7 +44,7 @@ Official pressure opportunities are elevated plus high. The rated delivery's out
 
 ## 2. Attribution and eligibility
 
-Rows are excluded from player-rate metrics when extras_type is other or Penalty, when a None row has non-zero extras, or when a bye/leg-bye row has non-zero batter runs. That leaves 186,363 eligible deliveries and holds out 257 ambiguous rows.
+Attribution flags rows when extras_type is other or Penalty, when a None row has non-zero extras, or when a bye/leg-bye row has non-zero batter runs. The final ledger has 186,368 metric-eligible events and 252 ambiguous rows. Ambiguous rows contribute zero attributed runs, opportunities, dots and bowler wickets. Frozen v1 retains applicable match IDs and counts two flagged batter dismissals from the source wicket flag and dismissed-player ID. The v4 research model restricts batter dismissals to the striker on a counted ball.
 
     batter_runs = 0 for wide/byes/legbyes/other/Penalty; else source runs
     batter_ball_faced = eligible and extras_type ≠ wide

@@ -9,7 +9,7 @@ Order matters: understand data → reconstruct state → define pressure → mea
 | 03 | [Complete the data-quality and coverage audit](03_data_quality.md) | GATE PASSED | A reproducible policy holds out 70 special-condition matches pending Step 4 validation. |
 | 04 | [Reconstruct each innings and the pre-delivery match state](04_state_reconstruction.md) | GATE PASSED | Validated pre-delivery state exists for 782 primary-scope matches; exceptional, out-of-scope and malformed matches are held out. |
 | 05 | [Define pressure transparently (batting and bowling)](05_pressure_definition.md) | GATE PASSED | Pressure v1 is pre-delivery, interpretable, and independently validated on 186,620 deliveries. |
-| 06 | [Define role-appropriate batting and bowling metrics](06_metrics.md) | GATE PASSED | Role-specific aggregates reconcile to 186,363 attributed delivery records; 257 ambiguous events are held out. |
+| 06 | [Define role-appropriate batting and bowling metrics](06_metrics.md) | GATE PASSED | Role-specific aggregates reconcile to 186,368 attributed delivery records; 252 ambiguous events are held out. |
 | 07 | [Establish each player's normal-performance baseline](07_baselines.md) | GATE PASSED | 176 batter and 219 bowler ordinary-versus-pressure baselines pass formula and eligibility checks. |
 | 08 | [Design a reliability rating with sample-size protection](08_reliability.md) | GATE PASSED | Three-component signals use transparent 60-ball shrinkage; diagnostics are generated. |
 | 09 | [Validate the model and test ranking robustness](09_validation.md) | GATE PASSED | Rankings are stable across shrinkage priors; high-only sensitivity is disclosed. |

@@ -9,7 +9,7 @@ The project is now at a submission-ready analytical state for Lens A:
 
 - Primary official population: IPL and T20I only.
 - Validated state population: 782 matches and 186,620 deliveries.
-- Metric population: 186,363 eligible player-attribution deliveries; 257 ambiguous events are retained in the audit trail but excluded from rates.
+- Metric population: 186,368 eligible player-attribution deliveries; 252 ambiguous events are retained in the audit trail but excluded from rates.
 - Eligible comparison pools: 176 batters and 219 bowlers.
 - Robustness: batter top 10 is unchanged at 30/60/90 shrinkage priors; bowler overlap is 9/10 at prior 30 and 10/10 at 60/90.
 - Frozen outputs: outputs/rankings/lens_a_batters_v1.csv and outputs/rankings/lens_a_bowlers_v1.csv.
@@ -28,7 +28,7 @@ The project is now at a submission-ready analytical state for Lens A:
 
 - Do not merge player-fit or RR squad preferences into the Lens A score.
 - Do not restore excluded competition types to official rankings without rerunning the scope and quality gates.
-- Do not convert the 257 ambiguous attribution events into batter or bowler rates without a verified codebook rule.
+- Do not convert the 252 ambiguous attribution events into batter or bowler rates without a verified codebook rule.
 - Use IDs from the ranking CSV when resolving platform display labels.
 
 ## Outstanding work

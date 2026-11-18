@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Review the redesigned live dashboard.
+**Next action:** Select and confirm both ordered lists and upload the Round 1 PDF on Unstop.
 
 ---
 
@@ -290,3 +290,9 @@
 - Restyled the dashboard with a blush canvas, rounded ranking and evidence cards, and a compact navigation rail. Added a Home pressure chart from the existing audited distribution.
 - Files: dashboard/index.html, dashboard/atlas.css, dashboard/atlas.js, docs/research/paprf_publication_qa.md
 - Next: Review the redesigned live dashboard.
+
+## 2026-11-18 — Audited the original requirement, reran the model, independently verified 395 Le (step: 12)
+- Audited the original requirement, reran the model, independently verified 395 Lens A scores, corrected the attribution counts, and prepared a dedicated five-page submission PDF. Added directly comparable player charts and the benchmark result to the dashboard.
+- Files: docs/submission_review.md, outputs/report/latex/round1_submission.pdf, dashboard, scripts/build_round1_submission.py
+- Decision: Use the frozen v1 pressure ranks for Unstop. Keep the contextual ranking as supporting research and make no cross-project accuracy claim.
+- Next: Select and confirm both ordered lists and upload the Round 1 PDF on Unstop.

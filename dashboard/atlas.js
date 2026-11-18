@@ -4,7 +4,7 @@ const atlasPages = {
   home: ["Home", "home-rankings", "home", "home-findings"],
   dataset: ["Dataset Explorer", "dataset"],
   framework: ["Mathematical Framework", "pipeline", "method", "glossary"],
-  pressure: ["Pressure Analysis", "pressure", "rankings"],
+  pressure: ["Round 1 pressure rankings", "rankings", "pressure"],
   players: ["Player Performance", "unified"],
   roles: ["Role-Based Leaderboards", "role-profiles"],
   "top-ten": ["Ultimate Top 10", "unified"],
@@ -235,6 +235,13 @@ for (const [key, label] of [["email", "Email"], ["phone", "Phone"], ["linkedin",
 }
 if (globalThis.paprfEvidence?.datasets) {
   homeEvidence();
+  const pairedFolds = data.forward.folds.flatMap(fold => Object.values(fold.roles))
+    .map(row => [row.predictors.v4_p10.spearman, row.predictors.pooled_point.spearman])
+    .filter(pair => pair.every(Number.isFinite));
+  const pooledWins = pairedFolds.filter(([regularised, pooled]) => pooled > regularised).length;
+  $("validation-summary").textContent = "A simpler pooled pressure-gap score had higher next-window rank agreement in " +
+    pooledWins + " of " + pairedFolds.length + " comparisons with the regularised v4 p10 rank. " +
+    "Each pair used the same eligible players. The chart shows how results varied by window and discipline.";
   $("dataset-summary").append(table(["Scope", "Count"], [
     ["Source delivery events", number.format(data.datasets["ball_by_ball.csv"].row_count)],
     ["Retained delivery events", number.format(data.audit.delivery_rows)],

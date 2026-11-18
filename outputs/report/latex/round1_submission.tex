@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage{amsmath,booktabs,tabularx,mathptmx,microtype,xcolor,hyperref}
+\definecolor{Rose}{HTML}{A8245C}
+\hypersetup{colorlinks=true,urlcolor=Rose,linkcolor=Rose}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.5em}
+\raggedbottom
+\input{round1_evidence.tex}
+\begin{document}
+
+{\small \textcolor{Rose}{SUPER SELECTOR SEASON 2 \quad / \quad ROUND 1}}
+
+{\huge\bfseries Players under pressure}\\[6pt]
+{\large \AuthorName}
+
+\section*{Rankings for Unstop}
+Enter the two columns independently in the order shown. Rank 1 is the highest six-decimal Lens A v1 score in each discipline. The supporting research explores contextual effectiveness separately.
+
+\EntryTable
+
+\subsection*{What the score measures}
+The score measures historical change from each player's ordinary performance after accounting for opportunity count. Batters and bowlers use different outcome measures and separately fitted peer scales. The retained population covers \Matches{} IPL and T20I matches and \Deliveries{} delivery events. Of these, \Flagged{} (\FlaggedShare) met the elevated or high pre-delivery pressure rule.
+
+\subsection*{How to read the evidence}
+Page 2 defines pressure and the scoring formula. Pages 3--4 disclose the evidence for every selection and the potential on-field contribution for Rajasthan Royals. Page 5 shows how conclusions change under sensitivity and repeatability checks.
+
+\clearpage
+\section*{Pressure, attribution and scoring}
+We joined the organiser's six CSVs by stable IDs, checked innings and delivery accounting, and held out exceptional or malformed cases described in the accompanying research. The match state precedes the rated delivery. The second-innings target is the completed first-innings total plus one in retained standard cases.
+
+Write $\ell$ for completed legal balls, $w$ for fallen wickets, $r$ for chase runs required, and $b$ for chase balls remaining. Define $g(x)=\min(1,\max(0,x))$.
+\begin{align*}
+P_1 &= .70g((\ell-72)/48)+.30g(w/10),\\
+P_2 &= .55g((6r/\max(1,b)-7)/5)+.25g(w/10)+.20g(\ell/120).
+\end{align*}
+Early first-innings states have more recovery time under this model, while a chase's required rate makes scoreboard urgency observable. Below .40 is ordinary, .40 to below .65 is elevated, and at least .65 is high. Elevated and high are combined. For a chase at 90 completed balls, four wickets lost and 12 required runs per over, $P_2=.55+.10+.15=.80$. First-innings powerplay pressure is structurally excluded here.
+
+For batters, use attributed runs, dots and dismissals per counted ball faced. Wides do not count as balls faced. For bowlers, economy is $6$ times conceded runs per legal ball; dot and credited-wicket rates use legal balls as denominator. Attributed wides and oversteps count toward runs conceded. Run-outs and the other documented non-bowler dismissals do not count as bowler wickets.
+
+There are \Ambiguous{} rows with ambiguous scoring attribution. They contribute no attributed runs, counted balls, dots or bowler wickets. Frozen v1 keeps their match IDs in coverage when applicable and counts a dismissal if the wicket flag and dismissed player ID are present. There are \AmbiguousDismissals{} such rows. The historical batter dismissal rule also includes named non-strikers. The v4 research variant tests a stricter counted-striker rule.
+
+\subsection*{Peer scaling and sample-size protection}
+Each player needs at least 60 counted opportunities and six recorded matches in both contexts. Let $\delta_j=x_{j,P}-x_{j,O}$ be the pressure-minus-ordinary rate, stored to six decimals. Let $\bar\delta_j$ and $s_j$ be its mean and sample standard deviation across eligible peers in the same discipline. For $n_P$ pressure opportunities,
+\[
+z_j=d_j(\delta_j-\bar\delta_j)/s_j,\qquad
+L=\frac{n_P}{n_P+60}\left(\frac{z_1+z_2+z_3}{3}\right).
+\]
+Signs $d_j$ are $(+,-,-)$ for batting runs per ball, dots and dismissals, and $(-,+,+)$ for bowling economy, dots and wickets. Zero spread gives a zero component. The fixed 60-opportunity term reduces small-sample extremes and brings a 60-ball record halfway toward zero. For Jason Holder, $n_P=337$, the unshrunk mean is \HolderRaw{}, and the final score is \HolderScore{}. Calculations use unrounded intermediate values. Equal six-decimal scores retain numeric player-ID order from the input.
+
+\clearpage
+\section*{Batting evidence}
+Balls and matches are ordinary/pressure. Rate gap is pressure minus ordinary in runs per ball; dot and dismissal gaps are percentage points. All three measures feed the score after orientation and scaling.
+\BatterEvidence
+\subsection*{What the picks could add to Rajasthan Royals}
+These are conditional on-field hypotheses from positive changes in the displayed pressure sample. The evidence does not establish current squad gaps, a player's availability, or a likely auction price.
+\BatterFit
+
+\clearpage
+\section*{Bowling evidence}
+Balls and matches are ordinary/pressure. Rate gap is pressure minus ordinary in conceded runs per six legal balls; dot and wicket gaps are percentage points. A negative economy gap is favourable.
+\BowlerEvidence
+\subsection*{What the picks could add to Rajasthan Royals}
+The observed improvements indicate traits worth checking against the team's needs. These historical comparisons use each player's own baseline and do not identify a particular deployment or establish future effectiveness.
+\BowlerFit
+
+\clearpage
+\section*{Validation, alternatives and limits}
+\subsection*{Sensitivity of the submission choices}
+These comparisons report shared top-ten membership with the default 60-ball prior. A high-band-only rerun changes the pressure sample and eligibility. Keeping the broader pressure sample retains more evidence.
+\SensitivityTable
+
+\subsection*{Does pressure performance repeat?}
+As a separate research test, v4 regularises context cells before comparing scores in 32 repeated splits stratified by season and competition. The two match halves are disjoint within each split. Each half requires 30 counted opportunities and three matches in both contexts. Observed and exposure-stratified shuffled values are medians of Spearman rank correlations on aligned common IDs. The last column counts observed split correlations above each split's own shuffle 90th percentile.
+\RepeatTable
+Rank repeatability is weak. Threshold choices and schedule mix can change the result. A shrunk historical change score cannot establish a persistent skill, forecast a future match or quantify causal pressure effects. The public research report discloses the detailed forward-fold comparisons against pooled and volume benchmarks, including results that favour simpler predictors.
+
+\subsection*{How to reproduce the submission}
+With the organiser CSVs in the project input tree, run \path{scripts/verify_paprf_rebuild.py}. It reconstructs the evidence in a clean temporary directory. The submission builder independently recomputes all \ScoreCount{} eligible Lens A scores from the published baselines and checks rank order against both frozen CSVs and their manifest. The following are the peer scales applied to the rounded rate gaps.
+
+\minipage[t]{.48\linewidth}\textbf{Batters}\BatterPeerTable\endminipage\hfill
+\minipage[t]{.48\linewidth}\textbf{Bowlers}\BowlerPeerTable\endminipage
+
+Source: organiser's Round 1 brief and CSVs. See the \href{https://unstop.com/o/owqQZ3f}{Unstop listing} and the \href{https://dashboard-seven-delta-35.vercel.app/reports/paprf_research.pdf}{expanded PAPRF research report}.
+\end{document}

@@ -91,7 +91,28 @@ function renderUnifiedPlayer(player) {
       Object.entries(primary.geography).map(([region, r]) => [region, r.balls, r.run_residual === null ? "—" : fmt(r.run_residual, 4)])));
   target.append(contextual);
   const trajectory = element("details");
+  const scoredYears = primary.annual.filter(row => Number.isFinite(row.run_residual));
+  const annualChart = element("figure", undefined, "annual-comparison");
+  if (scoredYears.length) {
+    const maximum = Math.max(.01, ...scoredYears.map(row => Math.abs(row.run_residual)));
+    const bowling = primary.role.endsWith("_bowler");
+    annualChart.append(element("figcaption", "Annual run residual per scored ball. Zero is the historical expectation. " +
+      (bowling ? "Below zero means fewer conceded runs." : "Above zero means more batting runs.")));
+    for (const annual of scoredYears) {
+      const row = element("div", undefined, "annual-row");
+      const track = element("div", undefined, "annual-track");
+      track.setAttribute("aria-hidden", "true");
+      const bar = element("span");
+      bar.style.width = (Math.abs(annual.run_residual) / maximum * 50) + "%";
+      bar.style.left = (50 + Math.min(0, annual.run_residual) / maximum * 50) + "%";
+      track.append(bar);
+      row.append(element("span", annual.year), track,
+        element("strong", fmt(annual.run_residual, 3) + " · " + annual.scored_balls + " balls"));
+      annualChart.append(row);
+    }
+  }
   trajectory.append(element("summary", "Annual evidence in the primary role"),
+    annualChart,
     table(["Year", "Observed balls", "Scored balls", primary.role.endsWith("_bowler") ? "Economy" : "Strike rate", "Runs above expectation / ball"],
       primary.annual.map(r => [r.year, r.balls, r.scored_balls, r.raw_rate === null ? "—" : fmt(r.raw_rate, 2),
         r.run_residual === null ? "Warm-up / no scored balls" : fmt(r.run_residual, 4)])));

@@ -70,7 +70,7 @@ Batters are compared on runs per ball, dot-ball rate and dismissal rate. Better 
 
 Bowlers are compared on economy, dot-ball rate and wicket rate. Better pressure bowling means lower economy, higher dot rate and higher wicket rate versus ordinary context.
 
-The attribution rules explicitly handle wides, no-balls, byes, leg-byes and dismissal types. Ambiguous events are never silently forced into a rate: 257 deliveries are excluded from player-rate attribution while remaining in the state and pressure audit trail. The resulting metric population is 186,363 eligible deliveries.
+The attribution rules explicitly handle wides, no-balls, byes, leg-byes and dismissal types. The 252 ambiguous rows are held out of attributed run, opportunity, dot and bowler-wicket counts. The frozen v1 implementation retains their match identifiers where applicable and uses the source wicket flag and dismissed-player ID for batting dismissals. The resulting attribution-eligible population is 186,368 events.
 
 ## Baseline, reliability and why the score is credible
 
@@ -78,7 +78,7 @@ Each player is compared with their own ordinary-context baseline. This avoids tr
 
 Eligibility requires at least 60 pressure opportunities and six pressure matches, plus the corresponding ordinary-context comparison. This yields 176 eligible batters and 219 eligible bowlers.
 
-Within each role, the three performance deltas are standardised and equally combined into a raw signal. A transparent empirical-Bayes shrinkage weight then contracts smaller pressure samples toward zero:
+Within each role, the three performance deltas are standardised and equally combined into a raw signal. A fixed 60-opportunity shrinkage weight then contracts smaller samples toward zero:
 
     reliability signal = raw signal × pressure opportunities / (pressure opportunities + 60)
 

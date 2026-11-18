@@ -1,7 +1,7 @@
 # Step 6 Metric Specification
 
 **Status:** GATE PASSED  
-**Population:** 186,363 metric-eligible deliveries from the 782 validated primary-scope matches.
+**Population:** 186,368 metric-eligible deliveries from the 782 validated primary-scope matches.
 
 ## Why attribution is separated from pressure
 
@@ -15,7 +15,7 @@ The analysis keeps a delivery in player-rate calculations unless its attribution
 - A None extras label with a non-zero extras field is excluded as a source inconsistency.
 - A bye or leg-bye label with non-zero batter runs is excluded as a source inconsistency.
 
-This holds out 257 of 186,620 reconstructed deliveries. They remain in the state and pressure audit trail; they are not silently discarded from the source.
+This holds out 252 of 186,620 reconstructed deliveries. They remain in the state and pressure audit trail; they are not silently discarded from the source.
 
 ## Batter metrics
 
