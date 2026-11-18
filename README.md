@@ -6,7 +6,7 @@
 
 ## PAPRF Round 1 dashboard
 
-Open [the dashboard](dashboard/index.html) from a local checkout to explore pressure exposure, player calculations, ranking sensitivity and the research milestones. See the [dashboard setup and publishing guide](dashboard/README.md) and the [current four-phase research plan](docs/methodology/paprf_four_phase_plan.md). The project plan also calls for a publication-quality PDF.
+Open [the dashboard](dashboard/index.html) from a local checkout to explore pressure exposure, player calculations, ranking sensitivity and the research milestones. The [research review PDF draft](outputs/report/paprf_research_review_v3.pdf) summarises model versions through v3. See the [dashboard setup and publishing guide](dashboard/README.md) and the [current four-phase research plan](docs/methodology/paprf_four_phase_plan.md).
 
 > **Taking over this project (human or model)?** Read in this order:
 > 1. `AGENTS.md` — working rules and the mandatory log-update protocol

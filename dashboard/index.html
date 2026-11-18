@@ -12,7 +12,7 @@
 <body>
   <header class="site-header">
     <div class="mast"><a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span> PAPRF</a><span class="mast-label">Super Selector · Round 1</span></div>
-    <nav aria-label="Dashboard"><a href="#overview">Overview</a><a href="#research">Research v2</a><a href="#pressure">Pressure</a><a href="#rankings">v1 explorer</a><a href="#method">Method</a><a href="#progress">Progress</a></nav>
+    <nav aria-label="Dashboard"><a href="#overview">Overview</a><a href="#research">Research rankings</a><a href="#pressure">Pressure</a><a href="#rankings">v1 explorer</a><a href="#method">Method</a><a href="#progress">Progress</a></nav>
   </header>
   <main id="overview">
     <section class="hero">
@@ -34,11 +34,12 @@
     <div id="load-error" class="panel" hidden>Evidence could not be loaded. Regenerate the dashboard data bundle and refresh.</div>
     <section class="panel" id="research">
       <div class="section-head"><div><p class="kicker">LATEST RESEARCH ITERATION</p><h2>Match-adjusted top 10</h2></div>
-      <label>Role<select id="research-role"><option value="batter">Batters</option><option value="bowler">Bowlers</option></select></label></div>
+      <div class="controls"><label>Version<select id="research-version"><option value="v3">v3 · phase and competition family</option><option value="v2">v2 · innings, phase and competition family</option></select></label>
+      <label>Role<select id="research-role"><option value="batter">Batters</option><option value="bowler">Bowlers</option></select></label></div></div>
       <p id="research-note" class="note" aria-live="polite"></p>
       <div id="research-top"></div>
-      <details><summary>Why players left the v1 top ten</summary><div id="research-movements"></div></details>
-      <details><summary>Cell-threshold sensitivity</summary><div id="research-thresholds"></div></details>
+      <details><summary>Why players left the previous top ten</summary><div id="research-movements"></div></details>
+      <details><summary>Cell support and temporal sensitivity</summary><div id="research-thresholds"></div></details>
       <p class="note">The research score is the 10th percentile of matched scores across valid match-bootstrap draws. The 10th–90th percentile range describes variation conditional on the observed support.</p>
     </section>
     <section class="panel" id="pressure">
@@ -88,8 +89,8 @@
       <p class="kicker">RESEARCH MILESTONES</p><h2>Project progress</h2>
       <ol class="timeline">
         <li><strong>Data and pressure foundation</strong><span>Recalculated index, phase and band across the retained delivery sample.</span></li>
-        <li><strong>Statistical modelling</strong><span>v2 research rankings now account for matched contexts and match-resampling uncertainty. Support gates and temporal stability remain areas for refinement.</span></li>
-        <li><strong>Dashboard and research PDF</strong><span>Interactive evidence explorer built. Publication-quality PDF remains planned.</span></li>
+        <li><strong>Statistical modelling</strong><span>v3 broadens matched coverage. Chronological checks still show weak ranking repeatability.</span></li>
+        <li><strong>Dashboard and research PDF</strong><span>Interactive version comparison and a five-page research review draft are available.</span></li>
         <li><strong>Validation and submission</strong><span>Cross-check final deliverables and verify submission labels before release.</span></li>
       </ol>
     </section>

@@ -97,6 +97,8 @@ def collect(clusters=None):
         period = "early" if match["match_date"] < split else "late"
         if clusters is not None:
             clusters["families"][match_id] = family
+            if "periods" in clusters:
+                clusters["periods"][match_id] = period
         bucket = int(row["pressure_band"] in PRESSURE_BANDS)
         contributions = [
             ("batter", row["striker_id"], int(row["batter_runs_attributed"]),

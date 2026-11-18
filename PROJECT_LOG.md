@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Compare coarser strata and partial pooling to recover sparse support, then measure temporal stability and refresh the PDF evidence.
+**Next action:** Audit dismissal-rate influence and compare a partially pooled fine-cell model before deciding the submission ranking.
 
 ---
 
@@ -210,3 +210,9 @@
 - Files: scripts/build_paprf_v2.py,docs/methodology/paprf_v2_uncertainty.md,outputs/rankings/paprf_batters_v2.csv,outputs/rankings/paprf_bowlers_v2.csv,outputs/tables/paprf_v2_uncertainty.csv,work/paprf_v2_validation.json,dashboard/
 - Decision: Rank research v2 by the empirical 10th percentile with at least 95 percent valid draws, and document the resulting loss of eligibility.
 - Next: Compare coarser strata and partial pooling to recover sparse support, then measure temporal stability and refresh the PDF evidence.
+
+## 2026-11-18 — Released v3 phase-and-family research rankings, compared three matching designs  (step: 9-12)
+- Released v3 phase-and-family research rankings, compared three matching designs in the same chronological windows and replayed the v2 top tens exactly. Added a dashboard v2/v3 selector and rendered and checked the five-page PDF draft against all 20 player names.
+- Files: scripts/build_paprf_v3.py,scripts/build_paprf_review_pdf.py,docs/methodology/paprf_v3_cell_granularity.md,outputs/rankings/paprf_batters_v3.csv,outputs/rankings/paprf_bowlers_v3.csv,outputs/report/paprf_research_review_v3.pdf,work/paprf_v3_validation.json,dashboard/
+- Decision: Treat the broad v3 support gain as observed coverage, and report the weak temporal repeatability and attribution sensitivity.
+- Next: Audit dismissal-rate influence and compare a partially pooled fine-cell model before deciding the submission ranking.

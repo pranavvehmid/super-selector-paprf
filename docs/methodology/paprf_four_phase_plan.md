@@ -13,6 +13,6 @@ Stages H and I span analysis and validation. Phase 2 is where model experiments 
 
 ## Evidence standard
 
-Phase 2 evidence is organised in the [pressure and weight experiment](paprf_phase2_experiment.md), [matched-context and temporal audit](paprf_matched_context_and_repeatability.md), and [v2 research ranking and uncertainty audit](paprf_v2_uncertainty.md). The [formula ledger](lens_a_formula_ledger.md) records the baseline algorithms. Sparse-cell alternatives and temporal testing of a revised model remain open.
+Phase 2 evidence is organised in the [pressure and weight experiment](paprf_phase2_experiment.md), [matched-context and temporal audit](paprf_matched_context_and_repeatability.md), [v2 uncertainty audit](paprf_v2_uncertainty.md), and [v3 granularity and temporal comparison](paprf_v3_cell_granularity.md). The [formula ledger](lens_a_formula_ledger.md) records the baseline algorithms. Partial pooling and outcome-component influence remain open. Phase 3 now includes a research review PDF draft and the dashboard version selector.
 
 For each result, record the source path and version or hash, row grain, ID join, population, exclusions, numerator, denominator, formula, units, precision, code entry point and verification result. Use the claim and source registers for external facts. Keep proposed and measured values identifiable. An unavailable result is reported as unavailable with its reason. The [Phase 1 record](paprf_phase1_evidence.md) provides the first reproducible calculation and audit.

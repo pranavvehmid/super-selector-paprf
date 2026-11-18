@@ -127,8 +127,24 @@ function renderRankings() {
 }
 
 function renderResearch() {
+  const role = $("research-role").value;
+  if ($("research-version").value === "v3") {
+    const run = data.granularity;
+    const stats = run.designs.phase_family_v3[role];
+    $("research-note").textContent = `PAPRF v3 · ${stats.bootstrap_eligible} eligible · ${run.draws} draws · ${stats.shared_with_v2}/10 shared with v2`;
+    $("research-top").replaceChildren(table(["v3 rank", "Player", "v2 top-10 rank", "Matched point rank", "v3 score (p10)", "p90", "Valid draws"],
+      stats.top10.map((r) => [r.research_rank, r.name, r.v2_rank ?? "—", r.rank,
+        fmt(r.p10, 6), fmt(r.p90, 6), `${r.valid_draws}/${run.draws}`])));
+    $("research-movements").replaceChildren(table(["Player", "v2 rank", "Reason"],
+      stats.v2_departures.map((r) => [r.name, r.v2_rank, r.reason])));
+    const labels = {fine_v2: "Fine v2", phase_family_v3: "Phase + family v3", innings_phase: "Innings + phase"};
+    $("research-thresholds").replaceChildren(table(["Design", "Matched", "Bootstrap eligible", "Common across time", "Spearman ρ"],
+      Object.entries(run.designs).map(([key, roles]) => [labels[key], roles[role].matched_eligible,
+        roles[role].bootstrap_eligible, roles[role].temporal.common_eligible, fmt(roles[role].temporal.spearman, 3)])));
+    return;
+  }
   const run = data.research;
-  const stats = run.roles[$("research-role").value];
+  const stats = run.roles[role];
   const statuses = {
     outside_top10: "Qualified outside the top ten",
     insufficient_resample_support: "Fewer than 95% valid draws",
@@ -178,6 +194,7 @@ if (!data) {
   for (const id of ["role", "scenario", "limit"]) $(id).addEventListener("change", renderRankings);
   $("search").addEventListener("input", renderRankings);
   $("research-role").addEventListener("change", renderResearch);
+  $("research-version").addEventListener("change", renderResearch);
   $("sensitivity").append(table(["Sensitivity check", "Batters shared with v1", "Bowlers shared with v1"],
     [...[30, 90].map((prior) => [`Shrinkage prior = ${prior} balls`,
       ...["batter", "bowler"].map((role) => `${data.robustness.roles[role].prior_top10_overlap_with_60[prior]}/10`)]),
