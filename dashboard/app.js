@@ -128,6 +128,17 @@ function renderRankings() {
 
 function renderResearch() {
   const role = $("research-role").value;
+  $("research-forward").replaceChildren(table(
+    ["Test period", "Common players", "v4 p10 ρ", "v4 point ρ", "Pooled ρ", "Volume ρ", "v4 assessable", "Chance overlap"],
+    data.forward.folds.map((fold) => {
+      const stats = fold.roles[role];
+      const scores = ["v4_p10", "v4_point", "pooled_point", "pressure_volume"].map((key) => {
+        const rho = stats.predictors[key].spearman;
+        return rho === null ? "—" : fmt(rho, 3);
+      });
+      return [`${fold.test_start} to ${fold.test_end}`, stats.common_players, ...scores,
+        `${stats.predictors.v4_p10.original_top10_assessable}/10`, fmt(stats.chance_top10_overlap)];
+    })));
   if ($("research-version").value === "v4") {
     const run = data.regularised;
     const stats = run.roles[role];

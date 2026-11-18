@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Fit on an early window and validate on a held-out period using fixed peer scaling before final submission model selection.
+**Next action:** Estimate detectable repeatable signal with a phase-aware clustered null and update the research review.
 
 ---
 
@@ -222,3 +222,9 @@
 - Files: scripts/build_paprf_v4.py,scripts/verify_paprf_rebuild.py,docs/methodology/paprf_v4_reanalysis.md,outputs/rankings/paprf_batters_v4.csv,outputs/rankings/paprf_bowlers_v4.csv,outputs/tables/paprf_v4_progression.csv,work/paprf_clean_rebuild.json,dashboard/
 - Decision: Version the v4 historical research rankings and qualify claims because chronological rank agreement is weak.
 - Next: Fit on an early window and validate on a held-out period using fixed peer scaling before final submission model selection.
+
+## 2026-11-18 — Ran three expanding-window forward audits of v4 p10, v4 point, pooled point and  (step: 9)
+- Ran three expanding-window forward audits of v4 p10, v4 point, pooled point and pressure-volume predictors with fixed training peer scales. Published chance overlap and original top-ten coverage, verified all 48 correlations from the ledger, replayed the audit hashes and tested both dashboard roles.
+- Files: scripts/validate_paprf_forward.py,docs/methodology/paprf_forward_validation.md,outputs/tables/paprf_forward_validation_ledger.csv,work/paprf_forward_validation.json,outputs/figures/paprf_forward_validation.png,dashboard/
+- Decision: The retrospective benchmark results do not support a consistent predictive advantage or a change to the historical v4 rank order.
+- Next: Estimate detectable repeatable signal with a phase-aware clustered null and update the research review.

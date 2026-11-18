@@ -51,7 +51,7 @@ def normalise(deltas, peers, role, cap):
     return np.clip(signed, -cap, cap)
 
 
-def fit(groups, role, strength, cap, components, min_balls=60, min_matches=6):
+def measure(groups, role, strength, min_balls=60, min_matches=6):
     records, support = [], {}
     for (record_role, player), cells in sorted(groups.items()):
         if record_role != role:
@@ -67,6 +67,11 @@ def fit(groups, role, strength, cap, components, min_balls=60, min_matches=6):
         records.append(dict(player_id=player, ordinary_balls=ordinary.balls, pressure_balls=pressure.balls,
                             ordinary_matches=len(ordinary.matches), pressure_matches=len(pressure.matches),
                             cells=len(kept), deltas=np.average(lifted, weights=balls, axis=0)))
+    return records, support
+
+
+def fit(groups, role, strength, cap, components, min_balls=60, min_matches=6):
+    records, support = measure(groups, role, strength, min_balls, min_matches)
     deltas = np.array([r["deltas"] for r in records])
     peers = deltas.mean(axis=0), deltas.std(axis=0, ddof=1)
     for r in records:

@@ -99,6 +99,8 @@ def collect(clusters=None, *, striker_dismissals_only=False, dismissal_audit=Non
             clusters["families"][match_id] = family
             if "periods" in clusters:
                 clusters["periods"][match_id] = period
+            if "dates" in clusters:
+                clusters["dates"][match_id] = match["match_date"]
         bucket = int(row["pressure_band"] in PRESSURE_BANDS)
         contributions = [
             ("batter", row["striker_id"], int(row["batter_runs_attributed"]),

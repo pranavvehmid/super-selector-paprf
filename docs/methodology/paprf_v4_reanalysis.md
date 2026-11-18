@@ -57,4 +57,4 @@ Run `python scripts/build_paprf_v4.py` for the attribution audit, model and stre
 - [v1–v4 progression](../../outputs/tables/paprf_v4_progression.csv) puts successive top-ten ranks side by side. Blank ranks indicate absence from that version’s top ten.
 - [Sensitivity heatmap](../../outputs/figures/paprf_v4_sensitivity.png) compares point top-ten membership across tests. [Validation JSON](../../work/paprf_v4_validation.json) and [clean rebuild hashes](../../work/paprf_clean_rebuild.json) preserve the audit trail.
 
-The next research priority is to evaluate prediction against a held-out period with fixed pre-period peer scaling and to check whether wicket and dismissal signals justify their weight. The current rankings are the output of the declared historical estimand.
+The [forward-validation audit](paprf_forward_validation.md) evaluates later periods with fixed pre-period peer scaling. It found weak and inconsistent predictive ordering. Wicket and dismissal weighting remains an open research question. The current rankings are the output of the declared historical estimand.

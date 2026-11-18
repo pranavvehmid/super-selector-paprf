@@ -44,6 +44,7 @@ def main():
                 research=read_json("work/paprf_v2_validation.json"),
                 granularity=read_json("work/paprf_v3_validation.json"),
                 regularised=read_json("work/paprf_v4_validation.json"),
+                forward=read_json("work/paprf_forward_validation.json"),
                 robustness=read_json("work/robustness-validation.json"))
     path = ROOT / "dashboard/evidence.js"
     path.write_text("globalThis.paprfEvidence = " + json.dumps(data, ensure_ascii=True, separators=(",", ":")) + ";\n",
