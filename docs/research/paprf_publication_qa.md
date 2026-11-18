@@ -38,3 +38,13 @@ The reproducibility result is in [paprf_clean_rebuild.json](../../work/paprf_cle
 ## Interpretation and limits
 
 Historical repeatability of the pressure-only ranking is weak. Some contextual roles carry over better, with sparse cohorts and some simpler baselines outperforming the weighted composite. The rebuild establishes reproducibility on the supplied sample. External holdout performance and transfer to other settings remain unverified. Venue country is a limited condition proxy, and the current index provides no age or developmental projections. The new browser checks cover selected contrast and interactions. The About page uses the author's supplied public details.
+
+## Expanded report and dashboard Home
+
+Evidence run `33b601c24ae8` covers the same ranking calculations as `e5f524236dbf` and includes additional hashed inputs for the printed validation tables and figures. Home leads with both complete contextual top tens. Page 2 of the 57-page report prints the same two lists. The archive preserves the separate Round 1 pressure-only lists.
+
+The report includes worked reconstructions for each of the 20 contextual leaders, separate discipline comparisons, raw-file coverage and missingness, all seven role leaderboards, the v2–v4 match-resampling lists, and temporal, shuffle and sensitivity evidence. It reproduces all eight Figure Atlas charts and adds four static figures generated from dashboard evidence or the implemented chase formula. Interactive selectors stay available in the dashboard. The source archive packages the 18 full research chapters alongside the LaTeX, tables and figure assets.
+
+The generator reconciled both contextual CSVs with the shared dashboard export and independently recomputed the published six-decimal final scores. Text extraction verified 40 name-and-score pairs, the 20 detailed traces and all 12 numbered figure captions. All 57 PDF pages were rendered for inspection. The PDF SHA-256 is `0442bffe4f0de8f31b7362d1d1697bd6414a8bd5fcb8875a2d1bdca2771ca918`.
+
+The Edge checks passed on the local preview and production across 11 routes, five widths, and both themes, including an ordered comparison of the 20 Home rows with the published evidence. Production Home, the evidence export, the PDF and the editable source matched local files byte for byte.

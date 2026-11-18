@@ -1,0 +1,2133 @@
+\section{Dataset coverage and pressure evidence}
+
+The organiser's six files are audited before state reconstruction. The first summary counts raw rows, columns and exact duplicates. Field-level values below count blank cells, which may be valid when an event is inapplicable. The denominator for a blank percentage is the total rows in its file.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Source file & Rows & Fields & Exact duplicates \\
+\midrule
+ball\_by\_ball.csv & 200,999 & 33 & 0 \\
+matches.csv & 883 & 22 & 0 \\
+competitions.csv & 141 & 4 & 0 \\
+teams.csv & 353 & 3 & 0 \\
+playing\_eleven.csv & 28,381 & 9 & 0 \\
+competition\_team\_player\_mapping.csv & 6,413 & 6 & 0 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection*{ball\_by\_ball.csv}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Field with blanks & Blank rows & Share \\
+\midrule
+dismissal\_type\_id & 190,118 & 94.6\% \\
+dismissal\_type & 190,118 & 94.6\% \\
+dismissed\_player\_id & 190,107 & 94.6\% \\
+stroke & 12 & 0.0\% \\
+delivery\_style & 7 & 0.0\% \\
+over\_or\_around & 407 & 0.2\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection*{matches.csv}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Field with blanks & Blank rows & Share \\
+\midrule
+home\_team\_captain\_id & 44 & 5.0\% \\
+away\_team\_captain\_id & 45 & 5.1\% \\
+toss\_win\_team\_id & 15 & 1.7\% \\
+toss\_opted & 15 & 1.7\% \\
+first\_inn\_revised\_overs & 858 & 97.2\% \\
+second\_inn\_revised\_overs & 858 & 97.2\% \\
+revised\_target & 860 & 97.4\% \\
+win\_team\_id & 41 & 4.6\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection*{competitions.csv}
+
+The file has no recorded blank fields.
+
+\subsection*{teams.csv}
+
+The file has no recorded blank fields.
+
+\subsection*{playing\_eleven.csv}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Field with blanks & Blank rows & Share \\
+\midrule
+batting\_order & 8,678 & 30.6\% \\
+is\_captain & 8,667 & 30.5\% \\
+is\_wk & 8,667 & 30.5\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection*{competition\_team\_player\_mapping.csv}
+
+The file has no recorded blank fields.
+
+\subsection{Pressure exposure by innings and phase}
+
+The retained ledger contains 186,620 events. Elevated plus high comprises 33,343 + 35,445 = 68,788 events. Dividing by 186,620 and multiplying by 100 gives 36.9\%. Phase shares use the corresponding innings-phase subtotal.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Innings & Phase & Band & Events & All share & Phase share \\
+\midrule
+1 & powerplay & ordinary & 29322 & 15.712142\% & 100.000000\% \\
+1 & powerplay & elevated & 0 & 0.000000\% & 0.000000\% \\
+1 & powerplay & high & 0 & 0.000000\% & 0.000000\% \\
+1 & middle & ordinary & 43248 & 23.174365\% & 99.088118\% \\
+1 & middle & elevated & 398 & 0.213268\% & 0.911882\% \\
+1 & middle & high & 0 & 0.000000\% & 0.000000\% \\
+1 & death & ordinary & 1876 & 1.005251\% & 7.710012\% \\
+1 & death & elevated & 12091 & 6.478941\% & 49.691764\% \\
+1 & death & high & 10365 & 5.554067\% & 42.598225\% \\
+2 & powerplay & ordinary & 20450 & 10.958097\% & 69.714325\% \\
+2 & powerplay & elevated & 8273 & 4.433073\% & 28.202768\% \\
+2 & powerplay & high & 611 & 0.327403\% & 2.082907\% \\
+2 & middle & ordinary & 18307 & 9.809774\% & 43.173832\% \\
+2 & middle & elevated & 10736 & 5.752867\% & 25.318963\% \\
+2 & middle & high & 13360 & 7.158933\% & 31.507205\% \\
+2 & death & ordinary & 4629 & 2.480442\% & 26.326565\% \\
+2 & death & elevated & 1845 & 0.988640\% & 10.493090\% \\
+2 & death & high & 11109 & 5.952738\% & 63.180345\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\section{Ultimate Top 10 player evidence}
+
+The following pages reproduce the dashboard drill-down for every ranked batter and bowler in the two Ultimate Top 10 lists. Annual raw rates include warm-up observations where available. Residuals use scored opportunities only. A dash indicates unavailable evidence.
+
+\subsection{Batter score ledger}
+
+236 of 815 observed players qualify. 0 names also appear in this discipline's archived pressure top ten.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Rank & Player & Primary role & Balls & Matches & Final index \\
+\midrule
+1 & Abhishek Sharma & Opener & 1753 & 102 & 96.185437 \\
+2 & Phil Salt & Opener & 1373 & 62 & 92.072123 \\
+3 & Vaibhav Sooryavanshi & Opener & 555 & 29 & 91.026554 \\
+4 & Finn Allen & Opener & 607 & 33 & 90.795110 \\
+5 & Tim David & Middle/lower-order batter & 648 & 41 & 89.210055 \\
+6 & Travis Head & Opener & 1095 & 64 & 88.740663 \\
+7 & Harry Brook & Top-order batter & 428 & 21 & 88.530440 \\
+8 & Suryakumar Yadav & Top-order batter & 1707 & 90 & 86.676692 \\
+9 & Heinrich Klaasen & Middle/lower-order batter & 701 & 35 & 86.195089 \\
+10 & Andre Russell & Middle/lower-order batter & 384 & 26 & 85.438925 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsubsection*{Sensitivity and player movement}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+Alternative & Shared & Max shift & Entered & Left & Rank 1 \\
+\midrule
+No secondary credit & 9/10 & 10 & Glenn Maxwell & Heinrich Klaasen & Abhishek Sharma \\
+India events times 1.5 & 9/10 & 21 & Ishan Kishan & Andre Russell & Abhishek Sharma \\
+Residualised boundaries & 9/10 & 87 & Yashasvi Jaiswal & Heinrich Klaasen & Abhishek Sharma \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsubsection*{Comparison of ranks one and two}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Measure & Abhishek Sharma & Phil Salt \\
+\midrule
+Primary scored opportunities & 1753 & 1373 \\
+Primary scored matches & 102 & 62 \\
+Role reference & 99.347018 & 95.749220 \\
+Evidence-adjusted primary & 96.185437 & 92.072123 \\
+Secondary credit & 0.000000 & 0.000000 \\
+Final contextual index & 96.185437 & 92.072123 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\subsection{Batter 1. Abhishek Sharma}
+
+Player ID 6281. Primary role: Opener. 1753 scored balls in 102 matches, representing 95.3\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 2.506577 & 45.0\% & 1.127960 \\
+Boundaries & 2.241210 & 30.0\% & 0.672363 \\
+Dismissals or wickets & -0.105743 & 25.0\% & -0.026436 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.773887. Among 78 role peers the mean is -0.004546 and sample SD 0.716492. The role z-score is 2.482139 and Q = 99.347018. Retention is 0.935932. The running total moves from 50 to 96.185437 after the primary adjustment, then to 96.185437. No secondary role meets the support gate.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Opener & 1753 & 1267 & 96.185 & -0.2037 & 100.0\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 1267 & 0.5760 \\
+Outside India & 486 & 0.4846 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Strike rate & Run residual / ball \\
+\midrule
+2022 & 288 & 0 & 132.99 & -- \\
+2023 & 132 & 129 & 141.67 & 0.1426 \\
+2024 & 323 & 323 & 193.19 & 0.5579 \\
+2025 & 613 & 613 & 194.94 & 0.5244 \\
+2026 & 688 & 688 & 209.74 & 0.6473 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: 0.1114 runs per ball per year.
+
+\clearpage
+
+\subsection{Batter 2. Phil Salt}
+
+Player ID 5553. Primary role: Opener. 1373 scored balls in 62 matches, representing 98.4\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.469217 & 45.0\% & 0.661148 \\
+Boundaries & 1.291773 & 30.0\% & 0.387532 \\
+Dismissals or wickets & 0.723147 & 25.0\% & 0.180787 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.229467. Among 78 role peers the mean is -0.004546 and sample SD 0.716492. The role z-score is 1.722298 and Q = 95.749220. Retention is 0.919625. The running total moves from 50 to 92.072123 after the primary adjustment, then to 92.072123. No secondary role meets the support gate.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Opener & 1373 & 750 & 92.072 & 0.0426 & 96.2\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 750 & 0.3609 \\
+Outside India & 623 & 0.3430 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Strike rate & Run residual / ball \\
+\midrule
+2022 & 106 & 0 & 157.55 & -- \\
+2023 & 343 & 288 & 168.51 & 0.4277 \\
+2024 & 404 & 404 & 176.49 & 0.4067 \\
+2025 & 465 & 465 & 178.49 & 0.3621 \\
+2026 & 216 & 216 & 156.02 & 0.1319 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: -0.0836 runs per ball per year.
+
+\clearpage
+
+\subsection{Batter 3. Vaibhav Sooryavanshi}
+
+Player ID 50284. Primary role: Opener. 555 scored balls in 29 matches, representing 98.6\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 3.000000 & 45.0\% & 1.350000 \\
+Boundaries & 3.000000 & 30.0\% & 0.900000 \\
+Dismissals or wickets & -0.185537 & 25.0\% & -0.046384 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 2.203616. Among 78 role peers the mean is -0.004546 and sample SD 0.716492. The role z-score is 3.081907 and Q = 99.897160. Retention is 0.822222. The running total moves from 50 to 91.026554 after the primary adjustment, then to 91.026554. No secondary role meets the support gate.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Opener & 555 & 434 & 91.027 & 0.1020 & 99.8\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 434 & 0.7902 \\
+Outside India & 121 & 0.6452 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Strike rate & Run residual / ball \\
+\midrule
+2025 & 122 & 122 & 206.56 & 0.7128 \\
+2026 & 433 & 433 & 224.25 & 0.7715 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+
+
+\clearpage
+
+\subsection{Batter 4. Finn Allen}
+
+Player ID 4847. Primary role: Opener. 607 scored balls in 33 matches, representing 100.0\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 2.198653 & 45.0\% & 0.989394 \\
+Boundaries & 1.988977 & 30.0\% & 0.596693 \\
+Dismissals or wickets & 0.162657 & 25.0\% & 0.040664 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.626751. Among 78 role peers the mean is -0.004546 and sample SD 0.716492. The role z-score is 2.276783 and Q = 98.860041. Retention is 0.834938. The running total moves from 50 to 90.795110 after the primary adjustment, then to 90.795110. No secondary role meets the support gate.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Opener & 607 & 194 & 90.795 & 0.1971 & 96.8\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 194 & 0.7162 \\
+Outside India & 413 & 0.3866 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Strike rate & Run residual / ball \\
+\midrule
+2022 & 153 & 0 & 136.60 & -- \\
+2023 & 151 & 114 & 139.74 & 0.0818 \\
+2024 & 164 & 164 & 190.85 & 0.5600 \\
+2025 & 52 & 52 & 203.85 & 0.6930 \\
+2026 & 277 & 277 & 201.08 & 0.5827 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: 0.1206 runs per ball per year.
+
+\clearpage
+
+\subsection{Batter 5. Tim David}
+
+Player ID 6396. Primary role: Middle/lower-order batter. 648 scored balls in 41 matches, representing 66.9\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.552632 & 40.0\% & 0.621053 \\
+Boundaries & 1.499250 & 25.0\% & 0.374812 \\
+Dismissals or wickets & 0.911053 & 35.0\% & 0.318869 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.314734. Among 123 role peers the mean is 0.001491 and sample SD 0.756048. The role z-score is 1.736983 and Q = 95.880493. Retention is 0.843750. The running total moves from 50 to 88.711666 after the primary adjustment, then to 89.210055. Top-order batter contributes 0.498389 points from 136 balls with adjusted value 73.746757.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Top-order batter & 136 & 30 & 73.747 & 0.2474 & 37.8\% \\
+Middle/lower-order batter & 648 & 384 & 88.712 & 0.0011 & 85.2\% \\
+Late entrant & 184 & 165 & 65.710 & -- & 54.8\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 384 & 0.1435 \\
+Outside India & 264 & 0.5921 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Strike rate & Run residual / ball \\
+\midrule
+2022 & 160 & 0 & 192.50 & -- \\
+2023 & 166 & 159 & 146.39 & 0.2039 \\
+2024 & 233 & 233 & 159.23 & 0.0903 \\
+2025 & 136 & 136 & 199.26 & 0.6110 \\
+2026 & 120 & 120 & 190.00 & 0.6238 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: 0.1845 runs per ball per year.
+
+\clearpage
+
+\subsection{Batter 6. Travis Head}
+
+Player ID 2367. Primary role: Opener. 1095 scored balls in 64 matches, representing 100.0\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.494577 & 45.0\% & 0.672560 \\
+Boundaries & 1.809932 & 30.0\% & 0.542980 \\
+Dismissals or wickets & -0.653713 & 25.0\% & -0.163428 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.052111. Among 78 role peers the mean is -0.004546 and sample SD 0.716492. The role z-score is 1.474765 and Q = 92.986215. Retention is 0.901235. The running total moves from 50 to 88.740663 after the primary adjustment, then to 88.740663. No secondary role meets the support gate.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Opener & 1095 & 818 & 88.741 & -0.0458 & 77.8\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 818 & 0.3314 \\
+Outside India & 277 & 0.4349 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Strike rate & Run residual / ball \\
+\midrule
+2023 & 120 & 120 & 174.17 & 0.4294 \\
+2024 & 407 & 407 & 200.98 & 0.6337 \\
+2025 & 310 & 310 & 152.58 & 0.0924 \\
+2026 & 258 & 258 & 169.38 & 0.2073 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: -0.1672 runs per ball per year.
+
+\clearpage
+
+\subsection{Batter 7. Harry Brook}
+
+Player ID 6280. Primary role: Top-order batter. 428 scored balls in 21 matches, representing 70.5\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 2.425157 & 40.0\% & 0.970063 \\
+Boundaries & 1.865289 & 20.0\% & 0.373058 \\
+Dismissals or wickets & 1.024534 & 40.0\% & 0.409814 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.752934. Among 107 role peers the mean is 0.000300 and sample SD 0.708205. The role z-score is 2.474758 and Q = 99.333368. Retention is 0.781022. The running total moves from 50 to 88.530440 after the primary adjustment, then to 88.530440. Middle/lower-order batter contributes 0.000000 points from 62 balls with adjusted value 33.449540.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Top-order batter & 428 & 62 & 88.530 & -0.3716 & 93.4\% \\
+Middle/lower-order batter & 62 & 29 & 33.450 & -- & 0.0\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 62 & 0.1502 \\
+Outside India & 366 & 0.5352 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Strike rate & Run residual / ball \\
+\midrule
+2022 & 10 & 0 & 120.00 & -- \\
+2023 & 99 & 78 & 134.34 & 0.2130 \\
+2025 & 165 & 165 & 172.73 & 0.2324 \\
+2026 & 185 & 185 & 215.68 & 0.8121 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: 0.2083 runs per ball per year.
+
+\clearpage
+
+\subsection{Batter 8. Suryakumar Yadav}
+
+Player ID 1699. Primary role: Top-order batter. 1707 scored balls in 90 matches, representing 98.0\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.081862 & 40.0\% & 0.432745 \\
+Boundaries & 1.418375 & 20.0\% & 0.283675 \\
+Dismissals or wickets & 0.405496 & 40.0\% & 0.162198 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 0.878618. Among 107 role peers the mean is 0.000300 and sample SD 0.708205. The role z-score is 1.240205 and Q = 89.255018. Retention is 0.934319. The running total moves from 50 to 86.676692 after the primary adjustment, then to 86.676692. No secondary role meets the support gate.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Top-order batter & 1707 & 1399 & 86.677 & -0.1815 & 62.8\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 1399 & 0.2542 \\
+Outside India & 308 & 0.1595 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Strike rate & Run residual / ball \\
+\midrule
+2022 & 511 & 0 & 178.47 & -- \\
+2023 & 733 & 542 & 167.39 & 0.3178 \\
+2024 & 320 & 320 & 169.06 & 0.3281 \\
+2025 & 543 & 543 & 156.35 & 0.1066 \\
+2026 & 302 & 302 & 167.55 & 0.2307 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: -0.0570 runs per ball per year.
+
+\clearpage
+
+\subsection{Batter 9. Heinrich Klaasen}
+
+Player ID 4260. Primary role: Middle/lower-order batter. 701 scored balls in 35 matches, representing 55.0\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.377639 & 40.0\% & 0.551056 \\
+Boundaries & 0.839025 & 25.0\% & 0.209756 \\
+Dismissals or wickets & 0.558471 & 35.0\% & 0.195465 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 0.956277. Among 123 role peers the mean is 0.001491 and sample SD 0.756048. The role z-score is 1.262864 and Q = 89.668092. Retention is 0.853837. The running total moves from 50 to 83.870076 after the primary adjustment, then to 86.195089. Top-order batter contributes 2.325013 points from 563 balls with adjusted value 78.949098.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Top-order batter & 563 & 536 & 78.949 & -0.0575 & 35.0\% \\
+Middle/lower-order batter & 701 & 662 & 83.870 & 0.1227 & 63.6\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 662 & 0.2922 \\
+Outside India & 39 & 0.2682 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Strike rate & Run residual / ball \\
+\midrule
+2022 & 93 & 0 & 162.37 & -- \\
+2023 & 170 & 170 & 165.88 & 0.3523 \\
+2024 & 280 & 280 & 161.43 & 0.2965 \\
+2025 & 162 & 162 & 160.49 & 0.3235 \\
+2026 & 89 & 89 & 140.45 & 0.0967 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: -0.0614 runs per ball per year.
+
+\clearpage
+
+\subsection{Batter 10. Andre Russell}
+
+Player ID 1318. Primary role: Middle/lower-order batter. 384 scored balls in 26 matches, representing 73.7\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.670258 & 40.0\% & 0.668103 \\
+Boundaries & 2.308006 & 25.0\% & 0.577001 \\
+Dismissals or wickets & 0.364599 & 35.0\% & 0.127610 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.372715. Among 123 role peers the mean is 0.001491 and sample SD 0.756048. The role z-score is 1.813672 and Q = 96.513589. Retention is 0.761905. The running total moves from 50 to 85.438925 after the primary adjustment, then to 85.438925. Late entrant contributes 0.000000 points from 98 balls with adjusted value 45.251833.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Middle/lower-order batter & 384 & 253 & 85.439 & 0.0984 & 80.2\% \\
+Late entrant & 98 & 66 & 45.252 & -- & 0.8\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 253 & 0.1631 \\
+Outside India & 131 & 0.7109 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Strike rate & Run residual / ball \\
+\midrule
+2022 & 192 & 0 & 174.48 & -- \\
+2023 & 159 & 140 & 155.97 & 0.0869 \\
+2024 & 132 & 132 & 202.27 & 0.6294 \\
+2025 & 112 & 112 & 168.75 & 0.3495 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: 0.1472 runs per ball per year.
+
+\clearpage
+
+\subsection{Bowler score ledger}
+
+249 of 587 observed players qualify. 1 names also appear in this discipline's archived pressure top ten.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Rank & Player & Primary role & Balls & Matches & Final index \\
+\midrule
+1 & Varun Chakravarthy & Middle-overs bowler & 1224 & 80 & 90.496044 \\
+2 & Mohammad Nawaz & Middle-overs bowler & 462 & 31 & 87.488338 \\
+3 & Matheesha Pathirana & Death bowler & 484 & 43 & 85.688504 \\
+4 & Kuldeep Yadav & Middle-overs bowler & 1196 & 66 & 84.888094 \\
+5 & Abrar Ahmed & Middle-overs bowler & 505 & 34 & 84.388136 \\
+6 & Jamie Overton & Middle-overs bowler & 258 & 22 & 83.942623 \\
+7 & Sunil Narine & Middle-overs bowler & 834 & 50 & 83.367414 \\
+8 & Mitchell Santner & Middle-overs bowler & 924 & 60 & 83.279654 \\
+9 & Harpreet Brar & Middle-overs bowler & 390 & 28 & 82.638565 \\
+10 & Bhuvneshwar Kumar & Powerplay bowler & 822 & 61 & 82.497545 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsubsection*{Sensitivity and player movement}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+Alternative & Shared & Max shift & Entered & Left & Rank 1 \\
+\midrule
+No secondary credit & 10/10 & 13 & -- & -- & Varun Chakravarthy \\
+India events times 1.5 & 10/10 & 48 & -- & -- & Varun Chakravarthy \\
+Residualised boundaries & 8/10 & 61 & Krunal Pandya, Lockie Ferguson & Abrar Ahmed, Bhuvneshwar Kumar & Varun Chakravarthy \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsubsection*{Comparison of ranks one and two}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Measure & Varun Chakravarthy & Mohammad Nawaz \\
+\midrule
+Primary scored opportunities & 1224 & 462 \\
+Primary scored matches & 80 & 31 \\
+Role reference & 93.804398 & 96.609452 \\
+Evidence-adjusted primary & 89.893291 & 86.999255 \\
+Secondary credit & 0.602753 & 0.489083 \\
+Final contextual index & 90.496044 & 87.488338 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\subsection{Bowler 1. Varun Chakravarthy}
+
+Player ID 6256. Primary role: Middle-overs bowler. 1224 scored balls in 80 matches, representing 68.1\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.015731 & 35.0\% & 0.355506 \\
+Boundaries & 0.764419 & 20.0\% & 0.152884 \\
+Dismissals or wickets & 1.360819 & 45.0\% & 0.612369 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.120758. Among 221 role peers the mean is 0.000275 and sample SD 0.728268. The role z-score is 1.538559 and Q = 93.804398. Retention is 0.910714. The running total moves from 50 to 89.893291 after the primary adjustment, then to 90.496044. Powerplay bowler contributes 0.602753 points from 312 balls with adjusted value 73.646461.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Powerplay bowler & 312 & 246 & 73.646 & -0.0067 & 19.8\% \\
+Middle-overs bowler & 1224 & 990 & 89.893 & 0.2762 & 59.0\% \\
+Death bowler & 262 & 220 & 76.645 & 0.3056 & 38.2\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 990 & -0.1838 \\
+Outside India & 234 & 0.0375 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Economy & Run residual / ball \\
+\midrule
+2022 & 168 & 0 & 8.36 & -- \\
+2023 & 144 & 132 & 7.92 & 0.0334 \\
+2024 & 354 & 354 & 7.97 & -0.1199 \\
+2025 & 408 & 408 & 7.22 & -0.2365 \\
+2026 & 330 & 330 & 8.18 & -0.1171 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: -0.0400 runs per ball per year.
+
+\clearpage
+
+\subsection{Bowler 2. Mohammad Nawaz}
+
+Player ID 2490. Primary role: Middle-overs bowler. 462 scored balls in 31 matches, representing 75.7\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.224676 & 35.0\% & 0.428637 \\
+Boundaries & 1.400818 & 20.0\% & 0.280164 \\
+Dismissals or wickets & 1.381072 & 45.0\% & 0.621482 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.330283. Among 221 role peers the mean is 0.000275 and sample SD 0.728268. The role z-score is 1.826261 and Q = 96.609452. Retention is 0.793814. The running total moves from 50 to 86.999255 after the primary adjustment, then to 87.488338. Powerplay bowler contributes 0.489083 points from 114 balls with adjusted value 69.820735.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Powerplay bowler & 114 & 0 & 69.821 & -- & 20.8\% \\
+Middle-overs bowler & 462 & 0 & 86.999 & -0.2409 & 57.8\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+Outside India & 462 & -0.1768 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Economy & Run residual / ball \\
+\midrule
+2022 & 276 & 0 & 7.63 & -- \\
+2023 & 30 & 0 & 5.40 & -- \\
+2024 & 48 & 48 & 9.75 & 0.2937 \\
+2025 & 348 & 348 & 6.38 & -0.2354 \\
+2026 & 66 & 66 & 6.73 & -0.2102 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+
+
+\clearpage
+
+\subsection{Bowler 3. Matheesha Pathirana}
+
+Player ID 8661. Primary role: Death bowler. 484 scored balls in 43 matches, representing 49.2\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.348757 & 50.0\% & 0.674379 \\
+Boundaries & 1.132231 & 25.0\% & 0.283058 \\
+Dismissals or wickets & 0.701549 & 25.0\% & 0.175387 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.132824. Among 138 role peers the mean is 0.002012 and sample SD 0.807559. The role z-score is 1.400284 and Q = 91.928581. Retention is 0.801325. The running total moves from 50 to 83.598399 after the primary adjustment, then to 85.688504. Middle-overs bowler contributes 2.090105 points from 456 balls with adjusted value 72.184449.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Middle-overs bowler & 456 & 264 & 72.184 & -0.1403 & 7.4\% \\
+Death bowler & 484 & 353 & 83.598 & 0.0317 & 59.4\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 353 & -0.2731 \\
+Outside India & 131 & -0.2371 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Economy & Run residual / ball \\
+\midrule
+2022 & 17 & 0 & 9.53 & -- \\
+2023 & 144 & 144 & 7.79 & -0.4436 \\
+2024 & 173 & 173 & 9.09 & -0.2914 \\
+2025 & 161 & 161 & 10.84 & -0.0754 \\
+2026 & 6 & 6 & 9.00 & -0.1721 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: 0.1848 runs per ball per year.
+
+\clearpage
+
+\subsection{Bowler 4. Kuldeep Yadav}
+
+Player ID 3644. Primary role: Middle-overs bowler. 1196 scored balls in 66 matches, representing 83.3\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 0.857186 & 35.0\% & 0.300015 \\
+Boundaries & 1.009738 & 20.0\% & 0.201948 \\
+Dismissals or wickets & 0.775219 & 45.0\% & 0.348849 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 0.850811. Among 221 role peers the mean is 0.000275 and sample SD 0.728268. The role z-score is 1.167889 and Q = 87.857428. Retention is 0.908815. The running total moves from 50 to 84.405383 after the primary adjustment, then to 84.888094. Death bowler contributes 0.482712 points from 228 balls with adjusted value 75.321186.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Middle-overs bowler & 1196 & 978 & 84.405 & -0.0699 & 24.4\% \\
+Death bowler & 228 & 192 & 75.321 & -- & 35.0\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 978 & -0.0726 \\
+Outside India & 218 & -0.3034 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Economy & Run residual / ball \\
+\midrule
+2022 & 288 & 0 & 8.04 & -- \\
+2023 & 395 & 329 & 6.77 & -0.2225 \\
+2024 & 222 & 222 & 8.19 & -0.0578 \\
+2025 & 351 & 351 & 7.23 & -0.2325 \\
+2026 & 294 & 294 & 9.63 & 0.1036 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: 0.0793 runs per ball per year.
+
+\clearpage
+
+\subsection{Bowler 5. Abrar Ahmed}
+
+Player ID 5979. Primary role: Middle-overs bowler. 505 scored balls in 34 matches, representing 66.1\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.831204 & 35.0\% & 0.640921 \\
+Boundaries & 1.379986 & 20.0\% & 0.275997 \\
+Dismissals or wickets & 0.234398 & 45.0\% & 0.105479 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.022397. Among 221 role peers the mean is 0.000275 and sample SD 0.728268. The role z-score is 1.403497 and Q = 91.976572. Retention is 0.808000. The running total moves from 50 to 83.917070 after the primary adjustment, then to 84.388136. Death bowler contributes 0.471066 points from 109 balls with adjusted value 71.824619.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Powerplay bowler & 150 & 0 & 54.612 & -- & 5.2\% \\
+Middle-overs bowler & 505 & 0 & 83.917 & -0.2597 & 30.0\% \\
+Death bowler & 109 & 0 & 71.825 & -- & 26.0\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+Outside India & 505 & -0.2794 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Economy & Run residual / ball \\
+\midrule
+2024 & 78 & 78 & 6.69 & -0.1579 \\
+2025 & 349 & 349 & 5.69 & -0.3393 \\
+2026 & 78 & 78 & 6.85 & -0.1331 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: 0.0124 runs per ball per year.
+
+\clearpage
+
+\subsection{Bowler 6. Jamie Overton}
+
+Player ID 2382. Primary role: Middle-overs bowler. 258 scored balls in 22 matches, representing 56.8\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 2.019426 & 35.0\% & 0.706799 \\
+Boundaries & 1.391668 & 20.0\% & 0.278334 \\
+Dismissals or wickets & 1.177846 & 45.0\% & 0.530031 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.515163. Among 221 role peers the mean is 0.000275 and sample SD 0.728268. The role z-score is 2.080125 and Q = 98.124296. Retention is 0.682540. The running total moves from 50 to 82.846742 after the primary adjustment, then to 83.942623. Death bowler contributes 1.095881 points from 134 balls with adjusted value 71.099801.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Powerplay bowler & 62 & 36 & 32.978 & -- & 0.0\% \\
+Middle-overs bowler & 258 & 162 & 82.847 & -0.0074 & 56.0\% \\
+Death bowler & 134 & 92 & 71.100 & -- & 27.6\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 162 & -0.2284 \\
+Outside India & 96 & -0.4510 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Economy & Run residual / ball \\
+\midrule
+2024 & 24 & 24 & 6.75 & -0.3078 \\
+2025 & 84 & 84 & 7.00 & -0.2735 \\
+2026 & 150 & 150 & 6.64 & -0.3329 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+
+
+\clearpage
+
+\subsection{Bowler 7. Sunil Narine}
+
+Player ID 781. Primary role: Middle-overs bowler. 834 scored balls in 50 matches, representing 74.3\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.711263 & 35.0\% & 0.598942 \\
+Boundaries & 1.838796 & 20.0\% & 0.367759 \\
+Dismissals or wickets & -0.275597 & 45.0\% & -0.124019 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 0.842683. Among 221 role peers the mean is 0.000275 and sample SD 0.728268. The role z-score is 1.156727 and Q = 87.630809. Retention is 0.874214. The running total moves from 50 to 82.897374 after the primary adjustment, then to 83.367414. Death bowler contributes 0.470040 points from 144 balls with adjusted value 77.223170.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Powerplay bowler & 144 & 144 & 54.763 & -- & 2.2\% \\
+Middle-overs bowler & 834 & 834 & 82.897 & -0.0292 & 15.8\% \\
+Death bowler & 144 & 144 & 77.223 & -- & 94.8\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 834 & -0.2591 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Economy & Run residual / ball \\
+\midrule
+2022 & 228 & 0 & 5.58 & -- \\
+2023 & 198 & 186 & 7.42 & -0.1324 \\
+2024 & 264 & 264 & 6.30 & -0.3851 \\
+2025 & 222 & 222 & 7.97 & -0.1424 \\
+2026 & 162 & 162 & 6.63 & -0.3592 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: -0.0334 runs per ball per year.
+
+\clearpage
+
+\subsection{Bowler 8. Mitchell Santner}
+
+Player ID 4101. Primary role: Middle-overs bowler. 924 scored balls in 60 matches, representing 73.5\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.219225 & 35.0\% & 0.426729 \\
+Boundaries & 1.062888 & 20.0\% & 0.212578 \\
+Dismissals or wickets & 0.438074 & 45.0\% & 0.197133 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 0.836440. Among 221 role peers the mean is 0.000275 and sample SD 0.728268. The role z-score is 1.148155 and Q = 87.454773. Retention is 0.885057. The running total moves from 50 to 83.149626 after the primary adjustment, then to 83.279654. Powerplay bowler contributes 0.130028 points from 192 balls with adjusted value 56.257582.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Powerplay bowler & 192 & 78 & 56.258 & -- & 2.4\% \\
+Middle-overs bowler & 924 & 384 & 83.150 & -0.2281 & 21.6\% \\
+Death bowler & 141 & 51 & 53.871 & 0.0992 & 4.0\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 384 & -0.1436 \\
+Outside India & 540 & -0.1989 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Economy & Run residual / ball \\
+\midrule
+2022 & 234 & 0 & 6.67 & -- \\
+2023 & 234 & 186 & 6.46 & -0.3096 \\
+2024 & 174 & 174 & 8.03 & -0.0440 \\
+2025 & 282 & 282 & 7.45 & -0.1887 \\
+2026 & 282 & 282 & 7.81 & -0.1564 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: 0.0287 runs per ball per year.
+
+\clearpage
+
+\subsection{Bowler 9. Harpreet Brar}
+
+Player ID 7325. Primary role: Middle-overs bowler. 390 scored balls in 28 matches, representing 70.5\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.420561 & 35.0\% & 0.497196 \\
+Boundaries & 1.594471 & 20.0\% & 0.318894 \\
+Dismissals or wickets & 0.537686 & 45.0\% & 0.241959 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 1.058049. Among 221 role peers the mean is 0.000275 and sample SD 0.728268. The role z-score is 1.452452 and Q = 92.681201. Retention is 0.764706. The running total moves from 50 to 82.638565 after the primary adjustment, then to 82.638565. Powerplay bowler contributes 0.000000 points from 114 balls with adjusted value 34.281789.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Powerplay bowler & 114 & 114 & 34.282 & -- & 0.0\% \\
+Middle-overs bowler & 390 & 390 & 82.639 & -0.1871 & 37.4\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 390 & -0.2100 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Economy & Run residual / ball \\
+\midrule
+2022 & 48 & 0 & 9.62 & -- \\
+2023 & 90 & 84 & 6.20 & -0.3334 \\
+2024 & 198 & 198 & 7.79 & -0.1066 \\
+2025 & 78 & 78 & 6.69 & -0.3442 \\
+2026 & 30 & 30 & 7.80 & -0.1972 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: -0.0007 runs per ball per year.
+
+\clearpage
+
+\subsection{Bowler 10. Bhuvneshwar Kumar}
+
+Player ID 360. Primary role: Powerplay bowler. 822 scored balls in 61 matches, representing 59.8\% of scored opportunities in this discipline.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrr}
+\toprule
+Primary metric & Signed z & Weight & Contribution \\
+\midrule
+Runs & 1.283533 & 35.0\% & 0.449237 \\
+Boundaries & 1.050420 & 20.0\% & 0.210084 \\
+Dismissals or wickets & 0.470524 & 45.0\% & 0.211736 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Weighted total 0.871056. Among 172 role peers the mean is 0.000388 and sample SD 0.769399. The role z-score is 1.131621 and Q = 87.110309. Retention is 0.872611. The running total moves from 50 to 82.382882 after the primary adjustment, then to 82.497545. Death bowler contributes 0.114663 points from 444 balls with adjusted value 52.122821.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Supported role & Balls & India & Adjusted & Pressure lift & Top 10 share \\
+\midrule
+Powerplay bowler & 822 & 762 & 82.383 & 0.3007 & 41.8\% \\
+Middle-overs bowler & 108 & 102 & 27.243 & -0.3472 & 0.0\% \\
+Death bowler & 444 & 414 & 52.123 & -0.1639 & 2.4\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+Primary role venue & Scored balls & Run residual per ball \\
+\midrule
+India & 762 & -0.2132 \\
+Outside India & 60 & 0.1463 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Year & Observed balls & Scored balls & Economy & Run residual / ball \\
+\midrule
+2022 & 468 & 0 & 5.81 & -- \\
+2023 & 168 & 156 & 7.57 & -0.1578 \\
+2024 & 240 & 240 & 8.18 & -0.0692 \\
+2025 & 174 & 174 & 8.10 & -0.1836 \\
+2026 & 252 & 252 & 7.74 & -0.3196 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Ball-weighted annual residual slope: -0.0703 runs per ball per year.
+
+\clearpage
+
+\section{Seven role leaderboards and validation}
+
+Top-ten shares come from historical match resampling. Pressure lift is the pressure-minus-ordinary run residual per opportunity and needs 30 scored balls in each context. A negative residual favours bowlers. India means venue country. These diagnostics use different units from the final index.
+
+\subsection{Opener}
+
+78 eligible. Top-ten overlap with primary: India weighting 10/10, equal weighting 10/10, and boundary residualisation 8/10.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Rank & Player & Role score & Balls & India balls & Resample share \\
+\midrule
+1 & Vaibhav Sooryavanshi & 1.811862 & 555 & 434 & 99.8\% \\
+2 & Abhishek Sharma & 1.660237 & 1753 & 1267 & 100.0\% \\
+3 & Finn Allen & 1.358237 & 607 & 194 & 96.8\% \\
+4 & Phil Salt & 1.130648 & 1373 & 750 & 96.2\% \\
+5 & Travis Head & 0.948199 & 1095 & 818 & 77.8\% \\
+6 & Priyansh Arya & 0.823669 & 391 & 391 & 59.4\% \\
+7 & Tim Seifert & 0.755699 & 566 & 78 & 59.0\% \\
+8 & Shai Hope & 0.647574 & 436 & 136 & 43.6\% \\
+9 & Sunil Narine & 0.639929 & 431 & 431 & 45.2\% \\
+10 & Yashasvi Jaiswal & 0.615957 & 1544 & 1307 & 37.0\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrrr}
+\toprule
+Later test starts & Common & Primary & Boundary alt. & Runs only & Volume & Assessable \\
+\midrule
+2024-05-08 & 22 & 0.582 & 0.548 & 0.509 & 0.163 & 6/10 \\
+2025-09-06 & 39 & 0.396 & 0.324 & 0.452 & 0.147 & 8/10 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Top-order batter}
+
+107 eligible. Top-ten overlap with primary: India weighting 8/10, equal weighting 8/10, and boundary residualisation 8/10.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Rank & Player & Role score & Balls & India balls & Resample share \\
+\midrule
+1 & Harry Brook & 1.369080 & 428 & 62 & 93.4\% \\
+2 & Glenn Maxwell & 0.883319 & 394 & 296 & 60.8\% \\
+3 & Suryakumar Yadav & 0.820909 & 1707 & 1399 & 62.8\% \\
+4 & Josh Inglis & 0.750245 & 497 & 202 & 48.2\% \\
+5 & Ishan Kishan & 0.749248 & 1105 & 870 & 50.8\% \\
+6 & Mitchell Marsh & 0.730263 & 338 & 110 & 46.2\% \\
+7 & Jacob Bethell & 0.621961 & 184 & 0 & 33.0\% \\
+8 & Tim David & 0.608309 & 136 & 30 & 37.8\% \\
+9 & Heinrich Klaasen & 0.608290 & 563 & 536 & 35.0\% \\
+10 & Shreyas Iyer & 0.607319 & 1141 & 892 & 30.8\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrrr}
+\toprule
+Later test starts & Common & Primary & Boundary alt. & Runs only & Volume & Assessable \\
+\midrule
+2024-05-08 & 27 & 0.380 & 0.306 & 0.366 & -0.040 & 7/10 \\
+2025-09-06 & 30 & 0.192 & 0.015 & 0.250 & -0.010 & 6/10 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Middle/lower-order batter}
+
+123 eligible. Top-ten overlap with primary: India weighting 10/10, equal weighting 9/10, and boundary residualisation 8/10.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Rank & Player & Role score & Balls & India balls & Resample share \\
+\midrule
+1 & Tim David & 1.109307 & 648 & 384 & 85.2\% \\
+2 & Andre Russell & 1.045878 & 384 & 253 & 80.2\% \\
+3 & Naman Dhir & 0.995556 & 179 & 110 & 70.8\% \\
+4 & Nicholas Pooran & 0.937738 & 467 & 467 & 65.0\% \\
+5 & Heinrich Klaasen & 0.816504 & 701 & 662 & 63.6\% \\
+6 & Rishabh Pant & 0.807620 & 169 & 169 & 50.6\% \\
+7 & Asif Khan & 0.803401 & 124 & 0 & 49.4\% \\
+8 & Sherfane Rutherford & 0.763383 & 493 & 227 & 48.4\% \\
+9 & Michael Bracewell & 0.622299 & 217 & 16 & 37.0\% \\
+10 & Towhid Hridoy & 0.618644 & 177 & 42 & 26.2\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrrr}
+\toprule
+Later test starts & Common & Primary & Boundary alt. & Runs only & Volume & Assessable \\
+\midrule
+2024-05-08 & 25 & 0.352 & 0.368 & 0.394 & 0.237 & 5/10 \\
+2025-09-06 & 33 & -0.228 & -0.158 & -0.267 & 0.184 & 3/10 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Late entrant}
+
+45 eligible. Top-ten overlap with primary: India weighting 9/10, equal weighting 10/10, and boundary residualisation 9/10.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Rank & Player & Role score & Balls & India balls & Resample share \\
+\midrule
+1 & Mahendra Singh Dhoni & 0.767797 & 186 & 186 & 95.2\% \\
+2 & Rinku Singh & 0.756640 & 142 & 97 & 92.2\% \\
+3 & Donovan Ferreira & 0.603956 & 60 & 60 & 66.0\% \\
+4 & Abdul Samad & 0.452188 & 81 & 81 & 60.2\% \\
+5 & Romario Shepherd & 0.446900 & 151 & 62 & 52.2\% \\
+6 & Gareth Delany & 0.430323 & 74 & 0 & 60.0\% \\
+7 & Shashank Singh & 0.426598 & 85 & 85 & 60.6\% \\
+8 & Tim David & 0.399743 & 184 & 165 & 54.8\% \\
+9 & Jason Holder & 0.397039 & 164 & 41 & 56.2\% \\
+10 & Naman Dhir & 0.377439 & 72 & 72 & 54.6\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrrr}
+\toprule
+Later test starts & Common & Primary & Boundary alt. & Runs only & Volume & Assessable \\
+\midrule
+2024-05-08 & 1 & -- & -- & -- & -- & 1/7 \\
+2025-09-06 & 0 & -- & -- & -- & -- & 0/10 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Powerplay bowler}
+
+172 eligible. Top-ten overlap with primary: India weighting 10/10, equal weighting 9/10, and boundary residualisation 7/10.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Rank & Player & Role score & Balls & India balls & Resample share \\
+\midrule
+1 & Kyle Klein & 1.032687 & 90 & 0 & 61.8\% \\
+2 & Saqib Mahmood & 0.958550 & 108 & 18 & 57.8\% \\
+3 & Josh Hazlewood & 0.767651 & 462 & 306 & 45.8\% \\
+4 & Bhuvneshwar Kumar & 0.760094 & 822 & 762 & 41.8\% \\
+5 & Liam Dawson & 0.749200 & 66 & 0 & 32.4\% \\
+6 & Salman Mirza & 0.746904 & 222 & 0 & 41.4\% \\
+7 & Blessing Muzarabani & 0.729690 & 435 & 18 & 37.4\% \\
+8 & Dunith Wellalage & 0.697874 & 108 & 0 & 35.0\% \\
+9 & Trent Boult & 0.638694 & 582 & 570 & 25.0\% \\
+10 & Jasprit Bumrah & 0.636049 & 582 & 432 & 20.6\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrrr}
+\toprule
+Later test starts & Common & Primary & Boundary alt. & Runs only & Volume & Assessable \\
+\midrule
+2024-05-08 & 44 & 0.317 & 0.273 & 0.163 & -0.225 & 7/10 \\
+2025-09-06 & 52 & -0.048 & -0.065 & -0.005 & 0.087 & 7/10 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Middle-overs bowler}
+
+221 eligible. Top-ten overlap with primary: India weighting 8/10, equal weighting 7/10, and boundary residualisation 8/10.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Rank & Player & Role score & Balls & India balls & Resample share \\
+\midrule
+1 & Mohammad Nawaz & 1.055997 & 462 & 0 & 57.8\% \\
+2 & Jamie Overton & 1.034159 & 258 & 162 & 56.0\% \\
+3 & Varun Chakravarthy & 1.020691 & 1224 & 990 & 59.0\% \\
+4 & Mustafizur Rahman & 0.953671 & 324 & 96 & 46.8\% \\
+5 & Lockie Ferguson & 0.849208 & 234 & 144 & 37.8\% \\
+6 & Abrar Ahmed & 0.826097 & 505 & 0 & 30.0\% \\
+7 & Sufiyan Muqeem & 0.823803 & 274 & 0 & 38.4\% \\
+8 & Harpreet Brar & 0.809097 & 390 & 390 & 37.4\% \\
+9 & Patrick Cummins & 0.787088 & 288 & 276 & 29.2\% \\
+10 & Kuldeep Yadav & 0.773230 & 1196 & 978 & 24.4\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrrr}
+\toprule
+Later test starts & Common & Primary & Boundary alt. & Runs only & Volume & Assessable \\
+\midrule
+2024-05-08 & 56 & 0.346 & 0.275 & 0.463 & 0.144 & 10/10 \\
+2025-09-06 & 69 & 0.217 & 0.180 & 0.264 & 0.096 & 7/10 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Death bowler}
+
+138 eligible. Top-ten overlap with primary: India weighting 9/10, equal weighting 9/10, and boundary residualisation 8/10.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+Rank & Player & Role score & Balls & India balls & Resample share \\
+\midrule
+1 & Jasprit Bumrah & 1.392640 & 416 & 349 & 95.8\% \\
+2 & Sunil Narine & 1.374800 & 144 & 144 & 94.8\% \\
+3 & Matheesha Pathirana & 0.907759 & 484 & 353 & 59.4\% \\
+4 & Noor Ahmad & 0.832482 & 217 & 151 & 50.2\% \\
+5 & Akeal Hosein & 0.758468 & 78 & 10 & 36.4\% \\
+6 & Rashid Khan & 0.727135 & 366 & 240 & 41.8\% \\
+7 & Varun Chakravarthy & 0.676293 & 262 & 220 & 38.2\% \\
+8 & Lungi Ngidi & 0.676234 & 186 & 129 & 27.2\% \\
+9 & Abrar Ahmed & 0.667377 & 109 & 0 & 26.0\% \\
+10 & Kuldeep Yadav & 0.640473 & 228 & 192 & 35.0\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrrr}
+\toprule
+Later test starts & Common & Primary & Boundary alt. & Runs only & Volume & Assessable \\
+\midrule
+2024-05-08 & 35 & 0.301 & 0.241 & 0.245 & 0.022 & 8/10 \\
+2025-09-06 & 34 & -0.185 & -0.143 & -0.121 & 0.079 & 6/10 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\section{Pressure validation and model comparisons}
+
+Forward results report Spearman rank correlation on common eligible IDs. Split-half summaries show median and empirical p10 to p90. Under uniform independent top-ten membership in a common pool of size $N$, expected overlap is $100/N$.
+
+\subsection{Batter forward and split-half tests}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrrrr}
+\toprule
+Later period & Common & v4 p10 & v4 point & Pooled & Volume & Chance & Assessable \\
+\midrule
+2023-04-03 to 2024-05-07 & 21 & -0.117 & -0.214 & 0.161 & 0.234 & 4.762 & 9/10 \\
+2024-05-08 to 2025-09-05 & 37 & 0.050 & 0.038 & 0.052 & -0.165 & 2.703 & 7/10 \\
+2025-09-06 to 2026-11-01 & 47 & -0.106 & -0.032 & -0.183 & -0.245 & 2.128 & 2/10 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xr>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xr}
+\toprule
+Gate balls / matches & Common median & Observed p10 / p50 / p90 & Shuffled p10 / p50 / p90 & Above null p90 \\
+\midrule
+30 / 3 & 95.0 & -0.083 / 0.012 / 0.095 & -0.133 / -0.002 / 0.128 & 1/32 \\
+60 / 6 & 52.0 & -0.149 / -0.031 / 0.123 & -0.178 / 0.004 / 0.181 & 0/32 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xr}
+\toprule
+Archived v1 alternative & Shared names \\
+\midrule
+Shrinkage prior 30 balls & 10 \\
+Shrinkage prior 90 balls & 10 \\
+High band only & 7 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+v2 balls per context cell & Eligible & Shared names \\
+\midrule
+6 & 127 & 4 \\
+12 & 105 & 10 \\
+24 & 87 & 6 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+v3 matching design & Point eligible & Draw eligible & Common & Temporal rho \\
+\midrule
+fine v2 & 105 & 46 & 49 & 0.048 \\
+phase family v3 & 144 & 81 & 76 & 0.059 \\
+innings phase & 111 & 77 & 57 & 0.080 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+v4 assumption & Point eligible & Shared names \\
+\midrule
+primary & 149 & 10 \\
+lambda6 & 149 & 8 \\
+lambda24 & 149 & 7 \\
+uncapped & 149 & 10 \\
+no event component & 149 & 5 \\
+historical dismissals & 149 & 10 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\subsubsection*{Batter v2 match-resampling rankings}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Rank & Player & Prior rank & Point rank & p10 & p90 & Valid \\
+\midrule
+1 & Reeza Hendricks & -- & 1 & 1.061415 & 3.449639 & 491 \\
+2 & Ryan Burl & -- & 3 & 0.457617 & 1.749552 & 499 \\
+3 & Fakhar Zaman & 4 & 5 & 0.279146 & 1.481649 & 495 \\
+4 & Mayank Agarwal & -- & 6 & 0.255547 & 2.171359 & 482 \\
+5 & Tim David & -- & 2 & 0.215509 & 2.451294 & 499 \\
+6 & Mohammad Rizwan & -- & 9 & 0.167734 & 1.261272 & 480 \\
+7 & Babar Azam & 10 & 8 & 0.148285 & 1.467798 & 487 \\
+8 & Quinton de Kock & -- & 10 & -0.010487 & 2.690153 & 475 \\
+9 & Liton Das & -- & 24 & -0.027796 & 1.074359 & 493 \\
+10 & Ajinkya Rahane & -- & 17 & -0.047248 & 1.020744 & 500 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xr>{\raggedright\arraybackslash}X}
+\toprule
+Player leaving the prior top ten & Prior rank & Reason \\
+\midrule
+Jason Holder & 1 & insufficient matched support \\
+Dinesh Karthik & 2 & insufficient matched support \\
+Mahendra Singh Dhoni & 3 & insufficient matched support \\
+Sam Billings & 5 & insufficient matched support \\
+Shashank Singh & 6 & outside top10 \\
+Matthew Wade & 7 & insufficient resample support \\
+Gulbadin Naib & 8 & insufficient matched support \\
+Gareth Delany & 9 & insufficient matched support \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\subsubsection*{Batter v3 match-resampling rankings}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Rank & Player & Prior rank & Point rank & p10 & p90 & Valid \\
+\midrule
+1 & Shahbaz Ahmed & -- & 1 & 1.360511 & 3.143326 & 499 \\
+2 & Fakhar Zaman & 3 & 5 & 0.734876 & 1.912918 & 498 \\
+3 & Reeza Hendricks & 1 & 6 & 0.594369 & 1.747091 & 500 \\
+4 & Babar Azam & 7 & 9 & 0.512896 & 1.492348 & 498 \\
+5 & Mahendra Singh Dhoni & -- & 4 & 0.475019 & 3.004310 & 496 \\
+6 & Shreyas Iyer & -- & 18 & 0.205718 & 0.993284 & 492 \\
+7 & Mayank Agarwal & 4 & 12 & 0.199639 & 1.435923 & 489 \\
+8 & Sanju Samson & -- & 19 & 0.176584 & 0.978699 & 478 \\
+9 & Harry Tector & -- & 15 & 0.087108 & 1.384221 & 496 \\
+10 & Nurul Hasan & -- & 11 & 0.068775 & 1.874749 & 485 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xr>{\raggedright\arraybackslash}X}
+\toprule
+Player leaving the prior top ten & Prior rank & Reason \\
+\midrule
+Ryan Burl & 2 & Outside top ten \\
+Tim David & 5 & Too few valid draws \\
+Mohammad Rizwan & 6 & Outside top ten \\
+Quinton de Kock & 8 & Outside top ten \\
+Liton Das & 9 & Outside top ten \\
+Ajinkya Rahane & 10 & Outside top ten \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\subsubsection*{Batter v4 match-resampling rankings}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Rank & Player & Prior rank & Point rank & p10 & p90 & Valid \\
+\midrule
+1 & Reeza Hendricks & 3 & 1 & 0.929171 & 2.421911 & 500 \\
+2 & Fakhar Zaman & 2 & 4 & 0.349085 & 1.615529 & 500 \\
+3 & Mahendra Singh Dhoni & 5 & 14 & 0.348762 & 1.429954 & 499 \\
+4 & Glenn Maxwell & -- & 2 & 0.331161 & 1.822608 & 500 \\
+5 & Rohit Sharma & -- & 10 & 0.214775 & 1.631109 & 500 \\
+6 & Tim David & -- & 5 & 0.196951 & 1.896095 & 500 \\
+7 & Mayank Agarwal & 7 & 13 & 0.191524 & 1.453020 & 500 \\
+8 & Sanju Samson & 8 & 18 & 0.187230 & 1.352765 & 500 \\
+9 & Shreyas Iyer & 6 & 15 & 0.159164 & 1.507043 & 500 \\
+10 & David Miller & -- & 9 & 0.110150 & 1.760411 & 500 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xr>{\raggedright\arraybackslash}X}
+\toprule
+Player leaving the prior top ten & Prior rank & Reason \\
+\midrule
+Shahbaz Ahmed & 1 & Outside top ten \\
+Babar Azam & 4 & Outside top ten \\
+Harry Tector & 9 & Outside top ten \\
+Nurul Hasan & 10 & Insufficient matched support \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Bowler forward and split-half tests}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrrrrr}
+\toprule
+Later period & Common & v4 p10 & v4 point & Pooled & Volume & Chance & Assessable \\
+\midrule
+2023-04-03 to 2024-05-07 & 25 & -0.094 & -0.115 & 0.030 & -0.263 & 4.000 & 7/10 \\
+2024-05-08 to 2025-09-05 & 47 & -0.286 & -0.217 & -0.084 & -0.106 & 2.128 & 5/10 \\
+2025-09-06 to 2026-11-01 & 49 & 0.119 & 0.144 & 0.199 & -0.029 & 2.041 & 4/10 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xr>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xr}
+\toprule
+Gate balls / matches & Common median & Observed p10 / p50 / p90 & Shuffled p10 / p50 / p90 & Above null p90 \\
+\midrule
+30 / 3 & 107.0 & -0.135 / -0.037 / 0.068 & -0.120 / 0.004 / 0.131 & 0/32 \\
+60 / 6 & 67.0 & -0.237 / -0.055 / 0.059 & -0.164 / -0.008 / 0.149 & 1/32 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xr}
+\toprule
+Archived v1 alternative & Shared names \\
+\midrule
+Shrinkage prior 30 balls & 9 \\
+Shrinkage prior 90 balls & 10 \\
+High band only & 5 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+v2 balls per context cell & Eligible & Shared names \\
+\midrule
+6 & 144 & 4 \\
+12 & 119 & 10 \\
+24 & 92 & 2 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrrrr}
+\toprule
+v3 matching design & Point eligible & Draw eligible & Common & Temporal rho \\
+\midrule
+fine v2 & 119 & 44 & 60 & -0.288 \\
+phase family v3 & 156 & 79 & 79 & -0.026 \\
+innings phase & 123 & 74 & 65 & -0.149 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xrr}
+\toprule
+v4 assumption & Point eligible & Shared names \\
+\midrule
+primary & 156 & 10 \\
+lambda6 & 156 & 8 \\
+lambda24 & 156 & 8 \\
+uncapped & 156 & 10 \\
+no event component & 156 & 8 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\subsubsection*{Bowler v2 match-resampling rankings}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Rank & Player & Prior rank & Point rank & p10 & p90 & Valid \\
+\midrule
+1 & Sufiyan Muqeem & 9 & 2 & 0.271975 & 1.732851 & 500 \\
+2 & T Natarajan & -- & 6 & 0.181122 & 1.689756 & 498 \\
+3 & Tushar Deshpande & -- & 18 & 0.158297 & 1.055646 & 500 \\
+4 & FazalHaq Farooqi & -- & 12 & 0.138539 & 1.371539 & 493 \\
+5 & Patrick Cummins & -- & 23 & 0.017149 & 1.199767 & 495 \\
+6 & Shardul Thakur & -- & 20 & -0.038183 & 1.063188 & 498 \\
+7 & Bhuvneshwar Kumar & -- & 34 & -0.107805 & 0.936606 & 491 \\
+8 & Haris Rauf & -- & 22 & -0.200089 & 1.264883 & 476 \\
+9 & Sunil Narine & -- & 30 & -0.237160 & 0.903351 & 497 \\
+10 & Mohammad Rishad Hossain & -- & 35 & -0.268102 & 0.911181 & 498 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xr>{\raggedright\arraybackslash}X}
+\toprule
+Player leaving the prior top ten & Prior rank & Reason \\
+\midrule
+Tabraiz Shamsi & 1 & insufficient matched support \\
+Sakib Hussain & 2 & insufficient matched support \\
+Hasan Mahmud & 3 & insufficient resample support \\
+Mohammad Nawaz & 4 & insufficient resample support \\
+Praful Hinge & 5 & insufficient matched support \\
+Matthew Humphreys & 6 & insufficient matched support \\
+George Linde & 7 & insufficient matched support \\
+Rasikh Salam & 8 & insufficient matched support \\
+Mohit Sharma & 10 & insufficient matched support \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\subsubsection*{Bowler v3 match-resampling rankings}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Rank & Player & Prior rank & Point rank & p10 & p90 & Valid \\
+\midrule
+1 & Naseem Shah & -- & 7 & 0.548019 & 2.495447 & 485 \\
+2 & Hasan Mahmud & -- & 2 & 0.525510 & 2.654397 & 489 \\
+3 & Rasikh Salam & -- & 5 & 0.352171 & 2.167610 & 475 \\
+4 & T Natarajan & 2 & 16 & 0.170662 & 1.260416 & 500 \\
+5 & Mohit Sharma & -- & 10 & 0.062285 & 1.767950 & 500 \\
+6 & Wanindu Hasaranga & -- & 31 & 0.038980 & 0.885115 & 478 \\
+7 & Mitchell Santner & -- & 24 & 0.026397 & 0.920088 & 484 \\
+8 & Arshdeep Singh & -- & 30 & -0.006543 & 0.855939 & 500 \\
+9 & Sufiyan Muqeem & 1 & 14 & -0.015630 & 1.768495 & 500 \\
+10 & Tushar Deshpande & 3 & 25 & -0.027528 & 0.984275 & 500 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xr>{\raggedright\arraybackslash}X}
+\toprule
+Player leaving the prior top ten & Prior rank & Reason \\
+\midrule
+FazalHaq Farooqi & 4 & Too few valid draws \\
+Patrick Cummins & 5 & Outside top ten \\
+Shardul Thakur & 6 & Outside top ten \\
+Bhuvneshwar Kumar & 7 & Outside top ten \\
+Haris Rauf & 8 & Outside top ten \\
+Sunil Narine & 9 & Outside top ten \\
+Mohammad Rishad Hossain & 10 & Outside top ten \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\subsubsection*{Bowler v4 match-resampling rankings}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{r>{\raggedright\arraybackslash}Xrrrrr}
+\toprule
+Rank & Player & Prior rank & Point rank & p10 & p90 & Valid \\
+\midrule
+1 & Kyle Jamieson & -- & 1 & 0.723396 & 1.760976 & 500 \\
+2 & Yash Thakur & -- & 2 & 0.250409 & 1.711284 & 500 \\
+3 & Lungi Ngidi & -- & 13 & 0.234311 & 1.510541 & 500 \\
+4 & Brad Evans & -- & 5 & 0.229248 & 1.662572 & 500 \\
+5 & Gerald Coetzee & -- & 23 & 0.172784 & 1.080690 & 500 \\
+6 & Jacob Duffy & -- & 9 & 0.168222 & 1.851642 & 500 \\
+7 & Mohammad Nawaz & -- & 8 & 0.157912 & 1.577769 & 500 \\
+8 & Anshul Kamboj & -- & 10 & 0.143460 & 1.604354 & 498 \\
+9 & T Natarajan & 4 & 11 & 0.113936 & 1.649656 & 500 \\
+10 & Sufiyan Muqeem & 9 & 4 & 0.108282 & 1.665398 & 500 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xr>{\raggedright\arraybackslash}X}
+\toprule
+Player leaving the prior top ten & Prior rank & Reason \\
+\midrule
+Naseem Shah & 1 & Outside top ten \\
+Hasan Mahmud & 2 & Outside top ten \\
+Rasikh Salam & 3 & Insufficient matched support \\
+Mohit Sharma & 5 & Outside top ten \\
+Wanindu Hasaranga & 6 & Outside top ten \\
+Mitchell Santner & 7 & Outside top ten \\
+Arshdeep Singh & 8 & Outside top ten \\
+Tushar Deshpande & 10 & Outside top ten \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+\section{Visual evidence atlas}
+
+The first eight figures reproduce the dashboard's published Figure Atlas. The remaining four are fixed printable views of the interactive pressure curve, impact bridge and dataset and role views.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{paprf_role_annual_examples.png}
+\caption{Annual contextual run residuals. Points show runs per ball with exposure labels. Partial years and changing schedules limit comparisons.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{paprf_role_component_heatmaps.png}
+\caption{Role metric Spearman correlations. Shared information between runs and boundaries motivates the residualised-boundary sensitivity test.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{paprf_role_forward_validation.png}
+\caption{Later-window contextual role validation. Spearman correlations use common eligible IDs. Absent estimates indicate inadequate support.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{paprf_pressure_distribution.png}
+\caption{Delivery counts by innings, phase and pressure band. First-innings powerplay elevated and high counts are structurally zero.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{paprf_v2_uncertainty.png}
+\caption{Pressure v2 conditional score uncertainty. Intervals span empirical p10 to p90 from whole-match resampling.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{paprf_v4_sensitivity.png}
+\caption{Pressure v4 assumptions. Cells show the number of names shared with the primary v4 point top ten.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{paprf_forward_validation.png}
+\caption{Pressure rank backtest. Markers compare prior rankings with later measured lift among common eligible players.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{paprf_split_reliability.png}
+\caption{Pressure split-half repeatability. Conditional shuffle distributions preserve exposure groups inside each split.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{report_pressure_curve.pdf}
+\caption{Chase rule at selected match states. Dashed lines mark the elevated and high gates. The default dashboard example reaches 0.800 at 12 required runs per over.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{report_index_contributions.pdf}
+\caption{Ultimate Top 10 index contributions for both disciplines. Start at 50, add the evidence-adjusted primary contribution and then the capped increment available to a secondary role.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{report_role_distribution.pdf}
+\caption{Eligible role scores grouped into the dashboard's six score intervals. Counts use role eligibility and can count one player in multiple roles.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{report_dataset_coverage.pdf}
+\caption{Raw rows in each supplied file. The logarithmic scale shows their orders of magnitude. Rows across files describe different units.}
+\end{figure}
+
+\clearpage
+
+\section{Research documentation and data provenance}
+
+The research library preserves full protocols, data definitions, exclusions, experiment history and linked ledgers. The editable report archive also includes these chapters as Markdown.
+
+\begin{enumerate}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#plan}{Research plan and phase history}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#unified}{Unified index and leaderboard directory}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#discipline}{Separate batting and bowling indices}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#formula-reference}{Numbered formula reference}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#roles}{Contextual outcomes and seven roles}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#role-validation}{Role validation and score uncertainty}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#source-dictionary}{Organiser data dictionary}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#source-audit}{Dataset quality and exclusions}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#phase-one}{Phase 1 evidence and distribution}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#pressure-method}{Pre-delivery pressure definition}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#v1}{Archived Lens A formula ledger}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#experiment}{Pressure and weight experiments}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#matched}{Matched-context audit}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#v2}{Pressure v2 and resampling}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#v3}{Pressure v3 and cell granularity}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#v4}{Pressure v4 regularisation}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#forward}{Forward validation of pressure rankings}
+
+\item \href{https://dashboard-seven-delta-35.vercel.app/library.html\#split}{Interleaved split-half reliability}
+
+\end{enumerate}

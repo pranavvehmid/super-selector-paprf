@@ -1,7 +1,7 @@
 "use strict";
 
 const atlasPages = {
-  home: ["Home", "home", "home-findings"],
+  home: ["Home", "home-rankings", "home", "home-findings"],
   dataset: ["Dataset Explorer", "dataset"],
   framework: ["Mathematical Framework", "pipeline", "method", "glossary"],
   pressure: ["Pressure Analysis", "pressure", "rankings"],
@@ -175,9 +175,12 @@ if (globalThis.paprfEvidence?.datasets) {
   $("compare-discipline").addEventListener("change", comparisonOptions);
   for (const id of ["compare-a", "compare-b"]) $(id).addEventListener("change", comparisonView);
   comparisonOptions();
-  const {batter, bowler} = data.disciplines.lists;
-  $("home-preview").append(table(["Rank", "Contextual batter", "Index / 100", "Contextual bowler", "Index / 100"],
-    batter.top10.slice(0, 3).map((r, i) => [r.rank, r.name, fmt(r.score, 3), bowler.top10[i].name, fmt(bowler.top10[i].score, 3)])));
+  for (const [discipline, label] of [["batter", "Batters"], ["bowler", "Bowlers"]]) {
+    const group = element("div");
+    group.append(element("h2", label), table(["Rank", "Player", "Index / 100"],
+      data.disciplines.lists[discipline].top10.map(r => [r.rank, r.name, fmt(r.score, 3)])));
+    $("home-preview").append(group);
+  }
   $("publication-run").textContent = `Evidence run ${data.publication.run_id} · ${data.publication.independently_rebuilt_files} rebuilt artifacts verified`;
   $("publication-pdf").closest("li").hidden = !data.publication.pdf_available;
 }

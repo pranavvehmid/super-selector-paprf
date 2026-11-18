@@ -2,7 +2,7 @@
 
 > Append-only. Newest entry at the bottom. The **Next action** line is rewritten by `scripts/log_progress.py`.
 
-**Next action:** Review the live About page and final report.
+**Next action:** Review the expanded project report and dashboard Home.
 
 ---
 
@@ -273,3 +273,9 @@
 - Published the author's About page and verified its contact links, project link, and report title-page credit on production.
 - Files: dashboard/author.js, dashboard/index.html, dashboard/atlas.js, outputs/report/latex, scripts/verify_paprf_site.cjs
 - Next: Review the live About page and final report.
+
+## 2026-11-18 — Published both complete contextual top tens on Home and a 57-page evidence repor (step: 11)
+- Published both complete contextual top tens on Home and a 57-page evidence report with 20 player score traces, 12 figures and validation appendices.
+- Files: dashboard/index.html, dashboard/atlas.js, scripts/build_paprf_report_evidence.py, outputs/report/latex, docs/research/paprf_publication_qa.md
+- Decision: Share the dashboard evidence loader with the report and verify both contextual lists and the archived pressure lists. Include all 18 source chapters in the editable archive.
+- Next: Review the expanded project report and dashboard Home.

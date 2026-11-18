@@ -39,6 +39,11 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.4rem); }
 .hero-scorecard { padding-block: 16px 8px; }
 .panel { padding-block: clamp(16px, 3vw, 35px); scroll-margin-top: 140px; }
 .panel p { max-width: 76ch; }
+.home-rankings { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: 24px; }
+.home-rankings > div { min-width: 0; }
+.home-rankings h2 { margin-block: 4px 8px; }
+.home-rankings table { min-width: 0; }
+.home-rankings :is(th, td) { padding: 7px 10px; }
 .note { color: var(--muted); }
 .section-head p { max-width: 76ch; }
 table { color: var(--ink); background: var(--surface); }

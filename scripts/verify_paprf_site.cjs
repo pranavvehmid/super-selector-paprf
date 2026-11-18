@@ -35,6 +35,13 @@ async function main() {
     await page.route("https://fonts.googleapis.com/**", r => r.abort());
     await page.goto(base, {waitUntil:"load"});
     assert.equal(await page.locator("html").getAttribute("data-theme"), "dark");
+    assert.equal(await page.locator("main > section:visible").first().locator("h1").innerText(), "Ultimate Top 10");
+    const expectedHome = await page.evaluate(() => ["batter", "bowler"].map(discipline =>
+      globalThis.paprfEvidence.disciplines.lists[discipline].top10.map(r => [String(r.rank), r.name, r.score.toFixed(3)])));
+    assert.deepEqual(expectedHome.map(rows => rows.length), [10, 10]);
+    const actualHome = await page.locator("#home-preview table").evaluateAll(tables => tables.map(table =>
+      Array.from(table.tBodies[0].rows, row => Array.from(row.cells, cell => cell.textContent))));
+    assert.deepEqual(actualHome, expectedHome);
     for (const theme of ["dark", "light"]) {
       if (await page.locator("html").getAttribute("data-theme") !== theme) await page.locator("#theme-toggle").click();
       for (const width of [390, 768, 1280, 1440, 1920]) {

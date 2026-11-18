@@ -18,7 +18,7 @@ def read_json(path):
     return json.loads((ROOT / path).read_text(encoding="utf-8"))
 
 
-def main():
+def build_evidence():
     names = {r["player_id"]: r["player_name"] for r in read_csv(TABLES / "supplied_data_candidate_universe.csv")}
     ledger = read_csv(TABLES / "paprf_phase2_score_ledger.csv")
     rankings = {}
@@ -61,8 +61,13 @@ def main():
                 role_validation=read_json("work/paprf_role_profile_validation.json"),
                 disciplines=read_json("work/paprf_contextual_discipline_v2.json"),
                 datasets=read_json("work/data-quality-audit.json")["file_quality"],
-                publication=read_json("work/publication_manifest.json"),
                 robustness=read_json("work/robustness-validation.json"))
+    return data
+
+
+def main():
+    data = build_evidence()
+    data["publication"] = read_json("work/publication_manifest.json")
     path = ROOT / "dashboard/evidence.js"
     path.write_text("globalThis.paprfEvidence = " + json.dumps(data, ensure_ascii=True, separators=(",", ":")) + ";\n",
                     encoding="utf-8")
